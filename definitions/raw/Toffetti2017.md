@@ -1,0 +1,4 @@
+# Main requirements for cloud-native applications by Toffetti et al. 2017
+
+*   **Resilience**: CNA have to anticipate failures and fluctuation in quality of both cloud resources and third-party services needed to implement an application to remain available during outages. Resource pooling in the cloud implies that unexpected fluctuations of the infrastructure performance (e.g., noisy neighbor problem in multi-tenant systems) need to be expected and managed accordingly.
+*   **Elasticity**: CNA need to support adjusting their capacity by adding or removing resources to provide the required QoS in face of load variation avoiding over- and under-provisioning. In other terms, cloud-native applications should take full advantage of the cloud being a measured service offering on-demand self-service and rapid elasticity.

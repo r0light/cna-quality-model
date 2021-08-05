@@ -1,0 +1,1775 @@
+@inproceedings{10.1145/3204949.3204976,
+author = {Mekuria, Rufael and McGrath, Michael J. and Riccobene, Vincenzo and Bayon-Molino, Victor and Tselios, Christos and Thomson, John and Dobrodub, Artem},
+title = {Automated Profiling of Virtualized Media Processing Functions Using Telemetry and Machine Learning},
+year = {2018},
+isbn = {9781450351928},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3204949.3204976},
+doi = {10.1145/3204949.3204976},
+abstract = {Most media streaming services are composed by different virtualized processing functions
+such as encoding, packaging, encryption, content stitching etc. Deployment of these
+functions in the cloud is attractive as it enables flexibility in deployment options
+and resource allocation for the different functions. Yet, most of the time overprovisioning
+of cloud resources is necessary in order to meet demand variability. This can be costly,
+especially for large scale deployments. Prior art proposes resource allocation based
+on analytical models that minimize the costs of cloud deployments under a quality
+of service (QoS) constraint. However, these models do not sufficiently capture the
+underlying complexity of services composed of multiple processing functions. Instead,
+we introduce a novel methodology based on full-stack telemetry and machine learning
+to profile virtualized or cloud native media processing functions individually. The
+basis of the approach consists of investigating 4 categories of performance metrics:
+throughput, anomaly, latency and entropy (TALE) in offline (stress tests) and online
+setups using cloud telemetry. Machine learning is then used to profile the media processing
+function in the targeted cloud/NFV environment and to extract the most relevant cloud
+level Key Performance Indicators (KPIs) that relate to the final perceived quality
+and known client side performance indicators. The results enable more efficient monitoring,
+as only KPI related metrics need to be collected, stored and analyzed, reducing the
+storage and communication footprints by over 85%. In addition a detailed overview
+of the functions behavior was obtained, enabling optimized initial configuration and
+deployment, and more fine-grained dynamic online resource allocation reducing overprovisioning
+and avoiding function collapse. We further highlight the next steps towards cloud
+native carrier grade virtualized processing functions relevant for future network
+architectures such as in emerging 5G architectures.},
+booktitle = {Proceedings of the 9th ACM Multimedia Systems Conference},
+pages = {150–161},
+numpages = {12},
+keywords = {characterization, performance, cloud computing, telemetry, experimentation, video streaming},
+location = {Amsterdam, Netherlands},
+series = {MMSys '18}
+}
+
+@inproceedings{10.1145/2701126.2701226,
+author = {Rizvi, Syed and Ryoo, Jungwoo and Kissell, John and Aiken, Bill},
+title = {A Stakeholder-Oriented Assessment Index for Cloud Security Auditing},
+year = {2015},
+isbn = {9781450333771},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2701126.2701226},
+doi = {10.1145/2701126.2701226},
+abstract = {Cloud computing is an emerging computing model that provides numerous advantages to
+organizations (both service providers and customers) in terms of massive scalability,
+lower cost, and flexibility, to name a few. Despite these technical and economical
+advantages of cloud computing, many potential cloud consumers are still hesitant to
+adopt cloud computing due to security and privacy concerns. This paper describes some
+of the unique cloud computing security factors and subfactors that play a critical
+role in addressing cloud security and privacy concerns. To mitigate these concerns,
+we develop a security metric tool to provide information to cloud users about the
+security status of a given cloud vendor. The primary objective of the proposed metric
+is to produce a security index that describes the security level accomplished by an
+evaluated cloud computing vendor. The resultant security index will give confidence
+to different cloud stakeholders and is likely to help them in decision making, increase
+the predictability of the quality of service, and allow appropriate proactive planning
+if needed before migrating to the cloud. To show the practicality of the proposed
+metric, we provide two case studies based on the available security information about
+two well-known cloud service providers (CSP). The results of these case studies demonstrated
+the effectiveness of the security index in determining the overall security level
+of a CSP with respect to the security preferences of cloud users.},
+booktitle = {Proceedings of the 9th International Conference on Ubiquitous Information Management and Communication},
+articleno = {55},
+numpages = {7},
+keywords = {data privacy, cloud security, security metrics, cloud auditing},
+location = {Bali, Indonesia},
+series = {IMCOM '15}
+}
+
+@inproceedings{10.1145/2980258.2982046,
+author = {VasanthaAzhagu, A. Kannaki and Gnanasekar, J. M.},
+title = {Cloud Computing Overview, Security Threats and Solutions-A Survey},
+year = {2016},
+isbn = {9781450347563},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2980258.2982046},
+doi = {10.1145/2980258.2982046},
+abstract = {Cloud Computing aims to provide computing everywhere. It delivers computing resources
+on demand over internet in terms of anything anywhere anytime concept. It provides
+everything as a service to its users like infrastructure platform software hardware
+workplace data and security. Cloud computing has made revolutionary transformations
+in the government and business. Cloud Computing transforms the databases and application
+software to the huge data centers, where the management of the services and data may
+not be trustworthy. To verify the correctness, integrity, confidentially and availability
+of data in the cloud, in this paper, we focus on various cloud computing security
+threats and solution that have been used since security is an important measure for
+quality of service.},
+booktitle = {Proceedings of the International Conference on Informatics and Analytics},
+articleno = {109},
+numpages = {6},
+keywords = {Availability, Cloud Computing, Deployment Security threats, Integrity, Quality of Service (QoS)},
+location = {Pondicherry, India},
+series = {ICIA-16}
+}
+
+@inproceedings{10.1145/2668930.2688043,
+author = {Becker, Matthias and Lehrig, Sebastian and Becker, Steffen},
+title = {Systematically Deriving Quality Metrics for Cloud Computing Systems},
+year = {2015},
+isbn = {9781450332484},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2668930.2688043},
+doi = {10.1145/2668930.2688043},
+abstract = {In cloud computing, software architects develop systems for virtually unlimited resources
+that cloud providers account on a pay-per-use basis. Elasticity management systems
+provision these resources autonomously to deal with changing workload. Such changing
+workloads call for new objective metrics allowing architects to quantify quality properties
+like scalability, elasticity, and efficiency, e.g., for requirements/SLO engineering
+and software design analysis. In literature, initial metrics for these properties
+have been proposed. However, current metrics lack a systematic derivation and assume
+knowledge of implementation details like resource handling. Therefore, these metrics
+are inapplicable where such knowledge is unavailable.To cope with these lacks, this
+short paper derives metrics for scalability, elasticity, and efficiency properties
+of cloud computing systems using the goal question metric (GQM) method. Our derivation
+uses a running example that outlines characteristics of cloud computing systems. Eventually,
+this example allows us to set up a systematic GQM plan and to derive an initial set
+of six new metrics. We particularly show that our GQM plan allows to classify existing
+metrics.},
+booktitle = {Proceedings of the 6th ACM/SPEC International Conference on Performance Engineering},
+pages = {169–174},
+numpages = {6},
+keywords = {metric, elasticity, cloud computing, gqm, efficiency, slo, analysis, scalability},
+location = {Austin, Texas, USA},
+series = {ICPE '15}
+}
+
+@article{10.1145/2557833.2557854,
+author = {Yadav, Nikita and Khatri, Sujata and Singh, V. B.},
+title = {Developing an Intelligent Cloud for Higher Education},
+year = {2014},
+issue_date = {January 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {39},
+number = {1},
+issn = {0163-5948},
+url = {https://doi.org/10.1145/2557833.2557854},
+doi = {10.1145/2557833.2557854},
+abstract = {With rapid development in the IT world, technologies are becoming more dynamic and
+advanced. Today, technologies are changing with customer requirements. In the IT world,
+research is carried out to make technology better to meet the requirements that change
+with time. With the advancement in the IT world, online services have proliferated.
+Now a days, cloud computing is the hottest buzzword in the IT world. Cloud computing
+is not limited to the E-Governance and business worlds, but is also making a great
+impact in the education world. With growing demand for education, technologies and
+research, all universities and education institutions have their eyes on cloud computing.
+The main pillars of educational institutions are students, faculties, administrations
+and libraries. Faculty and students do research and need quality data while students
+of a particular field need a subject-oriented knowledge. Manually getting these kinds
+of data is time consuming as students depend on literature, books, different kind
+of software and hardware. With cloud computing in higher education, cost-effective
+measures can be taken to minimize the dependency on books, hardware and software.
+In this paper, we discuss how Artifical Intelligence based cloud computing in higher
+education will improve quality and ease the process of getting e-resources (software/hardware
+platform, storage etc.). This study will help in understanding effective cost-cutting
+measures. We also discuss how cloud computing in the library and administration will
+brighten the education prospects.},
+journal = {SIGSOFT Softw. Eng. Notes},
+month = feb,
+pages = {1–5},
+numpages = {5},
+keywords = {higher education, E-administration, E-library, cloud computing, E-learning}
+}
+
+@inproceedings{10.1145/2737182.2737185,
+author = {Lehrig, Sebastian and Eikerling, Hendrik and Becker, Steffen},
+title = {Scalability, Elasticity, and Efficiency in Cloud Computing: A Systematic Literature Review of Definitions and Metrics},
+year = {2015},
+isbn = {9781450334709},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2737182.2737185},
+doi = {10.1145/2737182.2737185},
+abstract = {Context: In cloud computing, there is a multitude of definitions and metrics for scalability,
+elasticity, and efficiency. However, stakeholders have little guidance for choosing
+fitting definitions and metrics for these quality properties, thus leading to potential
+misunderstandings. For example, cloud consumers and providers cannot negotiate reliable
+and quantitative service level objectives directly understood by each stakeholder.
+Objectives: Therefore, we examine existing definitions and metrics for these quality
+properties from the viewpoint of cloud consumers, cloud providers, and software architects
+with regard to commonly used concepts. Methods: We execute a systematic literature
+review (SLR), reproducibly collecting common concepts in definitions and metrics for
+scalability, elasticity, and efficiency. As quality selection criteria, we assess
+whether existing literature differentiates the three properties, exemplifies metrics,
+and considers typical cloud characteristics and cloud roles. Results: Our SLR yields
+418 initial results from which we select 20 for in-depth evaluation based on our quality
+selection criteria. In our evaluation, we recommend concepts, definitions, and metrics
+for each property. Conclusions: Software architects can use our recommendations to
+analyze the quality of cloud computing applications. Cloud providers and cloud consumers
+can specify service level objectives based on our metric suggestions.},
+booktitle = {Proceedings of the 11th International ACM SIGSOFT Conference on Quality of Software Architectures},
+pages = {83–92},
+numpages = {10},
+keywords = {systematic literature review, cloud computing, cloud, scalability, metrics, elasticity, efficiency, definitions},
+location = {Montr\'{e}al, QC, Canada},
+series = {QoSA '15}
+}
+
+@inproceedings{10.1145/2896387.2896403,
+author = {Al-Ghuwairi, Abdel-Rahman and Eid, Hazem and Aloran, Mohammad and Salah, Zaher and Baarah, Aladdin Hussein and Al-oqaily, Ahmad A.},
+title = {A Mutation-Based Model to Rank Testing as a Service (TaaS) Providers in Cloud Computing},
+year = {2016},
+isbn = {9781450340632},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2896387.2896403},
+doi = {10.1145/2896387.2896403},
+abstract = {With the increase of cloud computing service models, the need to measure and evaluate
+them are increased as well. In this paper, we proposed a novel measurement approach
+for the purpose of evaluating the quality of Testing as a Service (TaaS), which is
+considered as one of the most recent outstanding model within cloud computing environment.
+(TaaS) as outstanding model include the provision of multi-sub services, such as enabling
+cloud customer to verify his own code through the use of cloud provider resources.
+Its goes without questioning that testing over web environment requires high level
+of resources, time, and effort. Therefore, it should take high attention toward the
+quality of the used testing technique. Where, the quality of testing technique associated
+with set of attributes that has the ability to determine testing effectiveness. Thus,
+in this paper we propose a measurement approach to evaluate the effectiveness of TaaS,
+over cloud computing environment which relies on the use of mutation score. The main
+contribution of the proposed model represent in the use of mutation score to evaluate
+cloud providers ability to perform TaaS, and rank them according to the percentage
+of TaaS effectiveness.},
+booktitle = {Proceedings of the International Conference on Internet of Things and Cloud Computing},
+articleno = {18},
+numpages = {5},
+keywords = {Mutation, Effectiveness, Cloud services, Testing as a services, Cloud computing, Measurement},
+location = {Cambridge, United Kingdom},
+series = {ICC '16}
+}
+
+@inproceedings{10.1145/3234781.3234787,
+author = {Tse, Daniel and Yuen, Hok Hin and He, Qiran and Wang, Chaoya and Yu, Jiheng},
+title = {The Security Vulnerabilities of On-Demand and Sharing Economy},
+year = {2018},
+isbn = {9781450364904},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3234781.3234787},
+doi = {10.1145/3234781.3234787},
+abstract = {The cloud computing has been widely in on-demand-and-sharing service economy and has
+become a hotspot in recent years especially in the IT industry which really lead to
+some changes in human's daily life. However, many users and researchers believed that
+the information security is the most significant challenge in cloud computing. Therefore,
+this paper aims to discover the threats and vulnerabilities of the cloud storage which
+is the most common application originating from the cloud computing. This research
+utilized a quantitative approach and all qualified respondents were asked to complete
+an online questionnaire. The result shows that (1) Data loss and leakage is the biggest
+threat in using cloud storage application (2) Abuse use of cloud computational resources
+is the most severe impact in cloud storage application (3) Respondents with different
+backgrounds have the different perspectives towards the cloud service (4) The countermeasures
+to minimize the security vulnerability are flexibility in choosing the protective
+measures, strengthen the infrastructure, improve the password authentication and strengthen
+the authorization.},
+booktitle = {Proceedings of the 2nd International Conference on E-Commerce, E-Business and E-Government},
+pages = {47–53},
+numpages = {7},
+keywords = {cloud storage application, threats, vulnerabilities, on-demand-and-sharing economy, cloud computing},
+location = {Hong Kong, Hong Kong},
+series = {ICEEG '18}
+}
+
+@inproceedings{10.5555/3233397.3233523,
+author = {Kirsal, Yonal and Ever, Yoney Kirsal and Mostarda, Leonardo and Gemikonakli, Orhan},
+title = {Analytical Modelling and Performability Analysis for Cloud Computing Using Queuing System},
+year = {2015},
+isbn = {9780769556970},
+publisher = {IEEE Press},
+abstract = {In recent years, cloud computing becomes a new computing model emerged from the rapid
+development of the internet. Users can reach their resources with high flexibility
+using the cloud computing systems all over the world. However, such systems are prone
+to failures. In order to obtain realistic quality of service (QoS) measurements, failure
+and recovery behaviours of the system should be considered. System's failures and
+repairs are associated with availability context in QoS measurements. In this paper,
+performance issues are considered with the availability of the system. Markov Reward
+Model (MRM) method is used to get QoS measurements. The mean queue length (MQL) results
+are calculated using the MRM. The results explicitly show that failures and repairs
+affect the system performance significantly.},
+booktitle = {Proceedings of the 8th International Conference on Utility and Cloud Computing},
+pages = {643–647},
+numpages = {5},
+keywords = {quality of service, cloud computing, queuing system, analytical modelling, performability analysis},
+location = {Limassol, Cyprus},
+series = {UCC '15}
+}
+
+@proceedings{10.1145/2755979,
+title = {VTDC '15: Proceedings of the 8th International Workshop on Virtualization Technologies in Distributed Computing},
+year = {2015},
+isbn = {9781450335737},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {During the past few years, we have begun to see a convergence of cloud computing and
+high performance computing (HPC) infrastructures, technologies, and applications.
+In HPC, applications have since long predominantly been parallel batch jobs with execution
+times measured in hours or even days, managed by mature batch and scheduling systems
+developed and refined over decades. With the introduction of clouds, providing elastic
+capacity and new programming models for internet-type applications, also traditional
+HPC users have begun to explore new methods to solve their problems. Cloud applications
+often come with large numbers of shorter tasks, frequently pipelined and sometimes
+combined with long-running service-type application components, not too different
+from what has been seen in HPC since long. Building on previous successful and highly
+attended VTDC workshops, this 8th edition is a forum to dwell from these synergies
+and exchange ideas among researchers in the broad area of virtualization technologies
+in distributed computing in order to further the forefronts of both HPC and cloud
+computing.The technical program is what defines the workshop. For the establishment
+of the program, we are grateful to all authors and to the program committee that has
+provided each paper with an average of over 6 high quality reviews, hopefully contributing
+both to the paper quality and to each author's future research. We thank the invited
+speakers, Dr. John Russell Lange (University of Pittsburgh, USA), Dr. Abhishek Gupta
+(Intel Corp, USA), and Prof. Guillaume Pierre (IRISA / Rennes 1 University, France),
+for their presentations, each highlighting a different aspect on the convergence of
+HPC and cloud computing.},
+location = {Portland, Oregon, USA}
+}
+
+@inproceedings{10.1145/2797143.2797145,
+author = {Stephanakis, Ioannis M. and Chochliouros, Ioannis P. and Sfakianakis, Evangelos and Shirazi, Noorulhassan},
+title = {Anomaly Detection In Secure Cloud Environments Using a Self-Organizing Feature Map (SOFM) Model For Clustering Sets of R-Ordered Vector-Structured Features},
+year = {2015},
+isbn = {9781450335805},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2797143.2797145},
+doi = {10.1145/2797143.2797145},
+abstract = {Cloud computing delivers services over virtualized networks to many end-users. Cloud
+services are characterized by such attributes as on-demand self-service, broad network
+access, resource pooling, rapid and elastic resource provisioning and metered services
+of various qualities. Cloud networks provide data as well as multimedia and video
+services. Cloud computing for critical structure IT is a relative new area of potential
+applications. Cloud networks are classified into private cloud networks, public cloud
+networks and hybrid cloud networks. Anomaly detection systems are defined as a branch
+of intrusion detection systems that deal with identifying anomalous events with respect
+to normal system behavior. A novel application of a Self-Organizing-Feature Map (SOFM)
+of reduced/aggregate sets of ordered vector structured features that are used for
+detecting anomalies in the context of secure cloud environments is herein proposed.
+Multivalue inputs consist of reduced/aggregate ordered sets of vector and binary features.
+The nodes of the SOFM - after training - are indicative of local distributions of
+feature measurements during normal cloud operation. Anomalies are detected as outliers
+of the trained SOFM. Each structured vector consists of binary as well as histogram
+data. The aggregated Canberra distance is used to order histogram data whereas the
+Jaccard distance is used for multivalue binary data. The so-called Cross-Order Distance
+Matrix is defined for both cases. The distance depends upon the selection of a similarity/distance
+measure and a method for operating upon the elements of the Cross-Order Distance Matrix.
+Several methods of estimating the distance between two ordered sets of features are
+investigated in the course of this paper.},
+booktitle = {Proceedings of the 16th International Conference on Engineering Applications of Neural Networks (INNS)},
+articleno = {27},
+numpages = {9},
+keywords = {Reduced/aggregate-ordering, Secure cloud networks, Self-Organizing Feature Maps (SOFMs), clustering, Canberra distance, intrusion detection, Jaccard distance},
+location = {Rhodes, Island, Greece},
+series = {EANN '15}
+}
+
+@inproceedings{10.1145/3328020.3353936,
+author = {Gao, Zhijun and Gao, Yuxin and Xu, Jingjing},
+title = {Designing Metrics to Evaluate the Help Center of Baidu Cloud},
+year = {2019},
+isbn = {9781450367905},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3328020.3353936},
+doi = {10.1145/3328020.3353936},
+abstract = {Help centers are mainly designed to assist users with their product uses. The question
+as to how we measure the quality of a help center remains unanswered. As the first
+step of a joint research initiated by Peking University and Baidu Cloud that aims
+to develop a set of computable metrics to evaluate the quality of help centers, this
+experience report shares the results of data analysis on correlation between user
+behavioral data and technical documentation quality. The documents and data we use
+are a suite of cloud computing services provided by Baidu Cloud. The report begins
+with an introduction of the research goal; following reviews on the related work,
+it then lays out the design of the experiments with user data collected from Baidu
+Cloud. In our experiments, we categorize all documents into three groups and try to
+identify which metrics would affect documentation quality most. The result shows that
+the key index that contributes most to the model is PV/UV. At last, the report concludes
+with our current experimental efforts and future work in our plan.},
+booktitle = {Proceedings of the 37th ACM International Conference on the Design of Communication},
+articleno = {28},
+numpages = {7},
+keywords = {web metrics, help center evaluation, technical information, quality evaluation},
+location = {Portland, Oregon},
+series = {SIGDOC '19}
+}
+
+@inproceedings{10.1145/3267357.3267362,
+author = {Arias-Cabarcos, Patricia and Almen\'{a}rez, Florina and D\'{\i}az-S\'{a}nchez, Daniel and Mar\'{\i}n, Andr\'{e}s},
+title = {FRiCS: A Framework for Risk-Driven Cloud Selection},
+year = {2018},
+isbn = {9781450359887},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3267357.3267362},
+doi = {10.1145/3267357.3267362},
+abstract = {Our devices and interactions in a world where physical and digital realities are more
+and more blended, generate a continuum of multimedia data that needs to be stored,
+shared and processed to provide services that enrich our daily lives. Cloud computing
+plays a key role in these tasks, dissolving resource allocation and computational
+boundaries, but it also requires advanced security mechanisms to protect the data
+and provide privacy guarantees. Therefore, security assurance must be evaluated before
+offloading tasks to a cloud provider, a process which is currently manual, complex
+and inadequate for dynamic scenarios. However, though there are many tools for evaluating
+cloud providers according to quality of service criteria, automated categorization
+and selection based on risk metrics is still challenging. To address this gap, we
+present FRiCS, a Framework for Risk-driven Cloud Selection, which contributes with:
+1) a set of cloud security metrics and risk-based weighting policies, 2) distributed
+components for metric extraction and aggregation, and 3) decision-making plugins for
+ranking and selection. We have implemented the whole system and conducted a case-study
+validation based on public cloud providers' security data, showing the benefits of
+the proposed approach.},
+booktitle = {Proceedings of the 2nd International Workshop on Multimedia Privacy and Security},
+pages = {18–26},
+numpages = {9},
+keywords = {risk-driven security, cloud computing, decision making, security metrics, cloud-based multimedia systems},
+location = {Toronto, Canada},
+series = {MPS '18}
+}
+
+@inproceedings{10.1109/CCGrid.2016.83,
+author = {Farias, Victor A. E. and Sousa, Fl\'{a}vio R. C. and Maia, Jos\'{e} G. R. and Gomes, Jo\~{a}o P. P. and Machado, Javam C.},
+title = {Machine Learning Approach for Cloud NoSQL Databases Performance Modeling},
+year = {2016},
+isbn = {9781509024520},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGrid.2016.83},
+doi = {10.1109/CCGrid.2016.83},
+abstract = {Cloud computing is a successful, emerging paradigm that supports on-demand services
+with pay-as-you-go model. With the exponential growth of data, NoSQL databases have
+been used to manage data in the cloud. In these newly emerging settings, mechanisms
+to guarantee Quality of Service heavily relies on performance predictability, i.e.,
+the ability to estimate the impact of concurrent query execution on the performance
+of individual queries in a continuously evolving workload. This paper presents a performance
+modeling approach for NoSQL databases in terms of performance metrics which is capable
+of capturing the non-linear effects caused by concurrency and distribution aspects.
+Experimental results confirm that our performance modeling can accurately predict
+mean response time measurements under a wide range of workload configurations.},
+booktitle = {Proceedings of the 16th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing},
+pages = {617–620},
+numpages = {4},
+keywords = {cloud computing, NoSQL, performance modeling},
+location = {Cartagena, Columbia},
+series = {CCGRID '16}
+}
+
+@inproceedings{10.1145/3147213.3149214,
+author = {Aske, Austin and Zhao, Xinghui},
+title = {An Actor-Based Framework for Edge Computing},
+year = {2017},
+isbn = {9781450351492},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3147213.3149214},
+doi = {10.1145/3147213.3149214},
+abstract = {The Actor model provides inherent parallelism, along with other convenient features
+to build large-scale distributed systems. In this paper, we present ActorEdge, an
+Actor based distributed framework for edge computing. ActorEdge provides straitforward
+integration with existing technologies, while enabling application developers to dynamically
+utilize computational resources on the edge of the clouds. ActorEdge has proven to
+outperform cloud computing options by providing superior quality of service, measuring
+a 10x lower latency, 30% less jitter, and greater bandwidth. Using this framework,
+programmers can easily develop and deploy their applications on a heterogeneous system,
+including cloud servers/data centers, edge servers, and mobile devices.},
+booktitle = {Proceedings of The10th International Conference on Utility and Cloud Computing},
+pages = {199–200},
+numpages = {2},
+keywords = {mobile clouds, cloud computing, edge computing, actors},
+location = {Austin, Texas, USA},
+series = {UCC '17}
+}
+
+@inproceedings{10.1145/3132847.3133045,
+author = {Fang, Zhou and Yu, Tong and Mengshoel, Ole J. and Gupta, Rajesh K.},
+title = {QoS-Aware Scheduling of Heterogeneous Servers for Inference in Deep Neural Networks},
+year = {2017},
+isbn = {9781450349185},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3132847.3133045},
+doi = {10.1145/3132847.3133045},
+abstract = {Deep neural networks (DNNs) are popular in diverse fields such as computer vision
+and natural language processing. DNN inference tasks are emerging as a service provided
+by cloud computing environments. However, cloud-hosted DNN inference faces new challenges
+in workload scheduling for the best Quality of Service (QoS), due to dependence on
+batch size, model complexity and resource allocation. This paper represents the QoS
+metric as a utility function of response delay and inference accuracy. We first propose
+a simple and effective heuristic approach that keeps low response delay and satisfies
+the requirement on processing throughput. Then we describe an advanced deep reinforcement
+learning (RL) approach that learns to schedule from experience. The RL scheduler is
+trained to maximize QoS, using a set of system statuses as the input to the RL policy
+model. Our approach performs scheduling actions only when there are free GPUs, thus
+reduces scheduling overhead over common RL schedulers that run at every continuous
+time step. We evaluate the schedulers on a simulation platform and demonstrate the
+advantages of RL over heuristics.},
+booktitle = {Proceedings of the 2017 ACM on Conference on Information and Knowledge Management},
+pages = {2067–2070},
+numpages = {4},
+keywords = {web service, deep neural networks inference, deep reinforcement learning, reinforcement learning, qos aware scheduling},
+location = {Singapore, Singapore},
+series = {CIKM '17}
+}
+
+@inproceedings{10.5555/2872550.2872554,
+author = {Yu, Ning and Gu, Feng and Guo, Xuan and He, Zaobo},
+title = {A Fine-Grained Flow Control Model for Cloud-Assisted Data Broadcasting},
+year = {2015},
+isbn = {9781510801004},
+publisher = {Society for Computer Simulation International},
+address = {San Diego, CA, USA},
+abstract = {Cloud-assisted data broadcasting is an emerging application where cloud computing
+assists data broadcasting to extend the capacity of system computing and improve the
+interactivity of the conventional media. However, with the increase in scale, it brings
+the difficulty on the complexity to provide the sufficient quality of service for
+diverse receivers. In order to obtain a fine-grained flow rate as well as the system
+stability, we propose a model based on parallel scheduling, fair queue and Proportional-Integral-Derivative
+(PID) controller to cope with these challenges. PID controller takes advantage of
+the feedback of the statistical output stream and automatically adjusts the transmission
+flow so that the system can achieve the fine-grained multiplexing performance. Meanwhile,
+we adopt a set of novel metrics to monitor and measure the quality of flow control
+in order to weaken the negative impact of coarse-grained flow to user-end devices
+to the minimum level. Extensive simulations and evaluations have illustrated the superiority
+of the proposed model in the performance and the quality of service in terms of proposed
+measurement metrics.},
+booktitle = {Proceedings of the 18th Symposium on Communications &amp; Networking},
+pages = {24–31},
+numpages = {8},
+keywords = {impact energy, quality of service, fair queue, cloud-assisted data broadcasting, fine-grained flow control, energy metric, time division multiplexing, user-end devices, impact power, proportional-integral-derivative (PID) controller, heterogeneous network},
+location = {Alexandria, Virginia},
+series = {CNS '15}
+}
+
+@proceedings{10.1145/2737182,
+title = {QoSA '15: Proceedings of the 11th International ACM SIGSOFT Conference on Quality of Software Architectures},
+year = {2015},
+isbn = {9781450334709},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 11th International ACM Sigsoft Conference on the Quality of Software
+Architectures -- QoSA 2015. For more than a decade, QoSA has strived to advance the
+state of the art of quality aspects of software architecture, focusing broadly on
+its quality characteristics and how these relate to the design of software architectures.
+Specific issues of interest are defining and modeling quality measures, evaluating
+and managing architecture quality, linking architecture to requirements and implementation,
+and preserving architecture quality throughout the system lifetime. Past themes for
+QoSA include Architecting for Adaptivity (2014), The System View (2013), Evolving
+Architectures (2012), Quality throughout the Software Lifecycle (2011), and Research
+into Practice -- Reality and Gaps (2010).QoSA 2015's theme is "Software Architecture
+for the 4th Industrial Revolution". After mechanization, mass production, and electronics,
+the Internet is about to enable a new level of productivity in manufacturing. This
+shall be enabled by smart cyber-physical systems connected to cloud computing services
+and communicating using standardized semantics. In the near future, industrial big
+data analytics on monitored sensor data shall improve the efficiency and individualization
+of production facilities. This year's QoSA conference solicited contributions that
+explore the various implications of this upcoming industrial revolution on software
+architecture. This included reference architectures, software architectures adapting
+at run time, architecture styles and patterns for cyber-physical and distributed systems.The
+call for papers attracted 42 initial submissions from Asia, North America, Africa,
+and Europe and 28 final submissions were considered during the review process. The
+program committee accepted 11 full papers and 2 short papers that cover topics, such
+as new architecture modeling approaches, architectural tactics for mobile computing,
+cloud computing architectures, and cyberphysical systems. QoSA's 2015 proceedings
+also include 2 papers from the WCOP 2015, the 20th International Doctoral Symposium
+on Components and Architecture.QoSA 2015 is part of the federated events on component-based
+software engineering and software architecture (CompArch 2015), which include WICSA
+2015 (12th Working IEEE / IFIP Conference on Software Architecture) and CBSE 2015
+(18th International ACM SIGSOFT Symposium on Component-Based Software Engineering).},
+location = {Montr\'{e}al, QC, Canada}
+}
+
+@inproceedings{10.1145/3425269.3425272,
+author = {Silva, Jorge Luiz Machado da and de Fran\c{c}a, Breno B. Nicolau and Rubira, Cec\'{\i}lia Mary Fischer},
+title = {Generating Trustworthiness Adaptation Plans Based on Quality Models for Cloud Platforms},
+year = {2020},
+isbn = {9781450387545},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3425269.3425272},
+doi = {10.1145/3425269.3425272},
+abstract = {Cloud computing platforms can offer many benefits related to the provision of service
+processing and storage for hosting client applications. Trustworthiness can be defined
+as the trust of a customer in a cloud service and its provider; however, the assurance
+of this property is not trivial. First, trustworthiness in general is not composed
+by a single quality attribute, but by the combination of multiple attributes, such
+as data privacy, performance, reliability, etc. Second, during runtime clients can
+experience a change of the trustworthiness level required by their application due
+to the degradation of the cloud service. This article presents a solution that monitors
+during runtime the set of quality attributes of a specific application and generates
+adaptation plans in order to certify that an adequate resource amount be provided
+by the cloud in order to keep its trustworthiness level. Our solution is based on
+quality models to compute the metric associated to each non-functional requirement
+and their combination them into different types of trustworthiness levels. The main
+contribution of the solution is to provide an approach which deals with multiple requirements
+at the same time (or simultaneously) during runtime in order to adapt the cloud resources
+to keep the trustworthiness level required by the application. The solution was evaluated
+by an experiment considering a scenario where the application trustworthiness level
+was composed by three quality attributes: data privacy, performance and reliability.
+Initial results have shown that the approach is feasible in terms of the execution
+of the adaptation plans during runtime to certify the trustworthiness level required
+by the application.},
+booktitle = {Proceedings of the 14th Brazilian Symposium on Software Components, Architectures, and Reuse},
+pages = {141–150},
+numpages = {10},
+keywords = {Cloud Computing, Trustworthiness, Adaptation Planning, Self-adaptive Systems},
+location = {Natal, Brazil},
+series = {SBCARS '20}
+}
+
+@inproceedings{10.1145/3447545.3451190,
+author = {Henning, S\"{o}ren and Hasselbring, Wilhelm},
+title = {How to Measure Scalability of Distributed Stream Processing Engines?},
+year = {2021},
+isbn = {9781450383318},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447545.3451190},
+doi = {10.1145/3447545.3451190},
+abstract = {Scalability is promoted as a key quality feature of modern big data stream processing
+engines. However, even though research made huge efforts to provide precise definitions
+and corresponding metrics for the term scalability, experimental scalability evaluations
+or benchmarks of stream processing engines apply different and inconsistent metrics.
+With this paper, we aim to establish general metrics for scalability of stream processing
+engines. Derived from common definitions of scalability in cloud computing, we propose
+two metrics: a load capacity function and a resource demand function. Both metrics
+relate provisioned resources and load intensities, while requiring specific service
+level objectives to be fulfilled. We show how these metrics can be employed for scalability
+benchmarking and discuss their advantages in comparison to other metrics, used for
+stream processing engines and other software systems.},
+booktitle = {Companion of the ACM/SPEC International Conference on Performance Engineering},
+pages = {85–88},
+numpages = {4},
+keywords = {cloud computing, stream processing, metrics, scalability},
+location = {Virtual Event, France},
+series = {ICPE '21}
+}
+
+@inproceedings{10.1145/3128128.3128161,
+author = {Marwan, M. and Kartit, A. and Ouahmane, H.},
+title = {Protecting Medical Data in Cloud Storage Using Fault-Tolerance Mechanism},
+year = {2017},
+isbn = {9781450352819},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3128128.3128161},
+doi = {10.1145/3128128.3128161},
+abstract = {Given the fact that cloud computing offers cost-efficient storage systems, medical
+organizations are more interested in using this alternative solution to safeguard
+their patients' data. Equally interestingly, users are charged based typically on
+the amount of occupied storage space. Basically, this concept is meant to cut costs
+and improve the quality of healthcare services. Consequently, implementing cloud storage
+would help clients to manage their data efficiently. Besides, it allows users to outsource
+the storage process by using virtual storage systems instead of local ones. Despite
+its significant impact in healthcare domain, adopting this paradigm to save medical
+data on remote servers poses serious challenges, especially security risks. Currently,
+various cryptographic techniques have been used to ensure data confidentiality and
+to avoid data disclosure. Globally, this model uses traditional cryptosystems such
+as AES, RSA to address security issues in cloud storage. As far as we know, there
+are only a few works in literature that deal with availability and data recovery in
+cloud computing. In general, the classical approach which is based on backup or replication
+is not suitable for cloud environment due to the highly dynamic nature of this model.
+The intent of this work is to enhance the reliability of cloud storage in order to
+meet security requirements. In this study, we propose a novel method based on Shamir's
+Secret Share Scheme and multi-cloud concept to avoid data loss and unauthorized access.
+More precisely, this technique seeks to divide consumers' data into several portions
+using Shamir's Secret Share to prevent privacy disclosure. Based on these considerations,
+we store these created portions in different nodes to minimize security risks, particularly
+internal attacks. To sum up, this method is designed to ensure fault-tolerance, which
+is the main subject of this study. In fact, we need just certain shares to reconstruct
+the secret data rather than using all parts. The experimental results are in accordance
+with the theoretical assumptions behind this model, and hence, confirm that the proposed
+framework provides necessary measures for preventing data loss in cloud storage.},
+booktitle = {Proceedings of the 2017 International Conference on Smart Digital Environment},
+pages = {214–219},
+numpages = {6},
+keywords = {cloud computing, medical image, fault tolerance, security},
+location = {Rabat, Morocco},
+series = {ICSDE '17}
+}
+
+@inproceedings{10.1109/UCC.2014.49,
+author = {Keller, Matthias and Robbert, Christoph and Karl, Holger},
+title = {Template Embedding: Using Application Architecture to Allocate Resources in Distributed Clouds},
+year = {2014},
+isbn = {9781479978816},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/UCC.2014.49},
+doi = {10.1109/UCC.2014.49},
+abstract = {In distributed cloud computing, application deployment across multiple sites can improve
+quality of service. Recent research developed algorithms to find optimal locations
+for virtual machines. However, those algorithms assume to have either single-tier
+applications or a fixed number of virtual machines--a strong simplification of reality.
+This paper investigates the placement and scaling of complex application architectures.
+An application is dynamically scaled to fit both the current demand situation and
+the currently available infrastructure resources. We compare two approaches: The first
+one is based on virtual network embedding. The second approach is a novel method called
+Template Embedding. It is based on a hierarchical 1-allocation hub flow problem and
+combines application scaling and embedding in one step. Extensive experiments on 43200
+network configurations showed that Template Embedding outperforms virtual network
+embedding in all cases in three metrics: success rate, solution quality, and runtime.
+This positive result shows that template embedding is a promising approach for distributed
+cloud resource allocation.},
+booktitle = {Proceedings of the 2014 IEEE/ACM 7th International Conference on Utility and Cloud Computing},
+pages = {387–395},
+numpages = {9},
+keywords = {Flow Problem, Hub Problem, Cloud Resource Allocation, Distributed Cloud Computing, Application Architecture},
+series = {UCC '14}
+}
+
+@inproceedings{10.1145/2668930.2688818,
+author = {Lehrig, Sebastian and Becker, Steffen},
+title = {The CloudScale Method for Software Scalability, Elasticity, and Efficiency Engineering: A Tutorial},
+year = {2015},
+isbn = {9781450332484},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2668930.2688818},
+doi = {10.1145/2668930.2688818},
+abstract = {In cloud computing, software engineers design systems for virtually unlimited resources
+that cloud providers account on a pay-per-use basis. Elasticity management systems
+provision these resource autonomously to deal with changing workloads. Such workloads
+call for new objective metrics allowing engineers to quantify quality properties like
+scalability, elasticity, and efficiency. However, software engineers currently lack
+engineering methods that aid them in engineering their software regarding such properties.
+Therefore, the CloudScale project developed tools for such engineering tasks. These
+tools cover reverse engineering of architectural models from source code, editors
+for manual design/adaption of such models, as well as tools for the analysis of modeled
+and operating software regarding scalability, elasticity, and efficiency. All tools
+are interconnected via ScaleDL, a common architectural language, and the CloudScale
+Method that leads through the engineering process. In this tutorial, we execute our
+method step-by-step such that every tool and ScaleDL are briefly introduced.},
+booktitle = {Proceedings of the 6th ACM/SPEC International Conference on Performance Engineering},
+pages = {329–331},
+numpages = {3},
+keywords = {engineering, cloudscale, tutorial, metrics, efficiency, scalability, elasticity, cloud computing, software analysis, method},
+location = {Austin, Texas, USA},
+series = {ICPE '15}
+}
+
+@inproceedings{10.1145/2996890.3007870,
+author = {Uhlir, Vojtech and Tomanek, Ondrej and Kencl, Lukas},
+title = {Latency-Based Benchmarking of Cloud Service Providers},
+year = {2016},
+isbn = {9781450346160},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2996890.3007870},
+doi = {10.1145/2996890.3007870},
+abstract = {With the ever-increasing trend of migration of applications to the Cloud environment,
+there is a growing need to thoroughly evaluate quality of the Cloud service itself,
+before deciding upon a hosting provider. Benchmarking the Cloud services is difficult
+though, due to the complex nature of the Cloud Computing setup and the diversity of
+locations, of applications and of their specific service requirements. However, such
+comparison may be crucial for decision making and for troubleshooting of services
+offered by the intermediate businesses - the so-called Cloud tenants. Existing cross-sectional
+studies and benchmarking methodologies provide only a shallow comparison of Cloud
+services, whereas state-of-the-art tooling for specific comparisons of application-performance
+parameters, such as for example latency, is insufficient. In this work, we propose
+a novel methodology for benchmarking of Cloud-service providers, which is based on
+latency measurements collected via active probing, and can be tailored to specific
+application needs. Furthermore, we demonstrate its applicability on a practical longitudinal
+study of real measurements of two major Cloud-service providers - Amazon and Microsoft.},
+booktitle = {Proceedings of the 9th International Conference on Utility and Cloud Computing},
+pages = {263–268},
+numpages = {6},
+location = {Shanghai, China},
+series = {UCC '16}
+}
+
+@inproceedings{10.1145/3386367.3431670,
+author = {Sacco, Alessio and Esposito, Flavio and Marchetto, Guido},
+title = {A Distributed Reinforcement Learning Approach for Energy and Congestion-Aware Edge Networks},
+year = {2020},
+isbn = {9781450379489},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3386367.3431670},
+doi = {10.1145/3386367.3431670},
+abstract = {The abiding attempt of automation has also pervaded computer networks, with the ability
+to measure, analyze, and control themselves in an automated manner, by reacting to
+changes in the environment (e.g., demand) while exploiting existing flexibilities.
+When provided with these features, networks are often referred to as "self-driving".
+Network virtualization and machine learning are the drivers. In this regard, the provision
+and orchestration of physical or virtual resources are crucial for both Quality of
+Service guarantees and cost management in the edge/cloud computing ecosystem. Auto-scaling
+mechanisms are hence essential to effectively manage the lifecycle of network resources.
+In this poster, we propose Relevant, a distributed reinforcement learning approach
+to enable distributed automation for network orchestrators. Our solution aims at solving
+the congestion control problem within Software-Defined Network infrastructures, while
+being mindful of the energy consumption, helping resources to scale up and down as
+traffic demands fluctuate and energy optimization opportunities arise.},
+booktitle = {Proceedings of the 16th International Conference on Emerging Networking EXperiments and Technologies},
+pages = {546–547},
+numpages = {2},
+keywords = {self-driving networks, reinforcement learning, auto-scaling},
+location = {Barcelona, Spain},
+series = {CoNEXT '20}
+}
+
+@inproceedings{10.1145/3316615.3316622,
+author = {Ming, Fan Xiu and Habeeb, Riyaz Ahamed Ariyaluran and Md Nasaruddin, Fariza Hanum Binti and Gani, Abdullah Bin},
+title = {Real-Time Carbon Dioxide Monitoring Based on IoT &amp; Cloud Technologies},
+year = {2019},
+isbn = {9781450365734},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3316615.3316622},
+doi = {10.1145/3316615.3316622},
+abstract = {In recent years, environment monitoring are of greater importance towards the area
+of climate monitoring, analysis, agricultural productivity management, quality assurance
+of water, air, alongside with other potential factors that are closely connected to
+industrial development and convenience of living. This research is motivated by creating
+awareness of smart home residents on indoor air quality, as well as providing insight
+of carbon dioxide emissions for industries and environmental organizations.This paper
+proposes an efficient solution towards environment monitoring of carbon dioxide integrated
+with Internet of Things capability and cloud computing technology. Aforementioned
+techniques will deliver highly accessible and real-time data visualization which would
+be greatly beneficial for Smart Homes efficiency of analysis actualization and counter-measures
+deployment. A monitoring architecture was developed to generate, accumulate, store
+and visualize carbon dioxide concentration using MQ135 carbon dioxide sensor, ESP8266
+Wi-Fi module, Firebase Cloud Storage Service and Android mobile application Carbon
+Insight for data visualization. 2880 data points in the time frame of 10 days with
+a 30-second interval was collected, stored and visualized with the application of
+this system.},
+booktitle = {Proceedings of the 2019 8th International Conference on Software and Computer Applications},
+pages = {517–521},
+numpages = {5},
+keywords = {cloud, Internet of things, environment monitoring},
+location = {Penang, Malaysia},
+series = {ICSCA '19}
+}
+
+@inproceedings{10.1109/CCGrid.2015.152,
+author = {Kuang, Wei and Brown, Laura E. and Wang, Zhenlin},
+title = {Modeling Cross-Architecture Co-Tenancy Performance Interference},
+year = {2015},
+isbn = {9781479980062},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGrid.2015.152},
+doi = {10.1109/CCGrid.2015.152},
+abstract = {Cloud computing has become a dominant computing paradigm to provide elastic, affordable
+computing resources to end users. Due to the increased computing power of modern machines
+powered by multi/many-core computing, data centers often co-locate multiple virtual
+machines (VMs) into one physical machine, resulting in co-tenancy, and resource sharing
+and competition. Applications or VMs co-locating in one physical machine can interfere
+with each other despite of the promise of performance isolation through virtualization.
+Modeling and predicting co-run interference therefore becomes critical for data center
+job scheduling and QoS (Quality of Service) assurance. Co-run interference can be
+categorized into two metrics, sensitivity and pressure, where the former denotes how
+an application's performance is affected by its co-run applications, and the latter
+measures how it impacts the performance of its co-run applications. This paper shows
+that sensitivity and pressure are both application- and architecture-dependent. Further,
+we propose a regression model that predicts an application's sensitivity and pressure
+across architectures with high accuracy. This regression model enables a data center
+scheduler to guarantee the QoS of a VM/application when it is scheduled to co-locate
+with another VMs/applications.},
+booktitle = {Proceedings of the 15th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing},
+pages = {231–240},
+numpages = {10},
+location = {Shenzhen, China},
+series = {CCGRID '15}
+}
+
+@article{10.1145/3284553,
+author = {Avgeris, Marios and Dechouniotis, Dimitrios and Athanasopoulos, Nikolaos and Papavassiliou, Symeon},
+title = {Adaptive Resource Allocation for Computation Offloading: A Control-Theoretic Approach},
+year = {2019},
+issue_date = {April 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {19},
+number = {2},
+issn = {1533-5399},
+url = {https://doi.org/10.1145/3284553},
+doi = {10.1145/3284553},
+abstract = {Although mobile devices today have powerful hardware and networking capabilities,
+they fall short when it comes to executing compute-intensive applications. Computation
+offloading (i.e., delegating resource-consuming tasks to servers located at the edge
+of the network) contributes toward moving to a mobile cloud computing paradigm. In
+this work, a two-level resource allocation and admission control mechanism for a cluster
+of edge servers offers an alternative choice to mobile users for executing their tasks.
+At the lower level, the behavior of edge servers is modeled by a set of linear systems,
+and linear controllers are designed to meet the system’s constraints and quality of
+service metrics, whereas at the upper level, an optimizer tackles the problems of
+load balancing and application placement toward the maximization of the number the
+offloaded requests. The evaluation illustrates the effectiveness of the proposed offloading
+mechanism regarding the performance indicators, such as application average response
+time, and the optimal utilization of the computational resources of edge servers.},
+journal = {ACM Trans. Internet Technol.},
+month = apr,
+articleno = {23},
+numpages = {20},
+keywords = {feedback control, Edge computing, linear modeling}
+}
+
+@inproceedings{10.1145/3030207.3030214,
+author = {Ilyushkin, Alexey and Ali-Eldin, Ahmed and Herbst, Nikolas and Papadopoulos, Alessandro V. and Ghit, Bogdan and Epema, Dick and Iosup, Alexandru},
+title = {An Experimental Performance Evaluation of Autoscaling Policies for Complex Workflows},
+year = {2017},
+isbn = {9781450344043},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3030207.3030214},
+doi = {10.1145/3030207.3030214},
+abstract = {Simplifying the task of resource management and scheduling for customers, while still
+delivering complex Quality-of-Service (QoS), is key to cloud computing. Many autoscaling
+policies have been proposed in the past decade to decide on behalf of cloud customers
+when and how to provision resources to a cloud application utilizing cloud elasticity
+features. However, in prior work, when a new policy is proposed, it is seldom compared
+to the state-of-the-art, and is often compared only to static provisioning using a
+predefined QoS target. This reduces the ability of cloud customers and of cloud operators
+to choose and deploy an autoscaling policy. In our work, we conduct an experimental
+performance evaluation of autoscaling policies, using as application model workflows,
+a commonly used formalism for automating resource management for applications with
+well-defined yet complex structure. We present a detailed comparative study of general
+state-of-the-art autoscaling policies, along with two new workflow-specific policies.
+To understand the performance differences between the 7 policies, we conduct various
+forms of pairwise and group comparisons. We report both individual and aggregated
+metrics. Our results highlight the trade-offs between the suggested policies, and
+thus enable a better understanding of the current state-of-the-art.},
+booktitle = {Proceedings of the 8th ACM/SPEC on International Conference on Performance Engineering},
+pages = {75–86},
+numpages = {12},
+keywords = {dag, cloud computing, metrics, supply, workflows, auto-scaling, scheduling, elasticity, clouds, opennebula, spec, demand, autoscaling, level of parallelism, performance, directed acyclic graph, workloads},
+location = {L'Aquila, Italy},
+series = {ICPE '17}
+}
+
+@inproceedings{10.1145/2910017.2910602,
+author = {Slivar, Ivan and Skorin-Kapov, Lea and Suznjevic, Mirko},
+title = {Cloud Gaming QoE Models for Deriving Video Encoding Adaptation Strategies},
+year = {2016},
+isbn = {9781450342971},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2910017.2910602},
+doi = {10.1145/2910017.2910602},
+abstract = {Cloud gaming has been recognized as a promising shift in the online game industry,
+with the aim being to deliver high-quality graphics games to any type of end user
+device. The concepts of cloud computing are leveraged to render the game scene as
+a video stream which is then delivered to players in real-time. Given high bandwidth
+and strict latency requirements, a key challenge faced by cloud game providers lies
+in configuring the video encoding parameters so as to maximize player Quality of Experience
+(QoE) while meeting bandwidth availability constraints. In this paper we address this
+challenge by conducting a subjective laboratory study involving 52 players and two
+different games aimed at identifying QoE-driven video encoding adaptation strategies.
+Empirical results are used to derive analytical QoE estimation models as functions
+of bitrate and framerate, while also taking into account game type and player skill.
+Results have shown that under certain identified bandwidth conditions, reductions
+of framerate lead to QoE improvements due to improved graphics quality. Given that
+results indicate that different QoE-driven video adaptation policies should likely
+be applied for different types of games, we further report on objective video metrics
+that may be used to classify games for the purpose of choosing an appropriate and
+QoE-driven video codec configuration strategy.},
+booktitle = {Proceedings of the 7th International Conference on Multimedia Systems},
+articleno = {18},
+numpages = {12},
+keywords = {cloud gaming QoE, cloud gaming, QoE modeling, QoE},
+location = {Klagenfurt, Austria},
+series = {MMSys '16}
+}
+
+@inproceedings{10.1145/2898445.2898446,
+author = {Sun, Degang and Zhang, Jie and Fan, Wei and Wang, Tingting and Liu, Chao and Huang, Weiqing},
+title = {SPLM: Security Protection of Live Virtual Machine Migration in Cloud Computing},
+year = {2016},
+isbn = {9781450342858},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2898445.2898446},
+doi = {10.1145/2898445.2898446},
+abstract = {Virtual machine live migration technology, as an important support for cloud computing,
+has become a central issue in recent years. The virtual machines' runtime environment
+is migrated from the original physical server to another physical server, maintaining
+the virtual machines running at the same time. Therefore, it can make load balancing
+among servers and ensure the quality of service. However, virtual machine migration
+security issue cannot be ignored due to the immature development of it. This paper
+we analyze the security threats of the virtual machine migration, and compare the
+current proposed protection measures. While, these methods either rely on hardware,
+or lack adequate security and expansibility. In the end, we propose a security model
+of live virtual machine migration based on security policy transfer and encryption,
+named as SPLM (Security Protection of Live Migration) and analyze its security and
+reliability, which proves that SPLM is better than others. This paper can be useful
+for the researchers to work on this field. The security study of live virtual machine
+migration in this paper provides a certain reference for the research of virtualization
+security, and is of great significance.},
+booktitle = {Proceedings of the 4th ACM International Workshop on Security in Cloud Computing},
+pages = {2–9},
+numpages = {8},
+keywords = {live migration, virtual machine, virtualization, cloud computing, security},
+location = {Xi'an, China},
+series = {SCC '16}
+}
+
+@article{10.1145/3132041,
+author = {Slivar, Ivan and Suznjevic, Mirko and Skorin-Kapov, Lea},
+title = {Game Categorization for Deriving QoE-Driven Video Encoding Configuration Strategies for Cloud Gaming},
+year = {2018},
+issue_date = {August 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {14},
+number = {3s},
+issn = {1551-6857},
+url = {https://doi.org/10.1145/3132041},
+doi = {10.1145/3132041},
+abstract = {Cloud gaming has been recognized as a promising shift in the online game industry,
+with the aim of implementing the “on demand” service concept that has achieved market
+success in other areas of digital entertainment such as movies and TV shows. The concepts
+of cloud computing are leveraged to render the game scene as a video stream that is
+then delivered to players in real-time. The main advantage of this approach is the
+capability of delivering high-quality graphics games to any type of end user device;
+however, at the cost of high bandwidth consumption and strict latency requirements.
+A key challenge faced by cloud game providers lies in configuring the video encoding
+parameters so as to maximize player Quality of Experience (QoE) while meeting bandwidth
+availability constraints. In this article, we tackle one aspect of this problem by
+addressing the following research question: Is it possible to improve service adaptation
+based on information about the characteristics of the game being streamed? To answer
+this question, two main challenges need to be addressed: the need for different QoE-driven
+video encoding (re-)configuration strategies for different categories of games, and
+how to determine a relevant game categorization to be used for assigning appropriate
+configuration strategies. We investigate these problems by conducting two subjective
+laboratory studies with a total of 80 players and three different games. Results indicate
+that different strategies should likely be applied for different types of games, and
+show that existing game classifications are not necessarily suitable for differentiating
+game types in this context. We thus further analyze objective video metrics of collected
+game play video traces as well as player actions per minute and use this as input
+data for clustering of games into two clusters. Subjective results verify that different
+video encoding configuration strategies may be applied to games belonging to different
+clusters.},
+journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+month = jun,
+articleno = {56},
+numpages = {24},
+keywords = {Cloud gaming, video codec configuration strategies, game categorization, Quality of Experience}
+}
+
+@article{10.1145/3164537,
+author = {Ilyushkin, Alexey and Ali-Eldin, Ahmed and Herbst, Nikolas and Bauer, Andr\'{e} and Papadopoulos, Alessandro V. and Epema, Dick and Iosup, Alexandru},
+title = {An Experimental Performance Evaluation of Autoscalers for Complex Workflows},
+year = {2018},
+issue_date = {April 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {3},
+number = {2},
+issn = {2376-3639},
+url = {https://doi.org/10.1145/3164537},
+doi = {10.1145/3164537},
+abstract = {Elasticity is one of the main features of cloud computing allowing customers to scale
+their resources based on the workload. Many autoscalers have been proposed in the
+past decade to decide on behalf of cloud customers when and how to provision resources
+to a cloud application based on the workload utilizing cloud elasticity features.
+However, in prior work, when a new policy is proposed, it is seldom compared to the
+state-of-the-art, and is often compared only to static provisioning using a predefined
+quality of service target. This reduces the ability of cloud customers and of cloud
+operators to choose and deploy an autoscaling policy, as there is seldom enough analysis
+on the performance of the autoscalers in different operating conditions and with different
+applications. In our work, we conduct an experimental performance evaluation of autoscaling
+policies, using as application model workflows, a popular formalism for automating
+resource management for applications with well-defined yet complex structures. We
+present a detailed comparative study of general state-of-the-art autoscaling policies,
+along with two new workflow-specific policies. To understand the performance differences
+between the seven policies, we conduct various experiments and compare their performance
+in both pairwise and group comparisons. We report both individual and aggregated metrics.
+As many workflows have deadline requirements on the tasks, we study the effect of
+autoscaling on workflow deadlines. Additionally, we look into the effect of autoscaling
+on the accounted and hourly based charged costs, and we evaluate performance variability
+caused by the autoscaler selection for each group of workflow sizes. Our results highlight
+the trade-offs between the suggested policies, how they can impact meeting the deadlines,
+and how they perform in different operating conditions, thus enabling a better understanding
+of the current state-of-the-art.},
+journal = {ACM Trans. Model. Perform. Eval. Comput. Syst.},
+month = apr,
+articleno = {8},
+numpages = {32},
+keywords = {elasticity, benchmarking, metrics, Autoscaling, scientific workflows}
+}
+
+@inproceedings{10.1145/3030207.3044530,
+author = {Michael, Nicolas and Ramannavar, Nitin and Shen, Yixiao and Patil, Sheetal and Sung, Jan-Lung},
+title = {CloudPerf: A Performance Test Framework for Distributed and Dynamic Multi-Tenant Environments},
+year = {2017},
+isbn = {9781450344043},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3030207.3044530},
+doi = {10.1145/3030207.3044530},
+abstract = {The evolution of cloud-computing imposes many challenges on performance testing and
+requires not only a different approach and methodology of performance evaluation and
+analysis, but also specialized tools and frameworks to support such work. In traditional
+performance testing, typically a single workload was run against a static test configuration.
+The main metrics derived from such experiments included throughput, response times,
+and system utilization at steady-state. While this may have been sufficient in the
+past, where in many cases a single application was run on dedicated hardware, this
+approach is no longer suitable for cloud-based deployments. Whether private or public
+cloud, such environments typically host a variety of applications on distributed shared
+hardware resources, simultaneously accessed by a large number of tenants running heterogeneous
+workloads. The number of tenants as well as their activity and resource needs dynamically
+change over time, and the cloud infrastructure reacts to this by reallocating existing
+or provisioning new resources. Besides metrics such as the number of tenants and overall
+resource utilization, performance testing in the cloud must be able to answer many
+more questions: How is the quality of service of a tenant impacted by the constantly
+changing activity of other tenants? How long does it take the cloud infrastructure
+to react to changes in demand, and what is the effect on tenants while it does so?
+How well are service level agreements met? What is the resource consumption of individual
+tenants? How can global performance metrics on application- and system-level in a
+distributed system be correlated to an individual tenant's perceived performance?In
+this paper we present CloudPerf, a performance test framework specifically designed
+for distributed and dynamic multi-tenant environments, capable of answering all of
+the above questions, and more. CloudPerf consists of a distributed harness, a protocol-independent
+load generator and workload modeling framework, an extensible statistics framework
+with live-monitoring and post-analysis tools, interfaces for cloud deployment operations,
+and a rich set of both low-level as well as high-level workloads from different domains.},
+booktitle = {Proceedings of the 8th ACM/SPEC on International Conference on Performance Engineering},
+pages = {189–200},
+numpages = {12},
+keywords = {cloud, multi-tenancy, statistics collection, load generation, performance testing, workload modeling},
+location = {L'Aquila, Italy},
+series = {ICPE '17}
+}
+
+@inproceedings{10.1109/MICRO.2018.00056,
+author = {Lv, Yirong and Sun, Bin and Luo, Qinyi and Wang, Jing and Yu, Zhibin and Qian, Xuehai},
+title = {CounterMiner: Mining Big Performance Data from Hardware Counters},
+year = {2018},
+isbn = {9781538662403},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/MICRO.2018.00056},
+doi = {10.1109/MICRO.2018.00056},
+abstract = {Modern processors typically provide a small number of hardware performance counters
+to capture a large number of microarchitecture events1. These counters can easily
+generate a huge amount (e.g., GB or TB per day) of data, which we call big performance
+data in cloud computing platforms with more than thousands of servers and millions
+of complex workloads running ina"24/7/365" manner. The big performance data provides
+a precious foundation for root cause analysis of performance bottlenecks, architecture
+and compiler optimization, and many more. However, it is challenging to extract value
+from the big performance data due to: 1) the many unperceivable errors (e.g., outliers
+and missing values); and 2) the difficulty of obtaining insights, e.g., relating events
+to performance.In this paper, we propose CounterMiner, a rigorous methodology that
+enables the measurement and understanding of big performance data by using data mining
+and machine learning techniques. It includes three novel components: 1) using data
+cleaning to improve data quality by replacing outliers and filling in missing values;
+2) iteratively quantifying, ranking, and pruning events based on their importance
+with respect to performance; 3) quantifying interaction intensity between two events
+by residual variance. We use sixteen benchmarks (eight from CloudSuite and eight from
+the Spark 2 version of HiBench) to evaluate CounterMiner. The experimental results
+show that CounterMiner reduces the average error from 28.3% to 7.7% when multiplexing
+10 events on 4 hardware counters. We also conduct a real-world case study, showing
+that identifying important configuration parameters of Spark programs by event importance
+is much faster than directly ranking the importance of these parameters.},
+booktitle = {Proceedings of the 51st Annual IEEE/ACM International Symposium on Microarchitecture},
+pages = {613–626},
+numpages = {14},
+keywords = {performance counters, computer architecture, big data, data mining},
+location = {Fukuoka, Japan},
+series = {MICRO-51}
+}
+
+@proceedings{10.1145/2859889,
+title = {ICPE '16 Companion: Companion Publication for ACM/SPEC on International Conference on Performance Engineering},
+year = {2016},
+isbn = {9781450341479},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {The 7th ACM/SPEC International Conference on Performance Engineering (ICPE 2016) takes
+place in Delft in The Netherlands in March 2016. The conference grew out of the ACM
+Workshop on Software Performance (WOSP since 1998) and the SPEC International Performance
+Engineering Workshop (SIPEW since 2008), with the goal of integrating theory and practice
+in the field of performance engineering. It is a great pleasure for us to offer an
+outstanding technical program this year, which we believe will allow researchers and
+practitioners to present their visions and latest innovation, and to exchange ideas
+within the community.Overall, we received 89 high quality submissions across all three
+tracks. The main Research Track attracted 57 submissions with 19 accepted (33% acceptance
+rate) for presentation at the conference. Among them were 16 full papers and three
+short papers. Each paper received at least three reviews from experienced program
+committee members. In the Work-In-Progress and Vision Track, six out of 15 contributions
+were selected. The Industry and Experience Track received 17 submissions, of which
+seven were selected for inclusion in the program. The accepted papers were organized
+into five research track sessions, two industry track sessions, and one WiP and vision
+track session. Three best paper candidates were also selected: two research papers
+and one industry paper.We are proud to have three excellent keynote speakers as part
+of our technical program: Bianca Schroeder from University of Toronto, Canada, presenting
+"Case studies from the real world: The importance of measurement and analysis in building
+better systems"Wilhelm Hasselbring from Kiel University, Germany, discussing "Microservices
+for Scalability"Angelo Corsaro, Chief Technology Officer at PrismTech, talking about
+"Cloudy, Foggy and Misty Internet of Things"In addition, the program includes four
+tutorials, a doctoral symposium, a poster and demo track, the SPEC Distinguished Dissertation
+Award, and three interesting workshops, including the International Workshop on Large-Scale
+Testing (LT), the 2nd International Workshop on Performance Analysis of Big data Systems
+(PABS), and the 2nd Workshop on Challenges in Performance Methods for Software Development
+(WOSPC).The program covers traditional ICPE topics such as software and systems performance
+modeling and prediction, analysis and optimization, characterization and profiling,
+as well as application of performance engineering theory and techniques to several
+practical fields, including distributed systems, cloud computing, storage, energy,
+big data, virtualized systems and containers.},
+location = {Delft, The Netherlands}
+}
+
+@proceedings{10.1145/2851553,
+title = {ICPE '16: Proceedings of the 7th ACM/SPEC on International Conference on Performance Engineering},
+year = {2016},
+isbn = {9781450340809},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {The 7th ACM/SPEC International Conference on Performance Engineering (ICPE 2016) takes
+place in Delft in The Netherlands in March 2016. The conference grew out of the ACM
+Workshop on Software Performance (WOSP since 1998) and the SPEC International Performance
+Engineering Workshop (SIPEW since 2008), with the goal of integrating theory and practice
+in the field of performance engineering. It is a great pleasure for us to offer an
+outstanding technical program this year, which we believe will allow researchers and
+practitioners to present their visions and latest innovation, and to exchange ideas
+within the community.Overall, we received 89 high quality submissions across all three
+tracks. The main Research Track attracted 57 submissions with 19 accepted (33% acceptance
+rate) for presentation at the conference. Among them were 16 full papers and three
+short papers. Each paper received at least three reviews from experienced program
+committee members. In the Work-In-Progress and Vision Track, six out of 15 contributions
+were selected. The Industry and Experience Track received 17 submissions, of which
+seven were selected for inclusion in the program. The accepted papers were organized
+into five research track sessions, two industry track sessions, and one WiP and vision
+track session. Three best paper candidates were also selected: two research papers
+and one industry paper.We are proud to have three excellent keynote speakers as part
+of our technical program: Bianca Schroeder from University of Toronto, Canada, presenting
+"Case studies from the real world: The importance of measurement and analysis in building
+better systems"Wilhelm Hasselbring from Kiel University, Germany, discussing "Microservices
+for Scalability"Angelo Corsaro, Chief Technology Officer at PrismTech, talking about
+"Cloudy, Foggy and Misty Internet of Things"In addition, the program includes four
+tutorials, a doctoral symposium, a poster and demo track, the SPEC Distinguished Dissertation
+Award, and three interesting workshops, including the International Workshop on Large-Scale
+Testing (LT), the 2nd International Workshop on Performance Analysis of Big data Systems
+(PABS), and the 2nd Workshop on Challenges in Performance Methods for Software Development
+(WOSPC).The program covers traditional ICPE topics such as software and systems performance
+modeling and prediction, analysis and optimization, characterization and profiling,
+as well as application of performance engineering theory and techniques to several
+practical fields, including distributed systems, cloud computing, storage, energy,
+big data, virtualized systems and containers.},
+location = {Delft, The Netherlands}
+}
+
+@inproceedings{10.5555/2722129.2722142,
+author = {Buchet, Micka\"{e}l and Chazal, Fr\'{e}d\'{e}ric and Oudot, Steve Y. and Sheehy, Donald R.},
+title = {Efficient and Robust Persistent Homology for Measures},
+year = {2015},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+abstract = {A new paradigm for point cloud data analysis has emerged recently, where point clouds
+are no longer treated as mere compact sets but rather as empirical measures. A notion
+of distance to such measures has been defined and shown to be stable with respect
+to perturbations of the measure. This distance can easily be computed pointwise in
+the case of a point cloud, but its sublevel-sets, which carry the geometric information
+about the measure, remain hard to compute or approximate. This makes it challenging
+to adapt many powerful techniques based on the Euclidean distance to a point cloud
+to the more general setting of the distance to a measure on a metric space.We propose
+an efficient and reliable scheme to approximate the topological structure of the family
+of sublevel-sets of the distance to a measure. We obtain an algorithm for approximating
+the persistent homology of the distance to an empirical measure that works in arbitrary
+metric spaces. Precise quality and complexity guarantees are given with a discussion
+on the behavior of our approach in practice.},
+booktitle = {Proceedings of the Twenty-Sixth Annual ACM-SIAM Symposium on Discrete Algorithms},
+pages = {168–180},
+numpages = {13},
+location = {San Diego, California},
+series = {SODA '15}
+}
+
+@inproceedings{10.1145/3151848.3151850,
+author = {Karadimce, Aleksandar and Davcev, Danco},
+title = {Bayesian Network Model for Estimating User Satisfaction of Multimedia Cloud Services},
+year = {2017},
+isbn = {9781450353007},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3151848.3151850},
+doi = {10.1145/3151848.3151850},
+abstract = {The focus of this research is given to find a metric and determine the quality of
+the offered multimedia cloud services from an end users perception. The Quality of
+Experience (QoE) has been introduced to measure the quality features, which is used
+to determine the end-to-end user perceived quality of the used multimedia service.
+In this study, we have used students satisfaction survey, which provides direct subjective
+data on need, habits, and frequency of using different multimedia services. This data
+has been used for validation of the proposed Bayesian Network model for interactive
+estimation of the acceptability of multimedia cloud services based on the user preferences.},
+booktitle = {Proceedings of the 15th International Conference on Advances in Mobile Computing &amp; Multimedia},
+pages = {3–12},
+numpages = {10},
+keywords = {Quality of Experience, mobile cloud services, Bayesian Network, survey evaluation},
+location = {Salzburg, Austria},
+series = {MoMM2017}
+}
+
+@proceedings{10.1145/3183713,
+title = {SIGMOD '18: Proceedings of the 2018 International Conference on Management of Data},
+year = {2018},
+isbn = {9781450347037},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our pleasure to share with you the proceedings of SIGMOD 2018, the 44th ACM
+SIGMOD International Conference on Management of Data, in Houston, Texas. For many
+people, the words 'Houston, Texas' conjure up images of cowboy hats and oil rigs.
+This is not without reason. More than 20 Fortune 500 oil and gas companies are headquartered
+in Houston, and Texas beef is legendary. But less appreciated is that Houston is a
+vibrant and diverse city. By the usual metrics it is the most racially and ethnically
+diverse city in the United States. That diversity helps to make Houston a foodie's
+paradise, with wonderful Mexican, Tex-Mex, Vietnamese, and Chinese restaurants, and
+great Southern options, such as soul food and Cajun. Not to mention the best Texas-style
+barbecue!The SIGMOD conference is being held at the Marriott Marquis Houston, overlooking
+downtown Houston's Discovery Green park. Adjacent to Discovery Green are Minute Maid
+Park and the Toyota Center, home of baseball's Houston Astros and basketball's Houston
+Rockets, respectively. The conference banquet is at Minute Maid Park. Downtown Houston
+is a short car or train ride from great Houston museum district attractions such as
+the Menil Collection and the world-class shopping of the Houston Galleria area. And
+to repeat, everywhere you go in Houston, you'll find great food!This year's technical
+program features 90 research papers selected from 461 submissions, 15 industrial papers
+selected from 40 submissions, two invited industrial papers, 35 demonstration papers
+selected from 108 submissions, and 5 tutorials selected from 14 submissions (two of
+which were merged into a 2-session tutorial). There are 15 research sessions, 4 industry
+sessions, an invited special session, and two demonstration sessions. The two invited
+keynotes were chosen to broaden the SIGMOD community's understanding of areas having
+a major effect on data management: Eric Brewer, VP of Infrastructure at Google and
+faculty member at UC Berkeley, talking about the effect of container technology on
+cloud computing; and Pedro Domingos, Professor at University of Washington, talking
+about machine learning-what works, what doesn't, and where the field is headed. Like
+last year, the keynotes are followed by a plenary session of teaser talks, where each
+presenter gives a one-minute summary of their paper, to give attendees a high-level
+view of the conference and help them decide which sessions to attend.There are two
+changes in the session organization from recent years, whose goal is to make the program
+more compact and interesting for attendees. First, tutorials are presented during
+the main conference on Tuesday through Thursday, rather than on Friday after the main
+conference is over. Second, to ensure there are at most four parallel sessions in
+each time slot, each research paper presentation is allocated either 20 minutes or
+10 minutes. The decision of long vs. short presentations had several phases. During
+the reviewing process, PC members were asked to recommend whether each paper, if accepted,
+should be a long or short presentation. Then research PC group leaders made a recommendation
+for each of the accepted papers they supervised -- definitely 20 minutes, 20 minutes
+if there's time available, borderline, or definitely 10 minutes -- based on reviews,
+reviewer discussions, and their own judgment, without knowing the identity of authors.
+Their recommendation is not necessarily a quality metric. They recommended 'definitely
+10' for some papers highly-rated by reviewers, because the topic was narrow, could
+be explained in 10 minutes, or couldn't be explained in 20 minutes so extra time wouldn't
+help. For borderline papers, the final decision was based on many factors, such as
+topic diversity, institutional diversity, and the time available in the relevant session.The
+Research Program Committee consisted of a Program Chair, two Program Vice Chairs,
+15 group leaders, and 173 Program Committee Members. There were two rounds of submissions,
+with deadlines in July and November, respectively. Initially, each paper received
+three reviews. Additional reviews were solicited in cases where the reviewers did
+not have enough confidence, or where there was a significant score discrepancy in
+the first three reviews. Papers were extensively discussed online. Of the 458 submissions,
+20 were desk rejected (i.e., without reviews), 9 were accepted based on the first
+round of reviews, and 327 were rejected. Authors of the remaining 102 papers were
+asked to revise their papers to address reviewers' criticisms; 81 of those revisions
+were ultimately accepted. While the entire program committee worked hard to select
+an excellent program, the chairs and area leaders are especially grateful to the following
+program committee members for their very high quality work on the committee: Ashraf
+Aboulnaga, Manos Athanassoulis, Sebastian Breβ, Graham Cormode, Sudipto Das, Khuzaima
+Daudjee, Aaron Elmore, Ada Fu, Michael Hay, Yuxiong He, Yannis Katsis, Alexandra Meliou,
+Dan Olteanu, Andrew Pavlo, Peter Pietzuch, Lucian Popa, Semih Salihoglu, Ryan Stutsman,
+Yufei Tao, and Alexander Thomson.The program also includes industry papers, demonstrations,
+tutorials, workshops, a Student Research Competition, and a New Researcher Symposium.
+We thank the organizers of all the technical events, including research PC vice-chairs
+Xin Luna Dong and Mohamed Mokbel, industrial PC chairs Samuel Madden and Neoklis Polyzotis,
+demonstration chairs Georgia Koutrika and Feifei Li, tutorial chairs Ihab Ilyas and
+Stratis Viglas, workshop chairs Ihab Ilyas and Benny Kimelfeld, Student Research Competition
+chairs Alvin Cheung and Jana Giceva, and New Research Symposium chairs Katja Hose
+and Eugene Wu. We are also grateful to the CMT team, who modified their reviewing
+system to accommodate new aspects of this year's PC process.},
+location = {Houston, TX, USA}
+}
+
+@inproceedings{10.1145/3329391,
+author = {Esposito, Christian and Pop, Florin and Choi, Chang},
+title = {Session Details: Theme: Information Systems: SFECS - Sustainability of Fog/Edge Computing Systems Track},
+year = {2019},
+isbn = {9781450359337},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3329391},
+doi = {10.1145/3329391},
+abstract = {Fog/Edge Computing paradigms are widely used in enterprises to address the emerging
+challenges of big data analysis, because of their underlying scalable, flexible and
+distributed data management schemes. The data centers in the Clouds are facing great
+challenges on the burden of the consequent increasing the amount of data to be man-
+aged and the additional requirements of location awareness and low latency at the
+edge of network necessary by smart cites and factories. These are the reasons why
+a centralized model cannot be an efficient solution for generated or required data
+by the IoT devices in those applications and there is the progressive shift towards
+fog nodes and smarted edge nodes mediating between the cloud and the IoT devices.
+The Fog/Edge computing paradigm is a decentralized model that transfers a part of
+low computing data analysis from the cloud to the intermediate (fog) nodes or the
+edges, performing only high computing tasks in the cloud. This new approach tries
+to minimize the three factors that negatively compromise the effective and efficient
+application of the Cloud computing to smart cities and factories, or similar application
+domains: the network bandwidth usage, decentralization of the data processing tasks
+and reduced response latency for clients (IoT devices). Fog/Edge computing is a hierarchical
+approach where the overall infrastructure is structured in multiple layers, each responsible
+of offering a good coordination and data management to the nodes at the lower layer.
+The lowest layer is usually composed of sensors and/or actuators that measure and/or
+control the environment or a given business process, implemented as mobile devices
+that are running a sensing/controlling application. In this case, combining Sustainable
+computing with Fog and Edge computing represents a new approach for increasing quality-of-
+service and efficiency of the system, creating the capability to present temporal
+and geo-coded information, and increasing innovation, and co-designing sustainable
+future large scale distributed systems. This new paradigm appears to offer a good
+approach in handling the scale factor of the data size, reducing the network bandwidth
+usage and the response latency of the system. In order to support specifically the
+Fog/Edge architectures, there is a need, for instance, of location-awareness and computation
+placement, replication and recovery. In many cases Edge resources would be required
+for both computation and data storage to address the time and locality constraints.
+There are multiple kinds of orchestration management solutions for virtualization
+in this type of architecture with different characteristics and drawbacks. This results
+in different restrictions for application definition, scalability, availability, load
+balancing and so on. Also, virtualization may be needed at multiple levels in a Fog/Edge
+architecture as it consists of the following levels of abstraction: at the sensing
+level we have the IoT devices/smart things, at the Edge level there are the gateways
+to a first collection and the data from the IoT devices and their preliminary processing,
+at the Fog level we have an additional data management layer, and at the Cloud level
+there is the compute/storage infrastructure with applications on top. Last, but not
+least, the energy efficiency is particularly important at the IoT and edge level since
+the devices may be equipped with a limited battery, possible difficult or impossible
+to be charged. So, optimizing the energy consumption is a must. To address several
+open research is- sues regarding sustainability of future Fog/Edge systems, this track
+aims at solicit contributions highlighting challenges, state-of-the-art, and solutions
+to a set of currently unresolved key questions including - but not limited to - performance,
+modeling, optimization, energy-efficiency, reliability, security, privacy and techno-economic
+aspects of Fog/Edge systems. Through addressing these concerns while understanding
+their impacts and limitations, technological advancements will be channeled toward
+more sustainable/efficient platforms for tomorrow's ever-connected systems.},
+booktitle = {Proceedings of the 34th ACM/SIGAPP Symposium on Applied Computing},
+location = {Limassol, Cyprus},
+series = {SAC '19}
+}
+
+@inproceedings{10.1145/3183767.3183776,
+author = {Nobre, Ricardo and Reis, Lu\'{\i}s and Bispo, Jo\~{a}o and Carvalho, Tiago and Cardoso, Jo\~{a}o M.P. and Cherubin, Stefano and Agosta, Giovanni},
+title = {Aspect-Driven Mixed-Precision Tuning Targeting GPUs},
+year = {2018},
+isbn = {9781450364447},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3183767.3183776},
+doi = {10.1145/3183767.3183776},
+abstract = {Writing mixed-precision kernels allows to achieve higher throughput together with
+outputs whose precision remain within given limits. The recent introduction of native
+half-precision arithmetic capabilities in several GPUs, such as NVIDIA P100 and AMD
+Vega 10, contributes to make precision-tuning even more relevant as of late. However,
+it is not trivial to manually find which variables are to be represented as half-precision
+instead of single- or double-precision. Although the use of half-precision arithmetic
+can speed up kernel execution considerably, it can also result in providing non-usable
+kernel outputs, whenever the wrong variables are declared using the half-precision
+data-type. In this paper we present an automatic approach for precision tuning. Given
+an OpenCL kernel with a set of inputs declared by a user (i.e., the person responsible
+for programming and/or tuning the kernel), our approach is capable of deriving the
+mixed-precision versions of the kernel that are better improve upon the original with
+respect to a given metric (e.g., time-to-solution, energy-to-solution). We allow the
+user to declare and/or select a metric to measure and to filter solutions based on
+the quality of the output. We implement a proof-of-concept of our approach using an
+aspect-oriented programming language called LARA. It is capable of generating mixed-precision
+kernels that result in considerably higher performance when compared with the original
+single-precision floating-point versions, while generating outputs that can be acceptable
+in some scenarios.},
+booktitle = {Proceedings of the 9th Workshop and 7th Workshop on Parallel Programming and RunTime Management Techniques for Manycore Architectures and Design Tools and Architectures for Multicore Embedded Computing Platforms},
+pages = {26–31},
+numpages = {6},
+keywords = {mixed-precision, aspect-driven, GPGPU},
+location = {Manchester, United Kingdom},
+series = {PARMA-DITAM '18}
+}
+
+@article{10.1145/3264284,
+author = {Squillante, Mark S.},
+title = {Session Details: Special Issue on the Workshop on MAthematical Performance Modeling and Analysis (MAMA 2014)},
+year = {2014},
+issue_date = {September 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {42},
+number = {2},
+issn = {0163-5999},
+url = {https://doi.org/10.1145/3264284},
+doi = {10.1145/3264284},
+abstract = {The complexity of computer systems, networks and applications, as well as the advancements
+in computer technology, continue to grow at a rapid pace. Mathematical analysis, modeling
+and optimization have been playing, and continue to play, an important role in research
+studies to investigate fundamental issues and trade-offs at the core of performance
+problems in the design and implementation of complex computer systems, networks and
+applications.On June 20, 2014, the 16th Workshop on MAthematical performance Modeling
+and Analysis (MAMA 2014) was held in Austin TX, USA, sponsored by ACM SIGMETRICS,
+and held in conjunction with SIGMETRICS 2014. This workshop seeks to bring together
+researchers working on the mathematical, methodological and theoretical aspects of
+performance analysis, modeling and optimization. It is intended to provide a forum
+at SIGMETRICS conferences for talks on early research in the more mathematical areas
+of computer performance analysis. These talks tend to be based on very recent research
+results (including work in progress) or on new research results that will be otherwise
+submitted only to a journal (or recently have been submitted to a journal). Thus,
+part of the goal is to complement and supplement the SIGMETRICS Conference program
+with such talks without removing any theoretical contributions from the main technical
+program. Furthermore, we continue to experience the desired result of having abstracts
+from previous MAMA workshops appear as full papers in the main program of subsequent
+SIGMETRICS and related conferences.All submissions were reviewed by at least 4 members
+of the program committee, from which a total of 13 were selected for presentation
+at the MAMA 2014 workshop. This special issue of Performance Evaluation Review includes
+extended abstracts relating to these presentations (arranged in the order of their
+presentation), which cover a wide range of topics in the area of mathematical performance
+analysis, modeling and optimization.The study of Gelenbe examines the backlog of energy
+and of data packets in a sensor node that harvests energy, computing the properties
+of energy and data backlogs and discussing system stability. Meyfroyt derives asymptotic
+results for the coverage ratio under a specific class of spatial stochastic models
+(Cooperative Sequential Adsorption) and investigates the scalability of the Trickle
+communication protocol algorithm. The study of Tune and Roughan applies the principle
+of maximum entropy to develop fast traffic matrix synthesis models, with the future
+goal of developing realistic spatio-temporal traffic matrices. Bradonji\'{c} et al. compare
+and contrast the capacity, congestion and reliability requirements for alternative
+connectivity models of large-scale data centers relative to fat trees. The study of
+Rochman et al. considers the problem of resource placement in network applications,
+based on a largescale service faced with regionally distributed demands for various
+resources in cloud computing. Xie and Lui investigate the design and analysis of a
+rating system and a mechanism to encourage users to participate in crowdsourcing and
+to incentivize workers to develop high-quality solutions. The study of Asadi et al.
+formulates a general problem for the joint per-user mode selection, connection activation
+and resource scheduling of connections using both LTE and WiFi resources within the
+context of device-todevice communications. Zheng and Tan consider a nonconvex joint
+rate and power control optimization to achieve egalitarian fairness (max-min weighted
+fairness) in wireless networks, exploiting the nonlinear Perron-Frobenius theory and
+nonnegative matrix theory. The study of Goldberg et al. derives an asymptotically
+optimal control policy for a stochastic capacity problem of dynamically matching supply
+resources and uncertain demand, based on connections with lost-sales inventory models.
+Ghaderi et al. investigate a dynamic stochastic bin packing problem, analyzing the
+fluid limits of the system under an asymptotic best-fit algorithm and showing it asymptotically
+minimizes the number of servers used in steady state. The study of Tizghadam and Leon-Garcia
+examines the impact of overlaying or removing a subgraph on the Moore-Penrose inverse
+of the Laplacian matrix of an existing network topology and proposes an iterative
+method to find key performance measures. Miyazawa considers a two-node generalized
+Jackson network in a phase-type setting as a special case of a Markov-modulated twodimensional
+reflecting random walk and analyzes the tail asymptotics for this reflecting process.
+The study of Squillante et al. investigates improvement in scalability of search in
+networks through the use of multiple random walks, deriving bounds on the hitting
+time to a set of nodes and on various performance metrics.},
+journal = {SIGMETRICS Perform. Eval. Rev.},
+month = sep,
+numpages = {1}
+}
+
+@inproceedings{10.1145/2713168.2723146,
+author = {Pegus, Patrick and Cecchet, Emmanuel and Shenoy, Prashant},
+title = {Video BenchLab Demo: An Open Platform for Video Realistic Streaming Benchmarking},
+year = {2015},
+isbn = {9781450333511},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2713168.2723146},
+doi = {10.1145/2713168.2723146},
+abstract = {In this demonstration, we present an open, flexible and realistic benchmarking platform
+named Video BenchLab to measure the performance of streaming media workloads. While
+Video BenchLab can be used with any existing media server, we provide a set of tools
+for researchers to experiment with their own platform and protocols. The components
+include a MediaDrop video server, a suite of tools to bulk insert videos and generate
+streaming media workloads, a dataset of freely available video and a client runtime
+to replay videos in the native video players of real Web browsers such as Firefox,
+Chrome and Internet Explorer. Various metrics are collected to capture the quality
+of video playback and identify issues that can happen during video replay. Finally,
+we provide a Dashboard to manage experiments, collect results and perform analytics
+to compare performance between experiments.The demonstration showcases all the BenchLab
+video components including a MediaDrop server accessed by real web browsers running
+locally and in the cloud. We demo the whole experiment lifecycle from creation to
+deployment as well as result collection and analysis.},
+booktitle = {Proceedings of the 6th ACM Multimedia Systems Conference},
+pages = {101–104},
+numpages = {4},
+keywords = {benchmarking, web browsers, video, streaming},
+location = {Portland, Oregon},
+series = {MMSys '15}
+}
+
+@article{10.1145/2998454,
+author = {Li, Ning and Jiang, Hong and Feng, Dan and Shi, Zhan},
+title = {Customizable SLO and Its Near-Precise Enforcement for Storage Bandwidth},
+year = {2017},
+issue_date = {March 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {13},
+number = {1},
+issn = {1553-3077},
+url = {https://doi.org/10.1145/2998454},
+doi = {10.1145/2998454},
+abstract = {Cloud service is being adopted as a utility for large numbers of tenants by renting
+Virtual Machines (VMs). But for cloud storage, unpredictable IO characteristics make
+accurate Service-Level-Objective (SLO) enforcement challenging. As a result, it has
+been very difficult to support simple-to-use and technology-agnostic SLO specifying
+a particular value for a specific metric (e.g., storage bandwidth). This is because
+the quality of SLO enforcement depends on performance error and fluctuation that measure
+the precision of SLO enforcement. High precision of SLO enforcement is critical for
+user-oriented performance customization and user experiences. To address this challenge,
+this article presents V-Cup, a framework for VM-oriented customizable SLO and its
+near-precise enforcement. It consists of multiple auto-tuners, each of which exports
+an interface for a tenant to customize the desired storage bandwidth for a VM and
+enable the storage bandwidth of the VM to converge on the target value with a predictable
+precision. We design and implement V-Cup in the Xen hypervisor based on the fair sharing
+scheduler for VM-level resource management. Our V-Cup prototype evaluation shows that
+it achieves satisfying performance guarantees through near-precise SLO enforcement.},
+journal = {ACM Trans. Storage},
+month = feb,
+articleno = {6},
+numpages = {25},
+keywords = {storage management, end-to-end control, Cloud storage, service-level objective}
+}
+
+@inproceedings{10.1145/3383812.3383838,
+author = {Pacot, Mark Phil B. and Marcos, Nelson},
+title = {Cloud Removal from Aerial Images Using Generative Adversarial Network with Simple Image Enhancement},
+year = {2020},
+isbn = {9781450377201},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3383812.3383838},
+doi = {10.1145/3383812.3383838},
+abstract = {The atmospheric condition of the presence of clouds is one of the biggest problems
+in most aerial imaging systems. It degrades the visual quality of images leading to
+the loss of information for ground scenes. Hence, an effective cloud removal algorithm
+is a significant factor for this kind of problem and other related applications. The
+proposed cloud removal technique using the generative adversarial network with simple
+image enhancement (SIE-GAN) is a useful tool in removing cloud formations, most notably
+in images acquired using Unmanned Aerial Vehicle System (UAVs). This technique showed
+flexibility in performing the given task with satisfactory results, which is a gauge
+based on No-Reference Image Quality Metric, specifically the Perception-based Image
+Quality Evaluator (PIQE). Also, the proposed algorithm outperformed some of existing
+cloud removal algorithms by producing a better quality output when tested on the too-cloudy
+satellite images. Overall, the authors introduced a new frontier in generating cloud-free
+aerial images and added a valuable contribution to the array of cloud removal algorithms.},
+booktitle = {Proceedings of the 2020 3rd International Conference on Image and Graphics Processing},
+pages = {77–81},
+numpages = {5},
+keywords = {cloud removal, generative adversarial network, unmanned aerial vehicle system, no-reference image quality metric, simple image enhancement},
+location = {Singapore, Singapore},
+series = {ICIGP 2020}
+}
+
+@article{10.1145/3093893,
+author = {Garc\'{\i}a-Dorado, Jos\'{e} Luis},
+title = {Bandwidth Measurements within the Cloud: Characterizing Regular Behaviors and Correlating Downtimes},
+year = {2017},
+issue_date = {September 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {17},
+number = {4},
+issn = {1533-5399},
+url = {https://doi.org/10.1145/3093893},
+doi = {10.1145/3093893},
+abstract = {The search for availability, reliability, and quality of service has led cloud infrastructure
+customers to disseminate their services, contents, and data over multiple cloud data
+centers, often involving several Cloud service providers (CSPs). The consequence of
+this is that a large amount of data must be transmitted across the public Cloud. However,
+little is known about the bandwidth dynamics involved. To address this, we have conducted
+a measurement campaign for bandwidth between 18 data centers of four major CSPs. This
+extensive campaign allowed us to characterize the resulting time series of bandwidth
+as the addition of a stationary component and some infrequent excursions (typically
+downtimes). While the former provides a description of the bandwidth users can expect
+in the Cloud, the latter is closely related to the robustness of the Cloud (i.e.,
+the occurrence of downtimes is correlated). Both components have been studied further
+by applying factor analysis, specifically analysis of variance, as a mechanism to
+formally compare data centers’ behaviors and extract generalities. The results show
+that the stationary process is closely related to the data center locations and CSPs
+involved in transfers that, fortunately, make the Cloud more predictable and allow
+the set of reported measurements to be extrapolated. On the other hand, although correlation
+in the Cloud is low, that is, only 10% of the measured pair of paths showed some correlation,
+we found evidence that such correlation depends on the particular relationships between
+pairs of data centers with little connection to more general factors. Positively,
+this implies that data centers either in the same area or within the same CSP do not
+show qualitatively more correlation than other data centers, which eases the deployment
+of robust infrastructures. On the downside, this metric is scarcely generalizable
+and, consequently, calls for exhaustive monitoring.},
+journal = {ACM Trans. Internet Technol.},
+month = aug,
+articleno = {39},
+numpages = {25},
+keywords = {traffic correlation, inter-cloud, TCP bandwidth, ANOVA, Public cloud}
+}
+
+@article{10.1109/TNET.2016.2614129,
+author = {Zhao, Zhiwei and Dong, Wei and Bu, Jiajun and Gu, Tao and Min, Geyong},
+title = {Accurate and Generic Sender Selection for Bulk Data Dissemination in Low-Power Wireless Networks},
+year = {2017},
+issue_date = {April 2017},
+publisher = {IEEE Press},
+volume = {25},
+number = {2},
+issn = {1063-6692},
+url = {https://doi.org/10.1109/TNET.2016.2614129},
+doi = {10.1109/TNET.2016.2614129},
+abstract = {Data dissemination is a fundamental service offered by low-power wireless networks.
+Sender selection is the key to the dissemination performance and has been extensively
+studied. Sender impact metric plays a significant role in sender selection, since
+it determines which senders are selected for transmission. Recent studies have shown
+that spatial link diversity has a significant impact on the efficiency of broadcast.
+However, the existing metrics overlook such impact. Besides, they consider only gains
+but ignore the costs of sender candidates. As a result, existing works cannot achieve
+accurate estimation of the sender impact. Moreover, they cannot well support data
+dissemination with network coding, which is commonly used for lossy environments.
+In this paper, we first propose a novel sender impact metric, namely,  $gamma $ ,
+which jointly exploits link quality and spatial link diversity to calculate the gain/cost
+ratio of the sender candidates. Then, we develop a generic sender selection scheme
+based on the  $gamma $  metric called  $gamma $ -component that can generally support
+both types of dissemination using native packets and network coding. Extensive evaluations
+are conducted through real testbed experiments and large-scale simulations. The performance
+results and analysis show that  $gamma $  achieves far more accurate impact estimation
+than the existing works. In addition, the dissemination protocols based on  $gamma
+$ -component outperform the existing protocols in terms of completion time and transmissions
+by 20.5% and 23.1%, respectively.},
+journal = {IEEE/ACM Trans. Netw.},
+month = apr,
+pages = {948–959},
+numpages = {12}
+}
+
+@inproceedings{10.5555/2755535.2755542,
+author = {Huang, Chun-Ying and Chen, Po-Han and Huang, Yu-Ling and Chen, Kuan-Ta and Hsu, Cheng-Hsin},
+title = {Measuring the Client Performance and Energy Consumption in Mobile Cloud Gaming},
+year = {2014},
+publisher = {IEEE Press},
+abstract = {Mobile cloud gaming allows gamers to play games on resource-constrained mobile devices,
+and a measurement study to quality the client performance and energy consumption is
+crucial to attract and retain the gamers. In this paper, we adopt an open source cloud
+gaming platform to conduct extensive experiments on real mobile clients. Our experiment
+results show two major findings that are of interests to researchers, developers,
+and gamers. First, compared to mobile native games, mobile cloud games save energy
+by up to 30%. Second, the frame rate, bit rate, and resolution all affect the decoders'
+resource consumption, while frame rate imposes the highest impact. These findings
+shed some light on the further enhancements of the emerging mobile cloud gaming platforms.},
+booktitle = {Proceedings of the 13th Annual Workshop on Network and Systems Support for Games},
+articleno = {5},
+numpages = {3},
+location = {Nagoya, Japan},
+series = {NetGames '14}
+}
+
+@inproceedings{10.1145/2882903.2882943,
+author = {Kalyvianaki, Evangelia and Fiscato, Marco and Salonidis, Theodoros and Pietzuch, Peter},
+title = {THEMIS: Fairness in Federated Stream Processing under Overload},
+year = {2016},
+isbn = {9781450335317},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2882903.2882943},
+doi = {10.1145/2882903.2882943},
+abstract = {Federated stream processing systems, which utilise nodes from multiple independent
+domains, can be found increasingly in multi-provider cloud deployments, internet-of-things
+systems, collaborative sensing applications and large-scale grid systems. To pool
+resources from several sites and take advantage of local processing, submitted queries
+are split into query fragments, which are executed collaboratively by different sites.
+When supporting many concurrent users, however, queries may exhaust available processing
+resources, thus requiring constant load shedding. Given that individual sites have
+autonomy over how they allocate query fragments on their nodes, it is an open challenge
+how to ensure global fairness on processing quality experienced by queries in a federated
+scenario.We describe THEMIS, a federated stream processing system for resource-starved,
+multi-site deployments. It executes queries in a globally fair fashion and provides
+users with constant feedback on the experienced processing quality for their queries.
+THEMIS associates stream data with its source information content (SIC), a metric
+that quantifies the contribution of that data towards the query result, based on the
+amount of source data used to generate it. We provide the BALANCE-SIC distributed
+load shedding algorithm that balances the SIC values of result data. Our evaluation
+shows that the BALANCE-SIC algorithm yields balanced SIC values across queries, as
+measured by Jain's Fairness Index. Our approach also incurs a low execution time overhead.},
+booktitle = {Proceedings of the 2016 International Conference on Management of Data},
+pages = {541–553},
+numpages = {13},
+keywords = {federated data stream processing, fairness, tuple shedding, approximate data processing},
+location = {San Francisco, California, USA},
+series = {SIGMOD '16}
+}
+

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1633340653616.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1741866206",
+    "id" : "DF8D92D6",
+    "lastKnownWriteTime" : 1633340730,
+    "last_content_update" : 1633340730,
+    "path" : "C:/Users/Robin/work/conferences/2021_ESOCC/private/cnaquality/literatureSearchNew/springerlink/extract_doi.R",
+    "project_path" : "extract_doi.R",
+    "properties" : {
+        "cursorPosition" : "3,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,1772 @@
+@inproceedings{10.1145/3240508.3240642,
+author = {Pang, Haitian and Zhang, Cong and Wang, Fangxin and Hu, Han and Wang, Zhi and Liu, Jiangchuan and Sun, Lifeng},
+title = {Optimizing Personalized Interaction Experience in Crowd-Interactive Livecast: A Cloud-Edge Approach},
+year = {2018},
+isbn = {9781450356657},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3240508.3240642},
+doi = {10.1145/3240508.3240642},
+abstract = {Enabling users to interact with broadcasters and audience, the crowd-interactive livecast
+greatly improves viewer's quality of experience (QoE) and attracts millions of daily
+active users recently. In addition to striking the balance between resource utilization
+and viewers' QoE met in the traditional video streaming service, this novel service
+needs to take supererogatory efforts to improve the interaction QoE, which reflects
+the viewer interaction experience. To tackle this issue, we conduct measurement studies
+over a large-scale dataset crawled from a representative livecast service provider.
+We observe that the individual's interaction pattern is quite heterogeneous: only
+10% viewers proactively participate in the interaction, and the rest viewers usually
+watch passively. Incorporating the insight into the emerging cloud-edge architecture,
+we propose a framework PIECE, which optimizes the Personalized Interaction Experience
+with Cloud-Edge architecture (PIECE) for intelligent user access control and livecast
+distribution. In particular, we first devise a novel deep neural network based algorithm
+to predict users' interaction intensity using the historical viewer pattern. We then
+design an algorithm to maximize the individual's QoE, by strategically matching viewer
+sessions and transcoding-delivery paths over cloud-edge infrastructure. Finally, we
+use trace-driven experiments to verify the effectiveness of PIECE. Our results show
+that our prediction algorithm outperforms the state-of-the-art algorithms with a much
+smaller mean absolute error (40% reduction). Furthermore, in comparison with the cloud-based
+video delivery strategy, the proposed framework can simultaneously improve the average
+viewers QoE (26% improvement) and interaction QoE (21% improvement), while maintaining
+a high streaming bitrate.},
+booktitle = {Proceedings of the 26th ACM International Conference on Multimedia},
+pages = {1217–1225},
+numpages = {9},
+keywords = {cloud-edge, interactive live streaming, viewer interaction},
+location = {Seoul, Republic of Korea},
+series = {MM '18}
+}
+
+@inproceedings{10.1145/2966986.2980075,
+author = {Chang, Wanli and Roy, Debayan and Zhang, Licong and Chakraborty, Samarjit},
+title = {Model-Based Design of Resource-Efficient Automotive Control Software},
+year = {2016},
+isbn = {9781450344661},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2966986.2980075},
+doi = {10.1145/2966986.2980075},
+abstract = {Automotive platforms today run hundreds of millions of lines of software code implementing
+a large number of different control applications spanning across safety-critical functionality
+to driver assistance and comfort-related functions. While such control software today
+is largely designed following model-based approaches, the underlying models do not
+take into account the details of the implementation platforms, on which the software
+would eventually run. Following the state-of-the-art in control theory, the focus
+in such design is restricted to ensuring the stability of the designed controllers
+and meeting control performance objectives, such as settling time or peak overshoot.
+However, automotive platforms are highly cost-sensitive and the issue of designing
+"resource-efficient" controllers has largely been ignored so far and is addressed
+using very ad hoc techniques. In this paper, we will illustrate how, following traditional
+embedded systems design oriented thinking, computation, communication and memory issues
+can be incorporated in the controller design stage, thereby resulting in control software
+not only satisfying the usual control performance metrics but also making efficient
+utilization of the resources on distributed automotive architectures.},
+booktitle = {Proceedings of the 35th International Conference on Computer-Aided Design},
+articleno = {34},
+numpages = {8},
+location = {Austin, Texas},
+series = {ICCAD '16}
+}
+
+@article{10.1145/2845082,
+author = {\"{A}ij\"{o}, Tomi and J\"{a}\"{a}skel\"{a}inen, Pekka and Elomaa, Tapio and Kultala, Heikki and Takala, Jarmo},
+title = {Integer Linear Programming-Based Scheduling for Transport Triggered Architectures},
+year = {2015},
+issue_date = {January 2016},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {12},
+number = {4},
+issn = {1544-3566},
+url = {https://doi.org/10.1145/2845082},
+doi = {10.1145/2845082},
+abstract = {Static multi-issue machines, such as traditional Very Long Instructional Word (VLIW)
+architectures, move complexity from the hardware to the compiler. This is motivated
+by the ability to support high degrees of instruction-level parallelism without requiring
+complicated scheduling logic in the processor hardware. The simpler-control hardware
+results in reduced area and power consumption, but leads to a challenge of engineering
+a compiler with good code-generation quality.Transport triggered architectures (TTA),
+and other so-called exposed datapath architectures, take the compiler-oriented philosophy
+even further by pushing more details of the datapath under software control. The main
+benefit of this is the reduced register file pressure, with a drawback of adding even
+more complexity to the compiler side.In this article, we propose an Integer Linear
+Programming (ILP)-based instruction scheduling model for TTAs. The model describes
+the architecture characteristics, the particular processor resource constraints, and
+the operation dependencies of the scheduled program. The model is validated and measured
+by compiling application kernels to various TTAs with a different number of datapath
+components and connectivity. In the best case, the cycle count is reduced to 52% when
+compared to a heuristic scheduler. In addition to producing shorter schedules, the
+number of register accesses in the compiled programs is generally notably less than
+those with the heuristic scheduler; in the best case, the ILP scheduler reduced the
+number of register file reads to 33% of the heuristic results and register file writes
+to 18%. On the other hand, as expected, the ILP-based scheduler uses distinctly more
+time to produce a schedule than the heuristic scheduler, but the compilation time
+is within tolerable limits for production-code generation.},
+journal = {ACM Trans. Archit. Code Optim.},
+month = dec,
+articleno = {59},
+numpages = {22},
+keywords = {Code generation, transport triggered architectures, instruction-level parallelism, integer linear programming, exposed datapath}
+}
+
+@inproceedings{10.1145/3422392.3422501,
+author = {Barros, Daniel D. R. and Horita, Fl\'{a}vio and Fantinato, Denis G.},
+title = {Data Mining Tool to Discover DevOps Trends from Public Repositories: Predicting Release Candidates with Gthbmining.Rc},
+year = {2020},
+isbn = {9781450387538},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3422392.3422501},
+doi = {10.1145/3422392.3422501},
+abstract = {Public repositories have been performing an essential role in bringing software and
+services to technical communities and general users. Most of the cases, public repositories
+have a DevOps tool, with a live and historical database behind it, to support delivering
+and all steps this software or service should adopt before going to production. This
+paper introduces gthbmining, a data mining set of tools to discover DevOps trends
+from public repositories, and presents the module gthbmining.rc. Considering the premise
+of a GitHub public repository, the main contribution here is predicting release candidates,
+an important label a software release has. The methodology, architecture, components
+and interfaces are explained, as well as potential users. The results show a reliable
+and flexible tool, as classifiers metrics and graphics are provided, along with the
+possibility to add new data mining algorithms in the open source module presented.
+Related works are also supplied, and a conclusion shows the outcomes gthbmining.rc
+can provide.},
+booktitle = {Proceedings of the 34th Brazilian Symposium on Software Engineering},
+pages = {658–663},
+numpages = {6},
+keywords = {Data Mining, GitHub Mining Tool, DevOps, Release Candidate},
+location = {Natal, Brazil},
+series = {SBES '20}
+}
+
+@inproceedings{10.1145/3308558.3313551,
+author = {Yoon, Changhoon and Kim, Kwanwoo and Kim, Yongdae and Shin, Seungwon and Son, Sooel},
+title = {Doppelg\"{a}Ngers on the Dark Web: A Large-Scale Assessment on Phishing Hidden Web Services},
+year = {2019},
+isbn = {9781450366748},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3308558.3313551},
+doi = {10.1145/3308558.3313551},
+abstract = {Anonymous network services on the World Wide Web have emerged as a new web architecture,
+called the Dark Web. The Dark Web has been notorious for harboring cybercriminals
+abusing anonymity. At the same time, the Dark Web has been a last resort for people
+who seek freedom of the press as well as avoid censorship. This anonymous nature allows
+website operators to conceal their identity and thereby leads users to have difficulties
+in determining the authenticity of websites. Phishers abuse this perplexing authenticity
+to lure victims; however, only a little is known about the prevalence of phishing
+attacks on the Dark Web. We conducted an in-depth measurement study to demystify the
+prevalent phishing websites on the Dark Web. We analyzed the text content of 28,928
+HTTP Tor hidden services hosting 21 million dark webpages and confirmed 901 phishing
+domains. We also discovered a trend on the Dark Web in which service providers perceive
+dark web domains as their service brands. This trend exacerbates the risk of phishing
+for their service users who remember only a partial Tor hidden service address. Our
+work facilitates a better understanding of the phishing risks on the Dark Web and
+encourages further research on establishing an authentic and reliable service on the
+Dark Web.},
+booktitle = {The World Wide Web Conference},
+pages = {2225–2235},
+numpages = {11},
+location = {San Francisco, CA, USA},
+series = {WWW '19}
+}
+
+@inproceedings{10.1145/3276774.3276777,
+author = {Coffman, Austin R. and Bu\v{s}i\'{c}, Ana and Barooah, Prabir},
+title = {Virtual Energy Storage from TCLs Using QoS Preserving Local Randomized Control},
+year = {2018},
+isbn = {9781450359511},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3276774.3276777},
+doi = {10.1145/3276774.3276777},
+abstract = {We propose a control architecture for distributed coordination of a collection of
+on/off TCLs (thermostatically controlled loads), such as residential air conditioners,
+to provide the same service to the power grid as a large battery. This involves a
+collection of loads to coordinate their on/off decisions so that the aggregate power
+consumption profile tracks a grid-supplied reference. A key constraint is to maintain
+each consumer's quality of service (QoS). Recent works have proposed randomization
+at the loads. Thermostats at the loads are replaced by a randomized controller, and
+the grid broadcasts a scalar to all loads, which tunes the probability of turning
+on or off at each load depending on its state. In this paper we propose a modification
+of a previous design by Meyn and Bu\v{s}i\'{c}. The previous design by Meyn and Bu\v{s}i\'{c} ensures
+that the indoor temperature remains within a pre-specified bound, but other QoS metrics,
+especially the frequency of turning on and off was not limited. The controller we
+propose can be tuned to reduce the cycling rate of a TCL to any desired degree. The
+proposed design is compared against the design by Meyn and Bu\v{s}i\'{c} and another well
+cited design in the literature on control of TCL populations, by Mathieu et al. We
+show through simulations that the proposed controller is able to reduce the cycling
+of individual ACs compared to the previous designs with little loss in tracking of
+the grid-supplied reference signal.},
+booktitle = {Proceedings of the 5th Conference on Systems for Built Environments},
+pages = {93–102},
+numpages = {10},
+keywords = {randomized control, virtual energy storage, demand response, distributed control},
+location = {Shenzen, China},
+series = {BuildSys '18}
+}
+
+@article{10.1145/3340290,
+author = {Wang, Ji and Bao, Weidong and Zheng, Lei and Zhu, Xiaomin and Yu, Philip S.},
+title = {An Attention-Augmented Deep Architecture for Hard Drive Status Monitoring in Large-Scale Storage Systems},
+year = {2019},
+issue_date = {August 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {15},
+number = {3},
+issn = {1553-3077},
+url = {https://doi.org/10.1145/3340290},
+doi = {10.1145/3340290},
+abstract = {Data centers equipped with large-scale storage systems are critical infrastructures
+in the era of big data. The enormous amount of hard drives in storage systems magnify
+the failure probability, which may cause tremendous loss for both data service users
+and providers. Despite a set of reactive fault-tolerant measures such as RAID, it
+is still a tough issue to enhance the reliability of large-scale storage systems.
+Proactive prediction is an effective method to avoid possible hard-drive failures
+in advance. A series of models based on the SMART statistics have been proposed to
+predict impending hard-drive failures. Nonetheless, there remain some serious yet
+unsolved challenges like the lack of explainability of prediction results. To address
+these issues, we carefully analyze a dataset collected from a real-world large-scale
+storage system and then design an attention-augmented deep architecture for hard-drive
+health status assessment and failure prediction. The deep architecture, composed of
+a feature integration layer, a temporal dependency extraction layer, an attention
+layer, and a classification layer, cannot only monitor the status of hard drives but
+also assist in failure cause diagnoses. The experiments based on real-world datasets
+show that the proposed deep architecture is able to assess the hard-drive status and
+predict the impending failures accurately. In addition, the experimental results demonstrate
+that the attention-augmented deep architecture can reveal the degradation progression
+of hard drives automatically and assist administrators in tracing the cause of hard
+drive failures.},
+journal = {ACM Trans. Storage},
+month = aug,
+articleno = {21},
+numpages = {26},
+keywords = {SMART, recurrent neural network, attention mechanism, Hard drive failure, deep neural network}
+}
+
+@inproceedings{10.1145/2668322.2668327,
+author = {Papalambrou, Andreas and Stefanidis, Kyriakos and Gialelis, John and Serpanos, Dimitrios},
+title = {Detection, Traceback and Filtering of Denial of Service Attacks in Networked Embedded Systems},
+year = {2014},
+isbn = {9781450329323},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2668322.2668327},
+doi = {10.1145/2668322.2668327},
+abstract = {This work presents a composite scheme for detection, traceback and filtering of distributed
+denial of service (DDoS) attacks in networked embedded systems. A method based on
+algorithmic analysis of various node and network parameters is used to detect attacks
+while a packet marking method is used to mitigate the effects of the attack by filtering
+the incoming traffic that is part of this attack and trace back to the origin of the
+attack. The combination of the detection and mitigation methods provide an increased
+level of security in comparison to approaches based on a single method. Furthermore,
+the scheme is developed in a way to comply with the novel SHIELD secure architecture
+being developed, which aims at providing interoperability with other secure components
+as well as metrics to quantify their security properties.},
+booktitle = {Proceedings of the 9th Workshop on Embedded Systems Security},
+articleno = {5},
+numpages = {8},
+keywords = {embedded systems security, denial of service attacks},
+location = {New Delhi, India},
+series = {WESS '14}
+}
+
+@article{10.1145/3014431,
+author = {Hu, Han and Wen, Yonggang and Chua, Tat-Seng and Li, Xuelong},
+title = {Cost-Optimized Microblog Distribution over Geo-Distributed Data Centers: Insights from Cross-Media Analysis},
+year = {2017},
+issue_date = {April 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {3},
+issn = {2157-6904},
+url = {https://doi.org/10.1145/3014431},
+doi = {10.1145/3014431},
+abstract = {The unprecedent growth of microblog services poses significant challenges on network
+traffic and service latency to the underlay infrastructure (i.e., geo-distributed
+data centers). Furthermore, the dynamic evolution in microblog status generates a
+huge workload on data consistence maintenance. In this article, motivated by insights
+of cross-media analysis-based propagation patterns, we propose a novel cache strategy
+for microblog service systems to reduce the inter-data center traffic and consistence
+maintenance cost, while achieving low service latency. Specifically, we first present
+a microblog classification method, which utilizes the external knowledge from correlated
+domains, to categorize microblogs. Then we conduct a large-scale measurement on a
+representative online social network system to study the category-based propagation
+diversity on region and time scales. These insights illustrate social common habits
+on creating and consuming microblogs and further motivate our architecture design.
+Finally, we formulate the content cache problem as a constrained optimization problem.
+By jointly using the Lyapunov optimization framework and simplex gradient method,
+we find the optimal online control strategy. Extensive trace-driven experiments further
+demonstrate that our algorithm reduces the system cost by 24.5% against traditional
+approaches with the same service latency.},
+journal = {ACM Trans. Intell. Syst. Technol.},
+month = apr,
+articleno = {40},
+numpages = {18},
+keywords = {cross-media analysis, performance optimization, Social media analytics, data center}
+}
+
+@inproceedings{10.1145/3473714.3473742,
+author = {Xin, An},
+title = {Research on Multi-Sensor Fusion Perception Method of Vehicle-Infrastructure Collaboration for Smart Automobiles},
+year = {2021},
+isbn = {9781450390231},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3473714.3473742},
+doi = {10.1145/3473714.3473742},
+abstract = {Traffic congestion should be solved, it reduce traffic safety potential risks, and
+improve people's travel efficiency. The paper based on intelligent car's own operation
+characteristics (Smart car perception is generally only 300 ~ 500 meters, there is
+a perceived problem of super-visual distance and vision blind zone), In order to effectively
+improve the safety operation level of smart cars, and combined with intelligent non-smart
+cars on the road may encounter cars a smart car trip perception highway outside the
+scope of frequently asked questions, such as over-site sensations, the whole scene
+and area's perception, the blind area, the emergency corner, tunnel, bridge, other
+highways travel common scenes and so on. This paper is based on new infrastructure
+transformations or newly build's research and practical results such as road traffic
+intelligence infrastructure, it deployed the current road traffic to intelligently
+infrastructure, especially the technical difficulties existing in the process of common
+perceptual equipment (smart cameras, radar) are synonymous with multiple sensor information
+fusion perceptions, it proposed a multi-sensor fusion algorithm based on error variance,
+and designed a multi-object multi-sensor data processing system architecture. This
+paper also proposes traffic operation scheduling architecture based on the game theory
+of car road synergies on the basis of multi-sensor data fusion. Finally, these architectures
+were analyzed using computer simulation techniques. The results show that the traffic
+operation schedule for multi-sensor fusion algorithm based on error variance and game
+theory based on the study proposed this study can be more obvious. The safety and
+efficiency of the road traffic environment of smart vehicles. Optimization, smart
+vehicles equipped with smart vehicles are also more than 25% higher than traditional
+common vehicles in terms of vehicle safety. All in all, this study proposed to synergistic
+multi-sensor convergence method for smart cars, that based on smart car a smart car
+perception, compared to non-smart roads after intelligent infrastructure construction
+and transformation of road traffic intelligent transportation systems, Higher efficiency
+and more intelligent can better solve the common problems in road traffic environment,
+providing people with safer, efficient and high-quality traffic travel services.},
+booktitle = {Proceedings of the 2021 International Conference on Control and Intelligent Robotics},
+pages = {164–175},
+numpages = {12},
+keywords = {vehicle-infrastructure collaboration, perceptual method research, smart vehicle, multi-sensor fusion},
+location = {Guangzhou, China},
+series = {ICCIR 2021}
+}
+
+@inproceedings{10.1145/2809826.2809836,
+author = {Khan, Yasir Imtiaz and Al-shaer, Ehab and Rauf, Usman},
+title = {Cyber Resilience-by-Construction: Modeling, Measuring &amp; Verifying},
+year = {2015},
+isbn = {9781450338219},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2809826.2809836},
+doi = {10.1145/2809826.2809836},
+abstract = {The need of cyber security is increasing as cyber attacks are escalating day by day.
+Cyber attacks are now so many and sophisticated that many will unavoidably get through.
+Therefore, there is an immense need to employ resilient architectures to defend known
+or unknown threats. Engineer- ing resilient system/infrastructure is a challenging
+task, that implies how to measure the resilience and how to obtain sufficient resilience
+necessary to maintain its service delivery under diverse situations. This paper has
+two fold objective, the first is to propose a formal approach to measure cyber resilience
+from different aspects (i.e., attacks, failures) and at different levels (i.e., pro-active,
+resistive and reactive). To achieve the first objective, we propose a formal frame-
+work named as: Cyber Resilience Engineering Framework (CREF). The second objective
+is to build a resilient system by construction. The idea is to build a formal model
+of a cyber system, which is initially not resilient with respect to attacks. Then
+by systematic refinements of the formal model and by its model checking, we attain
+resiliency. We exemplify our technique through the case study of simple cyber security
+device (i.e., network firewall).},
+booktitle = {Proceedings of the 2015 Workshop on Automated Decision Making for Active Cyber Defense},
+pages = {9–14},
+numpages = {6},
+keywords = {model checking, algebraic petri nets, firewall, cyber resilience},
+location = {Denver, Colorado, USA},
+series = {SafeConfig '15}
+}
+
+@inproceedings{10.1145/3019612.3019724,
+author = {Lautner, Douglas and Hua, Xiayu and Debates, Scott and Song, Miao and Shah, Jagat and Ren, Shangping},
+title = {BaaS (Bluetooth-as-a-Sensor): Conception, Design and Implementation on Mobile Platforms},
+year = {2017},
+isbn = {9781450344869},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3019612.3019724},
+doi = {10.1145/3019612.3019724},
+abstract = {As network connectivity becomes more capable, mobile devices are evolving into sensory
+data accumulators. Bluetooth (BT) components, which are widely used for communication
+purposes, also have the potential to become contextual sensors by constantly listening
+to information broadcast by nearby Bluetooth Low Energy (BLE) beacons. Compared to
+traditional Micro-Electro-Mechanical (MEMs) based contextual sensors, Bluetooth-as-a-Sensor
+(BaaS) provides a wider sensing spectrum and more comprehensive environmental information.
+However, current implementations of BT are optimized as a data transmitter, therefore
+deploying BaaS on a traditional mobile platform would cause an unacceptably high current
+drain and hence a significant reduction in battery life. Our objective is to conquer
+the current drain problem associated with having continuous wireless BT sensing. We
+provide a novel BaaS-based architecture which utilizes an energy-efficient sensor
+fusion core (SFC) to execute heavy-duty and long-standing tasks. We also present an
+optimized duty cycle algorithm that minimizes the duty cycle while guaranteeing an
+application's QoS requirements. Both BaaS architecture and algorithm are implemented
+and deployed on a Moto X platform and then applied to an indoor location service for
+consumer use validation. The performance of the BaaS-based architecture is evaluated
+for both average current drain and location accuracy. Data measured on Moto X shows
+that when using the BaaS architecture, the battery life is 5 times longer than using
+the traditional BT architecture.},
+booktitle = {Proceedings of the Symposium on Applied Computing},
+pages = {550–556},
+numpages = {7},
+keywords = {mobile sensing, mobile device, energy efficiency, embedded system, cellphone development},
+location = {Marrakech, Morocco},
+series = {SAC '17}
+}
+
+@article{10.1145/2660768,
+author = {Kim, Lok-Won and Lee, Dong-U and Villasenor, John},
+title = {Automated Iterative Pipelining for ASIC Design},
+year = {2015},
+issue_date = {February 2015},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {20},
+number = {2},
+issn = {1084-4309},
+url = {https://doi.org/10.1145/2660768},
+doi = {10.1145/2660768},
+abstract = {We describe an automated pipelining approach for optimally balanced pipeline implementation
+that achieves low area cost as well as meeting timing requirements. Most previous
+automatic pipelining methods have focused on Instruction Set Architecture (ISA)-based
+designs and the main goal of such methods generally has been maximizing performance
+as measured in terms of instructions per clock (IPC). By contrast, we focus on datapath-oriented
+designs (e.g., DSP filters for image or communication processing applications) in
+ASIC design flows. The goal of the proposed pipelining approach is to find the optimally
+pipelined design that not only meets the user-specified target clock frequency, but
+also seeks to minimize area cost of a given design. Unlike most previous approaches,
+the proposed methods incorporate the use of accurate area and timing information (iteratively
+achieved by synthesizing every interim pipelined design) to achieve higher accuracy
+during design exploration. When compared with exhaustive design exploration that considers
+all possible pipeline patterns, the two heuristic pipelining methods presented here
+involve only a small area penalty (typically under 5%) while offering dramatically
+reduced computational complexity. Experimental validation is performed with commercial
+ASIC design tools and described for applications including polynomial function evaluation,
+FIR filters, matrix multiplication, and discrete wavelet transform filter designs
+with a 90nm standard cell library.},
+journal = {ACM Trans. Des. Autom. Electron. Syst.},
+month = mar,
+articleno = {28},
+numpages = {24},
+keywords = {pipelined hardware architecture, pipelining, ASIC designs, design area optimization, Timing error resolution}
+}
+
+@inproceedings{10.1145/3414045.3415941,
+author = {Wazid, Mohammad and Bera, Basudeb and Mitra, Ankush and Das, Ashok Kumar and Ali, Rashid},
+title = {Private Blockchain-Envisioned Security Framework for AI-Enabled IoT-Based Drone-Aided Healthcare Services},
+year = {2020},
+isbn = {9781450381055},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3414045.3415941},
+doi = {10.1145/3414045.3415941},
+abstract = {Internet of Drones (IoD) architecture is designed to support a co-ordinated access
+for the airspace using the unmanned aerial vehicles (UAVs) known as drones. Recently,
+IoD communication environment is extremely useful for various applications in our
+daily activities. Artificial intelligence (AI)-enabled Internet of Things (IoT)-based
+drone-aided healthcare service is a specialized environment which can be used for
+different types of tasks, for instance, blood and urine samples collections, medicine
+delivery and for the delivery of other medical needs including the current pandemic
+of COVID-19. Due to wireless nature of communication among the deployed drones and
+their ground station server, several attacks (for example, replay, man-in-the-middle,
+impersonation and privileged-insider attacks) can be easily mounted by malicious attackers.
+To protect such attacks, the deployment of effective authentication, access control
+and key management schemes are extremely important in the IoD environment. Furthermore,
+combining the blockchain mechanism with deployed authentication make it more robust
+against various types of attacks. To mitigate such issues, we propose a private-blockchain
+based framework for secure communication in an IoT-enabled drone-aided healthcare
+environment. The blockchain-based simulation of the proposed framework has been carried
+out to measure its impact on various performance parameters.},
+booktitle = {Proceedings of the 2nd ACM MobiCom Workshop on Drone Assisted Wireless Communications for 5G and Beyond},
+pages = {37–42},
+numpages = {6},
+keywords = {authentication, security, internet of drones (IoD), blockchain, privacy, healthcare},
+location = {London, United Kingdom},
+series = {DroneCom '20}
+}
+
+@inproceedings{10.1145/3219104.3219148,
+author = {Ruan, Guangchen and Wernert, Eric and Gniady, Tassie and Tuna, Esen and Sherman, William},
+title = {High Performance Photogrammetry for Academic Research},
+year = {2018},
+isbn = {9781450364461},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3219104.3219148},
+doi = {10.1145/3219104.3219148},
+abstract = {Photogrammetry is the process of computationally extracting a three-dimensional surface
+model from a set of two-dimensional photographs of an object or environment. It is
+used to build models of everything from terrains to statues to ancient artifacts.
+In the past, the computational process was done on powerful PCs and could take weeks
+for large datasets. Even relatively small objects often required many hours of compute
+time to stitch together. With the availability of parallel processing options in the
+latest release of state-of-the-art photogrammetry software, it is possible to leverage
+the power of high performance computing systems on large datasets. In this paper we
+present a particular implementation of a high performance photogrammetry service.
+Though the service is currently based on a specific software package (Agisoft's PhotoScan),
+our system architecture is designed around a general photogrammetry process that can
+be easily adapted to leverage other photogrammetry tools. In addition, we report on
+an extensive performance study that measured the relative impacts of dataset size,
+software quality settings, and processing cluster size. Furthermore, we share lessons
+learned that are useful to system administrators looking to establish a similar service,
+and we describe the user-facing support components that are crucial for the success
+of the service.},
+booktitle = {Proceedings of the Practice and Experience on Advanced Research Computing},
+articleno = {45},
+numpages = {8},
+keywords = {HPC, photogrammetry, benchmarking, distributed processing, scalability, performance evaluation},
+location = {Pittsburgh, PA, USA},
+series = {PEARC '18}
+}
+
+@inproceedings{10.1109/CCGRID.2017.27,
+author = {Colmant, Maxime and Felber, Pascal and Rouvoy, Romain and Seinturier, Lionel},
+title = {WattsKit: Software-Defined Power Monitoring of Distributed Systems},
+year = {2017},
+isbn = {9781509066100},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGRID.2017.27},
+doi = {10.1109/CCGRID.2017.27},
+abstract = {The design and the deployment of energy-efficient distributed systems is a challenging
+task, which requires software engineers to consider all the layers of a system, from
+hardware to software. In particular, monitoring and analyzing the power consumption
+of a distributed system spanning several---potentially heterogeneous---nodes becomes
+particularly tedious when aiming at a finer granularity than observing the power consumption
+of hosting nodes. While the state-of-the-art in software-defined power meters fails
+to deliver adaptive solutions to offer such service-level perspective and to cope
+with the diversity of hardware CPU architectures, this paper proposes to automatically
+learn the power models of the nodes supporting a distributed system, and then to use
+these inferred power models to better understand how the power consumption of the
+system's processes is distributed across nodes at runtime.Our solution, named WattsKit,
+offers a modular toolkit to build software-defined power meters "\`{a} la carte", thus
+dealing with the diversity of user and hardware requirements. Beyond the demonstrated
+capability of covering a wide diversity of CPU architectures with high accuracy, we
+illustrate the benefits of adopting software-defined power meters to analyze the power
+consumption of complex layered and distributed systems. In particular, we illustrate
+the capability of our approach to monitor the power consumption of a system composed
+of Docker Swarm, Weave,Elasticsearch, and Apache ZooKeeper. Thanks to WattsKit, developers
+and administrators are now able to identify potential power leaks in their software
+infrastructure.},
+booktitle = {Proceedings of the 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing},
+pages = {514–523},
+numpages = {10},
+location = {Madrid, Spain},
+series = {CCGrid '17}
+}
+
+@inproceedings{10.5555/2665671.2665678,
+author = {Putnam, Andrew and Caulfield, Adrian M. and Chung, Eric S. and Chiou, Derek and Constantinides, Kypros and Demme, John and Esmaeilzadeh, Hadi and Fowers, Jeremy and Gopal, Gopi Prashanth and Gray, Jan and Haselman, Michael and Hauck, Scott and Heil, Stephen and Hormati, Amir and Kim, Joo-Young and Lanka, Sitaram and Larus, James and Peterson, Eric and Pope, Simon and Smith, Aaron and Thong, Jason and Xiao, Phillip Yi and Burger, Doug},
+title = {A Reconfigurable Fabric for Accelerating Large-Scale Datacenter Services},
+year = {2014},
+isbn = {9781479943944},
+publisher = {IEEE Press},
+abstract = {Datacenter workloads demand high computational capabilities, flexibility, power efficiency,
+and low cost. It is challenging to improve all of these factors simultaneously. To
+advance datacenter capabilities beyond what commodity server designs can provide,
+we have designed and built a composable, reconfigurablefabric to accelerate portions
+of large-scale software services. Each instantiation of the fabric consists of a 6x8
+2-D torus of high-end Stratix V FPGAs embedded into a half-rack of 48 machines. One
+FPGA is placed into each server, accessible through PCIe, and wired directly to other
+FPGAs with pairs of 10 Gb SAS cablesIn this paper, we describe a medium-scale deployment
+of this fabric on a bed of 1,632 servers, and measure its efficacy in accelerating
+the Bing web search engine. We describe the requirements and architecture of the system,
+detail the critical engineering challenges and solutions needed to make the system
+robust in the presence of failures, and measure the performance, power, and resilience
+of the system when ranking candidate documents. Under high load, the largescale reconfigurable
+fabric improves the ranking throughput of each server by a factor of 95% for a fixed
+latency distribution--- or, while maintaining equivalent throughput, reduces the tail
+latency by 29%},
+booktitle = {Proceeding of the 41st Annual International Symposium on Computer Architecuture},
+pages = {13–24},
+numpages = {12},
+location = {Minneapolis, Minnesota, USA},
+series = {ISCA '14}
+}
+
+@article{10.1145/2678373.2665678,
+author = {Putnam, Andrew and Caulfield, Adrian M. and Chung, Eric S. and Chiou, Derek and Constantinides, Kypros and Demme, John and Esmaeilzadeh, Hadi and Fowers, Jeremy and Gopal, Gopi Prashanth and Gray, Jan and Haselman, Michael and Hauck, Scott and Heil, Stephen and Hormati, Amir and Kim, Joo-Young and Lanka, Sitaram and Larus, James and Peterson, Eric and Pope, Simon and Smith, Aaron and Thong, Jason and Xiao, Phillip Yi and Burger, Doug},
+title = {A Reconfigurable Fabric for Accelerating Large-Scale Datacenter Services},
+year = {2014},
+issue_date = {June 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {42},
+number = {3},
+issn = {0163-5964},
+url = {https://doi.org/10.1145/2678373.2665678},
+doi = {10.1145/2678373.2665678},
+abstract = {Datacenter workloads demand high computational capabilities, flexibility, power efficiency,
+and low cost. It is challenging to improve all of these factors simultaneously. To
+advance datacenter capabilities beyond what commodity server designs can provide,
+we have designed and built a composable, reconfigurablefabric to accelerate portions
+of large-scale software services. Each instantiation of the fabric consists of a 6x8
+2-D torus of high-end Stratix V FPGAs embedded into a half-rack of 48 machines. One
+FPGA is placed into each server, accessible through PCIe, and wired directly to other
+FPGAs with pairs of 10 Gb SAS cablesIn this paper, we describe a medium-scale deployment
+of this fabric on a bed of 1,632 servers, and measure its efficacy in accelerating
+the Bing web search engine. We describe the requirements and architecture of the system,
+detail the critical engineering challenges and solutions needed to make the system
+robust in the presence of failures, and measure the performance, power, and resilience
+of the system when ranking candidate documents. Under high load, the largescale reconfigurable
+fabric improves the ranking throughput of each server by a factor of 95% for a fixed
+latency distribution--- or, while maintaining equivalent throughput, reduces the tail
+latency by 29%},
+journal = {SIGARCH Comput. Archit. News},
+month = jun,
+pages = {13–24},
+numpages = {12}
+}
+
+@inproceedings{10.1145/3366424.3382670,
+author = {Tiwary, Mayank and Mishra, Pritish and Jain, Shashank and Puthal, Deepak},
+title = {Data Aware Web-Assembly Function Placement},
+year = {2020},
+isbn = {9781450370240},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3366424.3382670},
+doi = {10.1145/3366424.3382670},
+abstract = {Existing container based serverless computing systems are limited by cold-start problems
+and complex architecture for stateful services, multi-tenancy, etc. This paper presents
+serverless functions to be placed as per data locality and executed as a web-assembly
+sandbox, which results better execution latency and reduced network usage as compared
+to the existing architectures. The designed serverless runtime features resource isolation
+in terms of CPU, Memory, and file-system isolation and falicitates multi-tenancy executions.
+The proposed architecture is evaluated using IoT workloads with different performance
+metrics.},
+booktitle = {Companion Proceedings of the Web Conference 2020},
+pages = {4–5},
+numpages = {2},
+keywords = {Multi-Tenancy, Servelress, Data Locality, Web-Assembly},
+location = {Taipei, Taiwan},
+series = {WWW '20}
+}
+
+@inproceedings{10.1145/3302541.3310294,
+author = {Scheuner, Joel and Leitner, Philipp},
+title = {Performance Benchmarking of Infrastructure-as-a-Service (IaaS) Clouds with Cloud WorkBench},
+year = {2019},
+isbn = {9781450362863},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3302541.3310294},
+doi = {10.1145/3302541.3310294},
+abstract = {The continuing growth of the cloud computing market has led to an unprecedented diversity
+of cloud services with different performance characteristics. To support service selection,
+researchers and practitioners conduct cloud performance benchmarking by measuring
+and objectively comparing the performance of different providers and configurations
+(e.g., instance types in different data center regions). In this tutorial, we demonstrate
+how to write performance tests for IaaS clouds using the Web-based benchmarking tool
+Cloud WorkBench (CWB). We will motivate and introduce benchmarking of IaaS cloud in
+general, demonstrate the execution of a simple benchmark in a public cloud environment,
+summarize the CWB tool architecture, and interactively develop and deploy a more advanced
+benchmark together with the participants.},
+booktitle = {Companion of the 2019 ACM/SPEC International Conference on Performance Engineering},
+pages = {53–56},
+numpages = {4},
+keywords = {performance, benchmarking, cloud computing},
+location = {Mumbai, India},
+series = {ICPE '19}
+}
+
+@inproceedings{10.5555/3195638.3195647,
+author = {Caulfield, Adrian M. and Chung, Eric S. and Putnam, Andrew and Angepat, Hari and Fowers, Jeremy and Haselman, Michael and Heil, Stephen and Humphrey, Matt and Kaur, Puneet and Kim, Joo-Young and Lo, Daniel and Massengill, Todd and Ovtcharov, Kalin and Papamichael, Michael and Woods, Lisa and Lanka, Sitaram and Chiou, Derek and Burger, Doug},
+title = {A Cloud-Scale Acceleration Architecture},
+year = {2016},
+publisher = {IEEE Press},
+abstract = {Hyperscale datacenter providers have struggled to balance the growing need for specialized
+hardware (efficiency) with the economic benefits of homogeneity (manageability). In
+this paper we propose a new cloud architecture that uses reconfigurable logic to accelerate
+both network plane functions and applications. This Configurable Cloud architecture
+places a layer of reconfigurable logic (FPGAs) between the network switches and the
+servers, enabling network flows to be programmably transformed at line rate, enabling
+acceleration of local applications running on the server, and enabling the FPGAs to
+communicate directly, at datacenter scale, to harvest remote FPGAs unused by their
+local servers. We deployed this design over a production server bed, and show how
+it can be used for both service acceleration (Web search ranking) and network acceleration
+(encryption of data in transit at high-speeds). This architecture is much more scalable
+than prior work which used secondary rack-scale networks for inter-FPGA communication.
+By coupling to the network plane, direct FPGA-to-FPGA messages can be achieved at
+comparable latency to previous work, without the secondary network. Additionally,
+the scale of direct inter-FPGA messaging is much larger. The average round-trip latencies
+observed in our measurements among 24, 1000, and 250,000 machines are under 3, 9,
+and 20 microseconds, respectively. The Configurable Cloud architecture has been deployed
+at hyperscale in Microsoft's production datacenters worldwide.},
+booktitle = {The 49th Annual IEEE/ACM International Symposium on Microarchitecture},
+articleno = {7},
+numpages = {13},
+location = {Taipei, Taiwan},
+series = {MICRO-49}
+}
+
+@article{10.1109/TNET.2016.2621159,
+author = {Chen, Min and Chen, Shigang and Cai, Zhiping},
+title = {Counter Tree: A Scalable Counter Architecture for Per-Flow Traffic Measurement},
+year = {2017},
+issue_date = {April 2017},
+publisher = {IEEE Press},
+volume = {25},
+number = {2},
+issn = {1063-6692},
+url = {https://doi.org/10.1109/TNET.2016.2621159},
+doi = {10.1109/TNET.2016.2621159},
+abstract = {Per-flow traffic measurement, which is to count the number of packets for each active
+flow during a certain measurement period, has many applications in traffic engineering,
+classification of routing distribution or network usage pattern, service provision,
+anomaly detection, and network forensics. In order to keep up with the high throughput
+of modern routers or switches, the online module for per-flow traffic measurement
+should use high-bandwidth SRAM that allows fast memory accesses. Due to limited SRAM
+space, exact counting, which requires to keep a counter for each flow, does not scale
+to large networks consisting of numerous flows. Some recent work takes a different
+approach to estimate the flow sizes using counter architectures that can fit into
+tight SRAM. However, existing counter architectures have limitations, either still
+requiring considerable SRAM space or having a small estimation range. In this paper,
+we design a scalable counter architecture called Counter Tree, which leverages a 2-D
+counter sharing scheme to achieve far better memory efficiency and in the meantime
+extend estimation range significantly. Furthermore, we improve the performance of
+Counter Tree by adding a status bit to each counter. Extensive experiments with real
+network traces demonstrate that our counter architecture can produce accurate estimates
+for flows of all sizes under very tight memory space.},
+journal = {IEEE/ACM Trans. Netw.},
+month = apr,
+pages = {1249–1262},
+numpages = {14}
+}
+
+@inproceedings{10.5555/2840819.2840915,
+author = {Kim, Yeseong and Imani, Mohsen and Patil, Shruti and Rosing, Tajana S.},
+title = {CAUSE: Critical Application Usage-Aware Memory System Using Non-Volatile Memory for Mobile Devices},
+year = {2015},
+isbn = {9781467383899},
+publisher = {IEEE Press},
+abstract = {Mobile devices are severely limited in memory, which affects critical user-experience
+metrics such as application service time. Emerging non-volatile memory (NVM) technologies
+such as STT-RAM and PCM are ideal candidates to provide higher memory capacity with
+negligible energy overhead. However, existing memory management systems overlook mobile
+users application usage which provides crucial cues for improving user experience.
+In this paper, we propose CAUSE, a novel memory system based on DRAM-NVM hybrid memory
+architecture. CAUSE takes explicit account of the application usage patterns to distinguish
+data criticality and identify suitable swap candidates. We also devise NVM hardware
+design optimized for the access characteristics of the swapped pages. We evaluate
+CAUSE on a real Android smartphone and NVSim simulator using user application usage
+logs. Our experimental results show that the proposed technique achieves 32% faster
+launch time for mobile applications while reducing energy cost by 90% and 44% on average
+over non-optimized STT-RAM and PCM, respectively.},
+booktitle = {Proceedings of the IEEE/ACM International Conference on Computer-Aided Design},
+pages = {690–696},
+numpages = {7},
+location = {Austin, TX, USA},
+series = {ICCAD '15}
+}
+
+@inproceedings{10.1145/2628588.2628598,
+author = {Sharakhov, Nikita and Marojevic, Vuk and Romano, Ferdinando and Polys, Nicholas and Dietrich, Carl},
+title = {Visualizing Real-Time Radio Spectrum Access with CORNET3D},
+year = {2014},
+isbn = {9781450330152},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2628588.2628598},
+doi = {10.1145/2628588.2628598},
+abstract = {Modern web technology enables the 3D portrayal of real-time data. WebSocket connections
+provide data over the web without the time-consuming overhead of HTTP requests. The
+server-side "push" paradigm is particularly useful for creating novel tools such as
+CORNET3D, where real-time 3D visualization is required. CORNET3D is an innovative
+Web3D interface to a research and education test bed for Dynamic Spectrum Access (DSA).
+Our system can drive several 2D and 3D portrayals of spectral data and radio performance
+metrics from a live, online system. The testbed can further integrate the data portrayals
+into a multi-user "serious game" to teach students about strategies for the optimal
+use of spectrum resources by providing them with real-time scoring based on their
+choices of radio transmission parameters. This paper describes the web service architecture
+and Webd3D front end for our DSA testbed, detailing new methods for spectrum visualization
+and the applications they enable.},
+booktitle = {Proceedings of the 19th International ACM Conference on 3D Web Technologies},
+pages = {109–116},
+numpages = {8},
+keywords = {HTML5, web applications, computer graphics, WebSockets, WebGL},
+location = {Vancouver, British Columbia, Canada},
+series = {Web3D '14}
+}
+
+@inproceedings{10.1145/3297663.3309668,
+author = {Talreja, Disha and Lahiri, Kanishka and Kalambur, Subramaniam and Raghavendra, Prakash},
+title = {Performance Scaling of Cassandra on High-Thread Count Servers},
+year = {2019},
+isbn = {9781450362399},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3297663.3309668},
+doi = {10.1145/3297663.3309668},
+abstract = {NoSQL databases are commonly used today in cloud deployments due to their ability
+to "scale-out" and effectively use distributed computing resources in a data center.
+At the same time, cloud servers are also witnessing rapid growth in CPU core counts,
+memory bandwidth, and memory capacity. Hence, apart from scaling out effectively,
+it's important to consider how such workloads "scale-up" within a single system, so
+that they can make the best use of available resources. In this paper, we describe
+our experiences studying the performance scaling characteristics of Cassandra, a popular
+open-source, column-oriented database, on a single high-thread count dual socket server.
+We demonstrate that using commonly used benchmarking practices, Cassandra does not
+scale well on such systems. Next, we show how by taking into account specific knowledge
+of the underlying topology of the server architecture, we can achieve substantial
+improvements in performance scalability. We report on how, during the course of our
+work, we uncovered an area for performance improvement in the official open-source
+implementation of the Java platform with respect to NUMA awareness. We show how optimizing
+this resulted in 27% throughput gain for Cassandra under studied configurations. As
+a result of these optimizations, using standard workload generators, we obtained up
+to 1.44x and 2.55x improvements in Cassandra throughput over baseline single and dual-socket
+performance measurements respectively. On wider testing across a variety of workloads,
+we achieved excellent performance scaling, averaging 98% efficiency within a socket
+and 90% efficiency at the system-level.},
+booktitle = {Proceedings of the 2019 ACM/SPEC International Conference on Performance Engineering},
+pages = {179–187},
+numpages = {9},
+keywords = {nosql databases, performance scalability, cassandra, performance benchmarking},
+location = {Mumbai, India},
+series = {ICPE '19}
+}
+
+@inproceedings{10.1145/3447545.3451180,
+author = {Klaver, Luuk and van der Knaap, Thijs and van der Geest, Johan and Harmsma, Edwin and van der Waaij, Bram and Pileggi, Paolo},
+title = {Towards Independent Run-Time Cloud Monitoring},
+year = {2021},
+isbn = {9781450383318},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447545.3451180},
+doi = {10.1145/3447545.3451180},
+abstract = {Cloud computing services are integral to the digital transformation. They deliver
+greater connectivity, tremendous savings, and lower total cost of ownership. Despite
+such benefits and benchmarking advances, costs are still quite unpredictable, performance
+is unclear, security is inconsistent, and there is minimal control over aspects like
+data and service locality. Estimating performance of cloud environments is very hard
+for cloud consumers. They would like to make informed decisions about which provider
+better suits their needs using specialized evaluation mechanisms. Providers have their
+own tools reporting specific metrics, but they are potentially biased and often incomparable
+across providers. Current benchmarking tools allow comparison but consumers need more
+flexibility to evaluate environments under actual operating conditions for specialized
+applications. Ours is early stage work and a step towards a monitoring solution that
+enables independent evaluation of clouds for very specific application needs. In this
+paper, we present our initial architecture of the Cloud Monitor that aims to integrate
+existing and new benchmarks in a flexible and extensible way. By way of a simplistic
+demonstrator, we illustrate the concept. We report some preliminary monitoring results
+after a brief time of monitoring and are able to observe unexpected anomalies. The
+results suggest an independent monitoring solution is a powerful enabler of next generation
+cloud computing, not only for the consumer but potentially the whole ecosystem.},
+booktitle = {Companion of the ACM/SPEC International Conference on Performance Engineering},
+pages = {21–26},
+numpages = {6},
+keywords = {performance evaluation, run-time monitoring, benchmarking, cloud computing},
+location = {Virtual Event, France},
+series = {ICPE '21}
+}
+
+@inproceedings{10.1145/2775088.2775100,
+author = {You, Taewan and Martinez-Julia, Pedro and Skarmeta, Antonio and Jung, Heeyoung},
+title = {Design and Deployment of Federation Testbed in EU-KR for Identifier-Based Communications},
+year = {2015},
+isbn = {9781450335645},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2775088.2775100},
+doi = {10.1145/2775088.2775100},
+abstract = {SmartFIRE is the first intercontinental testbed, federating multiple small-scale testbeds
+in South Korea and Europe, which exploits the benefits and building blocks of an OpenFlow-based
+infrastructure. As a part of SmartFIRE, both ETRI and UMU designs and develops a federation
+testbed for Identifier-based communications that all of communication services are
+achieved by Identifier not by IP address. In order to manage and control the testbed,
+we deploy a Measurement and Management Framework (OMF), further we will deploy SFA
+aggregate manager to federate with other SmartFIRE testbed. In this paper we introduce
+the federation testbed for ID-based communications including network connectivity,
+architecture configuration, and federation architecture. Moreover, to exploit the
+testbed, we design and implement two mobility use cases that we show seamless network
+connection service under host's mobility, such as intra-domain handover and inter-domain
+handover. Thus we can show result of the experimentation that the communication session
+wouldn't be cut off even though communication entity moves to a different network.
+Finally we refer future works for federation to cooperate with other SmartFIRE testbeds
+and additional ID-based communication scenario.},
+booktitle = {The 10th International Conference on Future Internet},
+pages = {13–16},
+numpages = {4},
+keywords = {Deployment, Federation Testbed, EU, Identifier-based communications, SmartFire, KR},
+location = {Seoul, Republic of Korea},
+series = {CFI '15}
+}
+
+@inproceedings{10.1145/3123878.3131999,
+author = {Szabo, Marton and Majdan, Andras and Pongracz, Gergely and Toka, Laszlo and Sonkoly, Balazs},
+title = {Making the Data Plane Ready for NFV: An Effective Way of Handling Resources},
+year = {2017},
+isbn = {9781450350570},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3123878.3131999},
+doi = {10.1145/3123878.3131999},
+abstract = {In order to enable carrier grade network services constructed from software-based
+network functions, we need a novel data plane supporting high performance packet processing,
+low latency and flexible, fine granular programmability and control. The network functions
+implemented as virtual machines or containers use the same hardware resources (cpu,
+memory) as the elements responsible for networking, therefore, a low-level resource
+orchestrator which is capable of jointly controlling these resources is an indispensable
+component. In this demonstration, we showcase our novel resource orchestrator (FERO)
+on top of a data plane making use of open-source components such as, Docker, DPDK
+and OVS. It is capable of i) generating an abstract model of the underlying hardware
+architecture during the bootstrap process, ii) mapping the incoming network service
+requests to available resources based on our recently proposed Service Graph embedding
+engine and the generated graph model. The impact of the orchestration decision is
+shown on-the-fly by real-time performance measurements on a graphical dashboard.},
+booktitle = {Proceedings of the SIGCOMM Posters and Demos},
+pages = {97–99},
+numpages = {3},
+keywords = {DPDK, SFC, SDN, NFV, Docker},
+location = {Los Angeles, CA, USA},
+series = {SIGCOMM Posters and Demos '17}
+}
+
+@inproceedings{10.1109/MODELS-C.2019.00032,
+author = {Burdusel, Alexandru and Zschaler, Steffen},
+title = {Towards Scalable Search-Based Model Engineering with MDEOptimiser Scale},
+year = {2019},
+isbn = {9781728151250},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/MODELS-C.2019.00032},
+doi = {10.1109/MODELS-C.2019.00032},
+abstract = {Running scientific experiments using search-based model engineering (SBME) tools is
+a complex task, that poses a number of challenges, starting from defining an experiment
+workflow, to parameter tuning, finding optimal computational resources to run on,
+collecting and interpreting metrics and making the entire process easily reproducible.Despite
+the proliferation of easily accessible hardware, as a result of the increased availability
+of infrastructure-as-a-service providers, many SBME tools are rarely using this technology
+for accelerating experimentation. Running many experiments on a single machine implies
+much longer waiting times and reduces the ability to increase the speed of iterations
+when doing SBME research, thus, slowing down the entire process.In this paper, we
+introduce a domain-specific language (DSL) and a framework that can be used to configure
+and run experiments at scale, on cloud infrastructure, in a reproducible way. We will
+describe our DSL and framework architecture along with an example to showcase how
+a case study can be evaluated using two different model optimisation tools.},
+booktitle = {Proceedings of the 22nd International Conference on Model Driven Engineering Languages and Systems},
+pages = {189–195},
+numpages = {7},
+keywords = {evolutionary search, workflow, reproducible research, middleware, search based model engineering, model driven engineering, cloud},
+location = {Munich, Germany},
+series = {MODELS '19}
+}
+
+@inproceedings{10.1145/3424978.3425039,
+author = {Li, Hailing and Zhang, Xiaohang and Cao, Shoufeng and He, Longtao and Zhang, Hui},
+title = {Active Measurement of Open Resolver Service Nodes},
+year = {2020},
+isbn = {9781450377720},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3424978.3425039},
+doi = {10.1145/3424978.3425039},
+abstract = {Driven by the growing number of DNS requests on the Internet, the architecture of
+the recursive resolver has become more huge and complex, especially for open resolvers
+that provide resolution services to the public. There are many service nodes with
+different roles in the open resolver, and the nodes that directly communicate with
+the authoritative server are called recursive egress nodes. This paper proposed a
+distributed measurement system and performed active measurement and analysis on the
+characteristics of the egress node of open resolvers collected from passive DNS traffic
+and third party active scanning. The results from 65 vantage points show that (1)
+most open resolvers have dozens of recursive egress nodes, and (2) most open resolvers
+have deployed at least one IPv6 address egress node, while IPv4 address still dominates
+the service node configuration. (3) A small amount of recursive egress nodes is reused
+by a large number of open resolvers, so that a large amount of DNS request traffic
+on the Internet is concentrated on limited recursive egress nodes, which will reduce
+the redundancy of DNS and cause cyber security risks. (4) The median distances between
+most open resolvers with multiple egress nodes and the users usually exceed 1000 kilometers,
+which will bring negative effect on the scheduling accuracy of CDN.},
+booktitle = {Proceedings of the 4th International Conference on Computer Science and Application Engineering},
+articleno = {61},
+numpages = {8},
+keywords = {Open resolver, Recursive egress node, DNS redirection, Distributed active measurement},
+location = {Sanya, China},
+series = {CSAE 2020}
+}
+
+@proceedings{10.1145/2737182,
+title = {QoSA '15: Proceedings of the 11th International ACM SIGSOFT Conference on Quality of Software Architectures},
+year = {2015},
+isbn = {9781450334709},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 11th International ACM Sigsoft Conference on the Quality of Software
+Architectures -- QoSA 2015. For more than a decade, QoSA has strived to advance the
+state of the art of quality aspects of software architecture, focusing broadly on
+its quality characteristics and how these relate to the design of software architectures.
+Specific issues of interest are defining and modeling quality measures, evaluating
+and managing architecture quality, linking architecture to requirements and implementation,
+and preserving architecture quality throughout the system lifetime. Past themes for
+QoSA include Architecting for Adaptivity (2014), The System View (2013), Evolving
+Architectures (2012), Quality throughout the Software Lifecycle (2011), and Research
+into Practice -- Reality and Gaps (2010).QoSA 2015's theme is "Software Architecture
+for the 4th Industrial Revolution". After mechanization, mass production, and electronics,
+the Internet is about to enable a new level of productivity in manufacturing. This
+shall be enabled by smart cyber-physical systems connected to cloud computing services
+and communicating using standardized semantics. In the near future, industrial big
+data analytics on monitored sensor data shall improve the efficiency and individualization
+of production facilities. This year's QoSA conference solicited contributions that
+explore the various implications of this upcoming industrial revolution on software
+architecture. This included reference architectures, software architectures adapting
+at run time, architecture styles and patterns for cyber-physical and distributed systems.The
+call for papers attracted 42 initial submissions from Asia, North America, Africa,
+and Europe and 28 final submissions were considered during the review process. The
+program committee accepted 11 full papers and 2 short papers that cover topics, such
+as new architecture modeling approaches, architectural tactics for mobile computing,
+cloud computing architectures, and cyberphysical systems. QoSA's 2015 proceedings
+also include 2 papers from the WCOP 2015, the 20th International Doctoral Symposium
+on Components and Architecture.QoSA 2015 is part of the federated events on component-based
+software engineering and software architecture (CompArch 2015), which include WICSA
+2015 (12th Working IEEE / IFIP Conference on Software Architecture) and CBSE 2015
+(18th International ACM SIGSOFT Symposium on Component-Based Software Engineering).},
+location = {Montr\'{e}al, QC, Canada}
+}
+
+@inproceedings{10.1145/3383313.3412248,
+author = {Hansen, Casper and Hansen, Christian and Maystre, Lucas and Mehrotra, Rishabh and Brost, Brian and Tomasi, Federico and Lalmas, Mounia},
+title = {Contextual and Sequential User Embeddings for Large-Scale Music Recommendation},
+year = {2020},
+isbn = {9781450375832},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3383313.3412248},
+doi = {10.1145/3383313.3412248},
+abstract = {Recommender systems play an important role in providing an engaging experience on
+online music streaming services. However, the musical domain presents distinctive
+challenges to recommender systems: tracks are short, listened to multiple times, typically
+consumed in sessions with other tracks, and relevance is highly context-dependent.
+In this paper, we argue that modeling users’ preferences at the beginning of a session
+is a practical and effective way to address these challenges. Using a dataset from
+Spotify, a popular music streaming service, we observe that a) consumption from the
+recent past and b) session-level contextual variables (such as the time of the day
+or the type of device used) are indeed predictive of the tracks a user will stream—much
+more so than static, average preferences. Driven by these findings, we propose CoSeRNN,
+a neural network architecture that models users’ preferences as a sequence of embeddings,
+one for each session. CoSeRNN predicts, at the beginning of a session, a preference
+vector, based on past consumption history and current context. This preference vector
+can then be used in downstream tasks to generate contextually relevant just-in-time
+recommendations efficiently, by using approximate nearest-neighbour search algorithms.
+We evaluate CoSeRNN on session and track ranking tasks, and find that it outperforms
+the current state of the art by upwards of 10% on different ranking metrics. Dissecting
+the performance of our approach, we find that sequential and contextual information
+are both crucial. },
+booktitle = {Fourteenth ACM Conference on Recommender Systems},
+pages = {53–62},
+numpages = {10},
+keywords = {Context, Sequence, User Embeddings, Music Recommendation},
+location = {Virtual Event, Brazil},
+series = {RecSys '20}
+}
+
+@inproceedings{10.1145/2693561.2693563,
+author = {Klein, John and Gorton, Ian},
+title = {Runtime Performance Challenges in Big Data Systems},
+year = {2015},
+isbn = {9781450333405},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2693561.2693563},
+doi = {10.1145/2693561.2693563},
+abstract = {Big data systems are becoming pervasive. They are distributed systems that include
+redundant processing nodes, replicated storage, and frequently execute on a shared 'cloud' infrastructure. For these systems, design-time predictions are insufficient
+to assure runtime performance in production. This is due to the scale of the deployed
+system, the continually evolving workloads, and the unpredictable quality of service
+of the shared infrastructure. Consequently, a solution for addressing performance
+requirements needs sophisticated runtime observability and measurement. Observability
+gives real-time insights into a system's health and status, both at the system and
+application level, and provides historical data repositories for forensic analysis,
+capacity planning, and predictive analytics. Due to the scale and heterogeneity of
+big data systems, significant challenges exist in the design, customization and operations
+of observability capabilities. These challenges include economical creation and insertion
+of monitors into hundreds or thousands of computation and data nodes, efficient, low
+overhead collection and storage of measurements (which is itself a big data problem),
+and application-aware aggregation and visualization. In this paper we propose a reference
+architecture to address these challenges, which uses a model-driven engineering toolkit
+to generate architecture-aware monitors and application-specific visualizations.},
+booktitle = {Proceedings of the 2015 Workshop on Challenges in Performance Methods for Software Development},
+pages = {17–22},
+numpages = {6},
+keywords = {observability, big data, model-driven engineering},
+location = {Austin, Texas, USA},
+series = {WOSP '15}
+}
+
+@inproceedings{10.1145/3364544.3364824,
+author = {Faye, S\'{e}bastien and Melakessou, Foued and Mtalaa, Wassila and Gautier, Prune and AlNaffakh, Neamah and Khadraoui, Djamel},
+title = {SWAM: A Novel Smart Waste Management Approach for Businesses Using IoT},
+year = {2019},
+isbn = {9781450370158},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3364544.3364824},
+doi = {10.1145/3364544.3364824},
+abstract = {The waste recycling industry has grown considerably in the recent years and many solutions
+have become democratized around smart waste collection. However, existing decision
+support systems generally rely on a limited flow of information and offer an often
+static or statistically based approach, focusing on specific use-cases (e.g., individuals,
+municipalities). This paper introduces SWAM, a new smart waste collection platform
+currently being elaborated in Luxembourg that targets businesses and large entities
+(e.g., restaurants, shopping centers). SWAM aims to consider multiple sources of combined
+information in its decision-making process and go further in the routing optimization
+process. The platform notably uses ultrasonic sensors to measure the filling level
+of containers, and smartphones with embedded intelligence to understand a driver's
+actions. This paper presents our experience on the development and deployment of this
+platform in Luxembourg, as well as the relevant options on the choice of sensing and
+communication technologies available in the market. It also presents the system architecture
+and two fundamental components. Firstly, a data management layer, which implements
+models for analyzing and predicting the filling patterns of the containers. Secondly,
+a multi-objective optimization layer, which compiles the collection routes that minimize
+the impact on the environment and maximize the service quality. This paper is intended
+to serve as a practical reference for the deployment of waste management systems,
+which have many technological components and can greatly fluctuate depending on the
+use cases to be covered.},
+booktitle = {Proceedings of the 1st ACM International Workshop on Technology Enablers and Innovative Applications for Smart Cities and Communities},
+pages = {38–45},
+numpages = {8},
+keywords = {Smart Waste Collection, Multi-Objective Optimization, IoT, WSN},
+location = {New York, NY, USA},
+series = {TESCA'19}
+}
+
+@inproceedings{10.1145/3426744.3431328,
+author = {V\"{o}r\"{o}s, P\'{e}ter and Pongr\'{a}cz, Gergely and Laki, S\'{a}ndor},
+title = {Towards a Hybrid Next Generation NodeB},
+year = {2020},
+isbn = {9781450381819},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3426744.3431328},
+doi = {10.1145/3426744.3431328},
+abstract = {5G Radio Access Networks consists of two key services: User Plane Function (UPF) and
+next generation NodeB (gNB). Though several papers have recently demonstrated that
+the high-level UPF can be described in P4, for the lowest-level gNB service it is
+more challenging and cannot purely be done with existing programmable switches. In
+this paper, we show that gNB requires functionalities such as Automatic Repeat Request
+(ARQ) and ciphering/deciphering that are not supported by the high speed P4-programmable
+switches available in the market. To overcome these limitations, we propose a hybrid
+approach where the majority of packet processing is done by a high speed P4-programmable
+switch while the additional functionalities are solved by external services implemented
+in DPDK. The coordination of packets among the services is also handled by the P4-switch.
+Our preliminary results include the identification of functionalities required by
+a gNB node for delivering user data, the design of a hybrid architecture, and the
+performance evaluation of the buffering and re-transmission service. Finally, our
+measurements demonstrate that the proposed hybrid approach is scalable and could be
+an alternative to existing gNB solutions in the future.},
+booktitle = {Proceedings of the 3rd P4 Workshop in Europe},
+pages = {56–58},
+numpages = {3},
+location = {Barcelona, Spain},
+series = {EuroP4'20}
+}
+
+@inproceedings{10.1145/2996913.2996917,
+author = {Chatterjee, Abhranil and Anjaria, Janit and Roy, Sourav and Ganguli, Arnab and Seal, Krishanu},
+title = {SAGEL: Smart Address Geocoding Engine for Supply-Chain Logistics},
+year = {2016},
+isbn = {9781450345897},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2996913.2996917},
+doi = {10.1145/2996913.2996917},
+abstract = {With the recent explosion of e-commerce industry in India, the problem of address
+geocoding, that is, transforming textual address descriptions to geographic reference,
+such as latitude, longitude coordinates, has emerged as a core problem for supply
+chain management. Some of the major areas that rely on precise and accurate address
+geocoding are supply chain fulfilment, supply chain analytics and logistics. In this
+paper, we present some of the challenges faced in practice while building an address
+geocoding engine as a core capability at Flipkart. We discuss the unique challenges
+of building a geocoding engine for a rapidly developing country like India, such as,
+fuzzy region boundaries, dynamic topography and lack of convention in spellings of
+toponyms, to name a few. We motivate the need for building a reliable and precise
+address geocoding system from a business perspective and argue why some of the commercially
+available solutions do not suffice for our requirements. SAGEL has evolved through
+3 cycles of solution prototypes and pilot experiments. We describe the learnings from
+each of these phases and how we incorporated them to get to the first production-ready
+version. We describe how we store and index map data on a SolrCloud cluster of Apache
+Solr, an open-source search platform, and the core algorithm for geocoding which works
+post-retrieval in order to determine the best matches among a set of candidate results.
+We give a brief description of the system architecture and provide accuracy results
+of our geocoding engine by measuring deviations of geocoded customer addresses across
+India, from verified latitude, longitude coordinates of those addresses, for a sizeable
+address set. We also measure and report our system's ability to geocode up to different
+region levels, like city, locality or building. We compare our results with those
+of the geocoding service provided by Google against a set of addresses for which we
+have verified latitude-longitude coordinates and show that our geocoding engine is
+almost as accurate as Google's, while having a higher coverage.},
+booktitle = {Proceedings of the 24th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems},
+articleno = {42},
+numpages = {10},
+keywords = {spatio-textual searching, storage and indexing, spatial data mining and knowledge discovery, geographic information retrieval},
+location = {Burlingame, California},
+series = {SIGSPACIAL '16}
+}
+
+@inproceedings{10.1145/2996890.2996903,
+author = {Sukhoroslov, Oleg and Volkov, Sergey and Afanasiev, Alexander},
+title = {Program Autotuning as a Service: Opportunities and Challenges},
+year = {2016},
+isbn = {9781450346160},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2996890.2996903},
+doi = {10.1145/2996890.2996903},
+abstract = {Program autotuning is becoming an increasingly valuable tool for improving performance
+portability across diverse target architectures, exploring trade-offs between several
+criteria, or meeting quality of service requirements. Recent work on general autotuning
+frameworks enabled rapid development of domain-specific autotuners reusing common
+libraries of parameter types and search techniques. In this work we explore the use
+of such frameworks to develop general-purpose online services for program autotuning
+using the Software as a Service model. Beyond the common benefits of this model, the
+proposed approach opens up a number of unique opportunities, such as collecting performance
+data and utilizing it to improve further runs, or enabling remote online autotuning.
+However, the proposed autotuning as a service approach also brings in several challenges,
+such as accessing target systems, dealing with measurement latency, and supporting
+execution of user-provided code. This paper presents the first step towards implementing
+the proposed approach and addressing these challenges. We describe an implementation
+of generic autotuning service that can be used for tuning arbitrary programs on user-provided
+computing systems. The service is based on OpenTuner autotuning framework and runs
+on Everest platform that enables rapid development of computational web services.
+In contrast to OpenTuner, the service doesn't require installation of the framework,
+allows users to avoid writing code and supports efficient parallel execution of measurement
+tasks across multiple machines. The performance of the service is evaluated by using
+it for tuning synthetic and real programs.},
+booktitle = {Proceedings of the 9th International Conference on Utility and Cloud Computing},
+pages = {148–155},
+numpages = {8},
+keywords = {distributed computing, program autotuning, software as a service, web services},
+location = {Shanghai, China},
+series = {UCC '16}
+}
+
+@inproceedings{10.1145/2816839.2816875,
+author = {Ilyas, Bambrik and Fedoua, Didi},
+title = {A Load Management Algorithm For Wireless Mesh Networks},
+year = {2015},
+isbn = {9781450334587},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2816839.2816875},
+doi = {10.1145/2816839.2816875},
+abstract = {The WMN (Wireless Mesh Network) is a new emerging technology that can render the field
+of industrial network more efficient and profitable. Due to its versatility that allows
+a flexible configuration, this kind of network is commonly considered as a very suitable
+architecture for mobile clients. The difference between the WMNs and other dynamic
+networks, such as the MANET (Mobile Ad-hoc Network), is that the Mesh network contains
+static wireless nodes called MR (Mesh Routers). Consequently, the presence of this
+infrastructure makes the WMN more suitable to provide QoS (Quality of Service). However,
+the guarantee of QoS in a dynamic topology is a difficult task by comparison with
+static networks. These difficulties are caused by the random movement of the clients,
+the shared nature of the wireless channel, the complexity of multi-hop communications
+and most importantly the management of the traffic load forwarded through the MRs.
+In this paper, we propose a new algorithm for load balancing in WMN that can search
+for alternative paths in order to deviate from the loaded MRs. The proposed algorithm
+can operate with different metrics at the same time and applies the Genetic Algorithm
+in case there is a large population of possible solutions.},
+booktitle = {Proceedings of the International Conference on Intelligent Information Processing, Security and Advanced Communication},
+articleno = {46},
+numpages = {6},
+keywords = {traffic load, WMN, mobile clients, Mesh Routers, Genetic Algorithm, QoS},
+location = {Batna, Algeria},
+series = {IPAC '15}
+}
+
+@inproceedings{10.1145/3298689.3346961,
+author = {Panteli, Maria},
+title = {Recommendation Systems Compliant with Legal and Editorial Policies: The BBC+ App Journey},
+year = {2019},
+isbn = {9781450362436},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3298689.3346961},
+doi = {10.1145/3298689.3346961},
+abstract = {The BBC produces thousands of pieces of content every day and numerous BBC products
+deliver this content to millions of users. For many years the content has been manually
+curated (this is evident in the selection of stories on the front page of the BBC
+News website and app for example). To support content creation and curation, a set
+of editorial guidelines have been developed to build quality and trust in the BBC.
+As personalisation becomes more important for audience engagement, we have been exploring
+how algorithmically-driven recommendations could be integrated in our products. In
+this talk we describe how we developed recommendation systems for the BBC+ app that
+comply with legal and editorial policies and promote the values of the organisation.
+We also discuss the challenges we face moving forward, extending the use of recommendation
+systems for a public service media organisation like the BBC.The BBC+ app is the first
+product to host in-house recommendations in a fully algorithmically-driven application.
+The app surfaces short video clips and is targeted at younger audiences. The first
+challenge we dealt with was content metadata. Content metadata are created for different
+purposes and managed by different teams across the organisation making it difficult
+to have reliable and consistent information. Metadata enrichment strategies have been
+applied to identify content that is considered to be editorially sensitive, such as
+political content, current legal cases, archived news, commercial content, and content
+unsuitable for an under 16 audience. Metadata enrichment is also applied to identify
+content that due care has not been taken such as poor titles, and spelling and grammar
+mistakes. The first versions of recommendation algorithms exclude all editorially
+risky content from the recommendations, the most serious of which is avoiding contempt
+of court. In other cases we exclude content that could undermine our quality and trustworthiness.The
+General Data Protection Regulation (GDPR) that recently came into effect had strong
+implications on the design of our system architecture, the choice of the recommendation
+models, and the implementation of specific product features. For example, the user
+should be able to delete their data or switch off personalisation at any time. Our
+system architecture should allow us to trace down and delete all data from that user
+and switch to non-personalised content. The recommendations should also be explainable
+and this led us to sometimes choosing a simpler model so that it is possible to more
+easily explain why a user was recommended a particular type of content. Specific product
+features were also added to enhance transparency and explainability. For example,
+the user could view their history of watched items, delete any item, and get an explanation
+of why a piece of content was recommended to them.At the BBC we aim to not only entertain
+our audiences but also to inform and educate. These BBC values are also reflected
+in our evaluation strategies and metrics. While we aim to increase audience engagement
+we are also responsible for providing recent and diverse content that meets the needs
+of all our audiences. Accuracy metrics such as Hit Rate and Normalized Discounted
+Cumulative Gain (NDCG) can give a good estimate of the predictive performance of the
+model. However, recency and diversity metrics have sometimes more weight in our products,
+especially in applications delivering news content. What is more, qualitative evaluation
+is very important before releasing any new model into production. We work closely
+with editorial teams who provide feedback on the quality of the recommendations and
+flag content not adhering to the BBC's values or the legal and editorial policies.The
+development of the BBC+ app has been a great journey. We learned a lot about our content
+metadata, the implications of GDPR in our system, and our evaluation strategies. We
+created a minimum viable product that is compliant with legal and editorial policies.
+However, a lot needs to be done to ensure the recommendations meet the quality standards
+of the BBC. While excluding editorially sensitive content has limited the risk of
+contempt of court, algorithmic fairness and impartiality still need to be addressed.
+We encourage the community to look more into these topics and help us create the way
+forward towards applications with responsible machine learning.},
+booktitle = {Proceedings of the 13th ACM Conference on Recommender Systems},
+pages = {529},
+numpages = {1},
+keywords = {recommendations, public service, technology policy},
+location = {Copenhagen, Denmark},
+series = {RecSys '19}
+}
+
+@inproceedings{10.1145/3204949.3204976,
+author = {Mekuria, Rufael and McGrath, Michael J. and Riccobene, Vincenzo and Bayon-Molino, Victor and Tselios, Christos and Thomson, John and Dobrodub, Artem},
+title = {Automated Profiling of Virtualized Media Processing Functions Using Telemetry and Machine Learning},
+year = {2018},
+isbn = {9781450351928},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3204949.3204976},
+doi = {10.1145/3204949.3204976},
+abstract = {Most media streaming services are composed by different virtualized processing functions
+such as encoding, packaging, encryption, content stitching etc. Deployment of these
+functions in the cloud is attractive as it enables flexibility in deployment options
+and resource allocation for the different functions. Yet, most of the time overprovisioning
+of cloud resources is necessary in order to meet demand variability. This can be costly,
+especially for large scale deployments. Prior art proposes resource allocation based
+on analytical models that minimize the costs of cloud deployments under a quality
+of service (QoS) constraint. However, these models do not sufficiently capture the
+underlying complexity of services composed of multiple processing functions. Instead,
+we introduce a novel methodology based on full-stack telemetry and machine learning
+to profile virtualized or cloud native media processing functions individually. The
+basis of the approach consists of investigating 4 categories of performance metrics:
+throughput, anomaly, latency and entropy (TALE) in offline (stress tests) and online
+setups using cloud telemetry. Machine learning is then used to profile the media processing
+function in the targeted cloud/NFV environment and to extract the most relevant cloud
+level Key Performance Indicators (KPIs) that relate to the final perceived quality
+and known client side performance indicators. The results enable more efficient monitoring,
+as only KPI related metrics need to be collected, stored and analyzed, reducing the
+storage and communication footprints by over 85%. In addition a detailed overview
+of the functions behavior was obtained, enabling optimized initial configuration and
+deployment, and more fine-grained dynamic online resource allocation reducing overprovisioning
+and avoiding function collapse. We further highlight the next steps towards cloud
+native carrier grade virtualized processing functions relevant for future network
+architectures such as in emerging 5G architectures.},
+booktitle = {Proceedings of the 9th ACM Multimedia Systems Conference},
+pages = {150–161},
+numpages = {12},
+keywords = {characterization, video streaming, experimentation, cloud computing, telemetry, performance},
+location = {Amsterdam, Netherlands},
+series = {MMSys '18}
+}
+
+@inproceedings{10.1145/2749469.2750422,
+author = {Zhang, Tianwei and Lee, Ruby B.},
+title = {CloudMonatt: An Architecture for Security Health Monitoring and Attestation of Virtual Machines in Cloud Computing},
+year = {2015},
+isbn = {9781450334020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2749469.2750422},
+doi = {10.1145/2749469.2750422},
+abstract = {Cloud customers need guarantees regarding the security of their virtual machines (VMs),
+operating within an Infrastructure as a Service (IaaS) cloud system. This is complicated
+by the customer not knowing where his VM is executing, and on the semantic gap between
+what the customer wants to know versus what can be measured in the cloud. We present
+an architecture for monitoring a VM's security health, with the ability to attest
+this to the customer in an unforgeable manner. We show a concrete implementation of
+property-based attestation and a full prototype based on the OpenStack open source
+cloud software.},
+booktitle = {Proceedings of the 42nd Annual International Symposium on Computer Architecture},
+pages = {362–374},
+numpages = {13},
+location = {Portland, Oregon},
+series = {ISCA '15}
+}
+
+@article{10.1145/2872887.2750422,
+author = {Zhang, Tianwei and Lee, Ruby B.},
+title = {CloudMonatt: An Architecture for Security Health Monitoring and Attestation of Virtual Machines in Cloud Computing},
+year = {2015},
+issue_date = {June 2015},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {43},
+number = {3S},
+issn = {0163-5964},
+url = {https://doi.org/10.1145/2872887.2750422},
+doi = {10.1145/2872887.2750422},
+abstract = {Cloud customers need guarantees regarding the security of their virtual machines (VMs),
+operating within an Infrastructure as a Service (IaaS) cloud system. This is complicated
+by the customer not knowing where his VM is executing, and on the semantic gap between
+what the customer wants to know versus what can be measured in the cloud. We present
+an architecture for monitoring a VM's security health, with the ability to attest
+this to the customer in an unforgeable manner. We show a concrete implementation of
+property-based attestation and a full prototype based on the OpenStack open source
+cloud software.},
+journal = {SIGARCH Comput. Archit. News},
+month = jun,
+pages = {362–374},
+numpages = {13}
+}
+
+@inproceedings{10.1145/3281411.3281426,
+author = {Xhonneux, Mathieu and Duchene, Fabien and Bonaventure, Olivier},
+title = {Leveraging EBPF for Programmable Network Functions with IPv6 Segment Routing},
+year = {2018},
+isbn = {9781450360807},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3281411.3281426},
+doi = {10.1145/3281411.3281426},
+abstract = {With the advent of Software Defined Networks (SDN), Network Function Virtualisation
+(NFV) or Service Function Chaining (SFC), operators expect networks to support flexible
+services beyond the mere forwarding of packets. The network programmability framework
+which is being developed within the IETF by leveraging IPv6 Segment Routing enables
+the realisation of in-network functions.In this paper, we demonstrate that this vision
+of in-network programmability can be realised. By leveraging the eBPF support in the
+Linux kernel, we implement a flexible framework that allows network operators to encode
+their own network functions as eBPF code that is automatically executed while processing
+specific packets. Our lab measurements indicate that the overhead of calling such
+eBPF functions remains acceptable. Thanks to eBPF, operators can implement a variety
+of network functions. We describe the architecture of our implementation in the Linux
+kernel. This extension has been released with Linux 4.18. We illustrate the flexibility
+of our approach with three different use cases: delay measurements, hybrid networks
+and network discovery. Our lab measurements also indicate that the performance penalty
+of running eBPF network functions on Linux routers does not incur a significant overhead.},
+booktitle = {Proceedings of the 14th International Conference on Emerging Networking EXperiments and Technologies},
+pages = {67–72},
+numpages = {6},
+location = {Heraklion, Greece},
+series = {CoNEXT '18}
+}
+
+@inproceedings{10.1145/3288599.3295582,
+author = {Shah, Ryan and Nagaraja, Shishir},
+title = {Do We Have the Time for IRM? Service Denial Attacks and SDN-Based Defences},
+year = {2019},
+isbn = {9781450360944},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3288599.3295582},
+doi = {10.1145/3288599.3295582},
+abstract = {Distributed sensor networks such as IoT deployments generate large quantities of measurement
+data. Often, the analytics that runs on this data is available as a web service which
+can be purchased for a fee. A major concern in the analytics ecosystem is ensuring
+the security of the data. Often, companies offer Information Rights Management (IRM)
+as a solution to the problem of managing usage and access rights of the data that
+transits administrative boundaries. IRM enables individuals and corporations to create
+restricted IoT data, which can have its flow from organisation to individual control
+- disabling copying, forwarding, and allowing timed expiry. We describe our investigations
+into this functionality and uncover a weak-spot in the architecture - its dependence
+upon the accurate global availability of time. We present an amplified denial-of-service
+attack which attacks time synchronisation and could prevent all the users in an organisation
+from reading any sort of restricted data until their software has been re-installed
+and re-configured. We argue that IRM systems built on current technology will be too
+fragile for businesses to risk widespread use. We also present defences that leverage
+the capabilities of Software-Defined Networks to apply a simple filter-based approach
+to detect and isolate attack traffic.},
+booktitle = {Proceedings of the 20th International Conference on Distributed Computing and Networking},
+pages = {496–501},
+numpages = {6},
+location = {Bangalore, India},
+series = {ICDCN '19}
+}
+
+@article{10.1109/TNET.2014.2354262,
+author = {Adhikari, Vijay K. and Guo, Yang and Hao, Fang and Hilt, Volker and Zhang, Zhi-Li and Varvello, Matteo and Steiner, Moritz},
+title = {Measurement Study of Netflix, Hulu, and a Tale of Three CDNs},
+year = {2015},
+issue_date = {December 2015},
+publisher = {IEEE Press},
+volume = {23},
+number = {6},
+issn = {1063-6692},
+url = {https://doi.org/10.1109/TNET.2014.2354262},
+doi = {10.1109/TNET.2014.2354262},
+abstract = {Netflix and Hulu are leading Over-the-Top (OTT) content service providers in the US
+and Canada. Netflix alone accounts for 29.7% of the peak downstream traffic in the
+US in 2011. Understanding the system architectures and performance of Netflix and
+Hulu can shed light on the design of such large-scale video streaming platforms, and
+help improving the design of future systems. In this paper, we perform extensive measurement
+study to uncover their architectures and service strategies. Netflix and Hulu bear
+many similarities. Both Netflix and Hulu video streaming platforms rely heavily on
+the third-party infrastructures, with Netflix migrating that majority of its functions
+to the Amazon cloud, while Hulu hosts its services out of Akamai. Both service providers
+employ the same set of three content distribution networks (CDNs) in delivering the
+video contents. Using active measurement study, we dissect several key aspects of
+OTT streaming platforms of Netflix and Hulu, e.g., employed streaming protocols, CDN
+selection strategy, user experience reporting, etc. We discover that both platforms
+assign the CDN to a video request without considering the network conditions and optimizing
+the user-perceived video quality. We further conduct the performance measurement studies
+of the three CDNs employed by Netflix and Hulu. We show that the available bandwidths
+on all three CDNs vary significantly over the time and over the geographic locations.
+We propose a measurement-based adaptive CDN selection strategy and a multiple-CDN-based
+video delivery strategy that can significantly increase users' average available bandwidth.},
+journal = {IEEE/ACM Trans. Netw.},
+month = dec,
+pages = {1984–1997},
+numpages = {14},
+keywords = {content distribution networks (CDN), Hulu, over-the-top (OTT) content service, video streaming, Netflix, CDN selection strategy}
+}
+
+@inproceedings{10.1109/CCGrid.2014.50,
+author = {Tolosana-Calasanz, Rafael and Ba\~{n}ares, Jos\'{e} \'{A}ngel and Rana, Omer and Pham, Congduc and Xydas, Erotokritos and Marmaras, Charalampos and Papadopoulos, Panagiotis and Cipcigan, Liana},
+title = {Enforcing Quality of Service on OpenNebula-Based Shared Clouds},
+year = {2014},
+isbn = {9781479927838},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGrid.2014.50},
+doi = {10.1109/CCGrid.2014.50},
+abstract = {With an increase in the number of monitoring sensors deployed on physical infrastructures,
+there is a corresponding increase in data volumes that need to be processed. Data
+measured or collected by sensors is typically processed at destination or "in-transit"
+(i.e. from data capture to delivery to a user). When such data are processed in-transit
+over a shared distributed computing infrastructure, it is useful to provide elastic
+computational capability which can be adapted based on processing requirements and
+demand. Where Service Level Agreements (SLAs) have been pre-agreed, such available
+computational capacity needs to be shared in such a way that any Quality of Service
+related constraints in such SLAs are not violated. This is particularly challenging
+for time critical applications and with highly variable and unpredictable rates of
+data generation (e.g. in Smart Grid applications where energy usage patterns may change
+unpredictably). Previously, we proposed a Reference net based architectural model
+for supporting QoS for multiple concurrent data streams being processed (prior to
+delivery to a user) over a shared infrastructure. In this paper, we describe a practical
+realisation of this architecture using the OpenNebula Cloud platform. We consider
+our infrastructure to be composed of a number of nodes, each of which has multiple
+processing units and data buffers. We utilize the "token bucket" model for regulating,
+on a per stream basis, the data injection rate into each node. We subsequently demonstrate
+how a streaming pipeline can be supported and managed using a dynamic control strategy
+at each node.},
+booktitle = {Proceedings of the 14th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing},
+pages = {651–659},
+numpages = {9},
+location = {Chicago, Illinois},
+series = {CCGRID '14}
+}
+
+@inproceedings{10.1145/3154273.3154316,
+author = {Talasila, Prasad and Kakrambe, Mihir and Rai, Anurag and Santy, Sebastin and Goveas, Neena and Deshpande, Bharat M.},
+title = {BITS Darshini: A Modular, Concurrent Protocol Analyzer Workbench},
+year = {2018},
+isbn = {9781450363723},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3154273.3154316},
+doi = {10.1145/3154273.3154316},
+abstract = {Network measurements are essential for troubleshooting and active management of networks.
+Protocol analysis of captured network packet traffic is an important passive network
+measurement technique used by researchers and network operations engineers. In this
+work, we present a measurement workbench tool named BITS Darshini (Darshini in short)
+to enable scientific network measurements.We have created Darshini as a modular, concurrent
+web application that stores experimental meta-data and allows users to specify protocol
+parse graphs. Darshini performs protocol analysis on a concurrent pipeline architecture,
+persists the analysis to a database and provides the analysis results via a REST API
+service. We formulate the problem of mapping protocol parse graph to a concurrent
+pipeline as a graph embedding problem. Our tool, Darshini, performs protocol analysis
+up to transport layer and is suitable for the study of small and medium-sized networks.
+Darshini enables secure collaboration and consultations with experts.},
+booktitle = {Proceedings of the 19th International Conference on Distributed Computing and Networking},
+articleno = {54},
+numpages = {10},
+keywords = {collaborative analysis, packet analyzer, measurement workbench, concurrent packet analysis, protocol parse graph, graph embedding, Network measurements},
+location = {Varanasi, India},
+series = {ICDCN '18}
+}
+
+@inproceedings{10.1145/2984393.2984398,
+author = {Tomtsis, Dimitrios and Kontogiannis, Sotirios and Kokkonis, George and Zinas, Nicholas},
+title = {IoT Architecture for Monitoring Wine Fermentation Process of Debina Variety Semi-Sparkling Wine},
+year = {2016},
+isbn = {9781450348102},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2984393.2984398},
+doi = {10.1145/2984393.2984398},
+abstract = {This paper proposes a new system architecture and HTTP communication mechanism called
+Smart Barrel System (Wine-SBS) for the process of monitoring Debina varietal sparkling
+wine fermenting conditions, produced at the area of Zitsa Epirus, Greece. The system
+includes microcontroller equipment with sensors that monitor wine attributes and storage
+conditions, called CBS-sensor transceivers, which are distributed among the debina
+fermentation vessels. The transmission of measurements, which occur periodically,
+are sent to a central cloud system application service. The CBS-sensor data are collected
+by a CBS-sensor collector and then follows an HTTP/2 request of multiplexed HTTP flows
+to a remote application server.},
+booktitle = {Proceedings of the SouthEast European Design Automation, Computer Engineering, Computer Networks and Social Media Conference},
+pages = {42–47},
+numpages = {6},
+keywords = {wireless sensor network, Precision enology, wine fermentation monitoring system},
+location = {Kastoria, Greece},
+series = {SEEDA-CECNSM '16}
+}
+
+@article{10.1109/TNET.2017.2746011,
+author = {Sapountzis, Nikolaos and Spyropoulos, Thrasyvoulos and Nikaein, Navid and Salim, Umer},
+title = {User Association in HetNets: Impact of Traffic Differentiation and Backhaul Limitations},
+year = {2017},
+issue_date = {December 2017},
+publisher = {IEEE Press},
+volume = {25},
+number = {6},
+issn = {1063-6692},
+url = {https://doi.org/10.1109/TNET.2017.2746011},
+doi = {10.1109/TNET.2017.2746011},
+abstract = {Operators, struggling to continuously add capacity and upgrade their architecture
+to keep up with data traffic increase, are turning their attention to denser deployments
+that improve spectral efficiency. Denser deployments make the problem of user association
+challenging, and much work has been devoted to finding algorithms that strike a tradeoff
+between user quality of service, and network-wide performance load-balancing. Nevertheless,
+the majority of these algorithms typically consider simple setups with a single type
+of traffic, usually elastic non-guaranteed bit rate GBR. They also focus on the radio
+access part, ignoring the backhaul topology and potential capacity limitations. Backhaul
+constraints are emerging as a key performance bottleneck in future networks, partly
+due to the continuous improvement of the radio interface, and partly due to the need
+for inexpensive backhaul links to reduce capital and operational expenditures. To
+this end, we propose an analytical framework for user association that jointly considers
+radio access and backhaul network performance. Specifically, we derive an algorithm
+that takes into account spectral efficiency, base station load, backhaul link capacities
+and topology, and two traffic classes GBR and non-GBR in both the uplink and downlink
+directions. We prove analytically an optimal user association rule that ends up maximizing
+either an arithmetic or a weighted harmonic mean of the achieved performance along
+different dimensions e.g., uplink and downlink performances or GBR and non-GBR performances.
+We then use extensive simulations to study the impact of: 1 traffic differentiation;
+and 2 backhaul capacity limitations and topology on key performance metrics.},
+journal = {IEEE/ACM Trans. Netw.},
+month = dec,
+pages = {3396–3410},
+numpages = {15}
+}
+
+@inproceedings{10.1145/2684822.2697043,
+author = {Lattanzi, Silvio and Mirrokni, Vahab},
+title = {Distributed Graph Algorithmics: Theory and Practice},
+year = {2015},
+isbn = {9781450333177},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2684822.2697043},
+doi = {10.1145/2684822.2697043},
+abstract = {As a fundamental tool in modeling and analyzing social, and information networks,
+large-scale graph mining is an important component of any tool set for big data analysis.
+Processing graphs with hundreds of billions of edges is only possible via developing
+distributed algorithms under distributed graph mining frameworks such as MapReduce,
+Pregel, Gigraph, and alike. For these distributed algorithms to work well in practice,
+we need to take into account several metrics such as the number of rounds of computation
+and the communication complexity of each round. For example, given the popularity
+and ease-of-use of MapReduce framework, developing practical algorithms with good
+theoretical guarantees for basic graph algorithms is a problem of great importance.In
+this tutorial, we first discuss how to design and implement algorithms based on traditional
+MapReduce architecture. In this regard, we discuss various basic graph theoretic problems
+such as computing connected components, maximum matching, MST, counting triangle and
+overlapping or balanced clustering. We discuss a computation model for MapReduce and
+describe the sampling, filtering, local random walk, and core-set techniques to develop
+efficient algorithms in this framework. At the end, we explore the possibility of
+employing other distributed graph processing frameworks. In particular, we study the
+effect of augmenting MapReduce with a distributed hash table (DHT) service and also
+discuss the use of a new graph processing framework called ASYMP based on asynchronous
+message-passing method. In particular, we will show that using ASyMP, one can improve
+the CPU usage, and achieve significantly improved running time.},
+booktitle = {Proceedings of the Eighth ACM International Conference on Web Search and Data Mining},
+pages = {419–420},
+numpages = {2},
+keywords = {parallel computing, mapreduce algorithms, large scale data-mining},
+location = {Shanghai, China},
+series = {WSDM '15}
+}
+
+@inproceedings{10.1145/2578153.2583037,
+author = {Chrobot, Nina},
+title = {The Role of Processing Fluency in Online Consumer Behavior: Evaluating Fluency by Tracking Eye Movements},
+year = {2014},
+isbn = {9781450327510},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2578153.2583037},
+doi = {10.1145/2578153.2583037},
+abstract = {The Internet enables people to extensively research products or services, and also
+easily compare prices between offers [e.g. Baker et al. 2001]. Taking into account
+the amount of information available on the Internet, acquisition of new information
+can face some difficulties, especially when one wants to make a purchase decision.
+Therefore, the ability to process relevant information fluently enables a user to
+create a better experience and to become more efficient in gathering information related
+to the purpose of the visit. This ability might be connected to the cognitive task
+that can either be effortless or effortful, and may lead to a metacognitive experience
+of either fluency or disfluency [Alter and Oppenheimer 2009]. Nevertheless, some e-commerce
+websites are preferred over others and this preference varies between individuals.
+This variation can be influenced by user's prior experience, cognitive sources but
+also graphics or information architecture on the web page. Presented project aims
+at applying the fluency concept to consumer behavior in online environment by studying
+eye movements and promoting eye tracking as an objective measure.},
+booktitle = {Proceedings of the Symposium on Eye Tracking Research and Applications},
+pages = {387–388},
+numpages = {2},
+location = {Safety Harbor, Florida},
+series = {ETRA '14}
+}
+
+@inproceedings{10.1145/3372224.3419195,
+author = {Zhang, Chaoyun and Fiore, Marco and Ziemlicki, Cezary and Patras, Paul},
+title = {Microscope: Mobile Service Traffic Decomposition for Network Slicing as a Service},
+year = {2020},
+isbn = {9781450370851},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3372224.3419195},
+doi = {10.1145/3372224.3419195},
+abstract = {The growing diversification of mobile services imposes requirements on network performance
+that are ever more stringent and heterogeneous. Network slicing aligns mobile network
+operation to this context, by enabling operators to isolate and customize network
+resources on a per-service basis. A key input for provisioning resources to slices
+is real-time information about the traffic demands generated by individual services.
+Acquiring such knowledge is however challenging, as legacy approaches based on in-depth
+inspection of traffic streams have high computational costs, which inflate with the
+widening adoption of encryption over data and control traffic. In this paper, we present
+a new approach to service-level demand estimation for slicing, which hinges on decomposition,
+i.e., the inference of per-service demands from traffic aggregates. By operating on
+total traffic volumes only, our approach overcomes the complexity and limitations
+of legacy traffic classification techniques, and provides a suitable input to recent 'Network Slice as a Service' (NSaaS) models. We implement decomposition through Microscope,
+a novel framework that uses deep learning to infer individual service demands from
+complex spatiotemporal features hidden in traffic aggregates. Microscope (i) transforms
+traffic data collected in irregular radio access deployments in a format suitable
+for convolutional learning, and (ii) can accommodate a variety of neural network architectures,
+including original 3D Deformable Convolutional Neural Networks (3D-DefCNNs) that we
+explicitly design for decomposition. Experiments with measurement data collected in
+an operational network demonstrate that Microscope accurately estimates per-service
+traffic demands with relative errors below 1.2%. Further, tests in practical NSaaS
+management use cases show that resource allocations informed by decomposition yield
+affordable costs for the mobile network operator.},
+booktitle = {Proceedings of the 26th Annual International Conference on Mobile Computing and Networking},
+articleno = {38},
+numpages = {14},
+keywords = {neural networks, traffic decomposition, service demand estimation, network slicing, mobile network data traffic, deep learning},
+location = {London, United Kingdom},
+series = {MobiCom '20}
+}
+

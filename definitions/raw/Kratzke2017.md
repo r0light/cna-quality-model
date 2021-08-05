@@ -1,0 +1,14 @@
+# Definition by Kratzke & Quint 2017
+
+Kratzke, N. & Quint, P.-C.
+Understanding Cloud-native Applications after 10 Years of Cloud Computing - A Systematic Mapping Study 
+Journal of Systems and Software, Journal of Systems and Software, 2017, 126, 1-16 
+
+A cloud-native application (CNA) is a distributed, elastic and horizontal scalable system composed of (micro)services which isolates state in a minimum of stateful components. The application and each self-contained deployment unit of that application is designed according to cloud-focused design patterns and operated on a self-service elastic platform.
+
+*   **Elasticity** is “the degree to which a system is able to adapt to workload changes by provisioning and de-provisioning resources in an autonomic manner, such that at each point in time the available resources match the current demand as closely as possible” and has been already defined by Herbst et al. (2013) .
+*   **Scalability** can be differentiated to “structural scalability and load scalability. Structural scalability is the ability of a system to expand in a chosen dimension 5 without major modifications to its architecture. Load scalability is the ability of a system to perform gracefully as the offered traffic increases” ( Bondi, 20 0 0 ).
+*   **Microservices** are understood as an architectural style to develop “a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies” ( Martin Fowler, 2014b ).
+*   **Self-contained deployment unit** is understood as “a part of the application’s deployment topology for realizing a specific technical unit” ( Inzinger et al., 2014 ) . More and more often a deployment unit is understood as “a standard container. The goal of a standard container is to encapsulate a software component and all its dependencies in a format that is self-describing and portable, so that any compliant runtime can run it without extra dependencies, regardless of the underlying machine and the contents of the container”. This is the understanding of the Open Container Initiative (OCI) which is explained in the 5 principles of standard containers ( Open Container Initiative, 2015 ).
+*   **Stateful components** are used for “multiple instances of a scaled-out application component (to) synchronize their internal state to provide a unified behavior” ( Fehling et al., 2014 ).
+*   **Elastic platform** is understood as a “middleware for the execution of custom applications, their communication, and data storage is offered via a self-service interface over a network” ( Fehling et al., 2014 ).

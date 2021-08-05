@@ -1,0 +1,1581 @@
+@inproceedings{10.1145/2882903.2882943,
+author = {Kalyvianaki, Evangelia and Fiscato, Marco and Salonidis, Theodoros and Pietzuch, Peter},
+title = {THEMIS: Fairness in Federated Stream Processing under Overload},
+year = {2016},
+isbn = {9781450335317},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2882903.2882943},
+doi = {10.1145/2882903.2882943},
+abstract = {Federated stream processing systems, which utilise nodes from multiple independent
+domains, can be found increasingly in multi-provider cloud deployments, internet-of-things
+systems, collaborative sensing applications and large-scale grid systems. To pool
+resources from several sites and take advantage of local processing, submitted queries
+are split into query fragments, which are executed collaboratively by different sites.
+When supporting many concurrent users, however, queries may exhaust available processing
+resources, thus requiring constant load shedding. Given that individual sites have
+autonomy over how they allocate query fragments on their nodes, it is an open challenge
+how to ensure global fairness on processing quality experienced by queries in a federated
+scenario.We describe THEMIS, a federated stream processing system for resource-starved,
+multi-site deployments. It executes queries in a globally fair fashion and provides
+users with constant feedback on the experienced processing quality for their queries.
+THEMIS associates stream data with its source information content (SIC), a metric
+that quantifies the contribution of that data towards the query result, based on the
+amount of source data used to generate it. We provide the BALANCE-SIC distributed
+load shedding algorithm that balances the SIC values of result data. Our evaluation
+shows that the BALANCE-SIC algorithm yields balanced SIC values across queries, as
+measured by Jain's Fairness Index. Our approach also incurs a low execution time overhead.},
+booktitle = {Proceedings of the 2016 International Conference on Management of Data},
+pages = {541–553},
+numpages = {13},
+keywords = {federated data stream processing, fairness, tuple shedding, approximate data processing},
+location = {San Francisco, California, USA},
+series = {SIGMOD '16}
+}
+
+@inproceedings{10.1109/IPSN.2018.00046,
+author = {Islam, Bashima and Islam, Md Tamzeed and Nirjon, Shahriar},
+title = {Glimpse.3D: A Motion-Triggered Stereo Body Camera for 3D Experience Capture and Preview},
+year = {2018},
+isbn = {9781538652985},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/IPSN.2018.00046},
+doi = {10.1109/IPSN.2018.00046},
+abstract = {The Glimpse.3D is a body-worn camera that captures, processes, stores, and transmits
+3D visual information of a real-world environment using a low cost camera-based sensor
+system that is constrained by its limited processing capability, storage, and battery
+life. The 3D content is viewed on a mobile device such as a smartphone or a virtual
+reality headset. This system can be used in applications such as capturing and sharing
+3D content in the social media, training people in different professions, and post-facto
+analysis of an event. Glimpse.3D uses off-the-shelf hardware and standard computer
+vision algorithms. Its novelty lies in the ability to optimally control camera data
+acquisition and processing stages to guarantee the desired quality of captured information
+and battery life. The design of the controller is based on extensive measurements
+and modeling of the relationships between the linear and angular motion of a body-worn
+camera and the quality of generated 3D point clouds as well as the battery life of
+the system. To achieve this, we 1) devise a new metric to quantify the quality of
+generated 3D point clouds, 2) formulate an optimization problem to find an optimal
+trigger point for the camera system that prolongs its battery life while maximizing
+the quality of captured 3D environment, and 3) make the model adaptive so that the
+system evolves and its performance improves over time.},
+booktitle = {Proceedings of the 17th ACM/IEEE International Conference on Information Processing in Sensor Networks},
+pages = {176–187},
+numpages = {12},
+keywords = {body camera, 3D-reconstruction},
+location = {Porto, Portugal},
+series = {IPSN '18}
+}
+
+@inproceedings{10.1109/IPSN.2018.00030,
+author = {Islam, Bashima and Islam, Md Tamzeed and Nirjon, Shahriar},
+title = {A Motion-Triggered Stereo Camera for 3D Experience Capture: Demo Abstract},
+year = {2018},
+isbn = {9781538652985},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/IPSN.2018.00030},
+doi = {10.1109/IPSN.2018.00030},
+abstract = {This demo is an implementation of our motion-triggered camera system that captures,
+processes, stores, and transmits 3D visual information of a real-world environment
+using a low-cost camera-based sensor system that is constrained by its limited processing
+capability, storage, and battery life. This system can be used in applications such
+as capturing and sharing 3D content in the social media, training people in different
+professions, and post-facto analysis of an event. This system uses off-the-shelf hardware
+and standard computer vision algorithms. Its novelty lies in the ability to optimally
+control camera data acquisition and processing stages to guarantee the desired quality
+of captured information and battery life. The design of the controller is based on
+extensive measurements and modeling of the relationships between the linear and angular
+motion of a camera and the quality of generated 3D point clouds as well as the battery
+life of the system. To achieve this, we 1) devise a new metric to quantify the quality
+of generated 3D point clouds, 2) formulate an optimization problem to find an optimal
+trigger point for the camera system and prolongs its battery life while maximizing
+the quality of captured 3D environment, and 3) make the model adaptive so that the
+system evolves and its performance improves over time.},
+booktitle = {Proceedings of the 17th ACM/IEEE International Conference on Information Processing in Sensor Networks},
+pages = {134–135},
+numpages = {2},
+location = {Porto, Portugal},
+series = {IPSN '18}
+}
+
+@inproceedings{10.1145/3466772.3467048,
+author = {Kassir, Saadallah and de Veciana, Gustavo and Wang, Nannan and Wang, Xi and Palacharla, Paparao},
+title = {Joint Update Rate Adaptation in Multiplayer Cloud-Edge Gaming Services: Spatial Geometry and Performance Tradeoffs},
+year = {2021},
+isbn = {9781450385589},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3466772.3467048},
+doi = {10.1145/3466772.3467048},
+abstract = {In this paper, we analyze the performance of Multiplayer Cloud Gaming (MCG) systems.
+To that end, we introduce a model and new MCG-Quality of Service (QoS) metric that
+captures the freshness of the players' updates and fairness in their gaming experience.
+We introduce an efficient measurement-based Joint Multiplayer Rate Adaptation (JMRA)
+algorithm that optimizes the MCG-QoS by overcoming large (possibly varying) network
+transport delays by increasing the associated players' update rates. The resulting
+MCG-QoS is shown to be Schur-concave in the network delays, leading to natural characterizations
+and performance comparisons associated with the players' spatial geometry and network
+congestion. In particular, joint rate adaptation enables service providers to combat
+variability in network delays and players' geographic spread to achieve high service
+coverage. This, in turn, allows us to explore the spatial density and capacity of
+compute resources that need to be provisioned. Finally, we leverage tools from majorization
+theory, to show how service placement decisions can be made to improve the robustness
+of the MCG-QoS to stochastic network delays.},
+booktitle = {Proceedings of the Twenty-Second International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing},
+pages = {191–200},
+numpages = {10},
+keywords = {Rate Adaptation, Multiplayer Cloud Gaming, Network Resource Provisioning, Service Placement, Edge Computing},
+location = {Shanghai, China},
+series = {MobiHoc '21}
+}
+
+@article{10.1109/TNET.2019.2900434,
+author = {Al-Abbasi, Abubakr O. and Aggarwal, Vaneet and Ra, Moo-Ryong},
+title = {Multi-Tier Caching Analysis in CDN-Based Over-the-Top Video Streaming Systems},
+year = {2019},
+issue_date = {April 2019},
+publisher = {IEEE Press},
+volume = {27},
+number = {2},
+issn = {1063-6692},
+url = {https://doi.org/10.1109/TNET.2019.2900434},
+doi = {10.1109/TNET.2019.2900434},
+abstract = {Internet video traffic has been rapidly increasing and is further expected to increase
+with the emerging 5G applications, such as higher definition videos, the IoT, and
+augmented/virtual reality applications. As end users consume video in massive amounts
+and in an increasing number of ways, the content distribution network CDN should be
+efficiently managed to improve the system efficiency. The streaming service can include
+multiple caching tiers, at the distributed servers and the edge routers, and efficient
+content management at these locations affects the quality of experience QoE of the
+end users. In this paper, we propose a model for video streaming systems, typically
+composed of a centralized origin server, several CDN sites, and edge-caches located
+closer to the end user. We comprehensively consider different systems design factors,
+including the limited caching space at the CDN sites, allocation of CDN for a video
+request, choice of different ports or paths from the CDN and the central storage,
+bandwidth allocation, the edge-cache capacity, and the caching policy. We focus on
+minimizing a performance metric, stall duration tail probability SDTP, and present
+a novel and efficient algorithm accounting for the multiple design flexibilities.
+The theoretical bounds with respect to the SDTP metric are also analyzed and presented.
+The implementation of a virtualized cloud system managed by Openstack demonstrates
+that the proposed algorithms can significantly improve the SDTP metric compared with
+the baseline strategies.},
+journal = {IEEE/ACM Trans. Netw.},
+month = apr,
+pages = {835–847},
+numpages = {13}
+}
+
+@article{10.1145/3284360,
+author = {Dey, Tamal K. and Shi, Dayu and Wang, Yusu},
+title = {SimBa: An Efficient Tool for Approximating Rips-Filtration Persistence via <u class="uu">Sim</u>plicial <u class="uu">Ba</u>tch Collapse},
+year = {2019},
+issue_date = {2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {24},
+issn = {1084-6654},
+url = {https://doi.org/10.1145/3284360},
+doi = {10.1145/3284360},
+abstract = {In topological data analysis, a point cloud data P extracted from a metric space is
+often analyzed by computing the persistence diagram or barcodes of a sequence of Rips
+complexes built on P indexed by a scale parameter. Unfortunately, even for input of
+moderate size, the size of the Rips complex may become prohibitively large as the
+scale parameter increases. Starting with the Sparse Rips filtration introduced by
+Sheehy, some existing methods aim to reduce the size of the complex to improve time
+efficiency as well. However, as we demonstrate, existing approaches still fall short
+of scaling well, especially for high-dimensional data. In this article, we investigate
+the advantages and limitations of existing approaches. Based on insights gained from
+the experiments, we propose an efficient new algorithm, called SimBa, for approximating
+the persistent homology of Rips filtrations with quality guarantees. Our new algorithm
+leverages a batch-collapse strategy as well as a new Sparse Rips-like filtration.
+We experiment on a variety of low- and high-dimensional datasets. We show that our
+strategy presents a significant size reduction and that our algorithm for approximating
+Rips filtration persistence is an order of magnitude faster than existing methods
+in practice.},
+journal = {ACM J. Exp. Algorithmics},
+month = jan,
+articleno = {1.5},
+numpages = {16},
+keywords = {persistent homology, Topological data analysis, simplicial maps, approximation, rips filtration}
+}
+
+@inproceedings{10.1109/CCGrid.2016.56,
+author = {Ibrahim, Abdallah Ali Zainelabden A. and Kliazovich, Dzmitry and Bouvry, Pascal},
+title = {Service Level Agreement Assurance between Cloud Services Providers and Cloud Customers},
+year = {2016},
+isbn = {9781509024520},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGrid.2016.56},
+doi = {10.1109/CCGrid.2016.56},
+abstract = {Cloud services providers deliver cloud services to cloud customers on pay-per-use
+model while the quality of the provided services are defined using service level agreements
+also known as SLAs. Unfortunately, there is no standard mechanism which exists to
+verify and assure that delivered services satisfy the signed SLA agreement in an automatic
+way. There is no guarantee in terms of quality. Those applications have many performance
+metrics. In this doctoral thesis, we propose a framework for SLA assurance, which
+can be used by both cloud providers and cloud users. Inside the proposed framework,
+we will define the performance metrics for the different applications. We will assess
+the applications performance in different testing environment to assure good services
+quality as mentioned in SLA. The proposed framework will be evaluated through simulations
+and using testbed experiments. After testing the applications performance by measuring
+the performance metrics, we will review the time correlations between those metrics.},
+booktitle = {Proceedings of the 16th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing},
+pages = {588–591},
+numpages = {4},
+keywords = {simulation, data centers, performance, metrics, quality of experience, applications, quality of services, cloud computing, service level agreement},
+location = {Cartagena, Columbia},
+series = {CCGRID '16}
+}
+
+@inproceedings{10.1145/2872427.2883053,
+author = {Zhou, Ke and Redi, Miriam and Haines, Andrew and Lalmas, Mounia},
+title = {Predicting Pre-Click Quality for Native Advertisements},
+year = {2016},
+isbn = {9781450341431},
+publisher = {International World Wide Web Conferences Steering Committee},
+address = {Republic and Canton of Geneva, CHE},
+url = {https://doi.org/10.1145/2872427.2883053},
+doi = {10.1145/2872427.2883053},
+abstract = {Native advertising is a specific form of online advertising where ads replicate the
+look-and-feel of their serving platform. In such context, providing a good user experience
+with the served ads is crucial to ensure long-term user engagement. In this work,
+we explore the notion of ad quality, namely the effectiveness of advertising from
+a user experience perspective. We design a learning framework to predict the pre-click
+quality of native ads. More specifically, we look at detecting offensive native ads,
+showing that, to quantify ad quality, ad offensive user feedback rates are more reliable
+than the commonly used click-through rate metrics. We then conduct a crowd-sourcing
+study to identify which criteria drive user preferences in native advertising. We
+translate these criteria into a set of ad quality features that we extract from the
+ad text, image and advertiser, and then use them to train a model able to identify
+offensive ads. We show that our model is very effective in detecting offensive ads,
+and provide in-depth insights on how different features affect ad quality. Finally,
+we deploy a preliminary version of such model and show its effectiveness in the reduction
+of the offensive ad feedback rate.},
+booktitle = {Proceedings of the 25th International Conference on World Wide Web},
+pages = {299–310},
+numpages = {12},
+keywords = {native advertising, image and text, features, ad quality, ad feedback, offensive rate, pre-click experience},
+location = {Montr\'{e}al, Qu\'{e}bec, Canada},
+series = {WWW '16}
+}
+
+@inproceedings{10.1145/2713168.2723145,
+author = {Pegus, Patrick and Cecchet, Emmanuel and Shenoy, Prashant},
+title = {Video BenchLab: An Open Platform for Realistic Benchmarking of Streaming Media Workloads},
+year = {2015},
+isbn = {9781450333511},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2713168.2723145},
+doi = {10.1145/2713168.2723145},
+abstract = {In this paper, we present an open, flexible and realistic benchmarking platform named
+Video BenchLab to measure the performance of streaming media workloads. While Video
+BenchLab can be used with any existing media server, we provide a set of tools for
+researchers to experiment with their own platform and protocols. The components include
+a MediaDrop video server, a suite of tools to bulk insert videos and generate streaming
+media workloads, a dataset of freely available video and a client runtime to replay
+videos in the native video players of real Web browsers such as Firefox, Chrome and
+Internet Explorer. We define simple metrics that are able to capture the quality of
+video playback and identify issues that can happen during video replay. Finally, we
+provide a Dashboard to manage experiments, collect results and perform analytics to
+compare performance between experiments.We present a series of experiments with Video
+BenchLab to illustrate how the video specific metrics can be used to measure the user
+perceived experience in real browsers when streaming videos. We also show Internet
+scale experiments by deploying clients in data centers distributed all over the globe.
+All the software, datasets, workloads and results used in this paper are made freely
+available on SourceForge for anyone to reuse and expand.},
+booktitle = {Proceedings of the 6th ACM Multimedia Systems Conference},
+pages = {165–176},
+numpages = {12},
+keywords = {web browsers, streaming, video, benchmarking},
+location = {Portland, Oregon},
+series = {MMSys '15}
+}
+
+@article{10.1145/2816795.2818061,
+author = {Liao, Jing and Finch, Mark and Hoppe, Hugues},
+title = {Fast Computation of Seamless Video Loops},
+year = {2015},
+issue_date = {November 2015},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {34},
+number = {6},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/2816795.2818061},
+doi = {10.1145/2816795.2818061},
+abstract = {Short looping videos concisely capture the dynamism of natural scenes. Creating seamless
+loops usually involves maximizing spatiotemporal consistency and applying Poisson
+blending. We take an end-to-end view of the problem and present new techniques that
+jointly improve loop quality while also significantly reducing processing time. A
+key idea is to relax the consistency constraints to anticipate the subsequent blending,
+thereby enabling looping of low-frequency content like moving clouds and changing
+illumination. We also analyze the input video to remove an undesired bias toward short
+loops. The quality gains are demonstrated visually and confirmed quantitatively using
+a new gradient-domain consistency metric. We improve system performance by classifying
+potentially loopable pixels, masking the 2D graph cut, pruning graph-cut labels based
+on dominant periods, and optimizing on a coarse grid while retaining finer detail.
+Together these techniques reduce computation times from tens of minutes to nearly
+real-time.},
+journal = {ACM Trans. Graph.},
+month = oct,
+articleno = {197},
+numpages = {10},
+keywords = {blend-aware consistency, video textures, cinemagraphs}
+}
+
+@inproceedings{10.1145/2649387.2660839,
+author = {Lindsey, Aaron and Yeh, Hsin-Yi (Cindy) and Wu, Chih-Peng and Thomas, Shawna and Amato, Nancy M.},
+title = {Improving Decoy Databases for Protein Folding Algorithms},
+year = {2014},
+isbn = {9781450328944},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2649387.2660839},
+doi = {10.1145/2649387.2660839},
+abstract = {Predicting protein structures and simulating protein folding are two of the most important
+problems in computational biology today. Simulation methods rely on a scoring function
+to distinguish the native structure (the most energetically stable) from non-native
+structures. Decoy databases are collections of non-native structures used to test
+and verify these functions.We present a method to evaluate and improve the quality
+of decoy databases by adding novel structures and removing redundant structures. We
+test our approach on 17 different decoy databases of varying size and type and show
+significant improvement across a variety of metrics. We also test our improved databases
+on a popular modern scoring function and show that they contain a greater number of
+native-like structures than the original databases, thereby producing a more rigorous
+database for testing scoring functions.},
+booktitle = {Proceedings of the 5th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics},
+pages = {717–724},
+numpages = {8},
+keywords = {protein folding, decoy databases, sampling methods},
+location = {Newport Beach, California},
+series = {BCB '14}
+}
+
+@inproceedings{10.1145/3319647.3325849,
+author = {Nagin, Kenneth and Kassis, Andre and Lorenz, Dean and Barabash, Katherine and Raichstein, Eran},
+title = {Estimating Client QoE from Measured Network QoS},
+year = {2019},
+isbn = {9781450367493},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3319647.3325849},
+doi = {10.1145/3319647.3325849},
+abstract = {This research is done in the context of the SliceNet project [4] that aims to extend
+5G infrastructure with cognitive management of cross-domain, cross-layer network slices
+[1], with emphasis on Quality of Experience (QoE) for vertical industries. The provisioning
+of network slices with proper QoE guarantees is seen as one of the key enablers of
+future 5G-enabled networks. The challenge is to assess the QoE experienced by the
+vertical application and its users without requiring the applications or the users
+to measure and report QoE related metrics back to the provider. To address this challenge,
+we propose a method for deriving application-level QoE from network-level Quality
+of Service (QoS) measurements, easily accessible by the provider. In particular, we
+describe a PoC where QoE, perceived by application users, is estimated from low level
+network monitoring data, by applying cognitive methods. Our main goal is enabling
+the cloud provider to support the desired E2E QoE-based Service Level Agreements (SLAs),
+e.g. by monitoring QoS metrics within the provider's domain to optimize resource allocation
+through provider's actuators. Additional benefit can be achieved by applying the same
+technique to troubleshoot issues in the provider's infrastructure. In this work, we
+employed classical statistical methods to assess the relationship between the application-level
+QoE and the network-level QoS.},
+booktitle = {Proceedings of the 12th ACM International Conference on Systems and Storage},
+pages = {188},
+numpages = {1},
+location = {Haifa, Israel},
+series = {SYSTOR '19}
+}
+
+@inproceedings{10.1145/3038912.3052560,
+author = {Haq, Osama and Raja, Mamoon and Dogar, Fahad R.},
+title = {Measuring and Improving the Reliability of Wide-Area Cloud Paths},
+year = {2017},
+isbn = {9781450349130},
+publisher = {International World Wide Web Conferences Steering Committee},
+address = {Republic and Canton of Geneva, CHE},
+url = {https://doi.org/10.1145/3038912.3052560},
+doi = {10.1145/3038912.3052560},
+abstract = {Many popular cloud applications use inter-data center paths; yet, little is known
+about the characteristics of these ``cloud paths''. Over an eighteen month period,
+we measure the inter-continental cloud paths of three providers (Amazon, Google, and
+Microsoft) using client side (VM-to-VM) measurements. We find that cloud paths are
+more predictable compared to public Internet paths, with an order of magnitude lower
+loss rate and jitter at the tail (95th percentile and beyond) compared to public Internet
+paths. We also investigate the nature of packet losses on these paths (e.g., random
+vs. bursty) and potential reasons why these paths may be better in quality. Based
+on our insights, we consider how we can further improve the quality of these paths
+with the help of existing loss mitigation techniques. We demonstrate that using the
+cloud path in conjunction with a detour path can mask most of the cloud losses, resulting
+in up to five 9's of network availability for applications.},
+booktitle = {Proceedings of the 26th International Conference on World Wide Web},
+pages = {253–262},
+numpages = {10},
+keywords = {inter-data center networks, loss rate, detour routing, cloud paths reliability, cloud availability, latency, bandwidth},
+location = {Perth, Australia},
+series = {WWW '17}
+}
+
+@inproceedings{10.1109/AST.2019.000-2,
+author = {Martinez-Ortiz, Andres-Leonardo and Lizcano, David and Ortega, Miguel},
+title = {Software Metrics Artifacts Making Web Quality Measurable: AST 2019 Invited Paper},
+year = {2019},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/AST.2019.000-2},
+doi = {10.1109/AST.2019.000-2},
+abstract = {Mining open source repositories introduces an effective approach to put in practice
+empirical software engineering in a variety of technologies. Kernel development (Linux)
+first and then Internet (Chromium) and more recently cloud orchestration (Kubernetes)
+and machine learning (TensorFlow) are fundamental pieces not just for open source
+ecosystem but also for the industry leading software innovation. Empirical software
+engineering sustains a better understanding of these projects, reducing even more
+the barriers for adoption. In this work we focus on empirical quality assessment developing
+software metrics artifacts to make web components quality measurable. After reviewing
+the state of the art and main frameworks for software measurement, we will present
+our proposal for the empirical evaluation of quality metrics for web components, data
+collection, measurement and prediction, discussing main benefits and some drawback
+of the selected approach, which will be aimed at future works.},
+booktitle = {Proceedings of the 14th International Workshop on Automation of Software Test},
+pages = {1–6},
+numpages = {6},
+keywords = {web technologies, open source, quality metrics, software engineering},
+location = {Montreal, Quebec, Canada},
+series = {AST '19}
+}
+
+@inproceedings{10.5555/3291291.3291304,
+author = {Silva, Gabriel Costa and R\'{e}, Reginaldo and Silva, Marco Aur\'{e}lio Graciotto},
+title = {Evaluating Efficiency, Effectiveness and Satisfaction of AWS and Azure from the Perspective of Cloud Beginners},
+year = {2018},
+publisher = {IBM Corp.},
+address = {USA},
+abstract = {Quality has long been regarded as an important driver of cloud adoption. In particular,
+quality in use (QiU) of cloud platforms may drive cloud beginners to the cloud platform
+that offers the best cloud experience. Cloud beginners are critical to the cloud market
+because they currently represent nearly a third of cloud users. We carried out three
+experiments to measure the QiU (dependent variable) of public cloud platforms (independent
+variable) regarding efficiency, effectiveness and satisfaction. AWS EC2 and Azure
+Virtual Machines are the two cloud services used as representative proxies to evaluate
+cloud platforms (treatments). Eleven undergraduate students with limited cloud knowledge
+(participants) manually created 152 VMs (task) using the web interface of cloud platforms
+(instrument) following seven different configurations (trials) for each cloud platform.
+Whereas AWS performed significantly better than Azure for efficiency (p-value not
+exceeding 0.001, A-statistic = 0.68), we could not find a significant difference between
+platforms for effectiveness (p-value exceeding 0.05) - although the effect size was
+found relevant (odds ratio = 0.41). Regarding satisfaction, most of our participants
+perceived the AWS as (i) having the best GUI to benefiting user interaction, (ii)
+the easiest platform to use, and (iii) the preferred cloud platform for creating VMs.
+Once confirmed by independent replications, our results suggest that AWS outperforms
+Azure regarding QiU. Therefore, cloud beginners might have a better cloud experience
+starting off their cloud projects by using AWS rather than Azure. In addition, our
+results may help to explain the AWS's cloud leadership.},
+booktitle = {Proceedings of the 28th Annual International Conference on Computer Science and Software Engineering},
+pages = {114–125},
+numpages = {12},
+keywords = {experimentation, cloud platforms, quality in use},
+location = {Markham, Ontario, Canada},
+series = {CASCON '18}
+}
+
+@inproceedings{10.1145/2790060.2790071,
+author = {Legrand, H\'{e}l\`{e}ne and Boubekeur, Tamy},
+title = {Morton Integrals for High Speed Geometry Simplification},
+year = {2015},
+isbn = {9781450337076},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2790060.2790071},
+doi = {10.1145/2790060.2790071},
+abstract = {Real time geometry processing has progressively reached a performance level that makes
+a number of signal-inspired primitives practical for on-line applications scenarios.
+This often comes through the joint design of operators, data structure and even dedicated
+hardware. Among the major classes of geometric operators, filtering and super-sampling
+(via tessellation) have been successfully expressed under high-performance constraints.
+The subsampling operator i.e., adaptive simplification, remains however a challenging
+case for non-trivial input models. In this paper, we build a fast geometry simplification
+algorithm over a new concept: Morton Integrals. By summing up quadric error metric
+matrices along Morton-ordered surface samples, we can extract concurrently the nodes
+of an adaptive cut in the so-defined implicit hierarchy, and optimize all simplified
+vertices in parallel. This approach is inspired by integral images and exploits recent
+advances in high performance spatial hierarchy construction and traversal. As a result,
+our GPU implementation can downsample a mesh made of several millions of polygons
+at interactive rates, while providing better quality than uniform simplification and
+preserving important salient features. We present results for surface meshes, polygon
+soups and point clouds, and discuss variations of our approach to account for per-sample
+attributes and alternatives error metrics.},
+booktitle = {Proceedings of the 7th Conference on High-Performance Graphics},
+pages = {105–112},
+numpages = {8},
+keywords = {Morton code, GPU algorithms, mesh simplification, adaptive clustering},
+location = {Los Angeles, California},
+series = {HPG '15}
+}
+
+@article{10.1109/TNET.2018.2851379,
+author = {Al-Abbasi, Abubakr O. and Aggarwal, Vaneet},
+title = {Video Streaming in Distributed Erasure-Coded Storage Systems: Stall Duration Analysis},
+year = {2018},
+issue_date = {August 2018},
+publisher = {IEEE Press},
+volume = {26},
+number = {4},
+issn = {1063-6692},
+url = {https://doi.org/10.1109/TNET.2018.2851379},
+doi = {10.1109/TNET.2018.2851379},
+abstract = {The demand for global video has been burgeoning across industries. With the expansion
+and improvement of video-streaming services, cloud-based video is evolving into a
+necessary feature of any successful business for reaching internal and external audiences.
+This paper considers video streaming over distributed systems where the video segments
+are encoded using an erasure code for better reliability, thus being the first work
+to our best knowledge that considers video streaming over erasure-coded distributed
+cloud systems. The download time of each coded chunk of each video segment is characterized,
+and the ordered statistics over the choice of the erasure-coded chunks is used to
+obtain the playback time of different video segments. Using the playback times, bounds
+on the moment generating function on the stall duration are used to bound the mean
+stall duration. Moment generating function-based bounds on the ordered statistics
+are also used to bound the stall duration tail probability, which determines the probability
+that the stall time is greater than a pre-defined number. These two metrics, mean
+stall duration and the stall duration tail probability, are important quality of experience
+QoE measures for the end users. Based on these metrics, we formulate an optimization
+problem to jointly minimize the convex combination of both the QoE metrics averaged
+over all requests over the placement and access of the video content. The non-convex
+problem is solved using an efficient iterative algorithm. Numerical results show a
+significant improvement in QoE metrics for cloud-based video compared to the considered
+baselines.},
+journal = {IEEE/ACM Trans. Netw.},
+month = aug,
+pages = {1921–1932},
+numpages = {12}
+}
+
+@inproceedings{10.1145/3240765.3240798,
+author = {Yen, Chih-Hsuan and Chen, Wei-Ming and Hsiu, Pi-Cheng and Kuo, Tei-Wei},
+title = {Differentiated Handling of Physical Scenes and Virtual Objects for Mobile Augmented Reality},
+year = {2018},
+isbn = {9781450359504},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3240765.3240798},
+doi = {10.1145/3240765.3240798},
+abstract = {Mobile devices running augmented reality applications consume considerable energy
+for graphics-intensive workloads. This paper presents a scheme for the differentiated
+handling of camera-captured physical scenes and computer-generated virtual objects
+according to different perceptual quality metrics. We propose online algorithms and
+their realtime implementations to reduce energy consumption through dynamic frame
+rate adaptation while maintaining the visual quality required for augmented reality
+applications. To evaluate system efficacy, we integrate our scheme into Android and
+conduct extensive experiments on a commercial smartphone with various application
+scenarios. The results show that the proposed scheme can achieve energy savings of
+up to 39.1% in comparison to the native graphics system in Android while maintaining
+satisfactory visual quality.},
+booktitle = {Proceedings of the International Conference on Computer-Aided Design},
+articleno = {36},
+numpages = {8},
+keywords = {energy savings, mobile systems, augmented reality, visual quality, frame frame adaptation},
+location = {San Diego, California},
+series = {ICCAD '18}
+}
+
+@inproceedings{10.1145/3307630.3342385,
+author = {Munoz, Daniel-Jesus and Pinto, M\'{o}nica and Fuentes, Lidia},
+title = {HADAS: Analysing Quality Attributes of Software Configurations},
+year = {2019},
+isbn = {9781450366687},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3307630.3342385},
+doi = {10.1145/3307630.3342385},
+abstract = {Software Product Lines (SPLs) are highly configurable systems. Automatic analyses
+of SPLs rely on solvers to navigate complex dependencies among features and find legal
+solutions. Variability analysis tools are complex due to the diversity of products
+and domain-specific knowledge. On that, while there are experimental studies that
+analyse quality attributes, the knowledge is not easily accessible for developers,
+and its appliance is not trivial. Aiming to allow the industry to quality-explore
+SPL design spaces, we developed the HADAS assistant that: (1) models systems and collects
+quality attributes metrics in a cloud repository, and (2) reasons about it helping
+developers with quality attributes requirements.},
+booktitle = {Proceedings of the 23rd International Systems and Software Product Line Conference - Volume B},
+pages = {13–16},
+numpages = {4},
+keywords = {variability, numerical, attribute, software product line, model, NFQA},
+location = {Paris, France},
+series = {SPLC '19}
+}
+
+@inproceedings{10.1145/2649563.2649571,
+author = {Weber, Andreas and Herbst, Nikolas and Groenda, Henning and Kounev, Samuel},
+title = {Towards a Resource Elasticity Benchmark for Cloud Environments},
+year = {2014},
+isbn = {9781450330596},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2649563.2649571},
+doi = {10.1145/2649563.2649571},
+abstract = {Auto-scaling features offered by today's cloud infrastructures provide increased flexibility
+especially for customers that experience high variations in the load intensity over
+time. However, auto-scaling features introduce new system quality attributes when
+considering their accuracy, timing, and boundaries. Therefore, distinguishing between
+different offerings has become a complex task, as it is not yet supported by reliable
+metrics and measurement approaches. In this paper, we discuss shortcomings of existing
+approaches for measuring and evaluating elastic behavior and propose a novel benchmark
+methodology specifically designed for evaluating the elasticity aspects of modern
+cloud platforms. The benchmark is based on open workloads with realistic load variation
+profiles that are calibrated to induce identical resource demand variations independent
+of the underlying hardware performance. Furthermore, we propose new metrics that capture
+the accuracy of resource allocations and de-allocations, as well as the timing aspects
+of an auto-scaling mechanism explicitly.},
+booktitle = {Proceedings of the 2nd International Workshop on Hot Topics in Cloud Service Scalability},
+articleno = {5},
+numpages = {8},
+keywords = {Resource, Elasticity, Supply, Demand, Load Profile},
+location = {Dublin, Ireland},
+series = {HotTopiCS '14}
+}
+
+@inproceedings{10.1145/3290688.3290705,
+author = {Tesfamicael, Aklilu Daniel and Liu, Vicky and Foo, Ernest and Caelli, Bill},
+title = {QoE Estimation Model for a Secure Real-Time Voice Communication System in the Cloud},
+year = {2019},
+isbn = {9781450366038},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3290688.3290705},
+doi = {10.1145/3290688.3290705},
+abstract = {As moving towards cloud-based real-time services, we are witnessing the shift from
+a technology-driven services to service provisioning paradigms, that is, from Quality
+of Service (QoS) to Quality of Experience (QoE). User experience and satisfaction
+are placed at the epicenter of the system design. QoE is a measurement of user experience
+on the provided service by a system. Often QoE is measured by subjective mechanisms,
+such as user experience surveys and mean opinion scores (MOS) methods, which can be
+a costly and time-consuming process. Using an adequate QoE model to measure user experience
+of perceived quality is cost-effective, compared to using time-consuming subjective
+surveys. Applying an adequate QoE model to assess user experience is advantageous
+for cloud-based real-time services such as voice and video. This study uses a formula-based
+QoE estimation model to estimate and predict QoE prior to the deployment or during
+the planning stage of the system service. This study investigates a real-world scenario
+of a company that recently moved to its premises-based real-time trading communication
+system (TCS) to a public cloud. A simulation system using OPNET is also implemented
+to illustrate the usefulness of the model. Our result shows that the effect of delay
+on the users experience of the service provided by the cloud-based TCS is minimum
+comparing to packet loss rate (PLR) and Jitter. However, it has been observed that
+the overhead of the different security settings of the TCS system had no major negative
+impact to the user experience. The proposed model can be used as a QoE control mechanism
+and network optimization for cloud-based TCS services.},
+booktitle = {Proceedings of the Australasian Computer Science Week Multiconference},
+articleno = {10},
+numpages = {9},
+keywords = {QoS, TCS, Real-time, VoIP, QoE, E-Model},
+location = {Sydney, NSW, Australia},
+series = {ACSW 2019}
+}
+
+@inproceedings{10.1109/UCC.2014.87,
+author = {Ali-Eldin, Ahmed and Seleznjev, Oleg and Sj\"{o}stedt-de Luna, Sara and Tordsson, Johan and Elmroth, Erik},
+title = {Measuring Cloud Workload Burstiness},
+year = {2014},
+isbn = {9781479978816},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/UCC.2014.87},
+doi = {10.1109/UCC.2014.87},
+abstract = {Workload burstiness and spikes are among the main reasons for service disruptions
+and decrease in the Quality-of-Service (QoS) of online services. They are hurdles
+that complicate autonomic resource management of data enters. In this paper, we review
+the state-of-the-art in online identification of workload spikes and quantifying burstiness.
+The applicability of some of the proposed techniques is examined for Cloud systems
+where various workloads are co-hosted on the same platform. We discuss Sample Entropy
+(Samp En), a measure used in biomedical signal analysis, as a potential measure for
+burstiness. A modification to the original measure is introduced to make it more suitable
+for Cloud workloads.},
+booktitle = {Proceedings of the 2014 IEEE/ACM 7th International Conference on Utility and Cloud Computing},
+pages = {566–572},
+numpages = {7},
+series = {UCC '14}
+}
+
+@inproceedings{10.1145/2884781.2884814,
+author = {Su, Guoxin and Rosenblum, David S. and Tamburrelli, Giordano},
+title = {Reliability of Run-Time Quality-of-Service Evaluation Using Parametric Model Checking},
+year = {2016},
+isbn = {9781450339001},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2884781.2884814},
+doi = {10.1145/2884781.2884814},
+abstract = {Run-time Quality-of-Service (QoS) assurance is crucial for business-critical systems.
+Complex behavioral performance metrics (PMs) are useful but often difficult to monitor
+or measure. Probabilistic model checking, especially parametric model checking, can
+support the computation of aggregate functions for a broad range of those PMs. In
+practice, those PMs may be defined with parameters determined by run-time data. In
+this paper, we address the reliability of QoS evaluation using parametric model checking.
+Due to the imprecision with the instantiation of parameters, an evaluation outcome
+may mislead the judgment about requirement violations. Based on a general assumption
+of run-time data distribution, we present a novel framework that contains light-weight
+statistical inference methods to analyze the reliability of a parametric model checking
+output with respect to an intuitive criterion. We also present case studies in which
+we test the stability and accuracy of our inference methods and describe an application
+of our framework to a cloud server management problem.},
+booktitle = {Proceedings of the 38th International Conference on Software Engineering},
+pages = {73–84},
+numpages = {12},
+keywords = {run-time evaluation, data distribution, probabilistic model checking, reliability, Quality-of-Service},
+location = {Austin, Texas},
+series = {ICSE '16}
+}
+
+@inproceedings{10.5555/2602339.2602375,
+author = {Zheng, Yixin and Li, Linglong and Zhang, Lin},
+title = {Poster Abstract: PiMi Air Community: Getting Fresher Indoor Air by Sharing Data and Know-Hows},
+year = {2014},
+isbn = {9781479931460},
+publisher = {IEEE Press},
+abstract = {PiMiair.org is a participatory indoor air quality data sharing project we launched
+in January 2014. Over 200 PiMi air boxes, a low-cost indoor air quality monitor, were
+given out to volunteer users across China. The PiMi air boxes measure the approximate
+indoor particulate matter concentration, and the ambient temperate and humidity. When
+a user accesses the PiMi air box for his personal air quality data on his smartphone,
+the data is relayed to the backend PiMi cloud server for analysis. Accumulating large
+amount of indoor air quality data under different circumstances, the PiMi cloud server
+is able to use statistical learning methodologies to detect point of interests (POIs)
+in the data series, and asks users to label their activities or events at the POIs.
+Together with the user-reported physicality information on the indoor environments,
+PiMiair.org is able to quantitatively evaluate the impacts of the environment physicality
+and human behaviors on the indoor air quality, and mine the knowledges on how to alleviate
+indoor air pollution. We believe that by sharing these knowledge among the community,
+healthier breathing environments could be nurtured for the well-being of the public.},
+booktitle = {Proceedings of the 13th International Symposium on Information Processing in Sensor Networks},
+pages = {283–284},
+numpages = {2},
+keywords = {human factors, indoor air quality, participatory sensing},
+location = {Berlin, Germany},
+series = {IPSN '14}
+}
+
+@article{10.1145/2853073.2853085,
+author = {Baliyan, Niyati and Kumar, Sandeep},
+title = {A Hierarchical Fuzzy System for Quality Assessment of Semantic Web Application as a Service},
+year = {2016},
+issue_date = {January 2016},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {41},
+number = {1},
+issn = {0163-5948},
+url = {https://doi.org/10.1145/2853073.2853085},
+doi = {10.1145/2853073.2853085},
+abstract = {Semantic Web enabled applications are becoming popular due to the presence of their
+machine comprehensible description, which makes them easily sharable across machines.
+If such applications are deployed as services to the user through the Cloud, they
+can facilitate transparency and reusability. There exist no attributes, metrics, or
+models for monitoring the quality of such applications. In the current work, a hierarchical
+fuzzy system for quality assessment of Semantic Web based applications delivered as
+services on the Cloud, is proposed. The quality attributes proposed herein have been
+validated through the standard IEEE-1061 validation framework. Experimental results
+reveal that the proposed hierarchical fuzzy system handles the multiplicity of quality
+attributes, and can be used for the relative ranking of Semantic Web applications
+available as services},
+journal = {SIGSOFT Softw. Eng. Notes},
+month = feb,
+pages = {1–7},
+numpages = {7},
+keywords = {Quality Metrics, Fuzzy Logic, Cloud, Semantic Web}
+}
+
+@inproceedings{10.5555/2755535.2755538,
+author = {Claypool, Mark and Finkel, David},
+title = {The Effects of Latency on Player Performance in Cloud-Based Games},
+year = {2014},
+publisher = {IEEE Press},
+abstract = {Cloud-based games are an increasingly popular method to distribute and play computer
+games on the Internet. While there has been some work studying network aspects of
+cloud-based games and examining the effects of latency on traditional games, there
+has not been sufficient research on the impact of latency on cloud-based games nor
+a comparison of the impact of latency on cloud-based games versus traditional games.
+This paper presents the results of two user studies that measure the objective and
+subjective effects of latency on cloud-based games, one study using the commercial
+cloud game system OnLive and the other study using the academic cloud game system
+GamingAnywhere. Analysis of the results shows both quality of experience and user
+performance degrade linearly with an increase in latency. More significantly, latency
+affects cloud-based games in a manner most similar to that of traditional first-person
+avatar games, the most sensitive class of games, despite the fact that the cloud-based
+games may have a different user perspective. These results have implications for cloud-based
+game designers and cloud system developers.},
+booktitle = {Proceedings of the 13th Annual Workshop on Network and Systems Support for Games},
+articleno = {2},
+numpages = {6},
+location = {Nagoya, Japan},
+series = {NetGames '14}
+}
+
+@inproceedings{10.1145/3036290.3036321,
+author = {L\'{o}pez, Cindy and Heinsen, Rene and Huh, Eui-Nam},
+title = {Improving Availability Applying Intelligent Replication in Federated Cloud Storage Based on Log Analysis},
+year = {2017},
+isbn = {9781450348287},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3036290.3036321},
+doi = {10.1145/3036290.3036321},
+abstract = {This study is focusing on improving the availability of federated storage services
+in order to provide better quality-of-service (QoS) to the customer with the minimum
+use of resources. One of the most efficient solutions to get the best experience in
+the cloud is to combine the services offered. In order for this to happen, there exist
+different approaches for selecting the best subset of services to reach the optimal
+performance. However, those works focus on one time selection processes, despite of
+customer's requirements are continuously changing and demanding adaptable storage
+service. In this research, I propose a method to improve storage availability through
+log sentiment analysis and intelligent replication. This methodology is based on the
+merging of two types of log analysis and the measurement of availability and performance
+metrics in order to select the best subset of services in cloud storage service federation.},
+booktitle = {Proceedings of the 2017 International Conference on Machine Learning and Soft Computing},
+pages = {148–153},
+numpages = {6},
+keywords = {availability, replication, subset selection, log analysis, Federated Cloud Storage, performance, cloud computing, sentiment analysis},
+location = {Ho Chi Minh City, Vietnam},
+series = {ICMLSC '17}
+}
+
+@inproceedings{10.1145/3097895.3097900,
+author = {Zhang, Wenxiao and Han, Bo and Hui, Pan},
+title = {On the Networking Challenges of Mobile Augmented Reality},
+year = {2017},
+isbn = {9781450350556},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3097895.3097900},
+doi = {10.1145/3097895.3097900},
+abstract = {In this paper, we conduct a reality check for Augmented Reality (AR) on mobile devices.
+We dissect and measure the cloud-offloading feature for computation-intensive visual
+tasks of two popular commercial AR systems. Our key finding is that their cloud-based
+recognition is still not mature and not optimized for latency, data usage and energy
+consumption. In order to identify the opportunities for further improving the Quality
+of Experience (QoE) for mobile AR, we break down the end-to-end latency of the pipeline
+for typical cloud-based mobile AR and pinpoint the dominating components in the critical
+path.},
+booktitle = {Proceedings of the Workshop on Virtual Reality and Augmented Reality Network},
+pages = {24–29},
+numpages = {6},
+keywords = {networking challenges, end-to-end latency, Augmented reality, cloud offloading, reality check},
+location = {Los Angeles, CA, USA},
+series = {VR/AR Network '17}
+}
+
+@article{10.1145/3047646,
+author = {Chen, Qi and Liu, Ye and Liu, Guangchi and Yang, Qing and Shi, Xianming and Gao, Hongwei and Su, Lu and Li, Quanlong},
+title = {Harvest Energy from the Water: A Self-Sustained Wireless Water Quality Sensing System},
+year = {2017},
+issue_date = {January 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {17},
+number = {1},
+issn = {1539-9087},
+url = {https://doi.org/10.1145/3047646},
+doi = {10.1145/3047646},
+abstract = {Water quality data is incredibly important and valuable, but its acquisition is not
+always trivial. A promising solution is to distribute a wireless sensor network in
+water to measure and collect the data; however, a drawback exists in that the batteries
+of the system must be replaced or recharged after being exhausted. To mitigate this
+issue, we designed a self-sustained water quality sensing system that is powered by
+renewable bioenergy generated from microbial fuel cells (MFCs). MFCs collect the energy
+released from native magnesium oxidizing microorganisms (MOMs) that are abundant in
+natural waters. The proposed energy-harvesting technology is environmentally friendly
+and can provide maintenance-free power to sensors for several years. Despite these
+benefits, an MFC can only provide microwatt-level power that is not sufficient to
+continuously power a sensor. To address this issue, we designed a power management
+module to accumulate energy when the input voltage is as low as 0.33V. We also proposed
+a radio-frequency (RF) activation technique to remotely activate sensors that otherwise
+are switched off in default. With this innovative technique, a sensor’s energy consumption
+in sleep mode can be completely avoided. Additionally, this design can enable on-demand
+data acquisitions from sensors. We implement the proposed system and evaluate its
+performance in a stream. In 3-month field experiments, we find the system is able
+to reliably collect water quality data and is robust to environment changes.},
+journal = {ACM Trans. Embed. Comput. Syst.},
+month = sep,
+articleno = {3},
+numpages = {24},
+keywords = {Energy harvesting, power management, microbial fuel cell, water quality monitoring, radio-frequency (RF) activation}
+}
+
+@inproceedings{10.1145/3373724.3373726,
+author = {Chen, Wenyu and Xiong, Wei and Cheng, Jierong and Li, Yusha},
+title = {Automatic Dimensional Measurement Using Datums Generated from Point Clouds},
+year = {2019},
+isbn = {9781450372350},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3373724.3373726},
+doi = {10.1145/3373724.3373726},
+abstract = {Dimensional measurement is critical for quality control. Manual dimensional measurement
+using standard gauges can only be applied on a few datums. To measure a huge number
+of datums, a component needs to be scanned into a point cloud and measured digitally.
+For precision components, datum generation on the scanned point cloud is labor-intensive.
+Given a raw point cloud from scanner, this paper proposes an automatic dimensional
+measurement solution with an adaptive local registration algorithm and an adaptive
+datum generation algorithm. Using datums on the CAD model as reference, the adaptive
+local registration algorithm selects local regions on the scanned model to compensate
+the local deviation between the CAD model and the scanned model. After that, with
+outliers and noises in the raw data, the adaptive datum generation algorithm creates
+the correct datums on the scanned model adaptive to the actual geometry. Dimensional
+measurement based on the generated datums can be achieved automatically. Moreover,
+the solution does not require users to manually preprocess the point cloud, such as
+outlier and noise removal. As such, it improves the productivity in dimensional inspection.},
+booktitle = {Proceedings of the 2019 5th International Conference on Robotics and Artificial Intelligence},
+pages = {59–63},
+numpages = {5},
+keywords = {Inspection, Datum generation, Dimensional measurement},
+location = {Singapore, Singapore},
+series = {ICRAI '19}
+}
+
+@inproceedings{10.5555/2755535.2755555,
+author = {K\"{a}m\"{a}r\"{a}inen, Teemu and Siekkinen, Matti and Xiao, Yu and Yl\"{a}-J\"{a}\"{a}ski, Antti},
+title = {Towards Pervasive and Mobile Gaming with Distributed Cloud Infrastructure},
+year = {2014},
+publisher = {IEEE Press},
+abstract = {Cloud gaming, where the game is rendered in the cloud and is streamed to an end-user
+device through a thin client, is rapidly gaining ground. Latency is still a key challenge
+to cloud gaming: highly interactive games can become unplayable even with response
+delays below 100 ms. To overcome this issue, we propose to deploy gaming services
+on a more distributed cloud infrastructure, and to instantiate gaming servers in close
+proximity of the user when necessary in order to shorten the response delay. Our prototype
+distributed cloud gaming platform also allows flexible configuration of gaming controls
+and video streams, enabling the use of public displays in mobile cloud gaming. We
+test our prototype with two games in different deployment scenarios, and measure the
+response delay and power consumption of the mobile devices. Our experiment results
+confirm that it is feasible to improve the quality of gaming experience through the
+deployment strategies provided by the proposed system.},
+booktitle = {Proceedings of the 13th Annual Workshop on Network and Systems Support for Games},
+articleno = {16},
+numpages = {6},
+location = {Nagoya, Japan},
+series = {NetGames '14}
+}
+
+@inproceedings{10.1145/2996890.2996906,
+author = {Chhetri, Mohan Baruwal and Vo, Quoc Bao and Kowalczyk, Ryszard},
+title = {CL-SLAM: Cross-Layer SLA Monitoring Framework for Cloud Service-Based Applications},
+year = {2016},
+isbn = {9781450346160},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2996890.2996906},
+doi = {10.1145/2996890.2996906},
+abstract = {Modern applications are increasingly being composed from multiple components that
+require and consume services at different layers of the cloud stack. The diverse,
+dynamic and unpredictable nature of both cloud services and application workloads
+makes quality-assured provision of such cloud service-based applications (CSBAs) a
+major challenge. While elasticity and autoscaling gives CSBA providers the ability
+to scale cloud resources on-demand, they require a comprehensive, system-wide view
+of the application performance in order to make timely, cost-effective and performance-efficient
+scaling decisions. In this paper, we propose, develop and validate CL-SLAM - a Cross-Layer
+SLA Monitoring Framework for CSBAs. Its main features include (a) realtime, fine-grained
+visibility into CSBA performance, (b) visual descriptive analytics to identify correlations
+and inter-dependencies between cross-layer performance metrics, (c) temporal profiling
+of CSBA performance, (d) proactive monitoring, detection and root-cause analysis of
+SLA violation, and (e) support for both reactive and proactive adaptation in support
+of quality-assured CSBA provision. We validate our approach through a prototype implementation.},
+booktitle = {Proceedings of the 9th International Conference on Utility and Cloud Computing},
+pages = {30–36},
+numpages = {7},
+keywords = {cross-layer SLA monitoring, cloud service-based application},
+location = {Shanghai, China},
+series = {UCC '16}
+}
+
+@inproceedings{10.1145/2739482.2764720,
+author = {Oprescu, Ana-Maria and (Vintila) Filip, Alexandra and Kielmann, Thilo},
+title = {Fast Pareto Front Approximation for Cloud Instance Pool Optimization},
+year = {2015},
+isbn = {9781450334884},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2739482.2764720},
+doi = {10.1145/2739482.2764720},
+abstract = {Computing the Pareto Set (PS) of optimal cloud schedules in terms of cost and makespan
+for a given application and set of cloud instance types is NP-complete. Moreover,
+cloud instances' volatility requires fast PS recomputations. While genetic algorithms
+(GA) are a promising approach, little knowledge of an approximated PS's quality leads
+to GAs running for overly many generations, contradicting the goal of quickly computing
+an approximate solution. We address this with MOO-GA, our GA enhanced with a domain-tailored
+termination criteria delivering fast, well-approximated Pareto sets. We compare to
+NSGAIII using PS convergence and diversity, and computational effort metrics. Results
+show MOO-GA consistently computing better quality Pareto sets within one second on
+average (df=98, p-value&lt;10-3).},
+booktitle = {Proceedings of the Companion Publication of the 2015 Annual Conference on Genetic and Evolutionary Computation},
+pages = {1443–1444},
+numpages = {2},
+keywords = {pareto frontier, genetic algorithms, infrastructure-as-a-service},
+location = {Madrid, Spain},
+series = {GECCO Companion '15}
+}
+
+@inproceedings{10.1145/3423328.3423497,
+author = {Li, Yen-Chun and Hsu, Chia-Hsin and Lin, Yu-Chun and Hsu, Cheng-Hsin},
+title = {Performance Measurements on a Cloud VR Gaming Platform},
+year = {2020},
+isbn = {9781450381581},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3423328.3423497},
+doi = {10.1145/3423328.3423497},
+abstract = {As cloud gaming and Virtual Reality (VR) games become popular in the game industry,
+game developers engage in these fields to boost their sales. Because cloud gaming
+possesses the merit of lifting computation loads from client devices to servers, it
+solves the high resource consumption issue of VR games on regular clients. However,
+it is important to know where is the bottleneck of the cloud VR gaming platform and
+how can it be improved in the future. In this paper, we conduct extensive experiments
+on the state-of-the-art cloud VR gaming platform--Air Light VR (ALVR). In particular,
+we analyze the performance of ALVR using both Quality-of-Service and Quality-of-Experience
+metrics. Our experiments reveal that latency (up to 90 ms RTT) has less influence
+on user experience compared to bandwidth limitation (as small as 35 Mbps) and packet
+loss rate (as high as 8%) . Moreover, we find that VR gamers can hardly notice the
+difference between the gaming experience with different latency values (between 0
+and 90 ms RTT). Such findings shed some lights on how to further improve the cloud
+VR gaming platform, e.g., a budget of up to 90 ms RTT may be used to absorb network
+dynamics when bandwidth is insufficient.},
+booktitle = {Proceedings of the 1st Workshop on Quality of Experience (QoE) in Visual Multimedia Applications},
+pages = {37–45},
+numpages = {9},
+keywords = {measurement, prototype, computer games, cloud computing, virtual reality},
+location = {Seattle, WA, USA},
+series = {QoEVMA'20}
+}
+
+@inproceedings{10.1109/CCGrid.2014.103,
+author = {Wu, Jie and Jansen, Christoph and Beier, Maximilian and Witt, Michael and Krefting, Dagmar},
+title = {Extending XNAT towards a Cloud-Based Quality Assessment Platform for Retinal Optical Coherence Tomographies},
+year = {2014},
+isbn = {9781479927838},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGrid.2014.103},
+doi = {10.1109/CCGrid.2014.103},
+abstract = {Neurosciencific research is increasingly based on image analysis methods. Large sets
+of imaging data are processed using complex image analysis tools. While today magnetic
+resonance imaging (MRI) is widely used for both functional and anatomical analysis
+of the human brain, new imaging modalities are beginning to prove their capabilities
+for neurological research. Among them, optical coherence tomography (OCT) allows for
+noninvasive visualization of anatomical structures on a micrometer scale. Becoming
+a standard diagnostic tool in ophthalmology, it is of rising interest for neurological
+research. Crucial to all data analysis methods is the quality of the input data. The
+platform presented in this paper is designed for automatic quality assessment of retinal
+OCTs. It extends the image management platform XNAT by services to calculate and store
+quality measures. It is also extensible regarding new quality measure algorithms,
+allowing the developer to upload Matlab code, compile it for the infrastructure's
+hardware architecture and test it in the system. The image processing tools to calculate
+the quality measures are provided as a cloud-based service employing OpenStack as
+underlying IT infrastructure. The prototype implementation encompassing security and
+performance aspects are presented.},
+booktitle = {Proceedings of the 14th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing},
+pages = {764–773},
+numpages = {10},
+keywords = {medical imaging, cloud, neuroimaging, XNAT, SaaS, OCT, IaaS},
+location = {Chicago, Illinois},
+series = {CCGRID '14}
+}
+
+@inproceedings{10.1145/3328886.3328892,
+author = {Alcivar, Nayeth I. Solorzano and Gallego, Diego Carrera and Quijije, Lissenia Sornoza and Quelal, Marco Mendoza},
+title = {Developing a Dashboard for Monitoring Usability of Educational Games Apps for Children},
+year = {2019},
+isbn = {9781450361682},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3328886.3328892},
+doi = {10.1145/3328886.3328892},
+abstract = {Nowadays digital game applications or interactive children's educational games implemented
+in mobile devices (to be identified as Apps), are beginning to be widely used to complement
+children's education, particularly during early childhood education. However, digital
+game Apps do not generate a timely collection of data that could be obtained, so that
+with a proper interpretation they can serve as a guide in making decisions about the
+content, types, and level of games that should be created as digital tools to support
+children's education. In this article, is indicated how through the development of
+a dashboard, linked to a database in the cloud, it is possible to obtain and present
+information that allows measuring the use and playability and usability factors for
+these types of Apps, in an orderly and precise manner. For the development of the
+dashboard and its link in real time with the Apps to monitor, JavaScript was used
+through the framework Sails.js and the database implemented in PostgreSQL. In parallel,
+for the data transmission tests, two mobile applications were implemented in Android,
+one programmed in Unity and the second using Adobe Animate. Both Apps were designed
+by recording internal data in JSON file format. To analyze and obtain results, we
+used PQM metrics 2014 (Playability Quality Model), and we applied an adapted theory
+which helps to facilitate the identification of factors affecting the use and adoption
+of information systems and technologies in Latin American local contexts. The Pilot
+tests were carried out with children from 4 to 8 years attending schools of marginal
+areas in the city of Guayaquil, Ecuador. These children with little knowledge of technology
+use, facilitate better evaluation of different scenarios to measure the behavioral
+use of the Apps and their contents without significant influence of previous knowledge
+about digital educational games. This article presents the first results of an extensive
+and longitudinal multidisciplinary research, relevant to organizations and people
+involved in early childhood education.},
+booktitle = {Proceedings of the 2019 2nd International Conference on Computers in Management and Business},
+pages = {70–75},
+numpages = {6},
+keywords = {Apps, Dashboard, Latin America, Usability, Technology Adoption and Education, Ecuador, Children, Digital Games, MIDI},
+location = {Cambridge, United Kingdom},
+series = {ICCMB 2019}
+}
+
+@inproceedings{10.1145/2964284.2973806,
+author = {Mekuria, Rufael and Cesar, Pablo},
+title = {MP3DG-PCC, Open Source Software Framework for Implementation and Evaluation of Point Cloud Compression},
+year = {2016},
+isbn = {9781450336031},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2964284.2973806},
+doi = {10.1145/2964284.2973806},
+abstract = {We present MP3DG-PCC, an open source framework for design, implementation and evaluation
+of point cloud compression algorithms. The framework includes objective quality metrics,
+lossy and lossless anchor codecs, and a test bench for consistent comparative evaluation.
+The framework and proposed methodology is in use for the development of an international
+point cloud compression standard in MPEG. In addition, the library is integrated with
+the popular point cloud library, making a large number of point cloud processing available
+and aligning the work with the broader open source community.},
+booktitle = {Proceedings of the 24th ACM International Conference on Multimedia},
+pages = {1222–1226},
+numpages = {5},
+keywords = {point cloud compression, evaluation, compression, 3d virtual reality},
+location = {Amsterdam, The Netherlands},
+series = {MM '16}
+}
+
+@inproceedings{10.1145/3388440.3414205,
+author = {Vijayan, Vipin and Gu, Shawn and Krebs, Eric T. and Meng, Lei and Milenkovi\'{c}, Tijana},
+title = {Pairwise Versus Multiple Global Network Alignment},
+year = {2020},
+isbn = {9781450379649},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3388440.3414205},
+doi = {10.1145/3388440.3414205},
+abstract = {This abstract is based on the following paper: Vijayan, Vipin, Shawn Gu, Eric T. Krebs,
+Lei Meng, and Tijana Milenkovi\'{c}. "Pairwise Versus Multiple Global Network Alignment."
+IEEE Access 8 (2020): 41961--41974.Proteins, the major macromolecules of life, interact
+with each other to carry out cellular functioning. Thus, analyses of protein-protein
+interaction (PPI) networks can yield important insights into biological function,
+disease, and evolution. While biotechnological advancements have made PPI network
+data available for many species, functions of many proteins in many of these species
+remain unknown. One way to uncover these functions is to transfer biological knowledge
+from a well-studied species to a poorly-studied one. Genomic sequence alignment, which
+has revolutionized our biomedical understanding, can be used for this purpose. However,
+sequence alignment has a major drawback: it does not consider interactions between
+proteins (which are ultimately what carry out function). So, biological network alignment
+(NA) can be used in a complementary fashion to predict protein functional knowledge
+that sequence alignment alone cannot predict. Specifically, NA compares PPI networks
+of different species to find regions of their similarity (or conservation), thus allowing
+for the transfer of functional knowledge across conserved network (rather than just
+sequence) regions.Like genomic sequence alignment, NA can be local or global. Just
+as the recent trend in the NA field, we also focus on global NA, which can be pairwise
+(PNA) and multiple (MNA). While PNA aligns two networks, MNA can align more than two
+networks at once. Since MNA can capture conserved network regions between more networks
+than PNA, it is hypothesized that MNA leads to deeper biological insights compared
+to PNA. However, due to different outputs of PNA and MNA, a PNA method is only compared
+to other PNA methods, and an MNA method is only compared to other MNA methods. Comparison
+of PNA against MNA must be done to evaluate whether MNA indeed yields more biologically
+meaningful alignments than PNA, as only this would justify MNA's higher computational
+complexity.We introduce a framework that allows for this. We evaluate eight prominent
+PNA and MNA methods, on synthetic and real-world biological networks, using topological
+and functional alignment quality measures. We compare PNA against MNA in both a pairwise
+(native to PNA) and multiple (native to MNA) manner. PNA is expected to lead to higher-quality
+alignments than MNA under the pairwise evaluation framework. Indeed, this is what
+we find. MNA is expected to lead to higher-quality alignments than PNA under the multiple
+evaluation framework. Shockingly, we find this not always to hold; PNA is often better
+than MNA in this framework, depending on the choice of evaluation test. Thus, we believe
+that any new MNA methods should be compared not just to existing MNA methods, but
+also to existing PNA methods using our evaluation framework, to properly judge the
+quality of alignments that they produce. Also, we confirm empirically that PNA is
+faster than MNA in both evaluation frameworks. These results indicate that currently,
+MNA offers little advantage over PNA; in order for MNA to gain an advantage, a drastic
+redesign of MNA's current algorithmic principles might be needed.},
+booktitle = {Proceedings of the 11th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics},
+articleno = {4},
+numpages = {1},
+keywords = {multi-network comparison, protein function prediction, biological network alignment},
+location = {Virtual Event, USA},
+series = {BCB '20}
+}
+
+@inproceedings{10.1145/2940136.2940143,
+author = {Wamser, Florian and Seufert, Michael and H\"{o}fner, Steffen and Tran-Gia, Phuoc},
+title = {Concept for Client-Initiated Selection of Cloud Instances for Improving QoE of Distributed Cloud Services},
+year = {2016},
+isbn = {9781450344258},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2940136.2940143},
+doi = {10.1145/2940136.2940143},
+abstract = {We introduce a concept for client-initiated selection of service location and service
+quality for improving the Quality of Experience (QoE) of general cloud services. It
+is loosely based on the HTTP adaptive streaming approach (e.g., MPEG DASH). A manifest
+file compiled by the cloud service provider specifies the available service locations
+and qualities, from which the user selects the optimal service instance based on contextual
+information obtained from client measurements and user preferences. The proposed concept
+is defined and is implemented in two client-based decision algorithms for improving
+the QoE of a simple picture gallery cloud service. These decision algorithms are evaluated
+and their impact on the service delivery is discussed. The evaluation shows that it
+is possible to improve the service location and quality selection by light-weight
+client-based algorithms.},
+booktitle = {Proceedings of the 2016 Workshop on QoE-Based Analysis and Management of Data Communication Networks},
+pages = {49–54},
+numpages = {6},
+keywords = {Quality of Experience, Cloud Services, Client-based Access for Cloud Services},
+location = {Florianopolis, Brazil},
+series = {Internet-QoE '16}
+}
+
+@inproceedings{10.1145/2578260.2578273,
+author = {Wang, Cong and Zink, Michael},
+title = {On the Feasibility of DASH Streaming in the Cloud},
+year = {2014},
+isbn = {9781450327060},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2578260.2578273},
+doi = {10.1145/2578260.2578273},
+abstract = {As shown in recent studies, video streaming is by far the biggest category of backbone
+Internet traffic in the US. As a measure to reduce the cost of highly over-provisioned
+physical infrastructures while remaining the quality of video services, many streaming
+service providers started to use cloud services where physical resources can be dynamically
+allocated based on current demand. This paper characterizes the performance of Dynamic
+Adaptive Streaming over HTTP (DASH), a new MPEG standard on adaptive streaming, in
+the cloud. We seek to answer the following questions that are critical to content
+providers that are hosting video in clouds: Which data center is the best to host
+videos? Does geographical distance matter? What type of instance is best suitable
+depending on different needs? How to efficiently solve the trade-off between performance
+and cost? The measurement methods and results presented in this paper can be easily
+expanded into other VoD services, and they allow us to i) characterize DASH behavior
+when streaming from the cloud; ii) identify the key factors that influence the DASH
+performance; and iii) suggest improvements for related services.},
+booktitle = {Proceedings of Network and Operating System Support on Digital Audio and Video Workshop},
+pages = {49–54},
+numpages = {6},
+keywords = {HTTP adaptive streaming, quality of experience, video-on-demand, Cloud computing},
+location = {Singapore, Singapore},
+series = {NOSSDAV '14}
+}
+
+@inproceedings{10.1145/2822332.2822339,
+author = {Evans, Kieran and Jones, Andrew and Preece, Alun and Quevedo, Francisco and Rogers, David and Spasi\'{c}, Irena and Taylor, Ian and Stankovski, Vlado and Taherizadeh, Salman and Trnkoczy, Jernej and Suciu, George and Suciu, Victor and Martin, Paul and Wang, Junchao and Zhao, Zhiming},
+title = {Dynamically Reconfigurable Workflows for Time-Critical Applications},
+year = {2015},
+isbn = {9781450339896},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2822332.2822339},
+doi = {10.1145/2822332.2822339},
+abstract = {Cloud-based applications that depend on time-critical data processing or network throughput
+require the capability of reconfiguring their infrastructure on demand as and when
+conditions change. Although the ability to apply quality of service constraints on
+the current Cloud offering is limited, there are ongoing efforts to change this. One
+such effort is the European funded SWITCH project that aims to provide a programming
+model and toolkit to help programmers specify quality of service and quality of experience
+metrics of their distributed application and to provide the means to specify the reconfiguration
+actions which can be taken to maintain these requirements. In this paper, we present
+an approach to application reconfiguration by applying a workflow methodology to implement
+a prototype involving multiple reconfiguration scenarios of a distributed real-time
+social media analysis application, called Sentinel. We show that by using a lightweight
+RPC-based workflow approach, we can monitor a live application in real time and spawn
+dependency-based workflows to reconfigure the underlying Docker containers that implement
+the distributed components of the application. We propose to use this prototype as
+the basis for part of the SWITCH workbench, which will support more advanced programmable
+infrastructures.},
+booktitle = {Proceedings of the 10th Workshop on Workflows in Support of Large-Scale Science},
+articleno = {7},
+numpages = {10},
+keywords = {quality of service, workflows, time-critical applications, quality of experience, dynamic data driven systems},
+location = {Austin, Texas},
+series = {WORKS '15}
+}
+
+@inproceedings{10.1145/3308560.3317075,
+author = {Debattista, Jeremy and Attard, Judie and Brennan, Rob and O'Sullivan, Declan},
+title = {Is the LOD Cloud at Risk of Becoming a Museum for Datasets? Looking Ahead towards a Fully Collaborative and Sustainable LOD Cloud},
+year = {2019},
+isbn = {9781450366755},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3308560.3317075},
+doi = {10.1145/3308560.3317075},
+abstract = {The Linked Open Data (LOD) cloud has been around since 2007. Throughout the years,
+this prominent depiction served as the epitome for Linked Data and acted as a starting
+point for many. In this article we perform a number of experiments on the dataset
+metadata provided by the LOD cloud, in order to understand better whether the current
+visualised datasets are accessible and with an open license. Furthermore, we perform
+quality assessment of 17 metrics over accessible datasets that are part of the LOD
+cloud. These experiments were compared with previous experiments performed on older
+versions of the LOD cloud. The results showed that there was no improvement on previously
+identified problems. Based on our findings, we therefore propose a strategy and architecture
+for a potential collaborative and sustainable LOD cloud.},
+booktitle = {Companion Proceedings of The 2019 World Wide Web Conference},
+pages = {850–858},
+numpages = {9},
+keywords = {LOD cloud, metadata quality, sustainable services, Linked Data, data quality},
+location = {San Francisco, USA},
+series = {WWW '19}
+}
+
+@inproceedings{10.1145/2597176.2578273,
+author = {Wang, Cong and Zink, Michael},
+title = {On the Feasibility of DASH Streaming in the Cloud},
+year = {2014},
+isbn = {9781450327060},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2597176.2578273},
+doi = {10.1145/2597176.2578273},
+abstract = {As shown in recent studies, video streaming is by far the biggest category of backbone
+Internet traffic in the US. As a measure to reduce the cost of highly over-provisioned
+physical infrastructures while remaining the quality of video services, many streaming
+service providers started to use cloud services where physical resources can be dynamically
+allocated based on current demand. This paper characterizes the performance of Dynamic
+Adaptive Streaming over HTTP (DASH), a new MPEG standard on adaptive streaming, in
+the cloud. We seek to answer the following questions that are critical to content
+providers that are hosting video in clouds: Which data center is the best to host
+videos? Does geographical distance matter? What type of instance is best suitable
+depending on different needs? How to efficiently solve the trade-off between performance
+and cost? The measurement methods and results presented in this paper can be easily
+expanded into other VoD services, and they allow us to i) characterize DASH behavior
+when streaming from the cloud; ii) identify the key factors that influence the DASH
+performance; and iii) suggest improvements for related services.},
+booktitle = {Proceedings of Network and Operating System Support on Digital Audio and Video Workshop},
+pages = {49–54},
+numpages = {6},
+keywords = {quality of experience, HTTP adaptive streaming, Cloud computing, video-on-demand},
+location = {Singapore, Singapore},
+series = {NOSSDAV '14}
+}
+
+@inproceedings{10.1145/3194124.3194130,
+author = {Shatnawi, Anas and Orr\`{u}, Matteo and Mobilio, Marco and Riganelli, Oliviero and Mariani, Leonardo},
+title = {Cloudhealth: A Model-Driven Approach to Watch the Health of Cloud Services},
+year = {2018},
+isbn = {9781450357302},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3194124.3194130},
+doi = {10.1145/3194124.3194130},
+abstract = {Cloud systems are complex and large systems where services provided by different operators
+must coexist and eventually cooperate. In such a complex environment, controlling
+the health of both the whole environment and the individual services is extremely
+important to timely and effectively react to misbehaviours, unexpected events, and
+failures. Although there are solutions to monitor cloud systems at different granularity
+levels, how to relate the many KPIs that can be collected about the health of the
+system and how health information can be properly reported to operators are open questions.This
+paper reports the early results we achieved in the challenge of monitoring the health
+of cloud systems. In particular we present CloudHealth, a model-based health monitoring
+approach that can be used by operators to watch specific quality attributes. The Cloud-Health
+Monitoring Model describes how to operationalize high level monitoring goals by dividing
+them into subgoals, deriving metrics for the subgoals, and using probes to collect
+the metrics. We use the CloudHealth Monitoring Model to control the probes that must
+be deployed on the target system, the KPIs that are dynamically collected, and the
+visualization of the data in dashboards.},
+booktitle = {Proceedings of the 1st International Workshop on Software Health},
+pages = {40–47},
+numpages = {8},
+keywords = {quality model, software health, monitoring, cloud service, monitoring model, metrics, KPI},
+location = {Gothenburg, Sweden},
+series = {SoHeal '18}
+}
+
+@inproceedings{10.1145/2565585.2565607,
+author = {Klugman, Noah and Rosa, Javier and Pannuto, Pat and Podolsky, Matthew and Huang, William and Dutta, Prabal},
+title = {Grid Watch: Mapping Blackouts with Smart Phones},
+year = {2014},
+isbn = {9781450327428},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2565585.2565607},
+doi = {10.1145/2565585.2565607},
+abstract = {The power grid is one of humanity's most significant engineering undertakings and
+it is essential in developed and developing nations alike. Currently, transparency
+into the power grid relies on utility companies and more fine-grained insight is provided
+by costly smart meter deployments. We claim that greater visibility into power grid
+conditions can be provided in an inexpensive and crowd-sourced manner independent
+of utility companies by leveraging existing smartphones. Our key insight is that an
+unmodified smartphone can detect power outages by monitoring changes to its own power
+state, locally verifying these outages using a variety of sensors that reduce the
+likelihood of false power outage reports, and corroborating actual reports with other
+phones through data aggregation in the cloud. The proposed approach enables a decentralized
+system that can scale, potentially providing researchers and concerned citizens with
+a powerful new tool to analyze the power grid and hold utility companies accountable
+for poor power quality. This paper demonstrates the viability of the basic idea, identifies
+a number of challenges that are specific to this application as well as ones that
+are common to many crowd-sourced applications, and highlights some improvements to
+smartphone operating systems that could better support such applications in the future.},
+booktitle = {Proceedings of the 15th Workshop on Mobile Computing Systems and Applications},
+articleno = {1},
+numpages = {6},
+keywords = {side channel information, power monitoring, smartphone applications, smart grid, crowdsourcing},
+location = {Santa Barbara, California},
+series = {HotMobile '14}
+}
+
+@article{10.1145/3442187,
+author = {Al-Abbasi, Abubakr O. and Aggarwal, Vaneet},
+title = {VidCloud: Joint Stall and Quality Optimization for Video Streaming over Cloud},
+year = {2021},
+issue_date = {March 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {5},
+number = {4},
+issn = {2376-3639},
+url = {https://doi.org/10.1145/3442187},
+doi = {10.1145/3442187},
+abstract = {As video-streaming services have expanded and improved, cloud-based video has evolved
+into a necessary feature of any successful business for reaching internal and external
+audiences. In this article, video streaming over distributed storage is considered
+where the video segments are encoded using an erasure code for better reliability.
+We consider a representative system architecture for a realistic (typical) content
+delivery network (CDN). Given multiple parallel streams/link between each server and
+the edge router, we need to determine, for each client request, the subset of servers
+to stream the video, as well as one of the parallel streams from each chosen server.
+To have this scheduling, this article proposes a two-stage probabilistic scheduling.
+The selection of video quality is also chosen with a certain probability distribution
+that is optimized in our algorithm. With these parameters, the playback time of video
+segments is determined by characterizing the download time of each coded chunk for
+each video segment. Using the playback times, a bound on the moment generating function
+of the stall duration is used to bound the mean stall duration. Based on this, we
+formulate an optimization problem to jointly optimize the convex combination of mean
+stall duration and average video quality for all requests, where the two-stage probabilistic
+scheduling, video quality selection, bandwidth split among parallel streams, and auxiliary
+bound parameters can be chosen. This non-convex problem is solved using an efficient
+iterative algorithm. Based on the offline version of our proposed algorithm, an online
+policy is developed where servers selection, quality, bandwidth split, and parallel
+streams are selected in an online manner. Experimental results show significant improvement
+in QoE metrics for cloud-based video as compared to the considered baselines.},
+journal = {ACM Trans. Model. Perform. Eval. Comput. Syst.},
+month = jan,
+articleno = {17},
+numpages = {32},
+keywords = {mean stall duration, two-stage probabilistic scheduling, video quality, Video streaming over cloud, erasure codes}
+}
+
+@inproceedings{10.1145/3361525.3361543,
+author = {Grohmann, Johannes and Nicholson, Patrick K. and Iglesias, Jesus Omana and Kounev, Samuel and Lugones, Diego},
+title = {Monitorless: Predicting Performance Degradation in Cloud Applications with Machine Learning},
+year = {2019},
+isbn = {9781450370097},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3361525.3361543},
+doi = {10.1145/3361525.3361543},
+abstract = {Today, software operation engineers rely on application key performance indicators
+(KPIs) for sizing and orchestrating cloud resources dynamically. KPIs are monitored
+to assess the achievable performance and to configure various cloud-specific parameters
+such as flavors of instances and autoscaling rules, among others. Usually, keeping
+KPIs within acceptable levels requires application expertise which is expensive and
+can slow down the continuous delivery of software. Expertise is required because KPIs
+are normally based on application-specific quality-of-service metrics, like service
+response time and processing rate, instead of generic platform metrics, like those
+typical across various environments (e.g., CPU and memory utilization, I/O rate, etc.)In
+this paper, we investigate the feasibility of outsourcing the management of application
+performance from developers to cloud operators. In the same way that the serverless
+paradigm allows the execution environment to be fully managed by a third party, we
+discuss a monitorless model to streamline application deployment by delegating performance
+management. We show that training a machine learning model with platform-level data,
+collected from the execution of representative containerized services, allows inferring
+application KPI degradation. This is an opportunity to simplify operations as engineers
+can rely solely on platform metrics -- while still fulfilling application KPIs --
+to configure portable and application agnostic rules and other cloud-specific parameters
+to automatically trigger actions such as autoscaling, instance migration, network
+slicing, etc.Results show that monitorless infers KPI degradation with an accuracy
+of 97% and, notably, it performs similarly to typical autoscaling solutions, even
+when autoscaling rules are optimally tuned with knowledge of the expected workload.},
+booktitle = {Proceedings of the 20th International Middleware Conference},
+pages = {149–162},
+numpages = {14},
+keywords = {Cloud computing, DevOps, Machine learning, Monitoring},
+location = {Davis, CA, USA},
+series = {Middleware '19}
+}
+
+@inproceedings{10.1145/2835075.2835078,
+author = {Adegboyega, Abiola},
+title = {An Adaptive Resource Provisioning Scheme for Effective QoS Maintenance in the IaaS Cloud},
+year = {2015},
+isbn = {9781450337328},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2835075.2835078},
+doi = {10.1145/2835075.2835078},
+abstract = {Effective bandwidth provisioning is of vital importance in the virtualized cloud where
+tenants with unique SLAs share a finite network. Different tenants collocated on the
+same physical server deployed with increasing VM density necessitates Quality of Service
+(QoS) provisioning beginning at the hypervisor. Recent efforts at provisioning the
+cloud network through various reservation methodologies have achieved some measure
+of success. However most of them do not account for the entire path over which application
+components communicate and cannot provide the necessary Service Level Agreement (SLA).
+Cloud applications components often communicate across multiple network devices aggregated
+into layers connected over finite bandwidth links that affect application response.
+Furthermore, traffic to and from tenant applications display volatility. In view of
+this, we design a virtual network reservation framework that is mindful of application
+performance across multiple network devices &amp; traffic volatility. Our network reservation
+framework is based on a forecasting engine motivated by the volatility existent in
+traffic to and from virtualized cloud environments. This forecasting engine is able
+to maintain SLAs by employing dynamic time-series models to develop novel bandwidth
+provisioning thresholds that adapt to the time-variation in tenant workloads. We test
+the effectiveness of our methods in the OpenStack cloud environment focusing on traffic
+directionality in the datacenter network, VM density and QoS across multiple flows
+competing for finite bandwidth. Our forecasting method offers a 25% improvement in
+prediction accuracy over existing methods while the reservation framework maintains
+SLAs at 95%.},
+booktitle = {Proceedings of the International Workshop on Virtualization Technologies},
+articleno = {2},
+numpages = {6},
+keywords = {Virtualization, QoS, Forecasting, SDN, Volatility},
+location = {Vancouver, BC, Canada},
+series = {VT15}
+}
+
+@inproceedings{10.1145/3094405.3094406,
+author = {Zhao, Yang and Xia, Nai and Tian, Chen and Li, Bo and Tang, Yizhou and Wang, Yi and Zhang, Gong and Li, Rui and Liu, Alex X.},
+title = {Performance of Container Networking Technologies},
+year = {2017},
+isbn = {9781450350587},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3094405.3094406},
+doi = {10.1145/3094405.3094406},
+abstract = {Container networking is now an important part of cloud virtualization architectures.
+It provides network access for containers by connecting both virtual and physical
+network interfaces. The performance of container networking has multiple dependencies,
+and each factor may significantly affect the performance. In this paper, we perform
+systematic experiments to study the performance of container networking technologies.
+For every measurement result, we try our best to qualify influencing factors.},
+booktitle = {Proceedings of the Workshop on Hot Topics in Container Networking and Networked Systems},
+pages = {1–6},
+numpages = {6},
+keywords = {Container, Measurement, Networking},
+location = {Los Angeles, CA, USA},
+series = {HotConNet '17}
+}
+
+@inproceedings{10.5555/2821357.2821366,
+author = {Herbst, Nikolas Roman and Kounev, Samuel and Weber, Andreas and Groenda, Henning},
+title = {BUNGEE: An Elasticity Benchmark for Self-Adaptive IaaS Cloud Environments},
+year = {2015},
+publisher = {IEEE Press},
+abstract = {Today's infrastructure clouds provide resource elasticity (i.e. auto-scaling) mechanisms
+enabling self-adaptive resource provisioning to reflect variations in the load intensity
+over time. These mechanisms impact on the application performance, however, their
+effect in specific situations is hard to quantify and compare. To evaluate the quality
+of elasticity mechanisms provided by different platforms and configurations, respective
+metrics and benchmarks are required. Existing metrics for elasticity only consider
+the time required to provision and deprovision resources or the costs impact of adaptations.
+Existing benchmarks lack the capability to handle open workloads with realistic load
+intensity profiles and do not explicitly distinguish between the performance exhibited
+by the provisioned underlying resources, on the one hand, and the quality of the elasticity
+mechanisms themselves, on the other hand.In this paper, we propose reliable metrics
+for quantifying the timing aspects and accuracy of elasticity. Based on these metrics,
+we propose a novel approach for benchmarking the elasticity of Infrastructure-as-a-Service
+(IaaS) cloud platforms independent of the performance exhibited by the provisioned
+underlying resources. We show that the proposed metrics provide consistent ranking
+of elastic platforms on an ordinal scale. Finally, we present an extensive case study
+of real-world complexity demonstrating that the proposed approach is applicable in
+realistic scenarios and can cope with different levels of resource efficiency.},
+booktitle = {Proceedings of the 10th International Symposium on Software Engineering for Adaptive and Self-Managing Systems},
+pages = {46–56},
+numpages = {11},
+location = {Florence, Italy},
+series = {SEAMS '15}
+}
+

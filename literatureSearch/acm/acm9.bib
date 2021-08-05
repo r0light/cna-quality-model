@@ -1,0 +1,1684 @@
+@inproceedings{10.1145/3349611.3355546,
+author = {Schwind, Anika and Haberzettl, Lorenz and Wamser, Florian and Ho\ss{}feld, Tobias},
+title = {QoE Analysis of Spotify Audio Streaming and App Browsing},
+year = {2019},
+isbn = {9781450369275},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3349611.3355546},
+doi = {10.1145/3349611.3355546},
+abstract = {Spotify is the most-listened audio streaming provider in 2019 with 217 million active
+users per month. Providers are therefore interested in the quality and functionality
+of Spotify in order to provide their users with the best possible streaming quality.
+While video streaming services such as Netflix and their streaming approach have been
+extensively explored in previous research, audio streaming services like Spotify and
+their corresponding behavior at certain network conditions have not been considered
+in detail yet. In this paper, we perform a QoE analysis under various network conditions
+and examine the app browsing performance of the audio streaming platform Spotify using
+its native Android mobile application. We have developed a measurement tool that emulates
+a user listening to audio through Spotify. While streaming, application and network
+layer parameters are captured that have a high correlation to the user's QoE. The
+paper shows a baseline scenario including the streaming of a single song as well as
+playlist streaming behavior. Next, the effect of interruptions on the streaming behavior
+is evaluated and finally, the influence of network impairments on QoE key performance
+indicators such as initial delay is shown.},
+booktitle = {Proceedings of the 4th Internet-QoE Workshop on QoE-Based Analysis and Management of Data Communication Networks},
+pages = {25–30},
+numpages = {6},
+keywords = {mobile application, audio streaming, spotify, qoe, browsing},
+location = {Los Cabos, Mexico},
+series = {Internet-QoE'19}
+}
+
+@inproceedings{10.1145/3229591.3229592,
+author = {R\"{u}th, Jan and Glebke, Ren\'{e} and Wehrle, Klaus and Causevic, Vedad and Hirche, Sandra},
+title = {Towards In-Network Industrial Feedback Control},
+year = {2018},
+isbn = {9781450359085},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3229591.3229592},
+doi = {10.1145/3229591.3229592},
+abstract = {Controlling physical machinery and processes is at the core of production automation.
+However, challenged by inflexibility, automation and control is evaluating to outsource
+this control to resourceful cloud environments. While this enables to derive better
+control through a plethora of measurements, it challenges the control quality through
+delay introduced through networks.In this paper, we show how to unify control and
+communication by offloading delay sensitive control tasks from the cloud to local
+network elements --- a previously unexplored area for in-network processing --- enabling
+both, ultra-high quality-of-control and scalable orchestration through cloud environments.
+Our implementation demonstrates how we combine state of the art control with communication.
+We achieve this by expressing the control and the datapath in P4 which we synthesize
+to BPF programs that we execute in XDP environments on Netronome SmartNICs. Further,
+we highlight the demands of control towards communication to build more involved and
+complex in-network controllers.},
+booktitle = {Proceedings of the 2018 Morning Workshop on In-Network Computing},
+pages = {14–19},
+numpages = {6},
+location = {Budapest, Hungary},
+series = {NetCompute '18}
+}
+
+@inproceedings{10.1145/3070607.3070608,
+author = {Hutchison, Dylan and Howe, Bill and Suciu, Dan},
+title = {LaraDB: A Minimalist Kernel for Linear and Relational Algebra Computation},
+year = {2017},
+isbn = {9781450350198},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3070607.3070608},
+doi = {10.1145/3070607.3070608},
+abstract = {Analytics tasks manipulate structured data with variants of relational algebra (RA)
+and quantitative data with variants of linear algebra (LA). The two computational
+models have overlapping expressiveness, motivating a common programming model that
+affords unified reasoning and algorithm design. At the logical level we propose LARA,
+a lean algebra of three operators, that expresses RA and LA as well as relevant optimization
+rules. We show a series of proofs that position LARA at just the right level of expressiveness
+for a middleware algebra: more explicit than MapReduce but more general than RA or
+LA. At the physical level we find that the LARA operators afford efficient implementations
+using a single primitive that is available in a variety of backend engines: range
+scans over partitioned sorted maps.To evaluate these ideas, we implemented the LARA
+operators as range iterators in Apache Accumulo, a popular implementation of Google's
+BigTable. First we show how LARA expresses a sensor quality control task, and we measure
+the performance impact of optimizations LARA admits on this task. Second we show that
+the LARADB implementation outperforms Accumulo's native MapReduce integration on a
+core task involving join and aggregation in the form of matrix multiply, especially
+at smaller scales that are typically a poor fit for scale-out approaches. We find
+that LARADB offers a conceptually lean framework for optimizing mixed-abstraction
+analytics tasks, without giving up fast record-level updates and scans.},
+booktitle = {Proceedings of the 4th ACM SIGMOD Workshop on Algorithms and Systems for MapReduce and Beyond},
+articleno = {2},
+numpages = {10},
+location = {Chicago, IL, USA},
+series = {BeyondMR'17}
+}
+
+@inproceedings{10.1145/2737095.2742919,
+author = {Nasser, Soliman and Barry, Andew and Doniec, Marek and Peled, Guy and Rosman, Guy and Rus, Daniela and Volkov, Mikhail and Feldman, Dan},
+title = {Fleye on the Car: Big Data Meets the Internet of Things},
+year = {2015},
+isbn = {9781450334754},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2737095.2742919},
+doi = {10.1145/2737095.2742919},
+abstract = {Vehicle-based vision algorithms, such as the collision alert systems [4], are able
+to interpret a scene in real-time and provide drivers with immediate feedback. However,
+such technologies are based on cameras on the car, limited to the vicinity of the
+car, severely limiting their potential. They cannot find empty parking slots, bypass
+traffic jams, or warn about dangers outside the car's immediate surrounding. An intelligent
+driving system augmented with additional sensors and network inputs may significantly
+reduce the number of accidents, improve traffic congestion, and care for the safety
+and quality of people's lives.We propose an open-code system, called Fleye, that consists
+of an autonomous drone (nano quadrotor) that carries a radio camera and flies few
+meters in front and above the car. The streaming video is transmitted in real time
+from the quadcopter to Amazon's EC2 cloud together with information about the driver,
+the drone, and the car's state. The output is then transmitted to the "smart glasses"
+of the driver. The control of the drone, as well as the sensor data collection from
+the driver, is done by low cost (&lt;30$) minicomputer. Most computation is done in the
+cloud, allowing straightforward integration of multiple vehicle behaviour and additional
+sensors, as well as greater computational capability.},
+booktitle = {Proceedings of the 14th International Conference on Information Processing in Sensor Networks},
+pages = {382–383},
+numpages = {2},
+keywords = {video streaming, internet of things, quadrotors, collision alert system},
+location = {Seattle, Washington},
+series = {IPSN '15}
+}
+
+@inproceedings{10.1145/2666310.2666376,
+author = {Qamar, Ahmad M. and Afyouni, Imad and Rahman, Md. Abdur and Rehman, Faizan Ur and Hussain, Delwar and Basalamah, Saleh and Lbath, Ahmed},
+title = {A GIS-Based Serious Game Interface for Therapy Monitoring},
+year = {2014},
+isbn = {9781450331319},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2666310.2666376},
+doi = {10.1145/2666310.2666376},
+abstract = {In this paper, we present a novel idea of a map-based therapy environment for people
+with Hemiplegia. The therapy environment is designed according to the suggestions
+of therapists, which consists of a spatial map browsing serious game augmented with
+our novel multi-sensory natural user interface (NUI). The NUI is based on 3D motion
+sensors that can recognize different hand and body gestures used for browsing a 3D
+or 2D map. The 3D motion sensors work in a non-invasive way; hence, they do not require
+any wearable body attachments and can be used at home without assistance from the
+therapists. The map-browsing environment provides an immersive experience to the disabled
+users, which helps in performing therapy in an interesting and entertaining manner.
+We have developed analytics for measuring certain quality of health improvement metrics
+from each type of spatial map browsing movements. The 3D motion sensors have been
+tested with Nokia, Google, ESRI, and a number of other maps that allow a subject to
+visualize and browse the 3D and 2D maps of the world. The map browsing session data
+shows the nature of big data; hence, the session data is stored in a cloud environment.
+Our developed serious game environment is web-based; thus anyone having the appropriate
+low cost sensor hardware can plug it in and start experiencing a natural way of hands
+free map browsing. We have deployed our framework in a hospital that treats Hemiplegic
+patients. Based on the feedback obtained, the developed platform shows a huge potential
+for use in hospitals that provide physiotherapy services as well as at patients' home
+as an assistive therapeutic service.},
+booktitle = {Proceedings of the 22nd ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems},
+pages = {589–592},
+numpages = {4},
+keywords = {therapy, kinect, GIS, leap, e-health, serious games},
+location = {Dallas, Texas},
+series = {SIGSPATIAL '14}
+}
+
+@inproceedings{10.1145/2774993.2775063,
+author = {Sun, Peng and Vanbever, Laurent and Rexford, Jennifer},
+title = {Scalable Programmable Inbound Traffic Engineering},
+year = {2015},
+isbn = {9781450334518},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2774993.2775063},
+doi = {10.1145/2774993.2775063},
+abstract = {With the rise of video streaming and cloud services, enterprise and access networks
+receive much more traffic than they send, and must rely on the Internet to offer good
+end-to-end performance. These edge networks often connect to multiple ISPs for better
+performance and reliability, but have only limited ways to influence which of their
+ISPs carries the traffic for each service. In this paper, we present Sprite, a software-defined
+solution for flexible inbound traffic engineering (TE). Sprite offers direct, fine-grained
+control over inbound traffic, by announcing different public IP prefixes to each ISP,
+and performing source network address translation (SNAT) on outbound request traffic.
+Our design achieves scalability in both the data plane (by performing SNAT on edge
+switches close to the clients) and the control plane (by having local agents install
+the SNAT rules). The controller translates high-level TE objectives, based on client
+and server names, as well as performance metrics, to a dynamic network policy based
+on real-time traffic and performance measurements. We evaluate Sprite with live data
+from "in the wild" experiments on an EC2-based testbed, and demonstrate how Sprite
+dynamically adapts the network policy to achieve high-level TE objectives, such as
+balancing YouTube traffic among ISPs to improve video quality.},
+booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined Networking Research},
+articleno = {12},
+numpages = {7},
+keywords = {software-defined networking, scalability, traffic engineering},
+location = {Santa Clara, California},
+series = {SOSR '15}
+}
+
+@inproceedings{10.1145/3349611.3355543,
+author = {Loh, Frank and Vomhoff, Viktoria and Wamser, Florian and Metzger, Florian and Ho\ss{}feld, Tobias},
+title = {Traffic Measurement Study on Video Streaming with the Amazon Echo Show},
+year = {2019},
+isbn = {9781450369275},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3349611.3355543},
+doi = {10.1145/3349611.3355543},
+abstract = {The Amazon Echo Show is one of the most widely used smart speakers with the ability
+to stream video. Due to its popularity, the traffic profiles of such devices are of
+interest to network operators and providers. This work presents a measurement study
+of the Amazon Echo Show in terms of network traffic and streaming behavior. More than
+470,hours of streaming data are collected and analyzed at network layer. Based on
+this, streaming quality is derived at application layer. The study quantifies the
+traffic and shows that streaming with the Amazon Echo Show is comparable to streaming
+with a native web browser, but in a more conservative way.},
+booktitle = {Proceedings of the 4th Internet-QoE Workshop on QoE-Based Analysis and Management of Data Communication Networks},
+pages = {31–36},
+numpages = {6},
+keywords = {alexa, traffic analysis, qoe, amazon echo, streaming},
+location = {Los Cabos, Mexico},
+series = {Internet-QoE'19}
+}
+
+@inproceedings{10.1145/3458306.3458873,
+author = {Huang, Tianchi and Zhang, Rui-Xiao and Sun, Lifeng},
+title = {Deep Reinforced Bitrate Ladders for Adaptive Video Streaming},
+year = {2021},
+isbn = {9781450384353},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3458306.3458873},
+doi = {10.1145/3458306.3458873},
+abstract = {In the typical transcoding pipeline for adaptive video streaming, raw videos are pre-chunked
+and pre-encoded according to a set of resolution-bitrate or resolution-quality pairs
+on the server-side, where the pair is often named as bitrate ladder. Different from
+existing heuristics, we argue that a good bitrate ladder should be optimized by considering
+video content features, network capacity, and storage costs on the cloud. We propose
+DeepLadder, a per-chunk optimization scheme which adopts state-of-the-art deep reinforcement
+learning (DRL) method to optimize the bitrate ladder w.r.t the above concerns. Technically,
+DeepLadder selects the proper setting for each video resolution autoregressively.
+We use over 8,000 video chunks, measure over 1,000,000 perceptual video qualities,
+collect real-world network traces for more than 50 hours, and invent faithful virtual
+environments to help train DeepLadder efficiently. Across a series of comprehensive
+experiments on both Constant Bitrate (CBR) and Variable Bitrate (VBR)-encoded videos,
+we demonstrate significant improvements in average video quality bandwidth utilization,
+and storage overhead in comparison to prior work as well as the ability to be deployed
+in the real-world transcoding framework.},
+booktitle = {Proceedings of the 31st ACM Workshop on Network and Operating Systems Support for Digital Audio and Video},
+pages = {66–73},
+numpages = {8},
+keywords = {bitrate ladder, adaptive video streaming},
+location = {Istanbul, Turkey},
+series = {NOSSDAV '21}
+}
+
+@inproceedings{10.1145/2740908.2742827,
+author = {Assaf, Ahmad and Senart, Aline and Troncy, Rapha\"{e}l},
+title = {Roomba: Automatic Validation, Correction and Generation of Dataset Metadata},
+year = {2015},
+isbn = {9781450334730},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2740908.2742827},
+doi = {10.1145/2740908.2742827},
+abstract = {Data is being published by both the public and private sectors and covers a diverse
+set of domains ranging from life sciences to media or government data. An example
+is the Linked Open Data (LOD) cloud which is potentially a gold mine for organizations
+and individuals who are trying to leverage external data sources in order to produce
+more informed business decisions. Considering the significant variation in size, the
+languages used and the freshness of the data, one realizes that spotting spam datasets
+or simply finding useful datasets without prior knowledge is increasingly complicated.
+In this paper, we propose Roomba, a scalable automatic approach for extracting, validating,
+correcting and generating descriptive linked dataset profiles. While Roomba is generic,
+we target CKAN-based data portals and we validate our approach against a set of open
+data portals including the Linked Open Data (LOD) cloud as viewed on the DataHub.
+The results demonstrate that the general state of various datasets and groups, including
+the LOD cloud group, needs more attention as most of the datasets suffer from bad
+quality metadata and lack some informative metrics that are required to facilitate
+dataset search.},
+booktitle = {Proceedings of the 24th International Conference on World Wide Web},
+pages = {159–162},
+numpages = {4},
+keywords = {dataset profile, data quality, linked data, metadata},
+location = {Florence, Italy},
+series = {WWW '15 Companion}
+}
+
+@inproceedings{10.1145/3001913.3006645,
+author = {Gibson, Marsalis T. and Rosa, Javier and Brewer, Eric A.},
+title = {MDB: A Metadata Tracking Microcontroller Micro-Database},
+year = {2016},
+isbn = {9781450346498},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3001913.3006645},
+doi = {10.1145/3001913.3006645},
+abstract = {This work in progress explores a database designed to enable data sharing on custom
+hardware data collection devices and prototypes. Projects and systems are frequently
+based on the Arduino framework, examples include ODK's FoneAstra [3], the Open Energy
+Monitor [7], and the Grove system of sensors [5]. The Arduino platform is targeted
+because of its ease of use, community support, and low cost as a data collecting device
+compared to other off-the-shelf sensors. However, there is a need for a framework
+suitable for microcontrollers that enable ease of integration into other data collection
+systems. This includes the ability to synchronize data with collection and aggregation
+devices designed to work offline as well as the ability to track sensors and describe
+data sources for other machines and users. To address the issue, we propose a solution
+based on an existing small database usable on the Arduino platform that would integrate
+into the Mezuri [6] data collection system. The database is designed to fit within
+the running memory constraints on a microcontroller to store sensor data with relatively
+few fields per reading on flash media. This framework, with explicit support for metadata,
+enables users in emerging regions to directly measure physical quantities as well
+as indirectly measure human behavior in future development projects involving direct
+sensing. The database can be used by a non-expert. In particular, we investigate the
+qualities that a technically inclined social scientist would look for when storing
+such data on microcontrollers. To enable Mezuri integration we will support metadata
+as a first class object accessible with additional utility functions and native synchronization
+support.},
+booktitle = {Proceedings of the 7th Annual Symposium on Computing for Development},
+articleno = {36},
+numpages = {4},
+keywords = {Metadata, Arduino, Embedded Databases, Emerging Regions, Sensors, Data Collection, Microcontroller},
+location = {Nairobi, Kenya},
+series = {ACM DEV '16}
+}
+
+@article{10.1145/3337956,
+author = {Moghaddam, Sara Kardani and Buyya, Rajkumar and Ramamohanarao, Kotagiri},
+title = {Performance-Aware Management of Cloud Resources: A Taxonomy and Future Directions},
+year = {2019},
+issue_date = {September 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {52},
+number = {4},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3337956},
+doi = {10.1145/3337956},
+abstract = {The dynamic nature of the cloud environment has made the distributed resource management
+process a challenge for cloud service providers. The importance of maintaining quality
+of service in accordance with customer expectations and the highly dynamic nature
+of cloud-hosted applications add new levels of complexity to the process. Advances
+in big-data learning approaches have shifted conventional static capacity planning
+solutions to complex performance-aware resource management methods. It is shown that
+the process of decision-making for resource adjustment is closely related to the behavior
+of the system, including the utilization of resources and application components.
+Therefore, a continuous monitoring of system attributes and performance metrics provides
+the raw data for the analysis of problems affecting the performance of the application.
+Data analytic methods, such as statistical and machine-learning approaches, offer
+the required concepts, models, and tools to dig into the data and find general rules,
+patterns, and characteristics that define the functionality of the system. Obtained
+knowledge from the data analysis process helps to determine the changes in the workloads,
+faulty components, or problems that can cause system performance to degrade. A timely
+reaction to performance degradation can avoid violations of service level agreements,
+including performing proper corrective actions such as auto-scaling or other resource
+adjustment solutions. In this article, we investigate the main requirements and limitations
+of cloud resource management, including a study of the approaches to workload and
+anomaly analysis in the context of performance management in the cloud. A taxonomy
+of the works on this problem is presented that identifies main approaches in existing
+research from the data analysis side to resource adjustment techniques. Finally, considering
+the observed gaps in the general direction of the reviewed works, a list of these
+gaps is proposed for future researchers to pursue.},
+journal = {ACM Comput. Surv.},
+month = aug,
+articleno = {84},
+numpages = {37},
+keywords = {Anomaly detection, resource management, big-data analytics, performance management}
+}
+
+@inproceedings{10.1145/3417113.3422184,
+author = {Malavolta, Ivano and Grua, Eoin Martino and Lam, Cheng-Yu and de Vries, Randy and Tan, Franky and Zielinski, Eric and Peters, Michael and Kaandorp, Luuk},
+title = {A Framework for the Automatic Execution of Measurement-Based Experiments on Android Devices},
+year = {2020},
+isbn = {9781450381284},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3417113.3422184},
+doi = {10.1145/3417113.3422184},
+abstract = {Conducting measurement-based experiments is fundamental for assessing the quality
+of Android apps in terms of, e.g., energy consumption, CPU, and memory usage. However,
+orchestrating such experiments is not trivial as it requires large boilerplate code,
+careful setup of measurement tools, and the adoption of various empirical best practices
+scattered across the literature. All together, those factors are slowing down the
+scientific advancement and harming experiments' replicability in the mobile software
+engineering area.In this paper we present Android Runner (AR), a framework for automatically
+executing measurement-based experiments on native and web apps running on Android
+devices. In AR, an experiment is defined once in a descriptive fashion, and then its
+execution is fully automatic, customizable, and replicable. AR is implemented in Python
+and it can be extended with third-party profilers.AR has been used in more than 25
+scientific studies primarily targeting performance and energy efficiency.},
+booktitle = {Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering Workshops},
+pages = {61–66},
+numpages = {6},
+location = {Virtual Event, Australia},
+series = {ASE '20}
+}
+
+@inproceedings{10.1145/3277593.3277619,
+author = {Belkaroui, Rami and Bertaux, Aur\'{e}lie and Labbani, Ouassila and Hugol-Gential, Cl\'{e}mentine and Nicolle, Christophe},
+title = {Towards Events Ontology Based on Data Sensors Network for Viticulture Domain},
+year = {2018},
+isbn = {9781450365642},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3277593.3277619},
+doi = {10.1145/3277593.3277619},
+abstract = {Wine Cloud project is the first "Big Data" platform on the french viticulture value
+chain. The aim of this platform is to provide a complete traceability of the life
+cycle of the wine, from the wine-grower to the consumer. In particular, Wine Cloud
+may qualify as an agricultural decision platform that will be used for vine life cycle
+management in order to predict the occurrence of major risks (vine diseases, grape
+vine pests, physiological risks, fermentation stoppage, oxidation of vine, etc...).
+Also to make wine production more rational by offering winegrower a set of recommendation
+regarding their strategy's of production development.The proposed platform "Wine Cloud"
+is based on heterogeneous sensors network (agricultural machines, plant sensors and
+measuring stations) deployed throughout a vineyard. These sensors allow for capturing
+data from the agricultural process and remote monitoring vineyards in the Internet
+of Things (IoT) era. However, the sensors data from different source is hard to work
+together for lack of semantic. Therefore, the task of coherently combining heterogeneous
+sensors data becomes very challenging. The integration of heterogeneous data from
+sensors can be achieved by data mining algorithms able to build correlations. Nevertheless,
+the meaning and the value of these correlations is difficult to perceive without highlighting
+the meaning of the data and the semantic description of the measured environment.In
+order to bridge this gap and build causality relationships form heterogeneous sensor
+data, we propose an ontology-based approach, that consists in exploring heterogeneous
+sensor data (light, temperature, atmospheric pressure, etc) in terms of ontologies
+enriched with semantic meta-data describing the life cycle of the monitored environment.},
+booktitle = {Proceedings of the 8th International Conference on the Internet of Things},
+articleno = {44},
+numpages = {7},
+keywords = {semantic sensor data, smart viticulture, ontologies, event ontology, IoT, big data},
+location = {Santa Barbara, California, USA},
+series = {IOT '18}
+}
+
+@inproceedings{10.1145/3412841.3441886,
+author = {Chikhaoui, Amina and Lemarchand, Laurent and Boukhalfa, Kamel and Boukhobza, Jalil},
+title = {<i>StorNIR</i>, a Multi-Objective Replica Placement Strategy for Cloud Federations},
+year = {2021},
+isbn = {9781450381048},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3412841.3441886},
+doi = {10.1145/3412841.3441886},
+abstract = {Federation of clouds makes it possible to transparently extend the resources of Cloud
+Service Providers (CSPs). For storage services several metrics need to be considered
+to satisfy customers QoS, that is storage performance, network latency and data availability.
+Data replication is a key strategy to optimize such metrics. For a CSP, member of
+a Federation, an effective placement of customers data object replicas is crucial
+to satisfy QoS demands. In this paper, we modeled the replica placement problem as
+a multi-objective optimization problem (MOOP) taking into account the local storage
+classes, other federation CSPs (external) storage services, and customers requirements.
+To solve this problem, we propose StorNIR a cost-efficient data object Storing scheme
+based on NSGAII upgraded with Injection and Reparation operators. StorNIR is a matheuristic
+that consists in hybridizing an exact method with NSGAII meta-heuristic. A repair
+operator was designed to make the solutions feasible with regards to the system constraints
+(storage volume, IOPs, etc). StorNIR performed better than both NSGAII meta-heuristic
+and the exact method in terms of quality of solutions and scalability. The repair
+function improves the NSGAII meta-heuristic up to 7 times with 7.4% more extra time
+execution. On average, StorNIR enhances by 17 times the quality of the initial solutions
+calculated by CPLEX in terms of Hypervolume. In addition, the designed matheuristic
+approach can be generalized to other meta-heuristics than NSGAII such as MOPSO meta-heuristic.},
+booktitle = {Proceedings of the 36th Annual ACM Symposium on Applied Computing},
+pages = {50–59},
+numpages = {10},
+location = {Virtual Event, Republic of Korea},
+series = {SAC '21}
+}
+
+@inproceedings{10.1145/3447526.3472057,
+author = {Chaudhary, Akash and Belani, Manshul and Maheshwari, Naman and Parnami, Aman},
+title = {Verbose : Designing a Context-Based Educational System for Improving Communicative Expressions},
+year = {2021},
+isbn = {9781450383288},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447526.3472057},
+doi = {10.1145/3447526.3472057},
+abstract = { ESL (English as a second language) speakers tend to follow the tone structure of
+their first language, making their speech difficult to understand for native speakers,
+thereby limiting their opportunities for education and employment. To address this
+problem, we build an interactive smartphone-based educational mobile application using
+the user-centered design process. This application teaches English intonations based
+on globally consistent pitch patterns through conversations with a trained chat assistant,
+which inculcates expert linguists’ teaching principles. After co-designing the application’s
+parameters with primary stakeholders and expert visual designers, we assess its effectiveness
+by measuring the pre and post-performance of the users after the system usage, using
+various quantitative measures, like intonation scores, SEQ, and SUS. Feedback from
+users suggests that ESL speakers find significant improvement in the perception of
+their vocal expressions, thereby highlighting the necessity of such a system in improving
+the quality of conversations that people have in general.},
+booktitle = {Proceedings of the 23rd International Conference on Mobile Human-Computer Interaction},
+articleno = {41},
+numpages = {13},
+keywords = {Stress-timed language, Learning application, Context-based learning, Intonations, Communicative expressions},
+location = {Toulouse &amp; Virtual, France},
+series = {MobileHCI '21}
+}
+
+@inproceedings{10.1145/3018896.3025135,
+author = {Saha, Debanshee and Shinde, Manasi and Thadeshwar, Shail},
+title = {IoT Based Air Quality Monitoring System Using Wireless Sensors Deployed in Public Bus Services},
+year = {2017},
+isbn = {9781450347747},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3018896.3025135},
+doi = {10.1145/3018896.3025135},
+abstract = {The ambient air quality monitoring network involves the measurement of a number of
+air pollutants at various locations in the city so as to maintain a sustainable air
+quality. It is the need of hour to monitor air quality in order to reduce air pollution.
+Exposure to air pollution can lead to respiratory and cardiovascular diseases, which
+is estimated to be the cause for 620,000 early deaths in 2010, and the impact on health
+due to air pollution in India has been calculated at 3 percent of its GDP. In recent
+years, air pollution has acquired critical dimensions and the air quality in most
+cities that monitor outdoor air pollution fail to meet WHO guidelines for safe levels.
+Air pollution is a major environmental change that causes many hazardous effects on
+human beings which need to be controlled. With the advancements in technology, several
+innovations have been made in the field of communications that are transitioning to
+the Internet of Things (IoT). In this domain, Wireless Sensor Networks (WSN) are one
+of those independent sensing devices to monitor physical and environmental conditions
+along with thousands of applications in other fields. In this paper, we are proposing
+the deployment of WSN sensor nodes in public transport buses for the constant monitoring
+of air pollution. The data regarding the air pollution particles such as emissions,
+smoke, and other pollutants will be collected via sensors on the public transport
+bus and the data will be aggregated and transmitted to the nearest sink node. Using
+the concept of the Internet of Things (IoT) the collected data will be uploaded on
+the cloud server also called as the IoT cloud where a large amount of the data is
+stored. This data can then be accessed at any point to analyze and accurate measures
+can be taken to map the air pollution.},
+booktitle = {Proceedings of the Second International Conference on Internet of Things, Data and Cloud Computing},
+articleno = {87},
+numpages = {6},
+keywords = {smart city, air pollution, wireless sensor networks, internet of things (IoT)},
+location = {Cambridge, United Kingdom},
+series = {ICC '17}
+}
+
+@inproceedings{10.1145/3090354.3090366,
+author = {Zertal, Soumia and Batouche, Mohamed Chawki},
+title = {A Hybrid Approach for Optimized Composition of Cloud Services},
+year = {2017},
+isbn = {9781450348522},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3090354.3090366},
+doi = {10.1145/3090354.3090366},
+abstract = {The increasing use of Cloud services as well as the increasing demands of complex
+cloud services creates the need for a dynamic and adaptive composition of services,
+in a decentralized and large scale environment, where the quality of services may
+increase or decrease. Early attempts for dynamic composition of services have been
+proposed. But they are limited by their ability to adapt when deploying in highly
+dynamic and open environments. For better performance measurements, we use, in this
+paper, the Particle Swarm Optimization (PSO) algorithm to find and provide the services
+that meets the user's query. To assess the utility of each service, we take into consideration
+its values of service quality provided in the past. The latter is represented by the
+mechanism of stigmergy which uses the pheromone as a means of communication between
+services.},
+booktitle = {Proceedings of the 2nd International Conference on Big Data, Cloud and Applications},
+articleno = {12},
+numpages = {7},
+keywords = {Stigmegy, Optimization, Particle Swarm Optimization, Service Composition, Cloud Computing},
+location = {Tetouan, Morocco},
+series = {BDCA'17}
+}
+
+@inproceedings{10.1145/3098603.3098608,
+author = {Tasiopoulos, Argyrios G. and Atarashi, Ray and Psaras, Ioannis and Pavlou, George},
+title = {On the Bitrate Adaptation of Shared Media Experience Services},
+year = {2017},
+isbn = {9781450350563},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3098603.3098608},
+doi = {10.1145/3098603.3098608},
+abstract = {In Shared Media Experience Services (SMESs), a group of people is interested in streaming
+consumption in a synchronised way, like in the case of cloud gaming, live streaming,
+and interactive social applications. However, group synchronisation comes at the expense
+of other Quality of Experience (QoE) factors due to both the dynamic and diverse network
+conditions that each group member experiences. Someone might wonder if there is a
+way to keep a group synchronised while maintaining the highest possible QoE for each
+one of its members. In this work, at first we create a Quality Assessment Framework
+capable of evaluating different SMESs improvement approaches with respect to traditional
+metrics like media bitrate quality, playback disruption, and end user desynchronisation.
+Secondly, we focus on the bitrate adaptation for improving the QoE of SMESs, as an
+incrementally deployable end user triggered approach, and we formulate the problem
+in the context of Adaptive Real Time Dynamic Programming (ARTDP). Finally, we develop
+and apply a simple QoE aware bitrate adaptation mechanism that we compare against
+youtube live-streaming traces to find that it improves the youtube performance by
+more than 30%.},
+booktitle = {Proceedings of the Workshop on QoE-Based Analysis and Management of Data Communication Networks},
+pages = {25–30},
+numpages = {6},
+keywords = {Bitrate Adaptation, QoE Assessment Framework, Shared Media Experience Services (SMESs)},
+location = {Los Angeles, CA, USA},
+series = {Internet QoE '17}
+}
+
+@article{10.1145/3383464,
+author = {Zeng, Xuezhi and Garg, Saurabh and Barika, Mutaz and Zomaya, Albert Y. and Wang, Lizhe and Villari, Massimo and Chen, Dan and Ranjan, Rajiv},
+title = {SLA Management for Big Data Analytical Applications in Clouds: A Taxonomy Study},
+year = {2020},
+issue_date = {June 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {53},
+number = {3},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3383464},
+doi = {10.1145/3383464},
+abstract = {Recent years have witnessed the booming of big data analytical applications (BDAAs).
+This trend provides unrivaled opportunities to reveal the latent patterns and correlations
+embedded in the data, and thus productive decisions may be made. This was previously
+a grand challenge due to the notoriously high dimensionality and scale of big data,
+whereas the quality of service offered by providers is the first priority. As BDAAs
+are routinely deployed on Clouds with great complexities and uncertainties, it is
+a critical task to manage the service level agreements (SLAs) so that a high quality
+of service can then be guaranteed. This study performs a systematic literature review
+of the state of the art of SLA-specific management for Cloud-hosted BDAAs. The review
+surveys the challenges and contemporary approaches along this direction centering
+on SLA. A research taxonomy is proposed to formulate the results of the systematic
+literature review. A new conceptual SLA model is defined and a multi-dimensional categorization
+scheme is proposed on its basis to apply the SLA metrics for an in-depth understanding
+of managing SLAs and the motivation of trends for future research.},
+journal = {ACM Comput. Surv.},
+month = jun,
+articleno = {46},
+numpages = {40},
+keywords = {SLA metrics, Big data, big data analytics application, service level agreement, SLA, service layer}
+}
+
+@inproceedings{10.1145/3428502.3428618,
+author = {Symeonidis, Panagiotis and Mitropoulos, Pantelis and Taskaris, Simeon and Vakkas, Theodoros and Adamopoulou, Eleni and Karakirios, Dimitrios and Salamalikis, Vasileios and Kosmopoulos, Georgios and Kazantzidis, Andreas},
+title = {ThermiAir: An Innovative Air Quality Monitoring System for Airborne Particulate Matter in Thermi, Greece},
+year = {2020},
+isbn = {9781450376747},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3428502.3428618},
+doi = {10.1145/3428502.3428618},
+abstract = {This paper presents the development of an innovative air quality monitoring platform
+for the Municipality of Thermi in Thessaloniki. The monitoring network consists of
+25 low cost but very accurate IoT sensors measuring the concentration of Particulate
+Matter (PM 10, PM 2.5, PM 1.0). Using these new generation of sensors, it is feasible
+to monitor air quality at city block level, revealing the spatial pattern of air pollution,
+and thus allowing local and regional agencies to design and apply the most suitable
+policies and measures to tackle the air pollution problem. The real time measurements
+are stored in the Cloud and are disseminated to the citizens and the local authorities'
+stakeholders through a web and a mobile app. The web application provides an air quality
+dashboard which presents the overall air quality in the Municipality. Both the Air
+Quality Index (AQI) and raw concentration data are used. Various types of presentations
+are available including maps and charts. The web application provides also a three-day
+air quality forecast using the Copernicus forecast data. The mobile app provides easy
+access to the real time data in a simple to understand way, suitable for the public
+users.},
+booktitle = {Proceedings of the 13th International Conference on Theory and Practice of Electronic Governance},
+pages = {775–778},
+numpages = {4},
+keywords = {data analytics, Air pollution, geographic information systems, Air quality, IoT sensors},
+location = {Athens, Greece},
+series = {ICEGOV 2020}
+}
+
+@inproceedings{10.1145/3339825.3393581,
+author = {Taraghi, Babak and Zabrovskiy, Anatoliy and Timmerer, Christian and Hellwagner, Hermann},
+title = {CAdViSE: Cloud-Based Adaptive Video Streaming Evaluation Framework for the Automated Testing of Media Players},
+year = {2020},
+isbn = {9781450368452},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3339825.3393581},
+doi = {10.1145/3339825.3393581},
+abstract = {Attempting to cope with fluctuations of network conditions in terms of available bandwidth,
+latency and packet loss, and to deliver the highest quality of video (and audio) content
+to users, research on adaptive video streaming has attracted intense efforts from
+the research community and huge investments from technology giants. How successful
+these efforts and investments are, is a question that needs precise measurements of
+the results of those technological advancements. HTTP-based Adaptive Streaming (HAS)
+algorithms, which seek to improve video streaming over the Internet, introduce video
+bitrate adaptivity in a way that is scalable and efficient. However, how each HAS
+implementation takes into account the wide spectrum of variables and configuration
+options, brings a high complexity to the task of measuring the results and visualizing
+the statistics of the performance and quality of experience. In this paper, we introduce
+CAdViSE, our Cloud-based Adaptive Video Streaming Evaluation framework for the automated
+testing of adaptive media players. The paper aims to demonstrate a test environment
+which can be instantiated in a cloud infrastructure, examines multiple media players
+with different network attributes at defined points of the experiment time, and finally
+concludes the evaluation with visualized statistics and insights into the results.},
+booktitle = {Proceedings of the 11th ACM Multimedia Systems Conference},
+pages = {349–352},
+numpages = {4},
+keywords = {HTTP adaptive streaming, MPEG-DASH, automated testing, network emulation, quality of experience, media players},
+location = {Istanbul, Turkey},
+series = {MMSys '20}
+}
+
+@inproceedings{10.1145/3349614.3356028,
+author = {Tomei, Matthew and Schwing, Alexander and Narayanasamy, Satish and Kumar, Rakesh},
+title = {Sensor Training Data Reduction for Autonomous Vehicles},
+year = {2019},
+isbn = {9781450369282},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3349614.3356028},
+doi = {10.1145/3349614.3356028},
+abstract = {Ensuring safety and reliability of autonomous vehicles requires good learning models
+which, in turn, require a large amount of real-world training data. Data produced
+by in-vehicle sensors (e.g., cameras, LIDARs, IMUs, etc.) can be used for training;
+however, both local storage and transmission of this sensor data to the cloud for
+subsequent use in training can be prohibitively expensive due to the staggering volume
+of data produced by these sensors, especially the cameras. In this paper, we perform
+the first exploration of techniques for reducing video frames in a way that the quality
+of training for autonomous vehicles is minimally affected. We particularly focus on
+utility aware data reduction schemes where the potential contribution of a video frame
+to enhancing the quality of learning (or utility) is explicitly considered during
+data reduction. Since actual utility of a video frame cannot be computed online, we
+use surrogate utility metrics to decide what video frames to keep for training and
+which ones to discard. Our results show that utility-aware data reduction schemes
+can reduce the amount of camera data required for training by as much as $16times$
+compared to random sampling for the same quality of learning (in terms of IoU).},
+booktitle = {Proceedings of the 2019 Workshop on Hot Topics in Video Analytics and Intelligent Edges},
+pages = {45–50},
+numpages = {6},
+keywords = {sensor, semantic segmentation, compression, machine learning, self driving car, autonomous vehicle, data reduction, active learning},
+location = {Los Cabos, Mexico},
+series = {HotEdgeVideo'19}
+}
+
+@inproceedings{10.1109/CCGRID.2017.120,
+author = {Shekhar, Shashank and Gokhale, Aniruddha},
+title = {Dynamic Resource Management Across Cloud-Edge Resources for Performance-Sensitive Applications},
+year = {2017},
+isbn = {9781509066100},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGRID.2017.120},
+doi = {10.1109/CCGRID.2017.120},
+abstract = {A large number of modern applications and systems are cloud-hosted, however, limitations
+in performance assurances from the cloud, and the longer and often unpredictable end-to-end
+network latencies between the end user and the cloud can be detrimental to the response
+time requirements of the applications, specifically those that have stringent Quality
+of Service (QoS) requirements. Although edge resources, such as cloudlets, may alleviate
+some of the latency concerns, there is a general lack of mechanisms that can dynamically
+manage resources across the cloud-edge spectrum. To address these gaps, this research
+proposes Dynamic Data Driven Cloud and Edge Systems (D3CES). It uses measurement data
+collected from adaptively instrumenting the cloud and edge resources to learn and
+enhance models of the distributed resource pool. In turn, the framework uses the learned
+models in a feedback loop to make effective resource management decisions to host
+applications and deliver their QoS properties. D3CES is being evaluated in the context
+of a variety of cyber physical systems, such as smart city, online games, and augmented
+reality applications.},
+booktitle = {Proceedings of the 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing},
+pages = {707–710},
+numpages = {4},
+keywords = {CPS, Edge Computing, IoT, DDDAS, Cloud Computing, Fog Computing, Resource Management},
+location = {Madrid, Spain},
+series = {CCGrid '17}
+}
+
+@inproceedings{10.1145/3173162.3173207,
+author = {Lottarini, Andrea and Ramirez, Alex and Coburn, Joel and Kim, Martha A. and Ranganathan, Parthasarathy and Stodolsky, Daniel and Wachsler, Mark},
+title = {Vbench: Benchmarking Video Transcoding in the Cloud},
+year = {2018},
+isbn = {9781450349116},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3173162.3173207},
+doi = {10.1145/3173162.3173207},
+abstract = {This paper presents vbench, a publicly available benchmark for cloud video services.
+We are the first study, to the best of our knowledge, to characterize the emerging
+video-as-a-service workload. Unlike prior video processing benchmarks, vbench's videos
+are algorithmically selected to represent a large commercial corpus of millions of
+videos. Reflecting the complex infrastructure that processes and hosts these videos,
+vbench includes carefully constructed metrics and baselines. The combination of validated
+corpus, baselines, and metrics reveal nuanced tradeoffs between speed, quality, and
+compression. We demonstrate the importance of video selection with a microarchitectural
+study of cache, branch, and SIMD behavior. vbench reveals trends from the commercial
+corpus that are not visible in other video corpuses. Our experiments with GPUs under
+vbench's scoring scenarios reveal that context is critical: GPUs are well suited for
+live-streaming, while for video-on-demand shift costs from compute to storage and
+network. Counterintuitively, they are not viable for popular videos, for which highly
+compressed, high quality copies are required. We instead find that popular videos
+are currently well-served by the current trajectory of software encoders.},
+booktitle = {Proceedings of the Twenty-Third International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {797–809},
+numpages = {13},
+keywords = {video transcoding, accelerator, benchmark},
+location = {Williamsburg, VA, USA},
+series = {ASPLOS '18}
+}
+
+@article{10.1145/3296957.3173207,
+author = {Lottarini, Andrea and Ramirez, Alex and Coburn, Joel and Kim, Martha A. and Ranganathan, Parthasarathy and Stodolsky, Daniel and Wachsler, Mark},
+title = {Vbench: Benchmarking Video Transcoding in the Cloud},
+year = {2018},
+issue_date = {February 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {53},
+number = {2},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/3296957.3173207},
+doi = {10.1145/3296957.3173207},
+abstract = {This paper presents vbench, a publicly available benchmark for cloud video services.
+We are the first study, to the best of our knowledge, to characterize the emerging
+video-as-a-service workload. Unlike prior video processing benchmarks, vbench's videos
+are algorithmically selected to represent a large commercial corpus of millions of
+videos. Reflecting the complex infrastructure that processes and hosts these videos,
+vbench includes carefully constructed metrics and baselines. The combination of validated
+corpus, baselines, and metrics reveal nuanced tradeoffs between speed, quality, and
+compression. We demonstrate the importance of video selection with a microarchitectural
+study of cache, branch, and SIMD behavior. vbench reveals trends from the commercial
+corpus that are not visible in other video corpuses. Our experiments with GPUs under
+vbench's scoring scenarios reveal that context is critical: GPUs are well suited for
+live-streaming, while for video-on-demand shift costs from compute to storage and
+network. Counterintuitively, they are not viable for popular videos, for which highly
+compressed, high quality copies are required. We instead find that popular videos
+are currently well-served by the current trajectory of software encoders.},
+journal = {SIGPLAN Not.},
+month = mar,
+pages = {797–809},
+numpages = {13},
+keywords = {video transcoding, accelerator, benchmark}
+}
+
+@inproceedings{10.1109/CCGRID.2018.00021,
+author = {Imai, Shigeru and Patterson, Stacy and Varela, Carlos A.},
+title = {Uncertainty-Aware Elastic Virtual Machine Scheduling for Stream Processing Systems},
+year = {2018},
+isbn = {9781538658154},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGRID.2018.00021},
+doi = {10.1109/CCGRID.2018.00021},
+abstract = {Stream processing systems deployed on the cloud need to be elastic to effectively
+accommodate workload variations over time. Performance models can predict maximum
+sustainable throughput (MST) as a function of the number of VMs allocated. We present
+a scheduling framework that incorporates three statistical techniques to improve Quality
+of Service (QoS) of cloud stream processing systems: (i) uncertainty quantification
+to consider variance in the MST model; (ii) online learning to update MST model as
+new performance metrics are gathered; and (iii) workload models to predict input data
+stream rates assuming regular patterns occur over time. Our framework can be parameterized
+by a QoS satisfaction target that statistically finds the best performance/cost tradeoff.
+Our results illustrate that each of the three techniques alone significantly improves
+QoS, from 52% to 73-81% QoS satisfaction rates on average for eight benchmark applications.
+Furthermore, applying all three techniques allows us to reach 98.62% QoS satisfaction
+rate with a cost less than twice the cost of the optimal (in hindsight) VM allocations,
+and half of the cost of allocating VMs for the peak demand in the workload.},
+booktitle = {Proceedings of the 18th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing},
+pages = {62–71},
+numpages = {10},
+location = {Washington, District of Columbia},
+series = {CCGrid '18}
+}
+
+@inproceedings{10.1145/3344341.3368796,
+author = {Kuhlenkamp, J\"{o}rn and Werner, Sebastian and Borges, Maria C. and El Tal, Karim and Tai, Stefan},
+title = {An Evaluation of FaaS Platforms as a Foundation for Serverless Big Data Processing},
+year = {2019},
+isbn = {9781450368940},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3344341.3368796},
+doi = {10.1145/3344341.3368796},
+abstract = {Function-as-a-Service (FaaS), offers a new alternative to operate cloud-based applications.
+FaaS platforms enable developers to define their application only through a set of
+service functions, relieving them of infrastructure management tasks, which are executed
+automatically by the platform. Since its introduction, FaaS has grown to support workloads
+beyond the lightweight use-cases it was originally intended for, and now serves as
+a viable paradigm for big data processing. However, several questions regarding FaaS
+platform quality are still unanswered. Specifically, the impact of automatic infrastructure
+management on serverless big data applications remains unexplored.In this paper, we
+propose a novel evaluation method (SIEM) to understand the impact of these tasks.
+For this purpose, we introduce new metrics to quantify quality in different big data
+application scenarios. We show an application of SIEM by evaluating the four major
+FaaS providers, and contribute results and new insights for FaaS-based big data processing.},
+booktitle = {Proceedings of the 12th IEEE/ACM International Conference on Utility and Cloud Computing},
+pages = {1–9},
+numpages = {9},
+keywords = {serverless, benchmarking, big data processing, cloud computing},
+location = {Auckland, New Zealand},
+series = {UCC'19}
+}
+
+@inproceedings{10.1145/3395027.3419595,
+author = {Ughetta, William and Kernighan, Brian W.},
+title = {The Old Bailey and OCR: Benchmarking AWS, Azure, and GCP with 180,000 Page Images},
+year = {2020},
+isbn = {9781450380003},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3395027.3419595},
+doi = {10.1145/3395027.3419595},
+abstract = {The Proceedings of the Old Bailey is a corpus of over 180,000 page images of court
+records printed from April 1674 to April 1913 and presents a comprehensive challenge
+for Optical Character Recognition (OCR) services. The Old Bailey is an ideal benchmark
+for historical document OCR, representing more than two centuries of variations in
+documents, including spellings, formats, and printing and preservation qualities.
+In addition to its historical and sociological significance, the Old Bailey is filled
+with imperfections that reflect the reality of coping with large-scale historical
+data. Most importantly, the Old Bailey contains human transcriptions for each page,
+which can be used to help measure OCR accuracy. Since humans do make mistakes in transcriptions,
+the relative performance of OCR services will be more informative than their absolute
+performance. This paper compares three leading commercial OCR cloud services: Amazon
+Web Services's Textract (AWS); Microsoft Azure's Cognitive Services (Azure); and Google
+Cloud Platform's Vision (GCP). Benchmarking involved downloading over 180,000 images,
+executing the OCR, and measuring the error rate of the OCR text against the human
+transcriptions. Our results found that AWS had the lowest median error rate, Azure
+had the lowest median round trip time, and GCP had the best combination of a low error
+rate and a low duration.},
+booktitle = {Proceedings of the ACM Symposium on Document Engineering 2020},
+articleno = {19},
+numpages = {4},
+keywords = {Old Bailey, Historical Documents, Amazon Web Services, Optical Character Recognition, Microsoft Azure, Google Cloud Platform},
+location = {Virtual Event, CA, USA},
+series = {DocEng '20}
+}
+
+@inproceedings{10.1109/CCGrid.2014.22,
+author = {Byholm, Benjamin and Porres, Iv\'{a}n},
+title = {Cost-Efficient, Reliable, Utility-Based Session Management in the Cloud},
+year = {2014},
+isbn = {9781479927838},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/CCGrid.2014.22},
+doi = {10.1109/CCGrid.2014.22},
+abstract = {We present a model and system for cost-efficient and reliable management of sessions
+in a Cloud, based on the von Neumann-Morgenstern utility theorem. Our model enables
+a web application provider to maximize profit while maintaining a desired quality
+of service. The objective is to determine whether, when, where, and how long to store
+a session, given multiple storage options with various properties, e.g. cost, capacity,
+and reliability. Reliability is affected by three factors: how often session state
+is stored, how many stores are used, and how reliable those stores are. To account
+for these factors, we use a Markovian reliability model and treat the valid storage
+options for each session as a von Neumann-Morgenstern lottery. We proceed by representing
+the resulting problem as a knapsack problem, which can be heuristically solved for
+a good compromise between efficiency and effectiveness. We analyze the results from
+a discrete-event simulation involving multiple session management policies, including
+two utility-based policies: a greedy heuristic policy intended to give real-time performance
+and a reference policy based on solving the linear programming relaxation of the knapsack
+problem, giving a theoretical upper bound on achievable utility. As the focus of this
+work is exploratory, rather than performance-based, we do not directly measure the
+time required for solving the model. Instead, we give the computational complexity
+of the algorithms. Our results indicate that otherwise unprofitable services become
+profitable through utility-based session management in a cloud setting. However, if
+the costs are much lower than the expected revenues, all policies manage to turn a
+profit. Different policies performed the best under different circumstances.},
+booktitle = {Proceedings of the 14th IEEE/ACM International Symposium on Cluster, Cloud, and Grid Computing},
+pages = {102–111},
+numpages = {10},
+keywords = {analytical models, and serviceability, availability, utility theory, simulation, web-based services, distributed systems, markov processes, reliability},
+location = {Chicago, Illinois},
+series = {CCGRID '14}
+}
+
+@inproceedings{10.1145/3380851.3416742,
+author = {Berger, Arthur},
+title = {Designing an Analytics Approach for Technical Content},
+year = {2020},
+isbn = {9781450375252},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3380851.3416742},
+doi = {10.1145/3380851.3416742},
+abstract = {Working on an enterprise cloud product, my documentation team rethought our approach
+to content analytics. Despite a variety of tools and awareness of industry best practices,
+my team felt stuck using analytics only in annual or on-demand reports to management,
+instead of to produce value for our end users. We employed Design Thinking practices
+to guide a multifaceted user research project that led to changes in the way that
+we created documentation and automated quality content checks. Key takeaways include
+to involve the technical documentation team in identifying not only what metrics to
+collect, but also how to collect, report, and use the metrics in order to increase
+buy-in and the likelihood that data analytics about content leads to meaningful change
+within the content itself.},
+booktitle = {Proceedings of the 38th ACM International Conference on Design of Communication},
+articleno = {7},
+numpages = {5},
+keywords = {Data analytics, design thinking,, content strategy},
+location = {Denton, TX, USA},
+series = {SIGDOC '20}
+}
+
+@inproceedings{10.1145/3428502.3428511,
+author = {Branco, Te\'{o}filo T. and Kawashita, Ilka M. and de S\'{a}-Soares, Filipe and Monteiro, Cl\'{a}udio N.},
+title = {An IoT Application Case Study to Optimize Electricity Consumption in the Government Sector},
+year = {2020},
+isbn = {9781450376747},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3428502.3428511},
+doi = {10.1145/3428502.3428511},
+abstract = {This paper presents a case study where sensor modules supported by Internet of Things
+(IoT) technology were used to monitor and control electricity consumption of air conditioning
+units in an innovation center of a public government institution. This study evaluates
+alternatives to improve the management of electricity consumption in Salvador City
+Hall's facilities. To contribute to the economy and sustainability of the Administration,
+we aim to increase the efficiency of the processes currently adopted. Our focus is
+on minimizing electricity waste and reducing costs. Installed sensor modules measure
+electricity consumption and control the operation of air conditioning equipment, allowing
+the administrator to manage the operation of these devices. The installation of smart
+sensor modules connected to an IoT platform allows energy consumption data to be sent
+to a computing Cloud and to be monitored remotely through dashboards generated by
+specialized software. A quantitative analysis was conducted to measure the efficiency
+of the air conditioning control system and identify opportunities for applying the
+IoT solution to control natural resources in the public sector. The monitoring of
+these signals subsidized the analyzes required for informed decision making of interventions
+to improve the system's stability and promote the reduction of consumption. Also,
+the system has demonstrated its ability to protect air conditioners, monitor the quality
+of the power supplied, proactively control consumption, and establish appropriate
+user behaviors for reducing consumption. Results demonstrated the feasibility of implementing
+automated systems to improve the consumption of natural resources in the public sector.
+We also identified some managerial behaviors required to enable this type of technological
+solution.},
+booktitle = {Proceedings of the 13th International Conference on Theory and Practice of Electronic Governance},
+pages = {70–81},
+numpages = {12},
+keywords = {Internet of Thinks (IoT), Sustainability, Innovation, Smart Technologies, E-government},
+location = {Athens, Greece},
+series = {ICEGOV 2020}
+}
+
+@inproceedings{10.1145/2987550.2987584,
+author = {Cano, Ignacio and Aiyar, Srinivas and Krishnamurthy, Arvind},
+title = {Characterizing Private Clouds: A Large-Scale Empirical Analysis of Enterprise Clusters},
+year = {2016},
+isbn = {9781450345255},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2987550.2987584},
+doi = {10.1145/2987550.2987584},
+abstract = {There is an increasing trend in the use of on-premise clusters within companies. Security,
+regulatory constraints, and enhanced service quality push organizations to work in
+these so called private cloud environments. On the other hand, the deployment of private
+enterprise clusters requires careful consideration of what will be necessary or may
+happen in the future, both in terms of compute demands and failures, as they lack
+the public cloud's flexibility to immediately provision new nodes in case of demand
+spikes or node failures.In order to better understand the challenges and tradeoffs
+of operating in private settings, we perform, to the best of our knowledge, the first
+extensive characterization of on-premise clusters. Specifically, we analyze data ranging
+from hardware failures to typical compute/storage requirements and workload profiles,
+from a large number of Nutanix clusters deployed at various companies.We show that
+private cloud hardware failure rates are lower, and that load/demand needs are more
+predictable than in other settings. Finally, we demonstrate the value of the measurements
+by using them to provide an analytical model for computing durability in private clouds,
+as well as a machine learning-driven approach for characterizing private clouds' growth.},
+booktitle = {Proceedings of the Seventh ACM Symposium on Cloud Computing},
+pages = {29–41},
+numpages = {13},
+keywords = {Private clouds, Measurements, Reliability, Performance},
+location = {Santa Clara, CA, USA},
+series = {SoCC '16}
+}
+
+@inproceedings{10.1109/ISLPED52811.2021.9502472,
+author = {Marculescu, Diana},
+title = {When Climate Meets Machine Learning: Edge to Cloud ML Energy Efficiency},
+year = {2021},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ISLPED52811.2021.9502472},
+doi = {10.1109/ISLPED52811.2021.9502472},
+abstract = {A large portion of current cloud and edge workloads feature Machine Learning (ML)
+tasks, thereby requiring a deep understanding of their energy efficiency. While the
+holy grail for judging the quality of a ML model has largely been testing accuracy,
+and only recently its resource usage, neither of these metrics translate directly
+to energy efficiency, runtime, or mobile device battery lifetime. This work uncovers
+the need for building accurate, platform-specific power and latency models for ML
+and efficient hardware-aware ML design methodologies, thus allowing machine learners
+and hardware designers to identify not just the best accuracy ML model configuration,
+but also those that satisfy given hardware constraints.},
+booktitle = {Proceedings of the ACM/IEEE International Symposium on Low Power Electronics and Design},
+articleno = {37},
+numpages = {1},
+keywords = {hardware-aware ML, quantization, model compression, neural architecture search},
+location = {Boston, Massachusetts},
+series = {ISLPED '21}
+}
+
+@inproceedings{10.1145/2950290.2994157,
+author = {Rossi, Chuck and Shibley, Elisa and Su, Shi and Beck, Kent and Savor, Tony and Stumm, Michael},
+title = {Continuous Deployment of Mobile Software at Facebook (Showcase)},
+year = {2016},
+isbn = {9781450342186},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2950290.2994157},
+doi = {10.1145/2950290.2994157},
+abstract = { Continuous deployment is the practice of releasing software updates to production
+as soon as it is ready, which is receiving increased adoption in industry. The frequency
+of updates of mobile software has traditionally lagged the state of practice for cloud-based
+services for a number of reasons. Mobile versions can only be released periodically.
+Users can choose when and if to upgrade, which means that several different releases
+coexist in production. There are hundreds of Android hardware variants, which increases
+the risk of having errors in the software being deployed.  Facebook has made significant
+progress in increasing the frequency of its mobile deployments. Over a period of 4
+years, the Android release has gone from a deployment every 8 weeks to a deployment
+every week. In this paper, we describe in detail the mobile deployment process at
+FB. We present our findings from an extensive analysis of software engineering metrics
+based on data collected over a period of 7 years. A key finding is that the frequency
+of deployment does not directly affect developer productivity or software quality.
+We argue that this finding is due to the fact that increasing the frequency of continuous
+deployment forces improved release and deployment automation, which in turn reduces
+developer workload. Additionally, the data we present shows that dog-fooding and obtaining
+feedback from alpha and beta customers is critical to maintaining release quality.
+},
+booktitle = {Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+pages = {12–23},
+numpages = {12},
+keywords = {Software release, Mobile code testing, Continuous deployment, Continuous delivery, Agile development},
+location = {Seattle, WA, USA},
+series = {FSE 2016}
+}
+
+@inproceedings{10.1145/3240508.3240642,
+author = {Pang, Haitian and Zhang, Cong and Wang, Fangxin and Hu, Han and Wang, Zhi and Liu, Jiangchuan and Sun, Lifeng},
+title = {Optimizing Personalized Interaction Experience in Crowd-Interactive Livecast: A Cloud-Edge Approach},
+year = {2018},
+isbn = {9781450356657},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3240508.3240642},
+doi = {10.1145/3240508.3240642},
+abstract = {Enabling users to interact with broadcasters and audience, the crowd-interactive livecast
+greatly improves viewer's quality of experience (QoE) and attracts millions of daily
+active users recently. In addition to striking the balance between resource utilization
+and viewers' QoE met in the traditional video streaming service, this novel service
+needs to take supererogatory efforts to improve the interaction QoE, which reflects
+the viewer interaction experience. To tackle this issue, we conduct measurement studies
+over a large-scale dataset crawled from a representative livecast service provider.
+We observe that the individual's interaction pattern is quite heterogeneous: only
+10% viewers proactively participate in the interaction, and the rest viewers usually
+watch passively. Incorporating the insight into the emerging cloud-edge architecture,
+we propose a framework PIECE, which optimizes the Personalized Interaction Experience
+with Cloud-Edge architecture (PIECE) for intelligent user access control and livecast
+distribution. In particular, we first devise a novel deep neural network based algorithm
+to predict users' interaction intensity using the historical viewer pattern. We then
+design an algorithm to maximize the individual's QoE, by strategically matching viewer
+sessions and transcoding-delivery paths over cloud-edge infrastructure. Finally, we
+use trace-driven experiments to verify the effectiveness of PIECE. Our results show
+that our prediction algorithm outperforms the state-of-the-art algorithms with a much
+smaller mean absolute error (40% reduction). Furthermore, in comparison with the cloud-based
+video delivery strategy, the proposed framework can simultaneously improve the average
+viewers QoE (26% improvement) and interaction QoE (21% improvement), while maintaining
+a high streaming bitrate.},
+booktitle = {Proceedings of the 26th ACM International Conference on Multimedia},
+pages = {1217–1225},
+numpages = {9},
+keywords = {cloud-edge, interactive live streaming, viewer interaction},
+location = {Seoul, Republic of Korea},
+series = {MM '18}
+}
+
+@inproceedings{10.1145/3458305.3463384,
+author = {Sethuraman, Manasvini and Sarma, Anirudh and Dhekne, Ashutosh and Ramachandran, Umakishore},
+title = {Foresight: Planning for Spatial and Temporal Variations in Bandwidth for Streaming Services on Mobile Devices},
+year = {2021},
+isbn = {9781450384346},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3458305.3463384},
+doi = {10.1145/3458305.3463384},
+abstract = {Spatiotemporal variation in cellular bandwidth availability is well-known and could
+affect a mobile user's quality of experience (QoE), especially while using bandwidth
+intensive streaming applications such as movies, podcasts, and music videos during
+commute. If such variations are made available to a streaming service in advance it
+could perhaps plan better to avoid sub-optimal performance while the user travels
+through regions of low bandwidth availability. The intuition is that such future knowledge
+could be used to buffer additional content in regions of higher bandwidth availability
+to tide over the deficits in regions of low bandwidth availability. Foresight is a
+service designed to provide this future knowledge for client apps running on a mobile
+device. It comprises three components: (a) a crowd-sourced bandwidth estimate reporting
+facility, (b) an on-cloud bandwidth service that records the spatiotemporal variations
+in bandwidth and serves queries for bandwidth availability from mobile users, and
+(c) an on-device bandwidth manager that caters to the bandwidth requirements from
+client apps by providing them with bandwidth allocation schedules. Foresight is implemented
+in the Android framework. As a proof of concept for using this service, we have modified
+an open-source video player---Exoplayer---to use the results of Foresight in its video
+buffer management. Our performance evaluation shows Foresight's scalability. We also
+showcase the opportunity that Foresight offers to ExoPlayer to enhance video quality
+of experience (QoE) despite spatiotemporal bandwidth variations for metrics such as
+overall higher bitrate of playback, reduction in number of bitrate switches, and reduction
+in the number of stalls during video playback.},
+booktitle = {Proceedings of the 12th ACM Multimedia Systems Conference},
+pages = {227–240},
+numpages = {14},
+keywords = {bandwidth management, spatiotemporal bandwidth information},
+location = {Istanbul, Turkey},
+series = {MMSys '21}
+}
+
+@inproceedings{10.1145/2801694.2801710,
+author = {Ganesan, Deepak},
+title = {Towards Ultra-Low Power Wearable Health Sensing with Sparse Sampling and Asymmetric Communication},
+year = {2015},
+isbn = {9781450337014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2801694.2801710},
+doi = {10.1145/2801694.2801710},
+abstract = {Wearable sensors offer tremendous opportunities for accelerating biomedical discovery,
+and improving population-scale health and wellness. There is a growing appetite for
+health analytics -- we are no longer content with wearables that count steps and calories,
+we want to measure physiology, behavior, activities, cognition, affect, and other
+parameters with the expectation that such data will lead to deep insights that can
+improve quality of life.But a chasm separates expectations and reality. How do we
+extract such insights from sensor platforms with tiny energy budgets? How do we communicate
+high-rate sensor data to the cloud for enabling deep analytics while operating within
+these energy budgets? How do we deal with noise, confounders, and artifacts that make
+insights hard to extract from signals collected in real-world settings?In this talk,
+I will discuss a few strategies to tackle these problems. I will discuss how we can
+design an low-power computational eyeglass that continually tracks eye and visual
+context by leveraging sparsity, how we can transfer data at Megabits/second from wearables
+while operating at tens of micro-watts of power, and how we can leverage these techniques
+in the context of mobile health.},
+booktitle = {Proceedings of the 2015 Workshop on Wireless of the Students, by the Students, &amp; for the Students},
+pages = {34},
+numpages = {1},
+keywords = {mobile health, backscatter communication, eye tracking},
+location = {Paris, France},
+series = {S3 '15}
+}
+
+@inproceedings{10.5555/3400397.3400622,
+author = {Anagnostou, Anastasia and Taylor, Simon J. E. and Abubakar, Nura Tijjani and Kiss, Tamas and DesLauriers, James and Gesmier, Gregoire and Terstyanszky, Gabor and Kacsuk, Peter and Kovacs, Jozsef},
+title = {Towards a Deadline-Based Simulation Experimentation Framework Using Micro-Services Auto-Scaling Approach},
+year = {2019},
+isbn = {9781728132839},
+publisher = {IEEE Press},
+abstract = {There is growing number of research efforts in developing auto-scaling algorithms
+and tools for cloud resources. Traditional performance metrics such as CPU, memory
+and bandwidth usage for scaling up or down resources are not sufficient for all applications.
+For example, modeling and simulation experimentation is usually expected to yield
+results within a specific timeframe. In order to achieve this often the quality of
+experiments is compromised either by restricting the parameter space to be explored
+or by limiting the number of replications required to give statistical confidence.
+In this paper, we present early stages of a deadline-based simulation experimentation
+framework using a micro-services auto-scaling approach. A case study of an agent-based
+simulation of a population physical activity behavior is used to demonstrate our framework.},
+booktitle = {Proceedings of the Winter Simulation Conference},
+pages = {2749–2758},
+numpages = {10},
+location = {National Harbor, Maryland},
+series = {WSC '19}
+}
+
+@inproceedings{10.1145/3152881.3152887,
+author = {Rahman, Mahmudur and Hong, Hua-Jun and Rahman, Amatur and Tsai, Pei-Hsuan and Afrin, Afia and Uddin, Md Yusuf Sarwar and Venkatasubramanian, Nalini and Hsu, Cheng-Hsin},
+title = {Adaptive Sensing Using Internet-of-Things with Constrained Communications},
+year = {2017},
+isbn = {9781450351683},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3152881.3152887},
+doi = {10.1145/3152881.3152887},
+abstract = {In this paper, we design and implement an Internet-of-Things (IoT) based platform
+for developing cities using environmental sensing as driving application with a set
+of air quality sensors that periodically upload sensor data to the cloud. Ubiquitous
+and free WiFi access is unavailable in most developing cities; IoT deployments must
+leverage 3G cellular connections that are expensive and metered. In order to best
+utilize the limited 3G data plan, we envision two adaptation strategies to drive sensing
+and sensemaking. The first technique is an infrastructure-level adaptation approach
+where we adjust sensing intervals of periodic sensors so that the data volume remains
+bounded within the plan. The second approach is at the information-level where application-specific
+analytics are deployed on board devices (or the edge) through container technologies
+(Docker and Kubernetes); the use case focuses on multimedia sensors that process captured
+raw information to lower volume semantic data that is communicated. This approach
+is implemented through the EnviroSCALE (Environmental Sensing and Community Alert
+Network) platform, an inexpensive Raspberry Pi based environmental sensing system
+that periodically publishes sensor data over a 3G connection with a limited data plan.
+We outline our deployment experience of EnviroSCALE in Dhaka city, the capital of
+Bangladesh. For information-level adaptation, we enhanced EnviroSCALE with Docker
+containers with rich media analytics, along Kubernetes for provisioning IoT devices
+and deploying the Docker images. To limit data communication overhead, the Docker
+images are preloaded in the board but a small footprint of analytic code is transferred
+whenever required. Our experiment results demonstrate the practicality of adaptive
+sensing and triggering rich sensing analytics via user-specified criteria, even over
+constrained data connections.},
+booktitle = {Proceedings of the 16th Workshop on Adaptive and Reflective Middleware},
+articleno = {6},
+numpages = {6},
+location = {Las Vegas, Nevada},
+series = {ARM '17}
+}
+
+@inproceedings{10.1145/3462203.3475873,
+author = {Agossou, B. Emmanuel and Toshiro, Takahara},
+title = {IoT &amp; AI Based System for Fish Farming: Case Study of Benin},
+year = {2021},
+isbn = {9781450384780},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3462203.3475873},
+doi = {10.1145/3462203.3475873},
+abstract = {Agriculture including aquaculture has been changing through multiple technological
+transformations in recent years. The Internet of Things (IoT) and Artificial Intelligence
+(AI) are providing remarkable technological innovations on fish farming. In this research,
+we present an automated IoT and AI-based system to improve fish farming. The proposed
+system uses multiple sensors to measure in real-time water quality chemical parameters
+such as: temperature, pH, turbidity, electrical conductivity, total dissolved solids,
+etc., from the fish pond and send them on a cloud database to allow fish farmers to
+access them in realtime with their devices (mobile phone, PC, tablets). The system
+contains three web applications which fish farmers can use. The first web application
+enables farmers with realtime visualizations of sensors data, issues alerts and remote
+pumps controls. Fish farmers can use the second web application for fish disease detection
+and to receive suggestions for diseases' care. This would help to classify two fish
+diseases which are: Epizootic Ulcerative Syndrome(EUS), and Ichthyophthirus(Ich).
+The third web application is a digital community platform for knowledge sharing, capacity
+building, market opportunities and collaboration among fish farmers. Our system can
+help reduce human efforts, reinforce capacity building, increase fish production and
+market opportunities for fish farmers.},
+booktitle = {Proceedings of the Conference on Information Technology for Social Good},
+pages = {259–264},
+numpages = {6},
+keywords = {MQTT, IoT, ESP32, eFish Farm, Convolutional Neural Network, Arduino, AI, Smart Fish Farming},
+location = {Roma, Italy},
+series = {GoodIT '21}
+}
+
+@article{10.1145/3089262.3089268,
+author = {Hossfeld, Tobias},
+title = {2016 International Teletraffic Congress (ITC 28) Report},
+year = {2017},
+issue_date = {April 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {47},
+number = {2},
+issn = {0146-4833},
+url = {https://doi.org/10.1145/3089262.3089268},
+doi = {10.1145/3089262.3089268},
+abstract = {The 28th International Teletraffic Congress (ITC 28) was held on 12--16 September
+2016 at the University of W"urzburg, Germany. The conference was technically cosponsored
+by the IEEE Communications Society and the Information Technology Society within VDE,
+and in cooperation with ACM SIGCOMM. ITC 28 provided a forum for leading researchers
+from academia and industry to present and discuss the latest advances and developments
+in design, modelling, measurement, and performance evaluation of communication systems,
+networks, and services. The main theme of ITC 28, emph{Digital Connected World},
+reflects the evolution of communications and networking, which is continually changing
+the world we are living in. The technical program was composed of 37 contributed full
+papers, 6 short demo papers and three keynote addresses. Three workshops dedicated
+to timely topics were sponsored: Programmability for Cloud Networks and Applications,
+Quality of Experience Centric Management, Quality Engineering for a Reliable Internet
+of Services.See ITC 28 Homepage: url{https://itc28.org/}},
+journal = {SIGCOMM Comput. Commun. Rev.},
+month = may,
+pages = {30–35},
+numpages = {6},
+keywords = {Performance Analysis and Modeling, Virtualization, Measurements, Video Streaming, Caching, Traffic and Network Management, Softwarization, Wireless and Cellular, Information Centric Networks, Clouds and Data Center}
+}
+
+@inproceedings{10.1145/3341105.3373915,
+author = {Santos, Guilherme and Paulino, Herv\'{e} and Vardasca, Tom\'{e}},
+title = {QoE-Aware Auto-Scaling of Heterogeneous Containerized Services (and Its Application to Health Services)},
+year = {2020},
+isbn = {9781450368667},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3341105.3373915},
+doi = {10.1145/3341105.3373915},
+abstract = {Containerized service is currently a widely adopted solution to deploy services in
+the cloud. However, many companies offer a very diverse set of Web accessible services
+that are subjected to very distinctive workloads. Consequently, to correctly provision
+the right amount of resources for each of these services is a challenge. In this paper
+we propose the Autonomic ConTainerized Service Scaler (ACTS), an autonomic system
+able to horizontally and vertically scale a set of heterogeneous containerized services
+subjected to different workloads. The adaptation decisions depended on a set of high-level
+Quality of Experience (QoE) metrics centered on the services' end-user. We have applied
+ACTS to some of the digital services of the Shared Services of the Ministry of Health
+(SPMS) public company. The experimental results show that our solution is able to
+adequately adapt the configuration of each service, as a direct response to alterations
+on its workload.},
+booktitle = {Proceedings of the 35th Annual ACM Symposium on Applied Computing},
+pages = {242–249},
+numpages = {8},
+keywords = {quality of experience, health care, auto-scaling, containers},
+location = {Brno, Czech Republic},
+series = {SAC '20}
+}
+
+@article{10.1145/3408293,
+author = {He, Xin and Liu, Qiong and Yang, You},
+title = {Make Full Use of Priors: Cross-View Optimized Filter for Multi-View Depth Enhancement},
+year = {2020},
+issue_date = {January 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {16},
+number = {4},
+issn = {1551-6857},
+url = {https://doi.org/10.1145/3408293},
+doi = {10.1145/3408293},
+abstract = {Multi-view video plus depth (MVD) is the promising and widely adopted data representation
+for future 3D visual applications and interactive media. However, compression distortions
+on depth videos impede the development of such applications, and filters are crucially
+needed for the quality enhancement at the terminal side. Cross-view priors can intuitively
+be involved in filter design, but these priors are also distorted in compression and
+thus the contribution of them can hardly be considered in previous research. In this
+article, we propose a cross-view optimized filter for depth map quality enhancement
+by making full use of inner- and cross-view priors. We dedicate to evaluate the contributions
+of distorted cross-view priors in filtering the current view of depth, and then both
+inner- and cross-view priors can be involved in the filter design. Thus, distortions
+of cross-view priors are not barriers again as before. For the purpose of that, mutual
+information guided cross-view consistency is designed to evaluate the contributions
+of cross-view priors from compression distortions of MVD. After that, under the framework
+of global optimization, both inner- and cross-view priors are modeled and taken to
+minimize the designed energy function where both data accuracy and spatial smoothness
+are modeled. The experimental results show that the proposed model outperforms state-of-the-art
+methods, where 3.289 dB and 0.0407 average gains on peak signal-to-noise ratio and
+structural similarity metrics can be obtained, respectively. For the subjective evaluations,
+object details and structure information are recovered in the compressed depth video.
+We also verify our method via several practical applications, including virtual view
+synthesis for smooth interaction and point cloud for 3D modeling for accuracy evaluation.
+In these verifications, the ringing and malposition artifacts on object contours are
+properly handled for interactive video, and discontinuous object surfaces are restored
+for 3D modeling. All of these results suggest that compression distortions in MVD
+can be properly filtered by the proposed model, which provides a promising solution
+for future bandwidth constrained 3D and interactive visual applications.},
+journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+month = dec,
+articleno = {127},
+numpages = {19},
+keywords = {global optimization, Multi-view video plus depth, view consistency}
+}
+
+@inproceedings{10.1145/3277453.3277484,
+author = {Shanthasheela, A. and Shanmugavadivu, P.},
+title = {An Exploratory Analysis of Speckle Noise Removal Methods for Satellite Images},
+year = {2018},
+isbn = {9781450365413},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3277453.3277484},
+doi = {10.1145/3277453.3277484},
+abstract = {Satellite images captured in a variety of modalities serve as the primary source for
+many applications. Satellite image processing extracts the image /spectral information
+represented in the form of pixels, classifies those pixels based on the similarity
+measures and further analyzes the inherent data, as per the requirements. The foremost
+objective of satellite processing is to automatically categorize the pixels in an
+image into the respective land cover class labels or themes. These pixels are classified
+by its spectral information and it is determined by the relative reflectance in various
+bands of wavelength. The accuracy and outcomes of any satellite image processing procedure,
+irrespective of the application domain, directly depends on its quality. Satellite
+images are invariably degraded by speckle noise. Hence, preprocessing the images for
+speckle noise suppression and/or cloud removal is deemed an inevitable component in
+satellite image processing. Researchers have proposed a spectrum of methods for speckle
+noise/cloud removal. A detailed review on the significant research publications on
+speckle noise removal are summarized in this article. The consolidation of methodology
+merits and demerits of the select research articles are presented in this paper. This
+review article on speckle noise removal is designed as a ready-reference for those
+researchers working in satellite image processing.},
+booktitle = {Proceedings of the 2018 International Conference on Electronics and Electrical Engineering Technology},
+pages = {217–222},
+numpages = {6},
+keywords = {Satellite images, SAR, RADAR, Review, Speckle Noise, Noise filters, Literature Survey},
+location = {Tianjin, China},
+series = {EEET '18}
+}
+
+@inproceedings{10.1145/3468264.3473915,
+author = {Kalia, Anup K. and Xiao, Jin and Krishna, Rahul and Sinha, Saurabh and Vukovic, Maja and Banerjee, Debasish},
+title = {Mono2Micro: A Practical and Effective Tool for Decomposing Monolithic Java Applications to Microservices},
+year = {2021},
+isbn = {9781450385626},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3468264.3473915},
+doi = {10.1145/3468264.3473915},
+abstract = {In migrating production workloads to cloud, enterprises often face the daunting task
+of evolving monolithic applications toward a microservice architecture. At IBM, we
+developed a tool called Mono2Micro to assist with this challenging task. Mono2Micro
+performs spatio-temporal decomposition, leveraging well-defined business use cases
+and runtime call relations to create functionally cohesive partitioning of application
+classes. Our preliminary evaluation of Mono2Micro showed promising results.  How well
+does Mono2Micro perform against other decomposition techniques, and how do practitioners
+perceive the tool? This paper describes the technical foundations of Mono2Micro and
+presents results to answer these two questions. To answer the first question, we evaluated
+Mono2Micro against four existing techniques on a set of open-source and proprietary
+Java applications and using different metrics to assess the quality of decomposition
+and tool’s efficiency. Our results show that Mono2Micro significantly outperforms
+state-of-the-art baselines in specific metrics well-defined for the problem domain.
+To answer the second question, we conducted a survey of twenty-one practitioners in
+various industry roles who have used Mono2Micro. This study highlights several benefits
+of the tool, interesting practitioner perceptions, and scope for further improvements.
+Overall, these results show that Mono2Micro can provide a valuable aid to practitioners
+in creating functionally cohesive and explainable microservice decompositions.},
+booktitle = {Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {1214–1224},
+numpages = {11},
+keywords = {microservices, clustering, dynamic analysis},
+location = {Athens, Greece},
+series = {ESEC/FSE 2021}
+}
+
+@inproceedings{10.1145/3318396.3318427,
+author = {Ho, P. C. W. and Fok, W. W. T. and Chan, C. K. K. and Yeung, H. H. Au and Ng, H. W. and Wong, S. L. and Ngai, S. Y. and Kwok, P. H. and Ho, Y. S. and Chan, K. H.},
+title = {Flipping the Learning and Teaching of Reading Strategies and Comprehension through a Cloud-Based Interactive Big Data Reading Platform},
+year = {2019},
+isbn = {9781450362672},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3318396.3318427},
+doi = {10.1145/3318396.3318427},
+abstract = {This study investigates the learning approach of the designed Flipped Reading Platform
+(FRP) and its effects on primary school students' general Chinese reading and comprehension
+capabilities. This study was undertaken as part of the Quality Education Fund project
+in Hong Kong, titled "Flipped Reading: Enhancing the Learning and Teaching of Reading
+Strategies and Comprehension in Chinese via an Interactive Cloud Platform."This paper
+presents the design of the Interactive Cloud Platform FRP, which incorporates elements
+of both reading strategies and learning activities, and investigates the changes in
+students' reading performance, applied strategies, and active learning level with
+the application of FRP. The results show the experimental students using the FRP in
+the pilot scheme generally gained more in three stages of reading comprehension, and
+that low-achieving students learned reading strategies better. Analysis of FRP log
+activities shows students' active engagement in reading and perceived competence.
+Different learning outcomes were also found within the experimental group, categorized
+by BYOD and non-BYOD classes. Implications of the study show the effectiveness of
+FRP, and the design demonstrates how the reading measures integrated the assessment
+indicators of both international and local standards in the domain of Chinese Language
+reading. Further research can be developed to examine individual online reading performance
+and learning behaviour on FRP.},
+booktitle = {Proceedings of the 2019 8th International Conference on Educational and Information Technology},
+pages = {185–191},
+numpages = {7},
+keywords = {e-Learning, Big data, reading strategy, Chinese Language, Cloud Platform, Flipped reading},
+location = {Cambridge, United Kingdom},
+series = {ICEIT 2019}
+}
+
+@inproceedings{10.1145/2642687.2642704,
+author = {Palomares, Daniel and Migault, Daniel and Hendrik, Hendrik and Laurent, Maryline and Pujolle, Guy},
+title = {Elastic Virtual Private Cloud},
+year = {2014},
+isbn = {9781450330275},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2642687.2642704},
+doi = {10.1145/2642687.2642704},
+abstract = {Several Virtual Private Networks are based on IPsec. However, IPsec has not been designed
+with elasticity in mind, which makes clusters of IPsec security gateways hard to manage
+for providing high Service Level Agreement (SLA). Thus, these SG clusters need management
+techniques to maintain their Quality of Service. For example, ISPs use VPNs to secure
+millions of communications when offloading End-Users from Radio Access Networks towards
+alternative access networks such as WLANs. Additionally, Virtual Private Cloud (VPC)
+providers also handle thousands of VPN connections when remote EUs access private
+clouds services. This paper describes how to provide Traffic Management (TM) and High
+Availability (HA) for VPN infrastructures by sharing or transferring an IPsec session.
+TM and HA have been implemented and evaluated over a 2-nodes cluster. We measured
+their impact on a real time audio streaming simulating a phone conversation. We found
+out that over a 2 minutes conversation, the impact on QoS measured with POLQA while
+applying TM or HA, is less than 3%.},
+booktitle = {Proceedings of the 10th ACM Symposium on QoS and Security for Wireless and Mobile Networks},
+pages = {127–131},
+numpages = {5},
+keywords = {high availability, VPN management, IPSEC, virtual private cloud, IKEV2, QoS, POLQA, context transfer},
+location = {Montreal, QC, Canada},
+series = {Q2SWinet '14}
+}
+
+@article{10.14778/2994509.2994527,
+author = {Mountantonakis, Michalis and Tzitzikas, Yannis},
+title = {On Measuring the Lattice of Commonalities among Several Linked Datasets},
+year = {2016},
+issue_date = {August 2016},
+publisher = {VLDB Endowment},
+volume = {9},
+number = {12},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/2994509.2994527},
+doi = {10.14778/2994509.2994527},
+abstract = {A big number of datasets has been published according to the principles of Linked
+Data and this number keeps increasing. Although the ultimate objective is linking
+and integration, it is not currently evident how connected the current LOD cloud is.
+Measurements (and indexes) that involve more than two datasets are not available although
+they are important: (a) for obtaining complete information about one particular URI
+(or set of URIs) with provenance (b) for aiding dataset discovery and selection, (c)
+for assessing the connectivity between any set of datasets for quality checking and
+for monitoring their evolution over time, (d) for constructing visualizations that
+provide more informative overviews. Since it would be prohibitively expensive to perform
+all these measurements in a na\"{\i}ve way, in this paper we introduce indexes (and their
+construction algorithms) that can speedup such tasks. In brief, we introduce (i) a
+namespace-based prefix index, (ii) a sameAs catalog for computing the symmetric and
+transitive closure of the owl:sameAs relationships encountered in the datasets, (iii)
+a semantics-aware element index (that exploits the aforementioned indexes), and finally
+(iv) two lattice-based incremental algorithms for speeding up the computation of the
+intersection of URIs of any set of datasets. We discuss the speedup obtained by the
+introduced indexes and algorithms through comparative results and finally we report
+measurements about connectivity of the LOD cloud that have never been carried out
+so far.},
+journal = {Proc. VLDB Endow.},
+month = aug,
+pages = {1101–1112},
+numpages = {12}
+}
+
+@inproceedings{10.1145/3185768.3186297,
+author = {Versluis, Laurens and van Eyk, Erwin and Iosup, Alexandru},
+title = {An Analysis of Workflow Formalisms for Workflows with Complex Non-Functional Requirements},
+year = {2018},
+isbn = {9781450356299},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3185768.3186297},
+doi = {10.1145/3185768.3186297},
+abstract = {Cloud and datacenter operators offer progressively more sophisticated service level
+agreements to customers. The Quality-of-Service guarantees by these operators have
+started to entail non-functional requirements customers have regarding their applications.
+At the same time, expressing applications as workflows in datacenters is increasingly
+more common. Currently, non-functional requirements (NFRs) can only be defined on
+entire workflows and cannot be changed at runtime, possibly wasting valuable resources.
+To move towards modifiable NFRs at the task level, there is a need for a formalism
+capable of expressing this. Existing formalisms do not support this level of granularity
+or are restricted to a subset of NFRs. In this work, we investigate the current support
+for NFRs in existing formalisms. Using a library containing workflows with and without
+NFRs, we inspect the capability of existing formalisms to express these requirements.
+Additionally, we create and evaluate five metrics to qualitatively and quantitatively
+compare each formalism. Our main findings are that although current formalisms do
+not support arbitrary NFRs per-task, the Directed Acyclic Graphs (DAGs) formalism
+is the most suitable to extend.},
+booktitle = {Companion of the 2018 ACM/SPEC International Conference on Performance Engineering},
+pages = {107–112},
+numpages = {6},
+keywords = {cloud, workflow, non-functional requirement, formalism, datacenter},
+location = {Berlin, Germany},
+series = {ICPE '18}
+}
+
+@inproceedings{10.1109/SEAMS.2017.2,
+author = {Moreno, Gabriel A. and Papadopoulos, Alessandro V. and Angelopoulos, Konstantinos and C\'{a}mara, Javier and Schmerl, Bradley},
+title = {Comparing Model-Based Predictive Approaches to Self-Adaptation: CobRA and PLA},
+year = {2017},
+isbn = {9781538615508},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/SEAMS.2017.2},
+doi = {10.1109/SEAMS.2017.2},
+abstract = {Modern software-intensive systems must often guarantee certain quality requirements
+under changing run-time conditions and high levels of uncertainty. Self-adaptation
+has proven to be an effective way to engineer systems that can address such challenges,
+but many of these approaches are purely reactive and adapt only after a failure has
+taken place. To overcome some of the limitations of reactive approaches (e.g., lagging
+behind environment changes and favoring short-term improvements), recent proactive
+self-adaptation mechanisms apply ideas from control theory, such as model predictive
+control (MPC), to improve adaptation. When selecting which MPC approach to apply,
+the improvement that can be obtained with each approach is scenario-dependent, and
+so guidance is needed to better understand how to choose an approach for a given situation.
+In this paper, we compare CobRA and PLA, two approaches that are inspired by MPC.
+CobRA is a requirements-based approach that applies control theory, whereas PLA is
+architecture-based and applies stochastic analysis. We compare the two approaches
+applied to RUBiS, a benchmark system for web and cloud application performance, discussing
+the required expertise needed to use both approaches and comparing their run-time
+performance with respect to different metrics.},
+booktitle = {Proceedings of the 12th International Symposium on Software Engineering for Adaptive and Self-Managing Systems},
+pages = {42–53},
+numpages = {12},
+keywords = {self-adaptation, adaptive system, model predictive control, CobRA, latency, PLA},
+location = {Buenos Aires, Argentina},
+series = {SEAMS '17}
+}
+
+@inproceedings{10.1145/3196398.3196422,
+author = {Widder, David Gray and Hilton, Michael and K\"{a}stner, Christian and Vasilescu, Bogdan},
+title = {I'm Leaving You, Travis: A Continuous Integration Breakup Story},
+year = {2018},
+isbn = {9781450357166},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3196398.3196422},
+doi = {10.1145/3196398.3196422},
+abstract = {Continuous Integration (CI) services, which can automatically build, test, and deploy
+software projects, are an invaluable asset in distributed teams, increasing productivity
+and helping to maintain code quality. Prior work has shown that CI pipelines can be
+sophisticated, and choosing and configuring a CI system involves tradeoffs. As CI
+technology matures, new CI tool offerings arise to meet the distinct wants and needs
+of software teams, as they negotiate a path through these tradeoffs, depending on
+their context. In this paper, we begin to uncover these nuances, and tell the story
+of open-source projects falling out of love with Travis, the earliest and most popular
+cloud-based CI system. Using logistic regression, we quantify the effects that open-source
+community factors and project technical factors have on the rate of Travis abandonment.
+We find that increased build complexity reduces the chances of abandonment, that larger
+projects abandon at higher rates, and that a project's dominant language has significant
+but varying effects. Finally, we find the surprising result that metrics of configuration
+attempts and knowledge dispersion in the project do not affect the rate of abandonment.},
+booktitle = {Proceedings of the 15th International Conference on Mining Software Repositories},
+pages = {165–169},
+numpages = {5},
+location = {Gothenburg, Sweden},
+series = {MSR '18}
+}
+
