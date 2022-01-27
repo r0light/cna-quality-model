@@ -63,6 +63,22 @@ The process of searching the literature is described [here](literatureSearch/sea
 
 ![The quality model with measures added](E3_measures.svg)
 
+| Name                    | Description                                                                                              | Relation        |   |   |
+|-------------------------|----------------------------------------------------------------------------------------------------------|-----------------|---|---|
+| System                  | The cloud-native application as a whole                                                                  | -               |   |   |
+| Component               | An abstract part of the system, maps to a logical service or cloud "resource"                            | part-of System  |   |   |
+| Service                 | A service implementing a business functionality                                                          | is-a Component  |   |   |
+| Endpoint                | A communication endpoint, for example a REST endpoint, message producer/listener                         | part-of Service |   |   |
+| External Endpoint       | An endpoint which is publicly available                                                                  | is-a Endpoint   |   |   |
+| Backing Service         | A component providing general functionalities needed by services, for example, messaging, logging        | is-a Component  |   |   |
+| Storage Backing Service | An explicitly stateful component used to store business data, e.g., a database                           | is-a Component  |   |   |
+| Link                    | A connection between components                                                                          | part-of System  |   |   |
+| Infrastructure          | The technical foundation where components are deployed, e.g., a container orchestration system           | part-of System  |   |   |
+| Deployment Mapping      | A connection between a component or infrastructure and its (underlying) infrastructure                   | part-of System  |   |   |
+| Request Trace           | The whole resulting trace of a service invocation from the outside, a collection of components and links | part-of System  |   |   |
+| Data Aggregate          | An aggregate which needs to be persisted and is used by services, e.g., Business objects                 | part-of System  |   |   |
+| Backing Data            | Non-business data, e.g., config values, secrets, logs, metrics                                           | part-of System  |   |   |
+
 [The final quality model focused on the architectural design](E4_final_quality_model.md)
 
 ![The final quality model focused on the architectural design](E4_final_quality_model_starform.svg)
