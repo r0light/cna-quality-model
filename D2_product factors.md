@@ -131,7 +131,8 @@
     Reznik2019 9 "Automated Testing"; Adkins2019 7 "Release Frequently Using Automated Testing" (Use automated testing for being able to release frequently)
 * Simplicity (as the counterpart to complexity, but instead of naming it Low Complexity named it Simplicity)  
   * **Operation outsourcing** -> Cost variability  
-    * **Managed infrastructure** (Infrastructure)
+    * **Managed infrastructure** (Infrastructure)  
+      *Infrastructure such as basic computing, storage or network resources can be managed by vendors to ensure a stable functioning and up-to-date functionalities. Furthermore, it reduces the operational overhead.*
     * **Managed backing services** (Backing Service)  
       Scholl2019 6 "Use Managed Databases and Analytics Services"; Arundel2019 15 "Don’t build your own monitoring infrastructure" (Use an external monitoring service); Bastani2017 10 "managed and automated messaging system" (operating your own messaging system increases operational overhead, better use a system managed by a platform)  
 
