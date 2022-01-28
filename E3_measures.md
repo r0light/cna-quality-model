@@ -104,7 +104,7 @@
     * **Spezialized stateful services** (Component, Storage Backing Service)  
       *For stateful components, specialized software should be used that can still provide elasticity and reliability by handling distributed state and ensure consistency.*  
       Davis2019 5.4; Ibryam2020 11 "Stateful Service"
-  * **Loose coupling** (System, Component, Link) +> Service independence  
+  * **Loose coupling** (System, Component, Link)  
     *In cloud-native applications links between components should be loosely coupled in time, location, and language to achieve independence.*  
     Goniwada2021 3 "Coupling" (Services should be as loosely coupled as possible)  
     * **Asynchronous communication** (Link)  
@@ -259,21 +259,23 @@
     *Software testing should be automated as far as possible to reduce the effort of evolving code and providing quick feedback on code changes. This comprises all types of tests, such as unit tests, integration tests, performance tests, or reliability tests.*  
     Reznik2019 9 "Automated Testing"; Adkins2019 7 "Release Frequently Using Automated Testing" (Use automated testing for being able to release frequently)
 * Simplicity (as the counterpart to complexity, but instead of naming it Low Complexity named it Simplicity)  
-  * *Average Number of Endpoints per Service* (Bogner2017, Bogner2020, Hirzalla2009; Brito2021, Jin2021; Rosa2020; Kazemi2013, Ma2009)
-  * *Number of Dependencies* (Apel2019)
-  * *Number of Versions per Service* (Bogner2017, Hirzalla2009)
-  * *Concurrently available versions complexity* (Karhikeyan2012)
-  * *Service Support for Transactions* (Bogner2017, Hirzalla2009)
-  * *Data Model Scope* (Zimmermann2015)
-  * *Complexity of message data* (Karhikeyan2012)
-  * *Average URL path length of all endpoints of a service* (Bogner2020, Haupt2017)
-  * *Average number of arguments per endpoint* (Bogner2020, BASCI2009)
-  * *Longest Path* (Bogner2020, Haupt2017)
-  * *Number of Roots* (Bogner2020, Haupt2017)
-  * *Runtime Compute Cost per time unit* (AbdelBaky2019)
-  * *Runtime Average Compute Cost per time unit* (AbdelBaky2019)
+  * **Sparsity**
+    * *Average Number of Endpoints per Service* (Bogner2017, Bogner2020, Hirzalla2009; Brito2021, Jin2021; Rosa2020; Kazemi2013, Ma2009)
+    * *Number of Dependencies* (Apel2019)
+    * *Number of Versions per Service* (Bogner2017, Hirzalla2009)
+    * *Concurrently available versions complexity* (Karhikeyan2012)
+    * *Service Support for Transactions* (Bogner2017, Hirzalla2009)
+    * *Data Model Scope* (Zimmermann2015)
+    * *Complexity of message data* (Karhikeyan2012)
+    * *Average URL path length of all endpoints of a service* (Bogner2020, Haupt2017)
+    * *Average number of arguments per endpoint* (Bogner2020, BASCI2009)
+    * *Longest Path* (Bogner2020, Haupt2017)
+    * *Number of Roots* (Bogner2020, Haupt2017)
+    * *Runtime Compute Cost per time unit* (AbdelBaky2019)
+    * *Runtime Average Compute Cost per time unit* (AbdelBaky2019)
   * **Operation outsourcing** (Backing Service, Infrastructure) +> Cost variability  
     *By outsourcing the operation of infrastructure and components to a cloud provider or other vendor, the operation is simplified because responsibility is transferred. Furthermore, costs can be made more flexible because providers and vendors can provide a usage-based pricing.*  
+    * **Managed infrastructure** (Infrastructure)  
     * **Managed backing services** (Backing Service)  
       *Especially backing services that provide non-business functionality can be managed by vendors to ensure a stable functioning and up-to-date functionalities. Furthermore, it reduces the operational overhead.*  
       Scholl2019 6 "Use Managed Databases and Analytics Services"; Arundel2019 15 "Don’t build your own monitoring infrastructure" (Use an external monitoring service); Bastani2017 10 "managed and automated messaging system" (operating your own messaging system increases operational overhead, better use a system managed by a platform)  
@@ -287,7 +289,7 @@
     *In a cloud-native application business logic and needed data should be replicated at various points in a system so that latencies can be minimized and requests can be distributed for fast request handling.*  
     * **Service repliation**  
       *In a cloud-native application services and therefore their provided functionalities should be replicated across different locations so that the latency for accesses from different locations is minimized and the incoming load can be distributed among replicas.*  
-      * *Amount of redudancy* (Zimmermann2015)
+      * *Amount of redundancy* (Zimmermann2015)
       * *Service Replication level* (Guerron2020, SOUZA-2016-ISCC)
     * **Horizontal data replication** (Storage Backing Service, Data Aggregate)  
       *Data should be replicated horizontally, that means duplicated across several data storage components so that higher load can be handled and replicas closer to the service where data is need can be used to reduce latency.*  
@@ -332,7 +334,7 @@
 ### Portability  
 
 * Adaptability  
-  * **Infrastructure abstraction** (Service, Infrastructure) +> Automated infrastructure, Operation outsourcing  
+  * **Infrastructure abstraction** (Service, Infrastructure) +> Automated infrastructure  
     *In a cloud-native application the used infrastructure should be abstracted by clear boundaries to decouple the system from physical hardware or also virtual hardware to minimize the effort and risk involved with managing infrastructure*  
     Bastani2017 14 "Service Brokers" (make use of service brokers as an additional level of abstraction to automatically add or remove backing services); Goniwada2021 3 "Location-Independent Principle"  
   * **Cloud vendor abstraction** (Service, Infrastructure)  
@@ -349,7 +351,7 @@
       *By storing configuration values in specialized services and not only environment variables for example, changing configurations is facilitated and updating configurations of runnning components can be enabled.*  
       Ibryam2020 19 "Configuration Resource"; Richardson2019 11.2 "Designing configurable services"; Arundel2019 10 "ConfigMaps"; Bastani2017 2 "Centralized, Journaled Configuration", Bastani2017 2 "Refreshable Configuration"
 * Installability  
-  * **Standardized self-contained deployment unit** (Component) +> Immutable artifacts  
+  * **Standardized self-contained deployment unit** (Component)  
     *The components of a cloud-native applications should be deployed as standardized self-contained units so that the same artifact can reliably be installed and run in different environments and on different infrastructure.*  
      Reznik2019 10 "Containerized Apps"; Adkins2019 7 "Use Containers" (smaller deployments, separated operating system, portable); Indrasiri2021 1 "Use Containerization and Container Orchestration"; Garrison2017 7 "Application Runtime and Isolation"; Goniwada2021 3 "Deploy Independently Principle" (deploy services in independent containers), "Self-Containment Principle", 5 "Containerization"  
 * Replaceability  
@@ -424,7 +426,7 @@
       Davis2019 10.1; Scholl2019 6 "Use Circuit Breakers for Nontransient Failures"; Richardson2019 3.2.3 "Handling partial failures using the Circuit Breaker pattern"; Bastani2017 12 "Isolating Failures and Graceful Degradation: circuit breaker"; Indrasiri2021 3 "Resilient Connectivity Pattern: Circuit breaker";  Goniwada2021 4 "Circuit Breaker"  
       * *Number of Links with Complex Failover* (Apel2019)
 * Recoverability  
-  * **Automated restarts** (Service) +> Autonomous fault handling  
+  * **Automated restarts** (Service)  
     *In a cloud-native application, when a component is found to be unhealthy, it should be automatically and directly restarted so that a recover from failures is possible. Ideally this concern should be moved to the infrastructure level.*  
     Winn2017 2 "Self-Healing Processes; Self-Healing VMs"; Bastani2017 13 "automatic remediation"; Indrasiri2021 1 "Why container orchestration?; High availability"; Goniwada2021 5 "Self-Healing"  
     * *Runtime resilience* (Wu2018)
