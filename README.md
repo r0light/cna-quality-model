@@ -18,7 +18,7 @@ We created this quality model by applying the following methodology:
 
 ![Methodology](docs/assets/img/methodology.png)
 
-The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and we defined Quality aspects, product factors, entities, and measures as described by this excerpt from the Quamoco meta model:
+The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and we defined **Quality aspects**, **product factors**, **entities**, and **measures** as described by this excerpt from the Quamoco meta model:
 
 ![An excerpt of the Quamoco meta model](docs/assets/img/quamoco.png)
 
@@ -43,20 +43,20 @@ The extracted statements are listed in [A_raw statements.md](A_raw%20statements.
 
 ### Step B
 
-In the second step we mapped the statements to the quality aspects of the [ISO25010 standard](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010). A short summary of these aspects is given in [A1_ISO25010 quality aspects.md](A1_ISO25010%20quality%20aspects.md).
+In the second step we mapped the statements to the **quality aspects** of the [ISO25010 standard](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010). A short summary of these aspects is given in [A1_ISO25010 quality aspects.md](A1_ISO25010%20quality%20aspects.md).
 
 The mapping as the outcome of this step is presented here: [B_statements_mapping.md](B_statements_mapping.md)
 
 ### Step C
 
-In the third step, we further differentiated the statements to derive quality aspects as required from the Quamoco meta model. These initial quality aspects with the statements they are based on are presented here:
+In the third step, we further differentiated the statements to derive **quality aspects** as required from the Quamoco meta model. These initial **quality aspects** with the statements they are based on are presented here:
 [C_cna quality aspects.md](C_cna%20quality%20aspects.md) and visualized like this:
 
 ![The initial quality aspects for the quality model](docs/assets/img/C_cna%20quality%20aspects.svg)
 
 ### Step D
 
-In the forth step we defined more specific product factors which impact and realize the found quality aspects. Therefore we relied on the following practitioner books and mapped statements and chapters to the quality aspects:
+In the forth step we defined more specific **product factors** which impact and realize the found **quality aspects**. Therefore we relied on the following practitioner books and mapped statements and chapters to the **quality aspects**:
 
 | Title                                                                                                                    | Author(s)                                                                                          | Year | Publisher |   |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|------|-----------|---|
@@ -73,7 +73,7 @@ In the forth step we defined more specific product factors which impact and real
 | [Practical Process Automation](https://www.oreilly.com/library/view/practical-process-automation/9781492061441/)         | Bernd Rücker                                                                                       | 2021 | O'Reilly  |   |
 | [Cloud Native Architecture and Design](https://link.springer.com/book/10.1007/978-1-4842-7226-8)                         | Shivakumar Goniwada                                                                                | 2021 | Apress    |   |
 
-After the intial scanning of the practitioner books we had added the product factors as detailed in [D1_product factors.md](D1_product%20factors.md) and visualized like this:
+After the initial scanning of the practitioner books we had added the **product factors** as detailed in [D1_product factors.md](D1_product%20factors.md) and visualized like this:
 
 ![The initial product factors for the quality model](docs/assets/img/D1_quality_aspects_refined.svg)
 
@@ -83,9 +83,9 @@ After having read all books, we iterated on the found statements and refined the
 
 ### Step E
 
-In the final step we added measures to the product factors as currently available in the scientific literature. This therefore serves as an evaluation of the currently existing measures which suit our model showing for which product factors measures have already been presented and for which product factors it is necessary to propose additional measures in future work (We do not propose additional measures in this work to keep the model in its current state aligned to existing literature).
+In the final step we added **measures** to the **product factors** as currently available in the scientific literature. This therefore serves as an evaluation of the currently existing **measures** which suit our model showing for which **product factors** **measures** have already been presented and for which **product factors** it is necessary to propose additional **measures** in future work (We do not propose additional **measures** in this work to keep the model in its current state aligned to existing literature).
 
-But because measures need to be based on entities which form the software architecture, suitable entities are needed. Therefore we propose the following entities which can describe the software architecture of a cloud-native application as suitable for our quality model:
+But because **measures** need to be based on **entities** which form the software architecture, suitable **entities** are needed. Therefore we propose the following **entities** which can describe the software architecture of a cloud-native application as suitable for our quality model:
 
 | Name                    | Description                                                                                              | Relation        |
 |-------------------------|----------------------------------------------------------------------------------------------------------|-----------------|
@@ -103,12 +103,12 @@ But because measures need to be based on entities which form the software archit
 | Data Aggregate          | An aggregate which needs to be persisted and is used by services, e.g., Business objects                 | part-of System  |
 | Backing Data            | Non-business data, e.g., config values, secrets, logs, metrics                                           | part-of System  |
 
-To find suitable measures, we performed a literature search, as described in more detail in [literatureSearch/search.md](literatureSearch/search.md).
+To find suitable **measures**, we performed a literature search, as described in more detail in [literatureSearch/search.md](literatureSearch/search.md).
 
-We first collected all measures that we found and characterized them, this is shown in [E1_raw_measures.md](E1_raw_measures.md).
-Then we selected only those measures suitable for our quality model (that means a measure fits to a product factor of our quality model and is based on the same level of abstraction as defined by our proposed entities). The selected measures are shown in [E2_selected_measures.md](E2_selected_measures.md).
+We first collected all **measures** that we found and characterized them, this is shown in [E1_raw_measures.md](E1_raw_measures.md).
+Then we selected only those **measures** suitable for our quality model (that means a measure fits to a **product factor** of our quality model and is based on the same level of abstraction as defined by our proposed **entities**). The selected **measures** are shown in [E2_selected_measures.md](E2_selected_measures.md).
 
-Next, we added these selected measures to our quality model which is detailed in [E3_measures.md](E3_measures.md) and visualized here:
+Next, we added these selected **measures** to our quality model which is detailed in [E3_measures.md](E3_measures.md) and visualized here:
 
 ![The quality model with measures added](docs/assets/img/E3_measures.svg)
 
@@ -118,6 +118,6 @@ Our final quality model with this specific scope is detailed in [E4_final_qualit
 
 ![The final quality model focused on the architectural design](docs/assets/img/E4_final_quality_model.svg)
 
-However, this visualization is problematic, because the relations between factors are difficult to see and follow. We therefore chose to change the visualization to a "star" form where the top most quality aspects are shown with a black background at the edges and product factors impacting multiple quality aspects can therefore be but in the middle. This is also the visualization shown initially:
+However, this visualization is problematic, because the relations between **factors** are difficult to see and follow. We therefore chose to change the visualization to a "star" form where the top most **quality aspects** are shown with a black background at the edges and **product factors** impacting multiple **quality aspects** can therefore be but in the middle. This is also the visualization shown initially:
 
 ![The final quality model focused on the architectural design visualized in a star form](docs/assets/img/E4_final_quality_model_starform.svg)
