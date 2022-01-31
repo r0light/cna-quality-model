@@ -1,32 +1,59 @@
 # Cloud-native applications Quality Model
 
-This is the accompanying repository to the paper "Towards a Quality Model for Cloud-native applications".
+This is the accompanying repository to the paper "Towards a Quality Model for Cloud-native applications". It contains the information and references we used to build the initial quality model based on practitioner books and scientific literature.
 
-Using the shown methodology, we have developed an initial quality model for cloud-native applications based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf)
+For a better overview you can also have a look at the following site: [https://r0light.github.io/cna-quality-model/](https://r0light.github.io/cna-quality-model/).
 
-![Methodology](figures/methodology.png)
+The files containing the "raw" information are shortly described here:
 
-![An excerpt of the Quamoco meta model](figures/quamoco.png)
+The final quality as presented in the paper is described in the file [The final quality model focused on the architectural design](E4_final_quality_model.md) and is visualized like this:
 
-An excerpt of the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf)
+![The final quality model focused on the architectural design visualized in a star form](docs/assets/img/E4_final_quality_model_starform.svg)
+
+We created this quality model by applying the following methodology:
+
+![Methodology](docs/assets/img/methodology.png)
+
+The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and we defined Quality aspects, product factors, entities, and measures as described by this excerpt from the Quamoco meta model:
+
+![An excerpt of the Quamoco meta model](docs/assets/img/quamoco.png)
+
+Referring to the methodology, in the following, details for the different steps (A,B,C,D,E) are presented:
 
 ## A
 
-[The raw statements from the definitions we used](A_raw%20statements.md)
+In the first step we extracted separate statements from the following definitions for cloud-native applications:
+
+* [CNCF2018](definitions/raw/CNCF2018.md)
+* [Fehling2014](definitions/raw/Fehling2014.md)
+* [Gannon2017](definitions/raw/Gannon2017.md)
+* [Kratzke2017](definitions/raw/Kratzke2017.md)
+* [Pahl2018](definitions/raw/Pahl2018.md)
+* [Pivotal2017](definitions/raw/Pivotal2017.md)
+* [RedHat2018](definitions/raw/RedHat2018.md)
+* [Toffetti2017](definitions/raw/Toffetti2017.md)
+* [Wurster2020](definitions/raw/Wurster2020.md)
+
+The extracted statements are listed in [A_raw statements.md](A_raw%20statements.md)
 
 [The quality aspects from the ISO25010 standard](A1_ISO25010%20quality%20aspects.md)
 
 ## B
 
-[The statements from the CNA definitions mapped to suitable quality aspects](B_statements_mapping.md)
+In the second step we mapped the statements to the quality aspects of the [ISO25010 standard](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010). A short summary of these aspects is given in [A1_ISO25010 quality aspects.md](A1_ISO25010%20quality%20aspects.md).
+
+The mapping as the outcome of this step is presented here: [B_statements_mapping.md](B_statements_mapping.md)
 
 ## C
 
-[The initial quality aspects for the quality model](C_cna%20quality%20aspects.md)
+In the third step, we further differentiated the statements to derive quality aspects as required from the Quamoco meta model. These initial quality aspects with the statements they are based on are presented here:
+[C_cna quality aspects.md](C_cna%20quality%20aspects.md) and visualized like this:
 
-![The initial quality aspects for the quality model](C_cna%20quality%20aspects.svg)
+![The initial quality aspects for the quality model](docs/assets/img/C_cna%20quality%20aspects.svg)
 
 ## D
+
+In the forth step we define more specific product factors which impact and realize the found quality aspects. Therefore we relied on the following practitioner books and mapped statements and chapters to the quality aspects:
 
 | Title                                                                                                                    | Author(s)                                                                                          | Year | Publisher |   |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|------|-----------|---|
@@ -43,25 +70,19 @@ An excerpt of the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/fi
 | [Practical Process Automation](https://www.oreilly.com/library/view/practical-process-automation/9781492061441/)         | Bernd Rücker                                                                                       | 2021 | O'Reilly  |   |
 | [Cloud Native Architecture and Design](https://link.springer.com/book/10.1007/978-1-4842-7226-8)                         | Shivakumar Goniwada                                                                                | 2021 | Apress    |   |
 
-[The initial product factors for the quality model](D1_product%20factors.md)
+After the intial scanning of the practitioner books we had added the product factors as detailed in [D1_product%20factors.md](D1_product%20factors.md) and visualized like this:
 
-![The initial product factors for the quality model](D1_quality_aspects_refined.svg)
+![The initial product factors for the quality model](docs/assets/img/D1_quality_aspects_refined.svg)
 
-[The refined product factors for the quality model](D2_product%20factors.md)
+After having read all books, we iterated on the found statements and refined the factor hierarchy. The outcome of this step is detailed in [D2_product%20factors.md](D2_product%20factors.md) and visualized like this:
 
-![The refined product factors for the quality model](D2_product_factors.svg)
+![The refined product factors for the quality model](docs/assets/img/D2_product_factors.svg)
 
 ## E
 
-[The raw set of measures found through the literature seach](E1_raw_measures.md)
+In the final step we added measures to the product factors as currently available in the scientific literature. This therefore serves as an evaluation of the currently existing measures which suit our model showing for which product factors measures have already been presented and for which product factors it is necessary to propose additional measures in future work (We do not propose additional measures in this work to keep the model in its current state aligned to existing literature).
 
-The process of searching the literature is described [here](literatureSearch/search.md).
-
-[The set of measures selected as suitable for the quality model](E2_selected_measures.md)
-
-[The quality model with measures added](E3_measures.md)
-
-![The quality model with measures added](E3_measures.svg)
+But because measures need to be based on entities which form the software architecture, suitable entities are needed. Therefore we propose the following entities which can describe the software architecture of a cloud-native application as suitable for our quality model:
 
 | Name                    | Description                                                                                              | Relation        |   |   |
 |-------------------------|----------------------------------------------------------------------------------------------------------|-----------------|---|---|
@@ -79,6 +100,22 @@ The process of searching the literature is described [here](literatureSearch/sea
 | Data Aggregate          | An aggregate which needs to be persisted and is used by services, e.g., Business objects                 | part-of System  |   |   |
 | Backing Data            | Non-business data, e.g., config values, secrets, logs, metrics                                           | part-of System  |   |   |
 
-[The final quality model focused on the architectural design](E4_final_quality_model.md)
 
-![The final quality model focused on the architectural design](E4_final_quality_model_starform.svg)
+To find suitable measures, we performed a literature search, as described in more detail in [literatureSearch/search.md](literatureSearch/search.md).
+
+We first collected all measures that we found and characterized them, this is shown in [E1_raw_measures.md](E1_raw_measures.md).
+Then we selected only those measures suitable for our quality model (that means a measure fits to a product factor of our quality model and is based on the same level of abstraction as defined by our proposed entities). The selected measures are shown in [E2_selected_measures.md](E2_selected_measures.md).
+
+Next, we added these selected measures to our quality model which is detailed in [E3_measures.md](E3_measures.md) and visualized here:
+
+![The quality model with measures added](docs/assets/img/E3_measures.svg)
+
+It is important to note that up to this point our quality model has a broad scope also including aspects such as the deployment process (and fitting product factors) and runtime measures (shown in purple in the previous visualization). We deliberately included these things in our quality model to gather as much information as possible. However, because the focus of our quality model should be on the design time of a software architecture, we iterated on the quality model once more to only include aspects that can be evaluated at design time (therefore excluding runtime measures) and can be evaluated based on the entities that we have proposed (therefore excluding for example aspects considering the deployment process). It might be possible to reconsider these things in future work, but for now we want to focus on the design time and elaborate our quality model to enable quantitative evaluations of software architectures.
+
+Our final quality model with this specific scope is detailed in [E4_final_quality_model.md](E4_final_quality_model.md) and visualized like this:
+
+![The final quality model focused on the architectural design](docs/assets/img/E4_final_quality_model.svg)
+
+However, this visualization is problematic, because the relations between factors are difficult to see and follow. We therefore chose to change the visualization to a "star" form where the top most quality aspects are shown with a black background at the edges and product factors impacting multiple quality aspects can therefore be but in the middle. This is also the visualization shown initially:
+
+![The final quality model focused on the architectural design visualized in a star form](docs/assets/img/E4_final_quality_model_starform.svg)
