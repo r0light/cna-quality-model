@@ -34,7 +34,7 @@ It also shows that **entities** are needed which describe a software architectur
 | Data Aggregate          | An aggregate which needs to be persisted and is used by services, e.g., Business objects                 | part-of System  |
 | Backing Data            | Non-business data, e.g., config values, secrets, logs, metrics                                           | part-of System  |
 
-Finally, **measures** are needed for a quantitative evaluation. In its current state we have included **measures** so far presented in scientific literature. However, not for all **product factors** we could find suitable **measures** highlighting the need for future work in order to enable comprehensive quality evaluations for cloud-native application architectures (For more information on this and on the creation process of our quality model see [Creation Process](/creation-process)).
+Finally, **measures** are needed for a quantitative evaluation. In its current state we have included **measures** so far presented in scientific literature. However, not for all **product factors** we could find suitable **measures** highlighting the need for future work in order to enable comprehensive quality evaluations for cloud-native application architectures (For more information on this and on the creation process of our quality model see [Creation Process](creation-process)).
 
 Our quality model is described in more detail in the following:
 

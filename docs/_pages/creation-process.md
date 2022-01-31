@@ -6,11 +6,11 @@ title: Creation Process
 
 We created this quality model by applying the following methodology:
 
-![Methodology](/assets/img/methodology.svg)
+![Methodology](assets/img/methodology.svg)
 
 The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and we defined Quality aspects, product factors, entities, and measures as described by this excerpt from the Quamoco meta model:
 
-![An excerpt of the Quamoco meta model](/assets/img/quamoco.svg)
+![An excerpt of the Quamoco meta model](assets/img/quamoco.svg)
 
 Referring to the methodology, in the following, details for the different steps (A,B,C,D,E) are presented.
 For the visualizations of the diagrams we used: [https://app.diagrams.net/](https://app.diagrams.net/)
@@ -37,7 +37,7 @@ In the second step we mapped the statements to the quality aspects of the [ISO25
 
 In the third step, we further differentiated the statements to derive quality aspects as required from the Quamoco meta model:
 
-![The initial quality aspects for the quality model](/assets/img/C_cna%20quality%20aspects.svg)
+![The initial quality aspects for the quality model](assets/img/C_cna%20quality%20aspects.svg)
 
 ### Step D
 
@@ -60,11 +60,11 @@ In the forth step we defined more specific product factors which impact and real
 
 After the intial scanning of the practitioner books we had added the product factors as shown here:
 
-![The initial product factors for the quality model](/assets/img/D1_quality_aspects_refined.svg)
+![The initial product factors for the quality model](assets/img/D1_quality_aspects_refined.svg)
 
 After having read all books, we iterated on the found statements and refined the factor hierarchy:
 
-![The refined product factors for the quality model](/assets/img/D2_product_factors.svg)
+![The refined product factors for the quality model](assets/img/D2_product_factors.svg)
 
 ### Step E
 
@@ -88,20 +88,20 @@ But because measures need to be based on entities which form the software archit
 | Data Aggregate          | An aggregate which needs to be persisted and is used by services, e.g., Business objects                 | part-of System  |
 | Backing Data            | Non-business data, e.g., config values, secrets, logs, metrics                                           | part-of System  |
 
-To find suitable measures, we performed a literature search, as described in more detail in [Search Process](/search-process).
+To find suitable measures, we performed a literature search, as described in more detail in [Search Process](search-process).
 
-We first collected all measures that we found and characterized them. Then we selected only those measures suitable for our quality model (that means a measure fits to a product factor of our quality model and is based on the same level of abstraction as defined by our proposed entities). The selected measures are list at [Measures](/measures).
+We first collected all measures that we found and characterized them. Then we selected only those measures suitable for our quality model (that means a measure fits to a product factor of our quality model and is based on the same level of abstraction as defined by our proposed entities). The selected measures are list at [Measures](measures).
 
 Next, we added these selected measures to our quality model:
 
-![The quality model with measures added](/assets/img/E3_measures.svg)
+![The quality model with measures added](assets/img/E3_measures.svg)
 
 It is important to note that up to this point our quality model has a broad scope also including aspects such as the deployment process (and fitting product factors) and runtime measures (shown in purple in the previous visualization). We deliberately included these things in our quality model to gather as much information as possible. However, because the focus of our quality model should be on the design time of a software architecture, we iterated on the quality model once more to only include aspects that can be evaluated at design time (therefore excluding runtime measures) and can be evaluated based on the entities that we have proposed (therefore excluding for example aspects considering the deployment process). It might be possible to reconsider these things in future work, but for now we want to focus on the design time and elaborate our quality model to enable quantitative evaluations of software architectures.
 
 Our final quality model with this specific scope:
 
-![The final quality model focused on the architectural design](/assets/img/E4_final_quality_model.svg)
+![The final quality model focused on the architectural design](assets/img/E4_final_quality_model.svg)
 
 However, this visualization is problematic, because the relations between factors are difficult to see and follow. We therefore chose to change the visualization to a "star" form where the top most quality aspects are shown with a black background at the edges and product factors impacting multiple quality aspects can therefore be but in the middle. This is also the visualization shown at [Overview](/):
 
-![The final quality model focused on the architectural design visualized in a star form](/assets/img/E4_final_quality_model_starform.svg)
+![The final quality model focused on the architectural design visualized in a star form](assets/img/E4_final_quality_model_starform.svg)
