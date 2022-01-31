@@ -10,11 +10,11 @@ This site describes the quality model for cloud-native application architectures
 Our quality model focuses on the design time and is intended to enable quality evaluations of software architectures to assess their cloud-nativeness.
 The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and contains the following **factors** (that means **quality aspects** and **product factors**):
 
-![The final quality model focused on the architectural design](/assets/img/E4_final_quality_model_starform.svg)
+![The final quality model focused on the architectural design](assets/img/E4_final_quality_model_starform.svg)
 
 The higher level **quality aspects** are adopted from the [ISO25010 standard](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010) and the relations (called **impacts**) between **product factors** and **quality aspects** is explained by this excerpt from the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf):
 
-![An excerpt of the Quamoco meta model](/assets/img/quamoco.svg)
+![An excerpt of the Quamoco meta model](assets/img/quamoco.svg)
 
 It also shows that **entities** are needed which describe a software architecture and which are characterized by **product factors**. Our proposed entities for the quality model are the following:
 
