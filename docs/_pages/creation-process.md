@@ -88,9 +88,9 @@ But because measures need to be based on entities which form the software archit
 | Data Aggregate          | An aggregate which needs to be persisted and is used by services, e.g., Business objects                 | part-of System  |
 | Backing Data            | Non-business data, e.g., config values, secrets, logs, metrics                                           | part-of System  |
 
-To find suitable measures, we performed a literature search, as described in more detail in [Search Process](../search-process).
+To find suitable measures, we performed a literature search, as described in more detail in [Search Process]({{ site.baseurl }}{% link _pages/search-process.md %}).
 
-We first collected all measures that we found and characterized them. Then we selected only those measures suitable for our quality model (that means a measure fits to a product factor of our quality model and is based on the same level of abstraction as defined by our proposed entities). The selected measures are list at [Measures](../measures).
+We first collected all measures that we found and characterized them. Then we selected only those measures suitable for our quality model (that means a measure fits to a product factor of our quality model and is based on the same level of abstraction as defined by our proposed entities). The selected measures are list at [Measures]({{ site.baseurl }}{% link _pages/measures.md %}).
 
 Next, we added these selected measures to our quality model:
 
@@ -102,6 +102,6 @@ Our final quality model with this specific scope:
 
 ![The final quality model focused on the architectural design](assets/img/E4_final_quality_model.svg)
 
-However, this visualization is problematic, because the relations between factors are difficult to see and follow. We therefore chose to change the visualization to a "star" form where the top most quality aspects are shown with a black background at the edges and product factors impacting multiple quality aspects can therefore be but in the middle. This is also the visualization shown at [Overview](..):
+However, this visualization is problematic, because the relations between factors are difficult to see and follow. We therefore chose to change the visualization to a "star" form where the top most quality aspects are shown with a black background at the edges and product factors impacting multiple quality aspects can therefore be but in the middle. This is also the visualization shown at [Overview]({{ site.baseurl }}{% link _pages/index.md %}):
 
 ![The final quality model focused on the architectural design visualized in a star form](assets/img/E4_final_quality_model_starform.svg)
