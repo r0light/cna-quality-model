@@ -20,8 +20,9 @@ minima:
 
 header_pages:
   - _pages/index.md
-  - _pages/search.md
-#  - _pages/measures.md
+  - _pages/creation-process.md
+  - _pages/search-process.md
+  - _pages/measures.md
 
 include:
   - _pages
