@@ -46,7 +46,7 @@ Differentiate between technical infrastructure such as PaaS or CaaS and compleme
       Isolated state means that large portions of a cloud application are stateless, thus, isolating state in small portions of the application. (Fehling2014)  
       A cloud-native application (CNA) isolates state in a minimum of stateful components. (Kratzke2017)  
       Cloud-native applications are designed with a clear separation among stateless and stateful services. (Wurster2020)  
-    * **Loose coupling** (System, Component, Link) -> Service independence  
+    * **Loose coupling** (System, Component, Link)  
       *In cloud-native applications links between services should be loosely coupled in time, location, and language to achieve independence.*  
       In cloud applications dependencies between application components should be minimized to reach loose coupling as a well-established concept in distributed applications. (Fehling2014)  
       Cloud applications should be loosely coupled, that means decoupled in time, location and language dimensions. (Pahl2018)  
@@ -236,7 +236,7 @@ Differentiate between technical infrastructure such as PaaS or CaaS and compleme
     * **Distribution** *repeated* (Service, Infrastructure)  
       *In cloud-native applications services should be distributed across locations and data centers for performance, availability and reliability.*  
       Cloud-native platforms uses orchestration to dynamically manage placement of containers across a cluster of VMs to provide recovery/restart in the event of failure. (Pivotal2017)  
-    * **Automated restarts** (Service) -> Autonomous fault handling  
+    * **Automated restarts** (Service)  
       *Failed instances of services should be recovered automatically.*  
       The platforms exploited for deploying and managing cloud-native applications are suitably configured to automatically recover failed service instances. (Wurster2020)  
       Building and operating cloud-native applications requires Microservices where each microservice can be restarted independent of other services. (Pivotal2017)  

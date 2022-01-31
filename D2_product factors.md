@@ -70,7 +70,7 @@
       Davis2019 5.4; Scholl2019 6 "Design Stateless Services That Scale Out"; Goniwada2021 3 "Be Smart with State Principle", 5 "Stateless Services"
     * **Spezialized Stateful services** (Component)  
       Davis2019 5.4; Ibryam2020 11 "Stateful Service"
-  * **Loose coupling** (System, Component, Link) +> Service independence  
+  * **Loose coupling** (System, Component, Link)  
     Goniwada2021 3 "Coupling" (Services should be as loosely coupled as possible)
     * **Asynchronous communication** (Link)  
       Davis2019: 4.2; Scholl2019 6 "Prefer Asynchronous Communication"; Richardson2019 3.3.2, 3.4 "Using asynchronous messaging to improve availability"; Indrasiri2021 3 "Service Choreography Pattern"; Ruecker2021 9 "Asynchronous Request/Response" (Use asynchronous communication to make services more robust); Goniwada2021 4 "Asynchronous Nonblocking I/O"
@@ -131,6 +131,8 @@
     Reznik2019 9 "Automated Testing"; Adkins2019 7 "Release Frequently Using Automated Testing" (Use automated testing for being able to release frequently)
 * Simplicity (as the counterpart to complexity, but instead of naming it Low Complexity named it Simplicity)  
   * **Operation outsourcing** -> Cost variability  
+    * **Managed infrastructure** (Infrastructure)  
+      *Infrastructure such as basic computing, storage or network resources can be managed by vendors to ensure a stable functioning and up-to-date functionalities. Furthermore, it reduces the operational overhead.*
     * **Managed backing services** (Backing Service)  
       Scholl2019 6 "Use Managed Databases and Analytics Services"; Arundel2019 15 "Don’t build your own monitoring infrastructure" (Use an external monitoring service); Bastani2017 10 "managed and automated messaging system" (operating your own messaging system increases operational overhead, better use a system managed by a platform)  
 
@@ -157,7 +159,7 @@
 ### Portability  
 
 * Adaptability  
-  * **Infrastructure abstraction** (Service, Infrastructure) +> Automated infrastructure, Operation outsourcing
+  * **Infrastructure abstraction** (Service, Infrastructure) +> Automated infrastructure  
       Bastani2017 14 "Service Brokers" (make use of service brokers as an additional level of abstraction to automatically add or remove backing services); Goniwada2021 3 "Location-Independent Principle"  
   * **Cloud vendor abstraction** (Service, Infrastructure)
       Wimm2017 3 "Infrastructure and the Cloud Provider Interface"; Indrasiri2021 1 "Dynamic Management; Mulicloud support"  
@@ -167,7 +169,7 @@
     * **Configuration stored in specialized services** (Service)  
       Ibryam2020 19 "Configuration Resource"; Richardson2019 11.2 "Designing configurable services"; Arundel2019 10 "ConfigMaps"; Bastani2017 2 "Centralized, Journaled Configuration", Bastani2017 2 "Refreshable Configuration"
 * Installability  
-  * **Standardized self-contained deployment unit** (Service) +> Immutable artifacts  
+  * **Standardized self-contained deployment unit** (Service)  
       Reznik2019 10 "Containerized Apps"; Adkins2019 7 "Use Containers" (smaller deployments, separated operating system, portable); Indrasiri2021 1 "Use Containerization and Container Orchestration"; Garrison2017 7 "Application Runtime and Isolation"; Goniwada2021 3 "Deploy Independently Principle" (deploy services in independent containers), "Self-Containment Principle", 5 "Containerization"  
 * Replaceability  
   * **Immutable artifacts** (Service, Infrastructure)
@@ -206,7 +208,7 @@
     * **Circuit breaked communication** (Link)  
       Davis2019 10.1; Scholl2019 6 "Use Circuit Breakers for Nontransient Failures"; Richardson2019 3.2.3 "Handling partial failures using the Circuit Breaker pattern"; Bastani2017 12 "Isolating Failures and Graceful Degradation: circuit breaker"; Indrasiri2021 3 "Resilient Connectivity Pattern: Circuit breaker";  Goniwada2021 4 "Circuit Breaker"  
 * Recoverability  
-  * **Automated restarts** (Service) +> Autonomous fault handling  
+  * **Automated restarts** (Service)  
       Winn2017 2 "Self-Healing Processes; Self-Healing VMs"; Bastani2017 13 "automatic remediation"; Indrasiri2021 1 "Why container orchestration?; High availability"; Goniwada2021 5 "Self-Healing"  
   * **Backups**  
       Arundel2019 11 "Backups" (Backup Kubernetes Cluster state to restore in case of mistakes/failures)

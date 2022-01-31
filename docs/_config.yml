@@ -1,0 +1,41 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Cloud-native Quality Model
+email: robin.lichtenthaeler@uni-bamberg.de
+description: >- # this means to ignore newlines until "base_url:"
+  This is the accompanying page to the paper called "Towards a Quality Model for Cloud-native Applications".
+base_url: /cloud-native-quality-model # the subpath of your site, e.g. /blog
+
+github_username:  "r0light/cna-quality-model"
+
+# Build settings
+theme: minima
+
+minima:
+  date_format: "%Y-%m-%d"
+
+header_pages:
+  - _pages/index.md
+  - _pages/creation-process.md
+  - _pages/search-process.md
+  - _pages/measures.md
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+
+exclude: 
+    - .gitignore
+    - Gemfile
+    - Gemfile.lock

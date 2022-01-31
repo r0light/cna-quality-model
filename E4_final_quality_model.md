@@ -86,7 +86,7 @@
     * **Spezialized stateful services** (Component, Storage Backing Service)  
       *For stateful components, specialized software should be used that can still provide elasticity and reliability by handling distributed state and ensure consistency.*  
       Davis2019 5.4; Ibryam2020 11 "Stateful Service"
-  * **Loose coupling** (System, Component, Link) +> Service independence  
+  * **Loose coupling** (System, Component, Link)  
     *In cloud-native applications links between components should be loosely coupled in time, location, and language to achieve independence.*  
     * **Asynchronous communication** (Link)  
       *By preferring asynchronous links (e.g. based on messaging middleware) for the communication between components, they can be decoupled in time so that not all linked components need to be available at the same time for a successfull communication.*  
@@ -148,46 +148,48 @@
   * **Service independence** (Service, Link) +> Co-existence  
     *In a cloud-native application services should be as independent as possible throughout their lifecycle, that means development, operation, and evolution. Changes to one services should not impact other services.*  
     Goniwada2021 3 "Decentralize Everything Principle" (Decentralize deployment, governance)  
-    * *Number of Links per Component* (Zimmermann2015; Tiwari2014; Rosa2020)
-    * *Number of Consumed Endpoints* (Apel2019)
-    * *Incoming outgoing ratio of a component* (Tiwari2014)
-    * *Ratio of outgoing links of a service* (PhamThiQuynh2009)
-    * *Coupling degree based on potential coupling* (PhamThiQuynh2009)
-    * *Interaction density in the system* (Tiwari2014)
-    * *Interaction density of a system* (Tiwari2014; Karhikeyan2012)
-    * *Indirect Interaction density of a system* (Karhikeyan2012)
-    * *Service Coupling based on Endpoint Entropy* (Wang2009)
-    * *System Coupling based on Endpoint Entropy* (Wang2009)
-    * *Combined metric for indirect dependency* (Karhikeyan2012)
-    * *Modularity quality based on cohesion and coupling* (Brito2021, Jin2021)
-    * *Conceptual Modularity quality based on Data Aggregate cohesion and coupling* (Brito2021, Jin2021)
-    * *Cyclic Communication* (Apel2019, Ntentos2020a)
-    * *Number of synchronous cycles* (Engel2018)
-    * *Services Interdependence in the System* (Bogner2017, Rud2006)
-    * *Average Number of Directly Connected Services* (Shim2008)
-    * *Number of Components that are linked to a component* (Bogner2017, Rud2009, Shim2008; Zhang2009)
-    * *Number of Components a component is linked to* (Bogner2017; Rud2009; Engel2018; Shim2008; Raj2021, Raj2018; Hofmeister2008; PhamThiQuynh2009; Zhang2009)
-    * *Relative Importance of the Service* (Zhang2009)
-    * *Number of links between two services* (Hofmeister2008)
-    * *Aggregate System metric to measure service coupling* (Hofmeister2008)
-    * *Extent of Aggregation components* (Hofmeister2008)
-    * *System’s CentraliZation* (Hofmeister2008)
-    * *Density of Aggregation* (Hofmeister2008)
-    * *Aggregator CentraliZation* (Hofmeister2008)
-    * *Number of Components a component is linked to relative to the total amount of components* (Raj2021, Raj2018, Zhang2009)
-    * *Degree of coupling in a system* (Raj2021, Raj2018, Hofmeister2008, Zhang2009)
-    * *Service Coupling based on data exchange complexity* (Kazemi2013, Ma2009)
-    * *Data Aggregate Convergence across Components* (Kazemi2013, Ma2009)
-    * *Simple Degree of coupling in a system* (Qian2006)
-    * *Service Criticality* (Bogner2017, Rud2009)
-    * *Ratio of components violating independent deployability to non-external components* (Zdun2017)
-    * *Ratio of independently deployable component clusters to non-external components* (Zdun2017)
-    * *Direct Service Sharing* (Ntentos2020a)
-    * *Transitively Shared Services* (Ntentos2020a)
-    * *Ratio of shared non-external components to non-external components* (Zdun2017)
-    * *Ratio of shared dependencies of non-external components to possible dependencies* (Zdun2017)
-    * *Degree of dependence on other components* (Oliveira2018, La2013, Oh2011)
-    * *Degree of dependence on other components* (PhamThiQuynh2009)
+    * **Low coupling** (Service, Link)  
+      *In a cloud-native application coupling shoud be low in terms of links between components. Each link represents a dependency and therefore decreases service independen*
+      * *Number of Links per Component* (Zimmermann2015; Tiwari2014; Rosa2020)
+      * *Number of Consumed Endpoints* (Apel2019)
+      * *Incoming outgoing ratio of a component* (Tiwari2014)
+      * *Ratio of outgoing links of a service* (PhamThiQuynh2009)
+      * *Coupling degree based on potential coupling* (PhamThiQuynh2009)
+      * *Interaction density in the system* (Tiwari2014)
+      * *Interaction density of a system* (Tiwari2014; Karhikeyan2012)
+      * *Indirect Interaction density of a system* (Karhikeyan2012)
+      * *Service Coupling based on Endpoint Entropy* (Wang2009)
+      * *System Coupling based on Endpoint Entropy* (Wang2009)
+      * *Modularity quality based on cohesion and coupling* (Brito2021, Jin2021)
+      * *Combined metric for indirect dependency* (Karhikeyan2012)
+      * *Services Interdependence in the System* (Bogner2017, Rud2006)
+      * *Average Number of Directly Connected Services* (Shim2008)
+      * *Number of Components that are linked to a component* (Bogner2017, Rud2009, Shim2008; Zhang2009)
+      * *Number of Components a component is linked to* (Bogner2017; Rud2009; Engel2018; Shim2008; Raj2021, Raj2018; Hofmeister2008; PhamThiQuynh2009; Zhang2009)
+      * *Number of links between two services* (Hofmeister2008)
+      * *Aggregate System metric to measure service coupling* (Hofmeister2008)
+      * *Number of Components a component is linked to relative to the total amount of components* (Raj2021, Raj2018, Zhang2009)
+      * *Degree of coupling in a system* (Raj2021, Raj2018, Hofmeister2008, Zhang2009)
+      * *Service Coupling based on data exchange complexity* (Kazemi2013, Ma2009)
+      * *Simple Degree of coupling in a system* (Qian2006)
+      * *Direct Service Sharing* (Ntentos2020a)
+      * *Transitively Shared Services* (Ntentos2020a)
+      * *Ratio of shared non-external components to non-external components* (Zdun2017)
+      * *Ratio of shared dependencies of non-external components to possible dependencies* (Zdun2017)
+      * *Degree of dependence on other components* (Oliveira2018, La2013, Oh2011)
+      * *Degree of dependence on other components* (PhamThiQuynh2009)
+    * **Functional decentralization** (System, Service, Link)  
+      *Business functionality should be decentralized over the system as a whole to make components more independent.*
+      * *Conceptual Modularity quality based on Data Aggregate cohesion and coupling* (Brito2021, Jin2021)
+      * *Cyclic Communication* (Apel2019, Ntentos2020a)
+      * *Number of synchronous cycles* (Engel2018)
+      * *Relative Importance of the Service* (Zhang2009)
+      * *Extent of Aggregation components* (Hofmeister2008)
+      * *System’s CentraliZation* (Hofmeister2008)
+      * *Density of Aggregation* (Hofmeister2008)
+      * *Aggregator CentraliZation* (Hofmeister2008)
+      * *Data Aggregate Convergence across Components* (Kazemi2013, Ma2009)
+      * *Service Criticality* (Bogner2017, Rud2009)
     * **Limited request trace scope** (Request Trace)  
       *A request that requires the collaboration of several services should still be limited to as few services as possible, because otherwise services are less independent the more they need to collaborate to handle requests.*  
       * *Maximum Length of Service Link chain per request trace* (Apel2019, Engel2018; Rosa2020)
@@ -205,14 +207,18 @@
       * *Database Type Utilization* (Ntentos2020a)
 * Testability  
 * Simplicity (as the counterpart to complexity, but instead of naming it Low Complexity named it Simplicity)  
-  * *Average Number of Endpoints per Service* (Bogner2017, Bogner2020, Hirzalla2009; Brito2021, Jin2021; Rosa2020; Kazemi2013, Ma2009)
-  * *Number of Dependencies* (Apel2019)
-  * *Number of Versions per Service* (Bogner2017, Hirzalla2009)
-  * *Concurrently available versions complexity* (Karhikeyan2012)
-  * *Service Support for Transactions* (Bogner2017, Hirzalla2009)
-  * *Data Model Scope* (Zimmermann2015)
+  * **Sparsity**
+    *The more sparse a system is, that means the less components there are, the more simple it is in general*
+    * *Average Number of Endpoints per Service* (Bogner2017, Bogner2020, Hirzalla2009; Brito2021, Jin2021; Rosa2020; Kazemi2013, Ma2009)
+    * *Number of Dependencies* (Apel2019)
+    * *Number of Versions per Service* (Bogner2017, Hirzalla2009)
+    * *Concurrently available versions complexity* (Karhikeyan2012)
+    * *Service Support for Transactions* (Bogner2017, Hirzalla2009)
+    * *Data Model Scope* (Zimmermann2015)
   * **Operation outsourcing** (Backing Service, Infrastructure) +> Cost variability  
     *By outsourcing the operation of infrastructure and components to a cloud provider or other vendor, the operation is simplified because responsibility is transferred. Furthermore, costs can be made more flexible because providers and vendors can provide a usage-based pricing.*  
+    * **Managed infrastructure** (Infrastructure)
+      *Infrastructure such as basic computing, storage or network resources can be managed by vendors to ensure a stable functioning and up-to-date functionalities. Furthermore, it reduces the operational overhead.*
     * **Managed backing services** (Backing Service)  
       *Especially backing services that provide non-business functionality can be managed by vendors to ensure a stable functioning and up-to-date functionalities. Furthermore, it reduces the operational overhead.*  
       Scholl2019 6 "Use Managed Databases and Analytics Services"; Arundel2019 15 "Don’t build your own monitoring infrastructure" (Use an external monitoring service); Bastani2017 10 "managed and automated messaging system" (operating your own messaging system increases operational overhead, better use a system managed by a platform)  
@@ -254,7 +260,7 @@
 ### Portability  
 
 * Adaptability  
-  * **Infrastructure abstraction** (Service, Infrastructure) +> Automated infrastructure, Operation outsourcing  
+  * **Infrastructure abstraction** (Service, Infrastructure) +> Automated infrastructure  
     *In a cloud-native application the used infrastructure should be abstracted by clear boundaries to decouple the system from physical hardware or also virtual hardware to minimize the effort and risk involved with managing infrastructure*  
     Bastani2017 14 "Service Brokers" (make use of service brokers as an additional level of abstraction to automatically add or remove backing services); Goniwada2021 3 "Location-Independent Principle"  
   * **Cloud vendor abstraction** (Service, Infrastructure)  
@@ -271,7 +277,7 @@
       *By storing configuration values in specialized services and not only environment variables for example, changing configurations is facilitated and updating configurations of runnning components can be enabled.*  
       Ibryam2020 19 "Configuration Resource"; Richardson2019 11.2 "Designing configurable services"; Arundel2019 10 "ConfigMaps"; Bastani2017 2 "Centralized, Journaled Configuration", Bastani2017 2 "Refreshable Configuration"
 * Installability  
-  * **Standardized self-contained deployment unit** (Component) +> Immutable artifacts  
+  * **Standardized self-contained deployment unit** (Component)  
     *The components of a cloud-native applications should be deployed as standardized self-contained units so that the same artifact can reliably be installed and run in different environments and on different infrastructure.*  
      Reznik2019 10 "Containerized Apps"; Adkins2019 7 "Use Containers" (smaller deployments, separated operating system, portable); Indrasiri2021 1 "Use Containerization and Container Orchestration"; Garrison2017 7 "Application Runtime and Isolation"; Goniwada2021 3 "Deploy Independently Principle" (deploy services in independent containers), "Self-Containment Principle", 5 "Containerization"  
 * Replaceability  
@@ -318,7 +324,7 @@
       Davis2019 10.1; Scholl2019 6 "Use Circuit Breakers for Nontransient Failures"; Richardson2019 3.2.3 "Handling partial failures using the Circuit Breaker pattern"; Bastani2017 12 "Isolating Failures and Graceful Degradation: circuit breaker"; Indrasiri2021 3 "Resilient Connectivity Pattern: Circuit breaker";  Goniwada2021 4 "Circuit Breaker"  
       * *Number of Links with Complex Failover* (Apel2019)
 * Recoverability  
-  * **Automated restarts** (Service) +> Autonomous fault handling  
+  * **Automated restarts** (Service)  
     *In a cloud-native application, when a component is found to be unhealthy, it should be automatically and directly restarted so that a recover from failures is possible. Ideally this concern should be moved to the infrastructure level.*  
     Winn2017 2 "Self-Healing Processes; Self-Healing VMs"; Bastani2017 13 "automatic remediation"; Indrasiri2021 1 "Why container orchestration?; High availability"; Goniwada2021 5 "Self-Healing"  
 
@@ -335,9 +341,11 @@
   * **Communication indirection** (Service, Link) +> Loose coupling  
     *Communication between services in a cloud-native application should be managed through additional software (therefore be indirect) to increase observability and ensure loose coupling.*  
     Indrasiri2021 3 "Sidecar Pattern", "Service Mesh Pattern", "Service Abstraction Pattern" Proxy communication with services to include service discovery and load balancing); Davis2019 10.3; Richardson2019 11.4.2
-    * *Service Interaction via Backing Service* (Ntentos2020a)
-    * *Service Interaction via Central Component utilization metric* (Ntentos2020)
-    * *Service Interaction with Event Sourcing utilization metric* (Ntentos2020)
+    * **Mediated communication** (Component, Link)  
+      *By mediating communication through additional components, there is no direct dependence on the other communication partner and additional operations can be performed to manage the communication.*  
+      * *Service Interaction via Backing Service* (Ntentos2020a)
+      * *Service Interaction via Central Component utilization metric* (Ntentos2020)
+      * *Service Interaction with Event Sourcing utilization metric* (Ntentos2020)
     * **Addressing abstraction** (Link, Backing Service)  
       *By abstracting from specific addresses for reaching other components, address changes can be handled automatically without impacting the link between components. This can be achieved for example through service discovery where components are addressed through abstract service names and specific addresses are resolved through service discovery.*  
       Davis2019 8.3; Ibryam2020 12 "Service Discovery"; Richardson2019 "Using service discovery"; Garrison2017 7 "Service Discovery"; Indrasiri2021 3 "Service Registry and Discovery Pattern" ; Bastani2017 7 "Routing" (Use service discovery with support for health checks and respect varying workloads); Indrasiri2021 3 "Service Abstraction Pattern" (Use an abstraction layer in front of services (for example Kubernetes Service)); Goniwada2021 4 "Service Discovery"  

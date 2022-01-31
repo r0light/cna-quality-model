@@ -78,7 +78,7 @@
       * Stateful services handle the complexity of distributed data
         Davis2019 5.4
         Ibryam2020 11 "Stateful Service"
-    * **Loose coupling** (System, Component, Link) -> Service independence  
+    * **Loose coupling** (System, Component, Link)  
       Goniwada2021 3 "Coupling" (Services should be as loosely coupled as possible)
       * Asynchronous communication (Link)  
         Davis2019: 4.2
@@ -248,7 +248,7 @@
         Goniwada2021 5 "Elasticity in Microservices"  
 * Portability  
   * Adaptability  
-    * **Infrastructure abstraction** (Service, Infrastructure) -> Operation outsourcing
+    * **Infrastructure abstraction** (Service, Infrastructure) -> Automated infrastructure  
       Bastani2017 14 "Service Brokers" (make use of service brokers as an additional level of abstraction to automatically add or remove backing services)  
       Goniwada2021 3 "Location-Independent Principle"  
     * **Cloud vendor abstraction** (Service, Infrastructure)
@@ -266,7 +266,7 @@
         Bastani2017 2 "Refreshable Configuration"
         Indrasiri2021 1 "Decoupled Configurations"
   * Installability  
-    * **Standardized self-contained deployment unit** (Service) -> Immutable artifacts  
+    * **Standardized self-contained deployment unit** (Service)  
       Reznik2019 10 "Containerized Apps"
       Adkins2019 7 "Use Containers" (smaller deployments, separated operating system, portable)
       Indrasiri2021 1 "Use Containerization and Container Orchestration"
@@ -333,7 +333,7 @@
         Indrasiri2021 3 "Resilient Connectivity Pattern: Circuit breaker"  
         Goniwada2021 4 "Circuit Breaker"  
   * Recoverability  
-    * **Automated restarts** (Service) -> Autonomous fault handling  
+    * **Automated restarts** (Service)  
       Winn2017 2 "Self-Healing Processes; Self-Healing VMs"
       Bastani2017 13 "automatic remediation"
       Indrasiri2021 1 "Why container orchestration?; High availability"  

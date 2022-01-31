@@ -1,0 +1,21 @@
+---
+---
+
+@import "minima";
+
+
+.wrapper {
+    max-width: 95%;
+}
+
+table.literature {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+@media (max-width: 1500px) {
+    table.literature {
+        table-layout: auto;
+        word-wrap: break-word;
+    }
+}

@@ -1,12 +1,16 @@
 # Literature search for scientific literature proposing measures for the quality of cloud-native application architectures
 
+The search process we used to find scientific literature presenting measures suitable for our quality model is detailed in the following:
+
 ## Basics
+
+We used the following two general search strings (which we transformed into library-specific forms as shown below) to capture both the topics of service-orientation for which microservices are the latest trend and cloud computing as being the foundation for cloud-nativeness:
 
 Search string 1: (Abstract:(architecture)) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(service-oriented) OR Abstract:(microservices))
 
 Search string 2: (Abstract:(cloud-native) OR Abstract:("cloud computing")) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(quality))
 
-Search date: 2021-10-04
+We did the literature search on all libraries on 2021-10-04.
 
 ## Searched libraries
 
@@ -17,14 +21,14 @@ Search date: 2021-10-04
 "filter": { Publication Date: (01/01/2014 TO 12/31/2021), ACM Content: DL }
 ```
 
-291 results
+This search returned 291 results.
 
 ```
 "query": { (Abstract:(cloud\-native) OR Abstract:("cloud computing")) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(quality)) }
 "filter": { Publication Date: (01/01/2014 TO 12/31/2021), ACM Content: DL }
 ```
 
-178 results
+This search returned 178 results.
 
 ### [IEEE](https://ieeexplore.ieee.org/Xplore/)
 
@@ -33,14 +37,14 @@ Search date: 2021-10-04
 2014 - 2021
 ```
 
-34 results
+This search returned 34 results.
 
 ```
 (("Abstract":"cloud-native" OR "Abstract":"cloud computing") AND ("Abstract":"measure" OR "Abstract":"metric") AND ("Abstract":"quality"))
 2014 - 2021
 ```
 
-84 results
+This search returned 84 results.
 
 ### [Springer Link](link.springer.com??)
 
@@ -51,20 +55,20 @@ Because Springer Link does not allow for searching the abstracts only, but inste
 2014 - 2021
 ```
 
-109 results
+This search returned 109 results.
 
 ```
 "cloud-native application" AND (measure OR metric) AND quality
 2014 - 2021
 ```
 
-84 results
+This search returned 84 results.
 
-### merged results
+### Merged results
 
-see: [00-raw-measures-literature.bib](00-raw-measures-literature.bib)
+All results merged are given in: [00-raw-measures-literature.bib](00-raw-measures-literature.bib)
 
-749 results (after removing duplicates)
+It includes 749 results (after removing duplicates).
 
 ## Filtering for suitable literature
 
