@@ -131,7 +131,7 @@ Our quality model is described in more detail in the following:
     * **Usage of existing solutions for non-core capabilities** (Component, Link)  
       *By using readily available standardized, open source solutions for non-core capabilities, the development effort is reduced and the software quality can be increased, because a broader community ensures the well-functioning of a software solution.*
       Reznik2019 9 "Avoid Reinventing the Wheel"; Adkins2019 12 "Frameworks to Enforce Security and Reliability"  
-  * **Separation by gateways** (System, Component, Endpoint) +> Service-orientation, Seamless upgrades, Least-Privileged Access  
+  * **Separation by gateways** (System, Component, Endpoint) +> Seamless upgrades, Least-Privileged Access  
     *By separating components through gateways, communication can be proxied and controlled at specific components. It also abstracts one part of a system from another so that it can be reused by different components without needing direct links to components that actually provide the needed funtionality, this also enables the redirection of communication when components change without changing the gateway endpoint. Furthermore, incoming communication from outside of a system can be controlled at a central component (the gateway) to ensure access control.*  
     Davis2019 10.2; Richardson2019 8.2; Bastani2017 8 "Edge Services: Filtering and Proxying with Netflix Zuul"; Indrasiri2021 7 "API Gateway Pattern"; Indrasiri2021 7 "API Microgateway Pattern" (Smaller API microgateways to avoid having a monolithic API gateway); Goniwada2021 4 "Mediator" (Use a mediator pattern between clients and servers)  
     * *Externally available endpoints* (Zimmermann2015)
