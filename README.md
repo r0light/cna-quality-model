@@ -20,7 +20,7 @@ We created this quality model by applying the following methodology:
 
 The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and we defined **Quality aspects**, **product factors**, **entities**, and **measures** as described by this excerpt from the Quamoco meta model:
 
-![An excerpt of the Quamoco meta model](docs/assets/img/quamoco.png)
+![An excerpt of the Quamoco meta model](docs/assets/img/quamoco.svg)
 
 Referring to the methodology, in the following, details for the different steps (A,B,C,D,E) are presented.
 For the visualizations of the diagrams we used: [https://app.diagrams.net/](https://app.diagrams.net/) and the `.drawio` files can be opened there.
