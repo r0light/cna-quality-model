@@ -47,7 +47,7 @@
     Scholl2019 6 "Use Separate Accounts/Subscriptions/Tenants"; Adkins2019 8 "Role separation" (let different services run with different roles to restric access); Adkins2019 8 "Location separation" (use different roles for a service in different locations to limit attack impacts)  
 * Authenticity  
   * **Authentication delegation** (System, Backing Service)  
-    *Delegating the verficiation of an entity for authenticity removes this concern from components so that their focus can remain on business funtionalities while for example different authentication options can be managed in one place only.*  
+    *Delegating the verification of an entity for authenticity removes this concern from components so that their focus can remain on business functionalities while for example different authentication options can be managed in one place only.*  
     Scholl2019 6 "Use Federated Identity Management"; Goniwada2021 9 "Decentralized Identity"  
 
 ### Maintainability
