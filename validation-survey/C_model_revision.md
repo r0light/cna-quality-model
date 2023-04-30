@@ -78,3 +78,4 @@
 
 * *Communication indirection*, *Mediated communication*, and *Communication partner abstraction*
   * no interpretable results; unclear impacts of sub-factors
+  
