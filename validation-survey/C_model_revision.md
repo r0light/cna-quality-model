@@ -7,6 +7,7 @@
 * Removed impact from *Automated infrastructure* on *Automated restarts* and instead added impact on *Recoverability*
 * Removed impact from *Dynamic Scheduling* on *Automated infrastructure*
 * Removed impact from *Infrastructure Abstraction* on *Automated infrastructure*
+* Splitted *Automated Infrastructure* into *Automated infrastructure provisioning* and *Automated infrastructure maintenance*
 * Added impact from *Built-in autoscaling* on *Availability*
 * Removed *Cost variability*
 * Removed impact from *Service independence* on *Co-existence*
@@ -25,7 +26,6 @@
 * Added impact from *Centralized consistent logging* on *Accountability*
 * Removed impact from *Contract-based links* on *API-based communication*
 * Added impact from *Contract-based links* on *Adaptability*
-* Added impact from *Infrastructure abstraction* on *Simplicity*
 * Removed impact from *Usage of existing solutions for non-core capabilities* on *Standardization* and instead added impact on *Simplicity*
 * Added impact from *Vertical data replication* on *Analyzability*
 * Added impact from *Vertical data replication* on *Availability*
