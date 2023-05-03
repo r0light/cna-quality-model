@@ -32,7 +32,7 @@ A more detailed report on the survey execution and results can be found in the r
 
 ### C: Updating the Quality Model based on the survey results
 
-The changes applied to the quality model based on the survey results are described in [C_model_revision.md]([validation-survey/C_model_revision.md]).
+The changes applied to the quality model based on the survey results are described in [C_model_revision.md](validation-survey/C_model_revision.md).
 The result of this revision of the quality model is the quality model as shown here:
 
 ![The revised quality model including the survey results](docs/assets/img/revised-quality-model.svg)
