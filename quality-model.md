@@ -104,10 +104,9 @@
       * *Degree of asynchronous communication* (Qian2006)
       * *Asynchronous Communication Utilization* (Ntentos2020a)
     * **Communication partner abstraction** (Link, Backing Service) -> Analyzability  
-      **TODO: reformulate** *By abstracting from specific components as linked communication partners, components are further decoupled and must not exist at the same time for communication. An example is event-driven communication where events are published to channels and can also be received by components which are created later in time.*  
-      *Communication between services in a cloud-native application should be managed through additional software (therefore be indirect) to increase observability and ensure loose coupling.*  
-      Indrasiri2021 3 "Sidecar Pattern", "Service Mesh Pattern", "Service Abstraction Pattern" Proxy communication with services to include service discovery and load balancing); Davis2019 10.3; Richardson2019 11.4.2
-      Richardson2019 6 Event-driven communication; Ruecker2021 8: Event-driven systems "event chains emerge over time and therefore lack visibility."
+      *By abstracting from specific components as linked communication partners, components are further decoupled and must not exist at the same time for communication. An example is event-driven communication where events are published to channels and can also be received by components which are created later in time.*  
+      Richardson2019 6 Event-driven communication; Ruecker2021 8: Event-driven systems "event chains emerge over time and therefore lack visibility." 
+      * *Service Interaction with Event Sourcing utilization metric* (Ntentos2020)
 * Reusability  
   * **Standardization** (System, Component, Link)  
     *By using standardized technologies within components, for interfaces, and especially for the infrastructure, backing services and other non-business concerns, reusability can be increased and the effort to develop additional functionality which integrates with existing components can be reduced.*  
@@ -133,7 +132,7 @@
       Scholl2019 6 "Implement Health Checks and Readiness Checks"; Ibryam2020 4 "Health Probe"; Richardson2019 11.3.1 "Using the Health check API pattern"; Garrison 7 "State Management"; Arundel2019 5 "Liveness Probes"; Arundel2019 5 "Readiness Probes"; Bastani2017 13 "Health Checks"; Indrasiri2021 1 "Why container orchestration?; Health monitoring"; Goniwada2021 4 "Fail Fast", 16 "Health Probe"  
 * Modifiability  
   * **Automated infrastructure provisioning** (Infrastructure) +> Installability  
-    *Infrastructure provisioning and management should be automated as much as possible to reduce the operational effort. Ideally it should be combined with components deployments so that no further interaction is needed for a component deployment.*  
+    *Infrastructure provisioning should be automated based on component requirements which are either stated explicitly or inferred from the component which should be deployed. The infrastructure and tools used should require only minimal manual effort. Ideally it should be combined with continuous delivery processes so that no further interaction is needed for a component deployment.*  
      Reznik2019 10 "Automated Infrastructure"; Goniwada2021 5 "Automation"  
     * **Use infrastructure as code** (Infrastructure) +> Adaptability, Reusability, Recoverability  
       *To avoid manual infrastructure operation and configuration, the infrastructure requirements and constraints should be defined (coded) independently of the actual runtime. That way a defined infrastructure can be automatically provisioned repeatedly and ideally on different underlying infrastructures (cloud providers).*  
@@ -245,8 +244,7 @@
       Indrasiri2014 4 "Data Sharding Pattern"; Goniwada2021 4 "Data Partitioning Pattern"
 * Resource utilisation  
   * **Enforcement of appropriate resource boundaries** (Component) +> Availability  
-    **TODO: reformulate** *In cloud-native applications, the resources required by a component should be predictable as precisely as possible to ensure a component has the resources available that it needs but also that resources are not allocated unnecessarily.*  
-    *For all components the maximum amout of resources a component can consume should be limited so that resources can be provisioned efficiently. By making the resource requirements explicit, for example in a configuration file, these limits can be enforced.*  
+    *In cloud-native applications, the resources required by a component should be predictable as precisely as possible and specified accordingly for each component in terms of lower and upper boundaries. Resources include CPU, memory, GPU, or Network requirements. This information should be used by the infrastructure to enforce these resource boundaries. Thereby it is ensured that a component has the resources available that it needs to function properly, that the infrastructure can optimize the amount of allocated resource, and that components are not negatively impacted by defective components which excessively consume resources.*  
     Scholl2019 6 "Define CPU and Memory Limits for Your Containers"; Arundel2019 5 "Resource Limits"; Ibryam2020 2 "Defined Resource requirements"; Arundel2019 5 "Resource Quotas" (limit maximum resources for a namespace); Goniwada2021 3 "Runtime Confinement Principle", 16 "Predictable Demands"  
   * **Dynamic scheduling** (Infrastructure)  
     *Resource provisioning to deployed components should be dynamic and automated so that every component is ensured to have the resources it needs and only that many resources are provisioned wich are really needed at the same time. This requires dynamic adjustments to resources to adapt to changing environments. This capability should be part of the used infrastructure.*  
@@ -313,7 +311,7 @@
       *If the infrastructure on which components of a cloud-native application are deployed provides the ability for rolling upgrades, upgrades can be performed seamlessly in an automated manner with reduced effort.*  
       Davis2019 7.2; Scholl2019 6 "Use Zero-Downtime Releases"; Ibryam2020 3 "Declarative Deployment"; Reznik2019 10 "Risk-Reducing Deployment Strategies"; Arundel2019 13 "Rolling Updates"; Indrasiri2021 1 "Why container orchestration?; Rolling upgrades"
   * **Automated infrastructure maintenance** (Infrastructure) +> Reoverability  
-  **TODO: reformulate** *Infrastructure provisioning and management should be automated as much as possible to reduce the operational effort. Ideally it should be combined with components deployments so that no further interaction is needed for a component deployment.*  
+    *The used infrastructure should automate regular maintenance tasks as much as possible in a way that the operation of components is not impacted by these tasks. Such tasks include updates of operating systems, standard libraries, and middleware managed by the infrastructure, but also certificate regeneration.*
      Reznik2019 10 "Automated Infrastructure"; Goniwada2021 5 "Automation"  
 * Fault tolerance  
   * *Process Coordination Means* (Zimmermann2015)
@@ -348,11 +346,10 @@
     *In a cloud-native application services should communicate via well-defined, standardized, documented, and declarative APIs which can be both synchronous or asynchronous.*  
     Reznik2019 9 "Communicate Through APIs"; Adkins2019 6 "Understandable Interface Specifications" (Use Interface specifications for understandability); Bastani2017 6 "Everything is an API" (Services are integrated via APIs); Indrasiri2021 2 "Service Definitions in Synchronous Communication" (Use a service definition for each service); Indrasiri2021 2 "Service Definition in Asynchronous Communication" (Use schemas to define message formats); Goniwada2021 3 "API First Principle"  
   * **Consistently mediated communication** (Component, Link) -> Time-behaviour +> Analyzability  
-    **TODO: reformulate** *By mediating communication through additional components, there is no direct dependence on the other communication partner and additional operations can be performed to manage the communication.*  
+    *By mediating communication through additional components, there is no direct dependence on the other communication partner and additional operations can be performed to manage the communication, such as load balancing, monitoring, or the enforcement of policies. By using centralized mediation approaches, such as Service Meshes, management actions can be performed universally and consistently across the components of an application.*
+    Indrasiri2021 3 "Sidecar Pattern", "Service Mesh Pattern", "Service Abstraction Pattern" Proxy communication with services to include service discovery and load balancing); Davis2019 10.3; Richardson2019 11.4.2  
     * *Service Interaction via Backing Service* (Ntentos2020a)
     * *Service Interaction via Central Component utilization metric* (Ntentos2020)
-    * *Service Interaction with Event Sourcing utilization metric* (Ntentos2020)
-
 
 ## Basic metrics
 
