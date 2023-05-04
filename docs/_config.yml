@@ -23,6 +23,7 @@ header_pages:
   - _pages/creation-process.md
   - _pages/search-process.md
   - _pages/measures.md
+  - _pages/validation-survey.md
 
 include:
   - _pages

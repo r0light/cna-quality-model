@@ -1,7 +1,7 @@
 ---
 permalink: /creation-process
 layout: page
-title: Creation Process
+title: Initial Creation Process
 ---
 
 We created this quality model by applying the following methodology:

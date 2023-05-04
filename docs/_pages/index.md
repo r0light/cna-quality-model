@@ -6,15 +6,15 @@ layout: home
 title: Overview
 ---
 
-This site describes the quality model for cloud-native application architectures as presented in the paper *Towards a Quality Model for Cloud-native Applications*.
+This site describes the quality model for cloud-native application architectures as presented in the paper *[Towards a Quality Model for Cloud-native applications](http://doi.org/10.1007/978-3-031-04718-3_7)* and updated in the paper *Cloud-Native Architectural Characteristics and their Impacts on Software Quality: A Validation Survey*.
 Our quality model focuses on the design time and is intended to enable quality evaluations of software architectures to assess their cloud-nativeness.
 The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and contains the following **factors** (that means **quality aspects** and **product factors**):
 
-![The final quality model focused on the architectural design](assets/img/E4_final_quality_model_starform.svg)
+![The current quality model focused on the architectural design](assets/img/revised-quality-model.svg)
 
 The higher level **quality aspects** are adopted from the [ISO25010 standard](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010) and the relations (called **impacts**) between **product factors** and **quality aspects** is explained by this excerpt from the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf):
 
-![An excerpt of the Quamoco meta model](assets/img/quamoco.svg)
+![An excerpt of the Quamoco meta model](assets/img/quamoco.svg?sanitize=true)
 
 It also shows that **entities** are needed which describe a software architecture and which are characterized by **product factors**. Our proposed entities for the quality model are the following:
 
@@ -34,7 +34,7 @@ It also shows that **entities** are needed which describe a software architectur
 | Data Aggregate          | An aggregate which needs to be persisted and is used by services, e.g., Business objects                 | part-of System  |
 | Backing Data            | Non-business data, e.g., config values, secrets, logs, metrics                                           | part-of System  |
 
-Finally, **measures** are needed for a quantitative evaluation. In its current state we have included **measures** so far presented in scientific literature. However, not for all **product factors** we could find suitable **measures** highlighting the need for future work in order to enable comprehensive quality evaluations for cloud-native application architectures (For more information on this and on the creation process of our quality model see [Creation Process]({{ site.baseurl }}{% link _pages/creation-process.md %}).
+Finally, **measures** are needed for a quantitative evaluation. In its current state we have included **measures** so far presented in scientific literature. However, not for all **product factors** we could find suitable **measures** highlighting the need for future work in order to enable comprehensive quality evaluations for cloud-native application architectures (For more information on this and on the creation process of our quality model see [Initial Creation Process]({{ site.baseurl }}{% link _pages/creation-process.md %}) and [Validation Survey]({{ site.baseurl }}{% link _pages/validation-survey.md %})).
 
 Our quality model is described in more detail in the following:
 
@@ -44,7 +44,7 @@ Our quality model is described in more detail in the following:
   * **Data encryption in transit** (Link)  
     *Data which is sent through a link from one component to another should be encrypted so that even when an attacker has access to the network layer, the data remains confidential.*  
     Scholl2019 6 "Encrypt Data in Transit; Indrasiri2021 2 "Security" (Use TLS for synchronous communications)
-  * **Secrets management** (Component) +> Seamless upgrades  
+  * **Secrets management** (Component)  
     *Secrets (e.g. passwords, access tokens, encryption keys) which allow access to other components or data should be managed specifically to make sure they stay confidential and only authorized components or persons can access them.*  
     * **Isolated secrets** (Component, Backing Data)  
       *Secrets (e.g. passwords, access tokens, encryption keys) should not be stored by in component artifacts (e.g. binaries, images). Instead, components should be given access at runtime only to those secrets which they actually need and only when they need it.*  
@@ -67,7 +67,7 @@ Our quality model is described in more detail in the following:
     Scholl2019 6 "Use Separate Accounts/Subscriptions/Tenants"; Adkins2019 8 "Role separation" (let different services run with different roles to restric access); Adkins2019 8 "Location separation" (use different roles for a service in different locations to limit attack impacts)  
 * Authenticity  
   * **Authentication delegation** (System, Backing Service)  
-    *Delegating the verficiation of an entity for authenticity removes this concern from components so that their focus can remain on business funtionalities while for example different authentication options can be managed in one place only.*  
+    *Delegating the verification of an entity for authenticity removes this concern from components so that their focus can remain on business functionalities while for example different authentication options can be managed in one place only.*  
     Scholl2019 6 "Use Federated Identity Management"; Goniwada2021 9 "Decentralized Identity"  
 
 ### Maintainability
@@ -90,13 +90,19 @@ Our quality model is described in more detail in the following:
         * *Number of synchronous endpoints offered by a service* (Shim2008)
         * *Service Interface Usage Cohesion* (Bogner2017, Perepletchikov2007, Kazemi2011)
         * *Distribution of synchronous calls* (Engel2018)
-    * **Command Query Responsibility Segregation** (Service, Endpoint)  
-      *When read (query) and write (command) operations to data aggregates have differing usage patterns and require different formats or are changed for different reasons, separating them into different components can lead to better modularity and manageability.*  
-      Davis2019 4.4; Richardson2019 7.2 "Using the CQRS pattern"; Bastani2017 12 "CQRS (Command Query Responsibility Segregation)"; Indrasiri2021 4 "Command and Query Responsibility Segregation Pattern"; Goniwada2021 4 "Command and Query Responsibility Segregation Pattern"
+      * **Command Query Responsibility Segregation** (Service, Endpoint) -> Simplicity  
+        *When read (query) and write (command) operations to data aggregates have differing usage patterns and require different formats or are changed for different reasons, separating them into different components can lead to better modularity and manageability.*  
+        Davis2019 4.4; Richardson2019 7.2 "Using the CQRS pattern"; Bastani2017 12 "CQRS (Command Query Responsibility Segregation)"; Indrasiri2021 4 "Command and Query Responsibility Segregation Pattern"; Goniwada2021 4 "Command and Query Responsibility Segregation Pattern"
+    * **Separation by gateways** (System, Component, Endpoint) +> Seamless upgrades  
+      *By separating components through gateways, communication can be proxied and controlled at specific components. It also abstracts one part of a system from another so that it can be reused by different components without needing direct links to components that actually provide the needed funtionality, this also enables the redirection of communication when components change without changing the gateway endpoint. Furthermore, incoming communication from outside of a system can be controlled at a central component (the gateway) to ensure access control.*  
+      Davis2019 10.2; Richardson2019 8.2; Bastani2017 8 "Edge Services: Filtering and Proxying with Netflix Zuul"; Indrasiri2021 7 "API Gateway Pattern"; Indrasiri2021 7 "API Microgateway Pattern" (Smaller API microgateways to avoid having a monolithic API gateway); Goniwada2021 4 "Mediator" (Use a mediator pattern between clients and servers)  
+      * *Externally available endpoints* (Zimmermann2015)
+      * *Centralization of externally available endpoints* (Ntentos2020)
+      * *API Composition utilization metric* (Ntentos2020)
   * **Isolated state** (System, Component, Storage Backing Service) +> Replaceability, Elasticity  
     *In cloud-native applications services should be structured by clearly separating stateless and stateful services. Stateful services should be reduced to a minimum.*  
     Goniwada2021 3 "Coupling" (Services should be as loosely coupled as possible)  
-    * **Mostly stateless services** (Component)  
+    * **Mostly stateless services** (Component) +> Testability  
       *Most services in a cloud-native application should be stateless, because they can be replaced, scaled and updated more easily.*  
       Davis2019 5.4; Scholl2019 6 "Design Stateless Services That Scale Out"; Goniwada2021 3 "Be Smart with State Principle", 5 "Stateless Services"
       * *Ratio of state dependency of endpoints* (Karhikeyan2012)
@@ -117,31 +123,21 @@ Our quality model is described in more detail in the following:
       * *Ratio of asynchronous outgoing links* (Karhikeyan2012)
       * *Degree of asynchronous communication* (Qian2006)
       * *Asynchronous Communication Utilization* (Ntentos2020a)
-    * **Persistent communication** (Link) +> Recoverability  
-      *By using links that persist messages which have been sent, components can be further decoupled, because components need not even exist at the time a message is sent, but can still receive a message. Through this communication can also be repeated in case of failures.*  
-      Indrasiri2021 5 "Event Sourcing Pattern: Log-based message brokers"
-      * *Service Link Persistence utilization metric* (Ntentos2020)
-      * *Outbox/Event Sourcing utilization metric* (Ntentos2020)
+    * **Communication partner abstraction** (Link, Backing Service) -> Analyzability  
+      *By abstracting from specific components as linked communication partners, components are further decoupled and must not exist at the same time for communication. An example is event-driven communication where events are published to channels and can also be received by components which are created later in time.*  
+      Richardson2019 6 Event-driven communication; Ruecker2021 8: Event-driven systems "event chains emerge over time and therefore lack visibility." 
+      * *Service Interaction with Event Sourcing utilization metric* (Ntentos2020)
 * Reusability  
   * **Standardization** (System, Component, Link)  
     *By using standardized technologies within components, for interfaces, and especially for the infrastructure, backing services and other non-business concerns, reusability can be increased and the effort to develop additional functionality which integrates with existing components can be reduced.*  
     * **Component similarity** (Component)  
       *The more similar components are, the higher the reusability is and the easier it is for developers to work on an unfamiliar component. Furthermore, similar components can be more easily integrated and maintainted in the same way. Similarity considers mainly the libraries and technologies used for implementing and deploying services.*  
       Reznik2019 9 "Reference Architecture"
-    * **Usage of existing solutions for non-core capabilities** (Component, Link)  
-      *By using readily available standardized, open source solutions for non-core capabilities, the development effort is reduced and the software quality can be increased, because a broader community ensures the well-functioning of a software solution.*
-      Reznik2019 9 "Avoid Reinventing the Wheel"; Adkins2019 12 "Frameworks to Enforce Security and Reliability"  
-  * **Separation by gateways** (System, Component, Endpoint) +> Seamless upgrades, Least-Privileged Access  
-    *By separating components through gateways, communication can be proxied and controlled at specific components. It also abstracts one part of a system from another so that it can be reused by different components without needing direct links to components that actually provide the needed funtionality, this also enables the redirection of communication when components change without changing the gateway endpoint. Furthermore, incoming communication from outside of a system can be controlled at a central component (the gateway) to ensure access control.*  
-    Davis2019 10.2; Richardson2019 8.2; Bastani2017 8 "Edge Services: Filtering and Proxying with Netflix Zuul"; Indrasiri2021 7 "API Gateway Pattern"; Indrasiri2021 7 "API Microgateway Pattern" (Smaller API microgateways to avoid having a monolithic API gateway); Goniwada2021 4 "Mediator" (Use a mediator pattern between clients and servers)  
-    * *Externally available endpoints* (Zimmermann2015)
-    * *Centralization of externally available endpoints* (Ntentos2020)
-    * *API Composition utilization metric* (Ntentos2020)
 * Analysability  
-  * **Automated monitoring** (Service, Link, Infrastructure) +> Automated restarts  
+  * **Automated monitoring** (Service, Link, Infrastructure)  
     *Cloud-native applications should enable monitoring at various levels (business functionalities in services, backing-service funtionalities, infrastructure) in an automated fashion to enable observable and autononmous reactions to changing system conditions.*  
     Goniwada2021 3 "High Observability Principle"  
-    * **Consistent centralized logging** (Service, Backing Service)  
+    * **Consistent centralized logging** (Service, Backing Service) +> Accountability  
       *Logging functionality should be concentrated in a centralized component which combines and stores logs from the components of a system. The logs should also be consistent regarding their format and level of granularity so that a correlation and analysability of logs is facilitated.*  
       Davis2019 11.1; Scholl2019 6 "Use a Unified Logging System"; Scholl2019 6 "Common and Structured Logging Format"; Richardson2019 11.3.2 "Applying the Log aggregation pattern"; Reznik2019 10 "Observability"; Garrison2017 7 "Monitoring and Logging"; Adkins2019 15 "Design your logging to be immutable"; Arundel2019 15 "Logging"; Winn2017 2 "Aggregated Streaming of Logs and Metrics"; Bastani2017 13 "Application Logging"; Bastani2017 13 "Audit Events" (capture events for audits, like failed logins etc); Ruecker2021 11 "Custom Centralized Monitoring"; Goniwada2021 19 "One Source of Truth"  
     * **Consistent centralized metrics** (Service, Backing Service)  
@@ -151,21 +147,18 @@ Our quality model is described in more detail in the following:
       *For requests that span multiple components in a cloud-native system, distributed tracing should be enabled so that complete traces can be analyzed and problems can be clearly attributed to single components.*  
       Davis 11.3; Scholl2019 6 "Use Correlation IDs"; Richardson2019 11.3.3 "Using the Distributed tracing pattern"; Garrison2017 7 "Debugging and Tracing"; Reznik2019 10 "Observability"; Arundel2019 15 "Tracing"; Bastani2017 13 "Distributed Tracing"; Ruecker2021 11 "Observability and Distributed Tracing Tools" (Use Distributed Tracing); Goniwada2021 19 "One Source of Truth"  
       * *Distributed Tracing Support* (Ntentos2020)
-    * **Health and readiness Checks** (Service)  
+    * **Health and readiness Checks** (Service) +> Automated restarts, Availability  
       *All components in cloud-native system should enable health and readiness checks so that unhealthy components can be quickly identified and fixed and communication is carried out only between healthy and ready components. Furthermore, health and readiness checks enable an up-to-date holisitc overview of the health of a system.*  
       Scholl2019 6 "Implement Health Checks and Readiness Checks"; Ibryam2020 4 "Health Probe"; Richardson2019 11.3.1 "Using the Health check API pattern"; Garrison 7 "State Management"; Arundel2019 5 "Liveness Probes"; Arundel2019 5 "Readiness Probes"; Bastani2017 13 "Health Checks"; Indrasiri2021 1 "Why container orchestration?; Health monitoring"; Goniwada2021 4 "Fail Fast", 16 "Health Probe"  
 * Modifiability  
-  * **Automated infrastructure** (Infrastructure) +> Automated restarts  
-    *Infrastructure provisioning and management should be automated as much as possible to reduce the operational effort. Ideally it should be combined with components deployments so that no further interaction is needed for a component deployment.*  
+  * **Automated infrastructure provisioning** (Infrastructure) +> Installability  
+    *Infrastructure provisioning should be automated based on component requirements which are either stated explicitly or inferred from the component which should be deployed. The infrastructure and tools used should require only minimal manual effort. Ideally it should be combined with continuous delivery processes so that no further interaction is needed for a component deployment.*  
      Reznik2019 10 "Automated Infrastructure"; Goniwada2021 5 "Automation"  
-    * **Use infrastructure as code** (Infrastructure) +> Installability  
+    * **Use infrastructure as code** (Infrastructure) +> Adaptability, Reusability, Recoverability  
       *To avoid manual infrastructure operation and configuration, the infrastructure requirements and constraints should be defined (coded) independently of the actual runtime. That way a defined infrastructure can be automatically provisioned repeatedly and ideally on different underlying infrastructures (cloud providers).*  
       Scholl2019 6 "Describe Infrastructure Using Code"; Goniwada2021 16 "Declarative Deployment", 17 "What Is Infrastructure as Code?"  
       * *Lines of code (LOC) for deployment configuration.* (Lehmann2017, Talwar2005)
-    * **Dynamic scheduling** (Infrastructure) +> Resource utilisation  
-      *Resource provisioning to deployed components should be dynamic and automated so that every component is ensured to have the resources it needs and only that many resources are provisioned wich are really needed at the same time. This requires dynamic adjustments to resources to adapt to changing environments. This capability should be part of the used infrastructure.*  
-      eznik2019 10 "Dynamic Scheduling"; Garrison2017 7 "Resource Allocation and Scheduling"; Ibryam2020 6 "Automated Placement"; Indrasiri2021 1 "Why container orchestration?; Resource Management"; Indrasiri2021 1 "Why container orchestration?; Automatic provisioning"; Goniwada2021 16 "Automated Placement"  
-  * **Service independence** (Service, Link) +> Co-existence  
+  * **Service independence** (Service, Link)  
     *In a cloud-native application services should be as independent as possible throughout their lifecycle, that means development, operation, and evolution. Changes to one services should not impact other services.*  
     Goniwada2021 3 "Decentralize Everything Principle" (Decentralize deployment, governance)  
     * **Low coupling** (Service, Link)  
@@ -225,6 +218,10 @@ Our quality model is described in more detail in the following:
       * *Ratio of Storage Backend Sharing* (Rosa2020)
       * *Shared Storage Backing Service Interactions* (Ntentos2020, Ntentos2020a)
       * *Database Type Utilization* (Ntentos2020a)
+  * **Addressing abstraction** (Link, Backing Service) +> Replaceability  
+    *By abstracting from specific addresses for reaching other components, address changes can be handled automatically without impacting the link between components. This can be achieved for example through service discovery where components are addressed through abstract service names and specific addresses are resolved through service discovery.*  
+    Davis2019 8.3; Ibryam2020 12 "Service Discovery"; Richardson2019 "Using service discovery"; Garrison2017 7 "Service Discovery"; Indrasiri2021 3 "Service Registry and Discovery Pattern" ; Bastani2017 7 "Routing" (Use service discovery with support for health checks and respect varying workloads); Indrasiri2021 3 "Service Abstraction Pattern" (Use an abstraction layer in front of services (for example Kubernetes Service)); Goniwada2021 4 "Service Discovery"  
+    * *Service Discovery Usage* (Apel2019)
 * Testability  
 * Simplicity (as the counterpart to complexity, but instead of naming it Low Complexity named it Simplicity)  
   * **Sparsity**
@@ -242,6 +239,9 @@ Our quality model is described in more detail in the following:
     * **Managed backing services** (Backing Service)  
       *Especially backing services that provide non-business functionality can be managed by vendors to ensure a stable functioning and up-to-date functionalities. Furthermore, it reduces the operational overhead.*  
       Scholl2019 6 "Use Managed Databases and Analytics Services"; Arundel2019 15 "Don’t build your own monitoring infrastructure" (Use an external monitoring service); Bastani2017 10 "managed and automated messaging system" (operating your own messaging system increases operational overhead, better use a system managed by a platform)  
+  * **Usage of existing solutions for non-core capabilities** (Component, Link)  
+    *By using readily available standardized, open source solutions for non-core capabilities, the development effort is reduced and the software quality can be increased, because a broader community ensures the well-functioning of a software solution.*
+    Reznik2019 9 "Avoid Reinventing the Wheel"; Adkins2019 12 "Frameworks to Enforce Security and Reliability"  
 
 ### Performance efficiency
 
@@ -256,38 +256,37 @@ Our quality model is described in more detail in the following:
       *Data should be replicated horizontally, that means duplicated across several data storage components so that higher load can be handled and replicas closer to the service where data is needed can be used to reduce latency.*  
      Scholl2019 6 "Use Data Partitioning and Replication for Scale"; Goniwada2021 4 "Data Replication"  
       * *Storage Replication level* (Guerron2020, SOUZA-2016-ISCC)
-    * **Vertical data replication** (Service, Data Aggregate)  
+    * **Vertical data replication** (Service, Data Aggregate) -> Analyzability +> Availability  
       *Data should be replicated vertically, that means across a request trace so that it is available closer to where a request initially comes in. Typically caching is used for vertical data replication.*  
       Scholl2019 6 "Use Caching"; Bastani2017 9 "Caching" (Use an In-Memory cache for queries to relieve datastore from traffic; replication into faster data storage); Indrasiri2021 4 "Caching Pattern"
     * **Sharded data store replication** (Storage Backing Service, Data Aggregate)  
       *Data should be sharded, that means split into several storage components by a reasonable strategy so that requests can be distributed across shards to increase performance, because one storage component is not as easily overloaded with requests.*  
       Indrasiri2014 4 "Data Sharding Pattern"; Goniwada2021 4 "Data Partitioning Pattern"
 * Resource utilisation  
-  * **Resource predictability** (Component)  
-    *In cloud-native applications, the resources required by a component should be predictable as precisely as possible to ensure a component has the resources available that it needs but also that resources are not allocated unnecessarily.*  
-    * **Resource limits** (Component)  
-      *For all components the maximum amout of resources a component can consume should be limited so that resources can be provisioned efficiently. By making the resource requirements explicit, for example in a configuration file, these limits can be enforced.*  
-      Scholl2019 6 "Define CPU and Memory Limits for Your Containers"; Arundel2019 5 "Resource Limits"; Ibryam2020 2 "Defined Resource requirements"; Arundel2019 5 "Resource Quotas" (limit maximum resources for a namespace); Goniwada2021 3 "Runtime Confinement Principle", 16 "Predictable Demands"  
-  * **Cost variability** (Service, Infrastructure)  
-    *The cost that occurs when running a cloud-native application should vary based on the actual usage of components. Cost should only occur when the system is useful by providing business functionality and otherwise the cost should be minimized so that financial resources are optimally utilized.*  
+  * **Enforcement of appropriate resource boundaries** (Component) +> Availability  
+    *In cloud-native applications, the resources required by a component should be predictable as precisely as possible and specified accordingly for each component in terms of lower and upper boundaries. Resources include CPU, memory, GPU, or Network requirements. This information should be used by the infrastructure to enforce these resource boundaries. Thereby it is ensured that a component has the resources available that it needs to function properly, that the infrastructure can optimize the amount of allocated resource, and that components are not negatively impacted by defective components which excessively consume resources.*  
+    Scholl2019 6 "Define CPU and Memory Limits for Your Containers"; Arundel2019 5 "Resource Limits"; Ibryam2020 2 "Defined Resource requirements"; Arundel2019 5 "Resource Quotas" (limit maximum resources for a namespace); Goniwada2021 3 "Runtime Confinement Principle", 16 "Predictable Demands"  
+  * **Dynamic scheduling** (Infrastructure)  
+    *Resource provisioning to deployed components should be dynamic and automated so that every component is ensured to have the resources it needs and only that many resources are provisioned wich are really needed at the same time. This requires dynamic adjustments to resources to adapt to changing environments. This capability should be part of the used infrastructure.*  
+    Reznik2019 10 "Dynamic Scheduling"; Garrison2017 7 "Resource Allocation and Scheduling"; Ibryam2020 6 "Automated Placement"; Indrasiri2021 1 "Why container orchestration?; Resource Management"; Indrasiri2021 1 "Why container orchestration?; Automatic provisioning"; Goniwada2021 16 "Automated Placement"
 * Capability  
   * **Elasticity** (Service) +> Resource utilisation  
     *A cloud-native application should automatically add or remove computing resources based on the currently monitored needs to be capable of handling the current load, but also optimize resource utilization.*  
-    * **Built-in autoscaling** (Service)  
+    * **Built-in autoscaling** (Service) +> Availability  
       *In a cloud-native application, autoscaling of components should be automated and ideally built-in into the infrastructure to reduce the operational effort for scaling. Autoscaling should be based on appropriate rules so that resurce utilization is optimized. The automated scaling also has to account for a services' dependencies*  
       Scholl2019 6 "Use Platform Autoscaling Features"; Ibryam2020 24 "Elastic Scale; Bastani2017 13 "Autoscaling"; Indrasiri2021 1 "Why container orchestration?; Scaling";  Goniwada2021 5 "Elasticity in Microservices"  
 
 ### Portability  
 
 * Adaptability  
-  * **Infrastructure abstraction** (Service, Infrastructure) +> Automated infrastructure  
+  * **Infrastructure abstraction** (Service, Infrastructure)  
     *In a cloud-native application the used infrastructure should be abstracted by clear boundaries to decouple the system from physical hardware or also virtual hardware to minimize the effort and risk involved with managing infrastructure*  
     Bastani2017 14 "Service Brokers" (make use of service brokers as an additional level of abstraction to automatically add or remove backing services); Goniwada2021 3 "Location-Independent Principle"  
-  * **Cloud vendor abstraction** (Service, Infrastructure)  
+  * **Cloud vendor abstraction** (Service, Infrastructure) +> Resuability  
     *In a cloud-native application the infrastructure and services offered by a cloud provider should be abstracted with a unifying boundary to enable portability across different cloud vendors.*  
     Wimm2017 3 "Infrastructure and the Cloud Provider Interface"; Indrasiri2021 1 "Dynamic Management; Mulicloud support"  
     * *Service portability* (Guerron2020, SINGH-2015-COMPELECENG)
-  * **Configuration management** (Component, Backing Data) +> Seamless upgrades  
+  * **Configuration management** (Component, Backing Data)  
     *Configuration values which are specific to an environment should be managed separately in a consistent way. Through this, components are more portable across environments and configuration can change independently from components.*  
     * **Isolated configuration** (Service, Backing Data)  
       *Following DevOps principles, environment-specific configurations should be separated from component artifacts (e.g. deployment units) and provided by the environment in which a cloud-native application runs. This enables adaptability across environments (also across testing and production environments)*  
@@ -296,6 +295,9 @@ Our quality model is described in more detail in the following:
     * **Configuration stored in specialized services** (Service, Backing Data, Backing Service)  
       *By storing configuration values in specialized services and not only environment variables for example, changing configurations is facilitated and updating configurations of runnning components can be enabled.*  
       Ibryam2020 19 "Configuration Resource"; Richardson2019 11.2 "Designing configurable services"; Arundel2019 10 "ConfigMaps"; Bastani2017 2 "Centralized, Journaled Configuration", Bastani2017 2 "Refreshable Configuration"
+  * **Contract-based** (Service, Endpoint)  
+    *By defining contracts for links, changes to endpoints can be evaluated by their impact on the contract and delayed when a contract would be broken. That way consumers of endpoints can adapt to changes when necessary.*  
+    Define Service Contracts That Do Not Leak Internal Details; Bastani2017 4 "Consumer-Driven Contract Testing" (Use contracts for APIs to test against)
 * Installability  
   * **Standardized self-contained deployment unit** (Component)  
     *The components of a cloud-native applications should be deployed as standardized self-contained units so that the same artifact can reliably be installed and run in different environments and on different infrastructure.*  
@@ -328,6 +330,9 @@ Our quality model is described in more detail in the following:
     * **Rolling upgrades enabled** (Component, Infrastructure)  
       *If the infrastructure on which components of a cloud-native application are deployed provides the ability for rolling upgrades, upgrades can be performed seamlessly in an automated manner with reduced effort.*  
       Davis2019 7.2; Scholl2019 6 "Use Zero-Downtime Releases"; Ibryam2020 3 "Declarative Deployment"; Reznik2019 10 "Risk-Reducing Deployment Strategies"; Arundel2019 13 "Rolling Updates"; Indrasiri2021 1 "Why container orchestration?; Rolling upgrades"
+  * **Automated infrastructure maintenance** (Infrastructure) +> Reoverability  
+    *The used infrastructure should automate regular maintenance tasks as much as possible in a way that the operation of components is not impacted by these tasks. Such tasks include updates of operating systems, standard libraries, and middleware managed by the infrastructure, but also certificate regeneration.*
+     Reznik2019 10 "Automated Infrastructure"; Goniwada2021 5 "Automation"  
 * Fault tolerance  
   * *Process Coordination Means* (Zimmermann2015)
   * **Autonomous fault handling** (Service, Link, Infrastructure)  
@@ -343,6 +348,11 @@ Our quality model is described in more detail in the following:
       *If a link is broken for an extended time, a circuit breaker can help to avoid unnecessary communication and therefore waiting time, instead a failure should be immediately returned or a default response should be given, if possible.*  
       Davis2019 10.1; Scholl2019 6 "Use Circuit Breakers for Nontransient Failures"; Richardson2019 3.2.3 "Handling partial failures using the Circuit Breaker pattern"; Bastani2017 12 "Isolating Failures and Graceful Degradation: circuit breaker"; Indrasiri2021 3 "Resilient Connectivity Pattern: Circuit breaker";  Goniwada2021 4 "Circuit Breaker"  
       * *Number of Links with Complex Failover* (Apel2019)
+  * **Persistent communication** (Link)  
+    *By using links that persist messages which have been sent, components can be further decoupled, because components need not even exist at the time a message is sent, but can still receive a message. Through this communication can also be repeated in case of failures.*  
+    Indrasiri2021 5 "Event Sourcing Pattern: Log-based message brokers"
+    * *Service Link Persistence utilization metric* (Ntentos2020)
+    * *Outbox/Event Sourcing utilization metric* (Ntentos2020)
 * Recoverability  
   * **Automated restarts** (Service)  
     *In a cloud-native application, when a component is found to be unhealthy, it should be automatically and directly restarted so that a recover from failures is possible. Ideally this concern should be moved to the infrastructure level.*  
@@ -355,24 +365,11 @@ Our quality model is described in more detail in the following:
   * **API-based communication** (Service, Endpoint, Link) +> Testability  
     *In a cloud-native application services should communicate via well-defined, standardized, documented, and declarative APIs which can be both synchronous or asynchronous.*  
     Reznik2019 9 "Communicate Through APIs"; Adkins2019 6 "Understandable Interface Specifications" (Use Interface specifications for understandability); Bastani2017 6 "Everything is an API" (Services are integrated via APIs); Indrasiri2021 2 "Service Definitions in Synchronous Communication" (Use a service definition for each service); Indrasiri2021 2 "Service Definition in Asynchronous Communication" (Use schemas to define message formats); Goniwada2021 3 "API First Principle"  
-    * **Contract-based** (Service, Endpoint)  
-      *By defining contracts for links, changes to endpoints can be evaluated by their impact on the contract and delayed when a contract would be broken. That way consumers of endpoints can adapt to changes when necessary.*  
-      Define Service Contracts That Do Not Leak Internal Details; Bastani2017 4 "Consumer-Driven Contract Testing" (Use contracts for APIs to test against)
-  * **Communication indirection** (Service, Link) +> Loose coupling  
-    *Communication between services in a cloud-native application should be managed through additional software (therefore be indirect) to increase observability and ensure loose coupling.*  
-    Indrasiri2021 3 "Sidecar Pattern", "Service Mesh Pattern", "Service Abstraction Pattern" Proxy communication with services to include service discovery and load balancing); Davis2019 10.3; Richardson2019 11.4.2
-    * **Mediated communication** (Component, Link)  
-      *By mediating communication through additional components, there is no direct dependence on the other communication partner and additional operations can be performed to manage the communication.*  
-      * *Service Interaction via Backing Service* (Ntentos2020a)
-      * *Service Interaction via Central Component utilization metric* (Ntentos2020)
-      * *Service Interaction with Event Sourcing utilization metric* (Ntentos2020)
-    * **Addressing abstraction** (Link, Backing Service)  
-      *By abstracting from specific addresses for reaching other components, address changes can be handled automatically without impacting the link between components. This can be achieved for example through service discovery where components are addressed through abstract service names and specific addresses are resolved through service discovery.*  
-      Davis2019 8.3; Ibryam2020 12 "Service Discovery"; Richardson2019 "Using service discovery"; Garrison2017 7 "Service Discovery"; Indrasiri2021 3 "Service Registry and Discovery Pattern" ; Bastani2017 7 "Routing" (Use service discovery with support for health checks and respect varying workloads); Indrasiri2021 3 "Service Abstraction Pattern" (Use an abstraction layer in front of services (for example Kubernetes Service)); Goniwada2021 4 "Service Discovery"  
-      * *Service Discovery Usage* (Apel2019)
-    * **Communication partner abstraction** (Link, Backing Service) -> Analysability  
-      *By abstracting from specific components as linked communication partners, components are further decoupled and must not exist at the same time for communication. An example is event-driven communication where events are published to channels and can also be received by components which are created later in time.*  
-      Richardson2019 6 Event-driven communication; Ruecker2021 8: Event-driven systems "event chains emerge over time and therefore lack visibility."
+  * **Consistently mediated communication** (Component, Link) -> Time-behaviour +> Analyzability  
+    *By mediating communication through additional components, there is no direct dependence on the other communication partner and additional operations can be performed to manage the communication, such as load balancing, monitoring, or the enforcement of policies. By using centralized mediation approaches, such as Service Meshes, management actions can be performed universally and consistently across the components of an application.*
+    Indrasiri2021 3 "Sidecar Pattern", "Service Mesh Pattern", "Service Abstraction Pattern" Proxy communication with services to include service discovery and load balancing); Davis2019 10.3; Richardson2019 11.4.2  
+    * *Service Interaction via Backing Service* (Ntentos2020a)
+    * *Service Interaction via Central Component utilization metric* (Ntentos2020)
 
 ## Basic metrics
 
