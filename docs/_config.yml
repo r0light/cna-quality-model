@@ -7,7 +7,7 @@
 title: Cloud-native Quality Model
 email: robin.lichtenthaeler@uni-bamberg.de
 description: >- # this means to ignore newlines until "base_url:"
-  This is the accompanying page to the paper called "Towards a Quality Model for Cloud-native Applications".
+  This is the accompanying page to our overall effort of creating a quality model for cloud-native application architectures.
 base_url: /cloud-native-quality-model # the subpath of your site, e.g. /blog
 
 github_username:  "r0light/cna-quality-model"
