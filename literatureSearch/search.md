@@ -1,8 +1,10 @@
 # Literature search for scientific literature proposing measures for the quality of cloud-native application architectures
 
-The search process we used to find scientific literature presenting measures suitable for our quality model is detailed in the following:
+The search process we used to find scientific literature presenting measures suitable for our quality model is detailed in the following. So far, two iterations of the search have been done which are listed below.
 
-## Basics
+## Initial search on 2021-10-04
+
+### Basics
 
 We used the following two general search strings (which we transformed into library-specific forms as shown below) to capture both the topics of service-orientation for which microservices are the latest trend and cloud computing as being the foundation for cloud-nativeness:
 
@@ -12,9 +14,9 @@ Search string 2: (Abstract:(cloud-native) OR Abstract:("cloud computing")) AND (
 
 We did the literature search on all libraries on 2021-10-04.
 
-## Searched libraries
+### Searched libraries
 
-### [ACM](https://dl.acm.org/)
+#### [ACM](https://dl.acm.org/)
 
 ```
 "query": { (Abstract:(architecture)) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(service\-oriented) OR Abstract:(microservices)) }
@@ -30,7 +32,7 @@ This search returned 291 results.
 
 This search returned 178 results.
 
-### [IEEE](https://ieeexplore.ieee.org/Xplore/)
+#### [IEEE](https://ieeexplore.ieee.org/Xplore/)
 
 ```
 (("Abstract":"architecture") AND ("Abstract":"measure" OR "Abstract":"metric") AND ("Abstract":"service-oriented" OR "Abstract":"microservices))
@@ -46,7 +48,7 @@ This search returned 34 results.
 
 This search returned 84 results.
 
-### [Springer Link](link.springer.com??)
+#### [Springer Link](link.springer.com??)
 
 Because Springer Link does not allow for searching the abstracts only, but instead searches full texts, the search keywords were adjusted to be even more specific.
 
@@ -64,15 +66,15 @@ This search returned 109 results.
 
 This search returned 84 results.
 
-### Merged results
+#### Merged results
 
-All results merged are given in: [00-raw-measures-literature.bib](00-raw-measures-literature.bib)
+All results merged are given in: [first-search/00-raw-measures-literature.bib](first-search/00-raw-measures-literature.bib)
 
 It includes 749 results (after removing duplicates).
 
-## Filtering for suitable literature
+### Filtering for suitable literature
 
-### 1. Filtering based on the title and other meta information
+#### 1. Filtering based on the title and other meta information
 
 In this step we...:
 
@@ -82,9 +84,9 @@ In this step we...:
 * removed papers with unrelated topics based on the title, including hardware-focused topics and topics considering too specific contexts like cloud gaming, autonomous vehicles or smart cities
 
 ...which resulted in 193 papers being left.
-see: [01-title-fits-measures-literature.bib](01-title-fits-measures-literature.bib)
+see: [first-search/01-title-fits-measures-literature.bib](first-search/01-title-fits-measures-literature.bib)
 
-### 2. Filtering based on the abstract
+#### 2. Filtering based on the abstract
 
 In this step we...:
 
@@ -95,16 +97,16 @@ In this step we...:
 * removed papers with a too specific focus on a specific technology (like databases, big data analysis)
 
 ...which resulted in 101 papers being left.
-see: [02-abstract-fits-measures-literature.bib](02-abstract-fits-measures-literature.bib)
+see: [first-search/02-abstract-fits-measures-literature.bib](first-search/02-abstract-fits-measures-literature.bib)
 
-### 3. Scanned papers based on the full-text
+#### 3. Scanned papers based on the full-text
 
 In this step we...:
 
 * reapplied the criteria mentioned in the previous steps, because the title and abstract sometimes do not contain all information needed for a correct judgement about the suitability of a paper.
 * selected only those papers which contained measures or metrics on a suitable level of abstraction and described sufficiently enough to be included in the quality model
 
-#### For each paper removed in this step, we provide a short reason why
+##### For each paper removed in this step, we provide a short reason why
 
 *Mapping based on the Bibtex-Keys used in the mentioned files*
 
@@ -188,7 +190,7 @@ In this step we...:
 
 In sum 77 papers were removed during this step.
 
-#### Papers which describe useable metrics
+##### Papers which describe useable metrics
 
 * AbdelBaky2019: Metrics for a multi-cloud system; Although the focus is on application execution in the form of workloads consisting of a set of tasks which are distributed among available resources of the system, the metrics consider the possibility of a multi-cloud architecture and could therefore be included as runtime metrics
 * Apel2019: Evaluates a microservices architecture by also defining architectural metrics.
@@ -209,9 +211,9 @@ In sum 77 papers were removed during this step.
 * Zimmermann2015: An overview of architectural metrics which might be useful from a personal experience view
 
 17 papers described useable metrics.
-see: [03-fulltext-fits-measures-literature.bib](03-fulltext-fits-measures-literature.bib)
+see: [first-search/03-fulltext-fits-measures-literature.bib](first-search/03-fulltext-fits-measures-literature.bib)
 
-#### Papers which lead to the identification of additional papers presenting usable metrics
+##### Papers which lead to the identification of additional papers presenting usable metrics
 
 * BaniIsmail2018: A survey on service identification methods. Because it is a survey, other approaches are reported only on a higher level and details such as metrics are not presented in this paper.
 * Bogner2020: An analysis of RESTful API descriptions using existing metrics.
@@ -222,9 +224,9 @@ see: [03-fulltext-fits-measures-literature.bib](03-fulltext-fits-measures-litera
 * Oliveira2018: A review of SOA reuse which also considers the usage for metrics for measuring reurse. Only few papers were found which actually describe metrics.
 
 7 papers were either reviews or used metrics from previous work. Therefore we checked their references to identify additional papers which present metrics.
-see: [03-fulltext-fits-measures-literature.bib](03-fulltext-fits-measures-literature.bib)
+see: [first-search/03-fulltext-fits-measures-literature.bib](first-search/03-fulltext-fits-measures-literature.bib)
 
-#### Papers which were identified in addition recursively based on the previously mentioned papers
+##### Papers which were identified in addition recursively based on the previously mentioned papers
 
 * Talwar2005 (found through Lehmann2017): Evaluates the quality of service deployment tactics and presents quantitative as well as qualitative metrics for evaluation.
 * La2013 (found through Oliveira2018): Investiages Service reuasability and also defines suitable metrics partly based on previous work.
@@ -265,7 +267,175 @@ see: [03-fulltext-fits-measures-literature.bib](03-fulltext-fits-measures-litera
 * Xiong2015 (found through Guerron2020): A model for measuring cloud quality of service with a focus on resource allocation
 
 The recursive search of the mentioned 7 papers led to the identifiation of 37 additional papers presenting useable metrics.
-see: [04-recursively-found-literature.bib](04-recursively-found-literature.bib)
+see: [first-search/04-recursively-found-literature.bib](first-search/04-recursively-found-literature.bib)
 
 As a final set we therefore considered 61 papers leading to or containing measures or metrics suitable for the quality model.
-see: [05-final-set-of-literature.bib](05-final-set-of-literature.bib)
+see: [first-search/05-final-set-of-literature.bib](first-search/05-final-set-of-literature.bib)
+
+## Repeated search on 2023-07-13
+
+### Basics
+
+We used the following two general search strings (which we transformed into library-specific forms as shown below) to capture both the topics of service-orientation for which microservices are the latest trend and cloud computing as being the foundation for cloud-nativeness:
+
+Search string 1: (Abstract:(architecture)) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(service-oriented) OR Abstract:(microservices))
+
+Search string 2: (Abstract:(cloud-native) OR Abstract:("cloud computing")) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(quality))
+
+We did the literature search on all libraries on 2023-07-13.
+
+### Searched libraries
+
+#### [ACM](https://dl.acm.org/)
+
+```
+"query": { (Abstract:(architecture)) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(service\-oriented) OR Abstract:(microservices)) }
+"filter": { E-Publication Date: (10/01/2021 TO 12/31/2023), ACM Content: DL }
+```
+
+This search returned 18 results.
+
+```
+"query": { (Abstract:("cloud\-native") OR Abstract:("cloud computing")) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(quality)) }
+"filter": { Publication Date: (01/01/2022 TO 12/31/2023), ACM Content: DL }
+```
+
+This search returned 9 results.
+
+#### [IEEE](https://ieeexplore.ieee.org/Xplore/)
+
+```
+(("Abstract":"architecture") AND ("Abstract":"measure" OR "Abstract":"metric") AND ("Abstract":"service-oriented" OR "Abstract":"microservices"))
+2022-10 - 2023-07
+```
+
+This search returned 16 results.
+
+```
+(("Abstract":"cloud-native" OR "Abstract":"cloud computing") AND ("Abstract":"measure" OR "Abstract":"metric") AND ("Abstract":"quality"))
+2022-10 - 2023-07
+```
+
+This search returned 24 results.
+
+#### [Springer Link](link.springer.com)
+
+Because Springer Link does not allow for searching the abstracts only, but instead searches full texts, the search keywords were adjusted to be even more specific.
+
+```
+("microservice architecture" OR "service-oriented architecture") AND ("metric" OR "measure") AND ("quality evaluation" OR "architecture evaluation" OR "architecture quality)
+2022-10 - 2023-07
+```
+
+This search returned 111 results.
+
+```
+"cloud-native application" AND (measure OR metric) AND quality
+2022-10 - 2023-07
+```
+
+This search returned 93 results.
+
+### Merged results
+
+All results merged are given in: [second-search/10-raw-measures-literature.bib](second-search/10-raw-measures-literature.bib)
+
+It includes 124 results (after removing meta entries for collection items and duplicates).
+
+### Filtering for suitable literature
+
+#### 1. Filtering based on the title and other meta information
+
+In this step we…:
+
+* removed meta entries for conference proceedings
+* removed abstracts for keynotes
+* removed papers with unrelated topics based on the title, including hardware-focused topics and topics considering too specific contexts like cloud gaming, autonomous vehicles or smart cities
+
+…which resulted in 89 papers being left.
+see: [second-search/11-filtered-by-title.bib](second-search/11-filtered-by-title.bib)
+
+#### 2. Filtering based on the abstract
+
+In this step we…:
+
+* removed papers which consider the data center level from a cloud provider perspective or very low-level measurements and approaches (operating system, runtime environments)
+* removed papers which focus on the quality of services from an end-user perspective
+* removed papers with measures which focus on internal component design (at the class or method level)
+* removed papers with measures for which a calculation is not clearly described or for which a manual assessment for example by an expert is required
+* removed papers with a too specific focus on a specific technology (like databases, big data analysis)
+
+…which resulted in 32 papers being left.
+see: [second-search/12-filtered-by-abstract.bib](second-search/12-filtered-by-abstract.bib)
+
+#### 3. Filtering based on the full-text
+
+In this step we...:
+
+* reapplied the criteria mentioned in the previous steps, because the title and abstract sometimes do not contain all information needed for a correct judgement about the suitability of a paper.
+* selected only those papers which contained measures or metrics on a suitable level of abstraction and described sufficiently enough to be included in the quality model
+
+##### For each paper removed in this step, we provide a short reason why
+
+*Mapping based on the Bibtex-Keys used in the mentioned files*
+
+* Adewojo2023: A detailed description of a load balancing architecture for a web application. Metrics considered are runtime metrics of virtual machines for load balancing (CPU & memory utilisation) and therefore not suitable for the quality model
+* Alonso2023: A structured literature review on the topic of "multi-cloud" applications which focuses on topics and challenges for research in this area, but without the inclusion of suitable metrics.
+* BalcaoFilho2023: A framework for assessing the trust of cloud services which does also contain security aspects, but on a higher level than specific metrics and focusing on the services offered by cloud providers directly rather than within an application architecture.
+* Basciftci2022: The full-text of the work was not accessible to us, despite several different attempts to retrieve it.
+* Beltran2023: A case study on different deployment options for cloud applications using the SockShop application. The different deployment options are only broadly characterized and then compared based on cost and performance, but no detailed architectural evaluation using metrics has been done.
+* BermonAngarita2023: From the general approach it seems a very related work, because the aim is to recommend types of software architectures based on desired non-functional requirements. However the "software architecture" is intended to describe the application as a whole and directly linked to high-level quality aspects which they are claimed to impact. To be suitable for our quality model, a more detailed consideration of the reasons why certain architectural characteristics have impacts on quality aspects would be needed.
+* Erdei2023: A study on optimizing the resource requirements of components by running experiments and formulating different optimization calculations. While a general point is made, that resource provisioning should be adjusted to the actual requirements, no more detailed considerations on the architectural characteristics of an application are made.
+* Ghazouani2022: An extension of WSDL to describe cloud computing aspects within WSDL descriptions. The considered extensions however cover general cloud aspects and no specific application architecture characeristics.
+* Gruenewald2022: A framework to include privacy considerations in the development practice for cloud applications. The framework however operates on a higher level without considering detailed architectural characteristics and therefore provides no metrics suitable for our quality model.
+* Gudenkauf2023: A comprehensive study on the ATAM method and the presentation of more extensive tooling support. The focus therefore is on the general method of evaluating software architectures according to architectural characteristics and quality aspects, but no focus on cloud computing.
+* Huang2023: The paper presents a framework for enabling billing for streaming services from a cloud provider perspective. Therefore no metrics suitable for the quality model (which takes the cloud consumer perspective) are presented.
+* Jiang2023: The study considers Log Analysis in a Microservices-based system and aims to locate root causes of failures. Therefore metrics are collected at runtime which for example describe the call graph of an application. However, the mentioned metrics consider the runtime and are only applicable in the mentioned scenario and therefore not suitable for the quality model.
+* Klinaku2023: The study investigates Explainability for Autoscaling by discussing the topic with practitioners. Through this requirements are derived which an autoscaling system should fulfill in able to be explainable and configurable. Also some metrics are presented which can be used to evaluate if an autoscaler is explainable which are however very specific to different types of autoscalers and thus less suitable for the quality model.
+* Kumara2022: The study considers quality assurance aspects for cloud applications at design time with a specific focus on Application topology models described with TOSCA. Not directly metrics, but instead anti-patterns are therefore defined for topology descriptions which can then be checked using tooling. The work is therefore related, but not directly useable for the architectural metrics in consideration for the quality model, because detailed characteristics of single components are in the focus.
+* Lichtenthaeler2022: This is our own previous work.
+* Mechouche2022: The work presents an approach for automated SLA checking and adherence by relying on automated adaptation strategies that are executed when SLA violations are detected to enable the system to meet SLAs again. SLAs are based on Performance, Cost, and Availability. However, the used metrics are focusing on runtime aspects and do not consider architectural details. Therefore, no metrics suitable for the quality model are included.
+* Morais2021: An approach for modeling and analyzing microservices-based applications. The work presents an own approach to model microservices-based systems and an approach for analyzing modeled systems based on the similarity of services. Although the similarity is based on metrics, its aim is to identify similar services across different systems. The focus of our quality model is however on the evaluation of single systems and therefore the presented similarity metrics are not directly helpful.
+* Mubarkoot2021: The work proposes an approach for checking non-functional properties of applications based on defined policies building on TOSCA deployment descriptions. Although therefore highly related to our work, the approach is described on a rather superficial level, meaning that no specific policies are described but rather how they could be integrated in the software development lifecycle. Therefore, no architectural metrics suitable for the quality model are included.
+* Pulnil2022: The full-text of the work was not accessible to us, despite several different attempts to retrieve it.
+* SerranoGutierrez2023: An approach for optimizing the configuration of individual functions in a FaaS-based application, mainly focusing on performance. Because each function is considered separately and no architectural metrics, considering the application architecture as a whole, are presented, no metrics suitable for the quality model could be found.
+* Straesser2023: The work focuses on autoscaler configuration options and aims to provide guidance on how to configure autoscalers based on common anti-patterns and potential solutions for these. While in general very relevant, because in this way the quality of autoscaling configurations could be measured, the topic requires a lot more runtime information than currently considered by our quality model and we therefore decided not to include the presented metrics.
+* Vitali2022: An approach for including energy and power consumption considerations into the development workflow of cloud applications. A formalization is proposed to include sustainability-oriented information in a model of an application. These information can then be used for the deployment of an application in order to reduce the emissions caused by an application. The approach however remains rather high-level and no specific metrics suitable for the quality model are presented.
+* Volpert2023: A methodology for evaluating isolation capabilities of virtualization technologies is presented. The focus is on how virtualization technologies can be compared in a fair way, leading to a proposed experiment setup where parallel workloads are executed and measurements regarding the resource usage of these workloads are taken in order to determine to what extent the workloads influence each other. The lower the influence, the better the isolation. While the isolation can be seen as a quality aspect, the work focuses on the technologies as such, and not the applications in which they are used. Therefore no suitable metrics were found.
+* Zaragoza2022a: An approach for identifying potential microservices in a system (that means classes which should be part of the same service) to guide the migration of systems into microservices. Because of this focus on internal structures of services, the presented metrics are not suitable for the quality model.
+
+In sum, 24 papers were removed during this step.
+
+##### Papers which describe useable metrics
+
+* Camilli2022: Presents a performance and reliability testing framework for microservices systems. The focus however is on runtime metrics rather than architectural considerations. The framework has been evaluated using the TrainTicket Benchmarking system.
+* Henning2022: A comprehensive study of scalability benchmarking for cloud-native applications. It clearly separates scalability from elasticity and focuses on scalability by also providing suitable metrics to rate the scalability of a system.
+* Moreira2022: An evolution-focus analysis approach which focuses on cohesion metrics.
+* Peng2022: An analysis approach based on the traces found in a microservices-based system, therefore presenting metrics regarding the interaction chains between services.
+* Straesser2023a: Very interesting, because quality aspects of container orchestration systems are considered. The metrics used are however mostly runtime metrics.
+* Vale2022: Provides a general overview on the connections between architectural aspects and quality aspects and is therefore very related to our work. Some metrics, referred to as "indicators" are also included.
+* Yilmaz2021: A quality model for microservices which focuses mostly on maintainability and therefore also includes metrics in this regard
+* Yussupov2022: A work presenting patterns for FaaS-based applications which therefore also includes aspects to consider for the quality model. Metrics however need to be distilled from these patterns.
+
+8 papers described useable metrics.
+see: [second-search/13-filtered-by-fulltext.bib](second-search/13-filtered-by-fulltext.bib)
+
+#### 4. Additional Forward Search based on the previously considered papers
+
+In addition to the described search process, we also applied a forward search to the previously considered 61 papers. To do so we looked up each paper at [SemanticScolar](https://www.semanticscholar.org/) and scanned the papers which have hitherto cited the paper in focus. Through this, we found the following relevant papers:
+
+* Filippone2023 (cites Brito2021):
+* Genfer2021 (cites Engel2018):
+* Ntentos2022 (cites Zdun2017):
+* Silva2023 (cites Perepletchikov2007):
+* Zdun2023 (cites Engel2018, Zdun2017):
+* Zhong2022 (cites Jin2021):
+
+6 papers describing metrics were found through a forward search using the hitherto found literature.
+see: [second-search/14-forward-search.bib](second-search/13-filtered-by-fulltext.bib)
+
+The combined papers identified by the literature search update therefore amount 14 papers, see [second-search/15-final-update-set.bib](second-search/15-final-update-set.bib).
+
+## Current literature including metrics relevant for the quality model
+
+see [20-updated-set-of-literature.bib](20-updated-set-of-literature.bib).
