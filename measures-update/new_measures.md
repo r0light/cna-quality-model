@@ -50,7 +50,7 @@ Name: Server Monitoring Metric
 
 Adjusted Name: Ratio of Infrastructure nodes that support Monitoring
 
-Source: Ntentos2022
+Source: Ntentos2022; Zdun2023
 
 Entity: Infrastructure
 
@@ -64,7 +64,7 @@ Name: Application Monitoring Support metric
 
 Adjusted Name: Ratio of Components that support Monitoring
 
-Source: Ntentos2022
+Source: Ntentos2022; Zdun2023
 
 Entity: Component
 
@@ -148,7 +148,7 @@ Name: Token-Based Authentication utilization metric
 
 Adjusted Name: Ratio of endpoints that support token-based authentication
 
-Source: Ntentos2022
+Source: Ntentos2022; Zdun2023
 
 Entity: Endpoint
 
@@ -162,7 +162,7 @@ Name: API Keys utilization metric
 
 Adjusted Name: Ratio of endpoints that support API Keys
 
-Source: Ntentos2022
+Source: Ntentos2022; Zdun2023
 
 Entity: Endpoint
 
@@ -176,7 +176,7 @@ Name: Plaintext Authentication utilization metric
 
 Adjusted Name: Ratio of endpoints that support plaintext authentication
 
-Source: Ntentos2022
+Source: Ntentos2022; Zdun2023
 
 Entity: Endpoint
 
@@ -380,6 +380,48 @@ Product factor: Functional decentralization
 
 Calculation: Number of potential cyclic dependencies in a system based on defined links
 
+### RollingUpdatePossibility
+
+Name: Update Time, Availability and successful requests
+
+Adjusted Name: Rolling Update Option
+
+Source: Straesser2023
+
+Entity: Infrastructure, Component
+
+Product factor: Rolling upgrades enabled
+
+Calculation: The infrastructure should provide the possibility for rolling updates, meaning that components can be updated without interrupting availability.
+
+### Provider-Managed Component
+
+Name: Consumer-Managed Component and Provider-Managed Component
+
+Adjusted Name: Ratio of Provider-Managed Components and Infrastructure
+
+Source: Yussupov2022
+
+Entity: Infrastructure, Component
+
+Product factor: Operation outsourcing, Managed infrastructure, Managed backing services
+
+Calculation: Although in the referenced paper, no measures are presented as such, patterns are presented. However, the distinction between provider-managed and consumer-managed aspects enables basic metrics for evaluating the occurrence of these patterns in a deployment stack. Proposed calculation: (Number of Provider-managed components and infrastrcture nodes) / All components and infrastructure nodes
+
+### SCO
+
+Name: Secure Distributed Connectors
+
+Adjusted Name: Ratio of secured links
+
+Source: Zdun2023
+
+Entity: Link
+
+Product factor: Data encryption in transit
+
+Calculation: Number of links using secure communication / All links
+
 ## Runtime measures
 
 ### P
@@ -465,3 +507,46 @@ Entity: Request Trace
 Product factor: Limited request trace scope
 
 Calculation: Maximum(Number of times the same Link is used within a request trace)
+
+### ReadyTime
+
+Name: Readiness Time
+
+Adjusted Name: Component Readiness Time
+
+Source: Straesser2023
+
+Entity: Component
+
+Product factor: Time behavior
+
+Calculation: The time it takes from issuing a start command until the component is ready.
+
+### RemovalTime
+
+Name: Removal Time
+
+Adjusted Name: Component Removal Time
+
+Source: Straesser2023
+
+Entity: Component
+
+Product factor: Time behavior
+
+Calculation: The time it takes from issuing a stop command until the component is removed.
+
+### RestartTime
+
+Name: Restart Time
+
+Adjusted Name: Component Restart Time
+
+Source: Straesser2023
+
+Entity: Component
+
+Product factor: Time behavior
+
+Calculation: The time it takes to restart a component (until it is ready) after manual restarts or restarts caused by errors.
+
