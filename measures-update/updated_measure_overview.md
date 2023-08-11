@@ -1,10 +1,4 @@
----
-permalink: /measures
-layout: page
-title: Measures
----
-
-Selected measures from literature which focus on the architectural properties:
+# Selected measures from literature which focus on the architectural properties
 
 ## Static measures
 
@@ -2657,3 +2651,4 @@ Entity: Component
 Product factor: Time behavior
 
 Calculation: The time it takes to restart a component (until it is ready) after manual restarts or restarts caused by errors.
+

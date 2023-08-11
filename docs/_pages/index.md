@@ -43,7 +43,9 @@ Our quality model is described in more detail in the following:
 * Confidentiality  
   * **Data encryption in transit** (Link)  
     *Data which is sent through a link from one component to another should be encrypted so that even when an attacker has access to the network layer, the data remains confidential.*  
-    Scholl2019 6 "Encrypt Data in Transit; Indrasiri2021 2 "Security" (Use TLS for synchronous communications)
+    Scholl2019 6 "Encrypt Data in Transit; Indrasiri2021 2 "Security" (Use TLS for synchronous communications)  
+    * *Ratio of endpoints that support SSL* (Ntentos2022)
+    * *Ratio of secured links* (Zdun2023)
   * **Secrets management** (Component)  
     *Secrets (e.g. passwords, access tokens, encryption keys) which allow access to other components or data should be managed specifically to make sure they stay confidential and only authorized components or persons can access them.*  
     * **Isolated secrets** (Component, Backing Data)  
@@ -61,6 +63,10 @@ Our quality model is described in more detail in the following:
     * **Access control management consistency** (Component)  
       *By managing access control in a consistent way, that means for example using the same format of access control lists or a single account directory for all components, vulnerabilities through misconfiguration can be reduced or avoided. Furthermore it is easier to verify that access restrictions are implemented correctly.*  
       Adkins2019 6 "Access Control" (Access control managed by framework); Goniwada2021 9 "Policy as Code" (consistently describe your security policies in form of code)
+      * *Ratio of endpoints that support token-based authentication* (Ntentos2022; Zdun2023)
+      * *Ratio of endpoints that support API Keys* (Ntentos2022; Zdun2023)
+      * *Ratio of endpoints that support plaintext authentication* (Ntentos2022; Zdun2023)
+      * *Ratio of endpoints that are included in an single-sign-on approach* (Ntentos2022)
 * Accountability  
   * **Account separation** (Component)  
     *Components should be separated by assigning them different accounts, ideally each component should have an individual account. Through this, it is possible to trace which component performed which actions and in case of an attack accounts that are compromised can be restricted on a fine-grained level so that parts of a system which are not compromised can remain functional.*  
@@ -80,16 +86,19 @@ Our quality model is described in more detail in the following:
        Reznik 2019 9 "Microservices Architecture"; Adkins2019 7 "Use Microservices" (aligns to zero-trust networking); Goniwada2021 3 "Polylithic Architecture Principle" (Build separate services for different business functionalitites)  
       * *Total Service Interface Cohesion* (Bogner2017, Perepletchikov2007)
       * *Covesiveness of Service* (Oliveira2018, La2013)
+      * *Cohesion of a Service based on other Endpoints called* (Peng2022)
       * **Limited data scope** (Service, Data Aggregate)  
         *To keep the functional scope of a service limited, the service should be concerned only with a limited number of data aggregates that need to be administrated together, for example to fulfill data consistency requirements. Data aggregates for which consistency requirements can be relaxed might be split into separate services.*  
         * *Data aggregate scope* (Shim2008)
         * *Service Interface Data Cohesion* (Bogner2017, Perepletchikov2007, Kazemi2011; Brito2021, Jin2021, Jin2018; Athanasopoulos2011, Athanasopoulos2015, Bogner2020)
+        * *Cohesion between Endpoints based on data aggregate usage* (Peng2022)
       * **Limited endpoint scope** (Service, Endpoint)  
         *To keep the functional scope of services limited, the number of endpoints of a service should be limited to a coveshive set of endpoints that provide related operations.*  
         * *Number of provided synchronous and asynchronous endpoints* (Apel2019; Engel2018; Shim2008; Brito2021, Jin2021)
         * *Number of synchronous endpoints offered by a service* (Shim2008)
         * *Service Interface Usage Cohesion* (Bogner2017, Perepletchikov2007, Kazemi2011)
         * *Distribution of synchronous calls* (Engel2018)
+        * *Cohesion of Endpoints based on invocation by other services* (Peng2022)
       * **Command Query Responsibility Segregation** (Service, Endpoint) -> Simplicity  
         *When read (query) and write (command) operations to data aggregates have differing usage patterns and require different formats or are changed for different reasons, separating them into different components can lead to better modularity and manageability.*  
         Davis2019 4.4; Richardson2019 7.2 "Using the CQRS pattern"; Bastani2017 12 "CQRS (Command Query Responsibility Segregation)"; Indrasiri2021 4 "Command and Query Responsibility Segregation Pattern"; Goniwada2021 4 "Command and Query Responsibility Segregation Pattern"
@@ -137,12 +146,17 @@ Our quality model is described in more detail in the following:
   * **Automated monitoring** (Service, Link, Infrastructure)  
     *Cloud-native applications should enable monitoring at various levels (business functionalities in services, backing-service funtionalities, infrastructure) in an automated fashion to enable observable and autononmous reactions to changing system conditions.*  
     Goniwada2021 3 "High Observability Principle"  
+    * *Ratio of Infrastructure nodes that support Monitoring* (Ntentos2022; Zdun2023)
+    * *Ratio of Components that support Monitoring* (Ntentos2022; Zdun2023)
     * **Consistent centralized logging** (Service, Backing Service) +> Accountability  
       *Logging functionality should be concentrated in a centralized component which combines and stores logs from the components of a system. The logs should also be consistent regarding their format and level of granularity so that a correlation and analysability of logs is facilitated.*  
       Davis2019 11.1; Scholl2019 6 "Use a Unified Logging System"; Scholl2019 6 "Common and Structured Logging Format"; Richardson2019 11.3.2 "Applying the Log aggregation pattern"; Reznik2019 10 "Observability"; Garrison2017 7 "Monitoring and Logging"; Adkins2019 15 "Design your logging to be immutable"; Arundel2019 15 "Logging"; Winn2017 2 "Aggregated Streaming of Logs and Metrics"; Bastani2017 13 "Application Logging"; Bastani2017 13 "Audit Events" (capture events for audits, like failed logins etc); Ruecker2021 11 "Custom Centralized Monitoring"; Goniwada2021 19 "One Source of Truth"  
+      * *Ratio of Components or Infrastructure nodes that export logs to a central service* (Ntentos2022)
     * **Consistent centralized metrics** (Service, Backing Service)  
       *Metrics gathering and calculation functionality should be concentrated in a centralized component which combines, aggregates and stores metrics from the components of a system. The metrics should also be consistent regarding their format and level of granularity so that a correlation and analysability of metrics is facilitated.*  
       Davis2019 11.2; Scholl2019 6 "Tag Your Metrics Appropriately"; Richardson2019 11.3.4 "Applying the Applications metrics pattern"; Garrison2017 7 "Monitoring and Logging", "Metrics Aggregation"; Reznik2019 10 "Observability"; Arundel2019 15 "Metrics help predict problems"; Winn2017 2 "Aggregated Streaming of Logs and Metrics"; Bastani2017 13 "Metrics"; Arundel2019 16 "The RED Pattern" (common metrics you should have for services); Arundel2019 16 "The USE Pattern" (common metrics for resources); Goniwada2021 19 "One Source of Truth"  
+      * *Ratio of Components or Infrastructure nodes that export metrics* (Ntentos2022)
+      * *Ratio of Components or Infrastructure nodes that enable Performance Analytics* (Ntentos2022)
     * **Distributed tracing of invocations** (Service, Link, Request Trace)  
       *For requests that span multiple components in a cloud-native system, distributed tracing should be enabled so that complete traces can be analyzed and problems can be clearly attributed to single components.*  
       Davis 11.3; Scholl2019 6 "Use Correlation IDs"; Richardson2019 11.3.3 "Using the Distributed tracing pattern"; Garrison2017 7 "Debugging and Tracing"; Reznik2019 10 "Observability"; Arundel2019 15 "Tracing"; Bastani2017 13 "Distributed Tracing"; Ruecker2021 11 "Observability and Distributed Tracing Tools" (Use Distributed Tracing); Goniwada2021 19 "One Source of Truth"  
@@ -150,6 +164,7 @@ Our quality model is described in more detail in the following:
     * **Health and readiness Checks** (Service) +> Automated restarts, Availability  
       *All components in cloud-native system should enable health and readiness checks so that unhealthy components can be quickly identified and fixed and communication is carried out only between healthy and ready components. Furthermore, health and readiness checks enable an up-to-date holisitc overview of the health of a system.*  
       Scholl2019 6 "Implement Health Checks and Readiness Checks"; Ibryam2020 4 "Health Probe"; Richardson2019 11.3.1 "Using the Health check API pattern"; Garrison 7 "State Management"; Arundel2019 5 "Liveness Probes"; Arundel2019 5 "Readiness Probes"; Bastani2017 13 "Health Checks"; Indrasiri2021 1 "Why container orchestration?; Health monitoring"; Goniwada2021 4 "Fail Fast", 16 "Health Probe"  
+      * *Ratio of Services that provide Health endpoints* (Ntentos2022)
 * Modifiability  
   * **Automated infrastructure provisioning** (Infrastructure) +> Installability  
     *Infrastructure provisioning should be automated based on component requirements which are either stated explicitly or inferred from the component which should be deployed. The infrastructure and tools used should require only minimal manual effort. Ideally it should be combined with continuous delivery processes so that no further interaction is needed for a component deployment.*  
@@ -191,6 +206,12 @@ Our quality model is described in more detail in the following:
       * *Ratio of shared dependencies of non-external components to possible dependencies* (Zdun2017)
       * *Degree of dependence on other components* (Oliveira2018, La2013, Oh2011)
       * *Degree of dependence on other components* (PhamThiQuynh2009)
+      * *Average System Coupling* (Filippone2023)
+      * *Coupling of services based on used Data Aggregates* (Peng2022)
+      * *Coupling of services based services which call them* (Peng2022)
+      * *Coupling of services based services which are called by them* (Peng2022)
+      * *Coupling of services based on amount of request traces that include a specific link* (Peng2022)
+      * *Coupling of services based times that they occur in the same request trace* (Peng2022)
     * **Functional decentralization** (System, Service, Link)  
       *Business functionality should be decentralized over the system as a whole to make components more independent.*
       * *Conceptual Modularity quality based on Data Aggregate cohesion and coupling* (Brito2021, Jin2021)
@@ -203,11 +224,15 @@ Our quality model is described in more detail in the following:
       * *Aggregator CentraliZation* (Hofmeister2008)
       * *Data Aggregate Convergence across Components* (Kazemi2013, Ma2009)
       * *Service Criticality* (Bogner2017, Rud2009)
+      * *Ratio of cyclic request traces* (Genfer2021)
+      * *Number of potential cycles in a system* (Peng2022)
     * **Limited request trace scope** (Request Trace)  
       *A request that requires the collaboration of several services should still be limited to as few services as possible, because otherwise services are less independent the more they need to collaborate to handle requests.*  
       * *Maximum Length of Service Link chain per request trace* (Apel2019, Engel2018; Rosa2020)
       * *Maximum number of services within a request trace* (Apel2019)
       * *Service composition scope* (Zimmermann2015)
+      * *Request Trace Length* (Peng2022)
+      * *Number of Cycles in Request Traces* (Peng2022)
     * **Logical grouping**  (System, Service)  
       *To increase the independence of services, services should also be grouped so that services which are related are in the same group, but services which are independent are separated further. That way a separation can also be achieved on the network and infrastucture level by separating independent component groups more strictly. Potential impacts of a compromised or misbehaving service can therefore be reduced to the group to which it belongs but other groups are unaffected.*  
       Scholl2019 6 "Use Namespaces to Organize Services in Kubernetes"; Arundel2019 5 "Using Namespaces"; Indrasiri2021 1 "Why container orchestration?; Componentization and isolation"  
@@ -232,8 +257,10 @@ Our quality model is described in more detail in the following:
     * *Concurrently available versions complexity* (Karhikeyan2012)
     * *Service Support for Transactions* (Bogner2017, Hirzalla2009)
     * *Data Model Scope* (Zimmermann2015)
+    * *Number of components* (Silva2023, Venkitachalam2017)
   * **Operation outsourcing** (Backing Service, Infrastructure) +> Cost variability  
     *By outsourcing the operation of infrastructure and components to a cloud provider or other vendor, the operation is simplified because responsibility is transferred. Furthermore, costs can be made more flexible because providers and vendors can provide a usage-based pricing.*  
+    * *Ratio of Provider-Managed Components and Infrastructure* (Yussupov2022)
     * **Managed infrastructure** (Infrastructure)
       *Infrastructure such as basic computing, storage or network resources can be managed by vendors to ensure a stable functioning and up-to-date functionalities. Furthermore, it reduces the operational overhead.*
     * **Managed backing services** (Backing Service)  
@@ -314,6 +341,7 @@ Our quality model is described in more detail in the following:
   * **Guarded ingress** (Service, Endpoint)  
     *Ingress communication, that means communication coming from the outside of a system, needs to be guarded. It should be ensured that access is controlled and that a system is not maliciously overwhelmed.*  
     Scholl2019 6 "Implement Rate Limiting and Throttling"; Adkins2019 8 "Throttling" (Delaying processing or responding to remain functional and decrease traffic from individual clients) (should be automated, part of graceful degradation); Adkins2019 8 "Load shedding" (In case of traffic spike, deny low priority requests to remain functional) (should be automated, part of graceful degradation); Goniwada2021 5 "Throttling"  
+    * *Ratio of endpoints whose ingress is guarded* (Ntentos2022)
   * **Distribution** (Service, Infrastructure)  
     *In cloud-native applications components should be distributed across locations and data centers for availability, reliability, and performance.*  
     * *Component density* (Guerron2020, RIZVI-2017-JPROCS)
@@ -329,7 +357,8 @@ Our quality model is described in more detail in the following:
     *Upgrades of services should not interfere with availability. There are different strategies, like rolling upgrades, to achieve this which should be provided as a capability by the infrastructure.*  
     * **Rolling upgrades enabled** (Component, Infrastructure)  
       *If the infrastructure on which components of a cloud-native application are deployed provides the ability for rolling upgrades, upgrades can be performed seamlessly in an automated manner with reduced effort.*  
-      Davis2019 7.2; Scholl2019 6 "Use Zero-Downtime Releases"; Ibryam2020 3 "Declarative Deployment"; Reznik2019 10 "Risk-Reducing Deployment Strategies"; Arundel2019 13 "Rolling Updates"; Indrasiri2021 1 "Why container orchestration?; Rolling upgrades"
+      Davis2019 7.2; Scholl2019 6 "Use Zero-Downtime Releases"; Ibryam2020 3 "Declarative Deployment"; Reznik2019 10 "Risk-Reducing Deployment Strategies"; Arundel2019 13 "Rolling Updates"; Indrasiri2021 1 "Why container orchestration?; Rolling upgrades"  
+      * *Rolling Update Option* (Straesser2023)
   * **Automated infrastructure maintenance** (Infrastructure) +> Reoverability  
     *The used infrastructure should automate regular maintenance tasks as much as possible in a way that the operation of components is not impacted by these tasks. Such tasks include updates of operating systems, standard libraries, and middleware managed by the infrastructure, but also certificate regeneration.*
      Reznik2019 10 "Automated Infrastructure"; Goniwada2021 5 "Automation"  

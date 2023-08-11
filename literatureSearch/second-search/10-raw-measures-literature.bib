@@ -1,0 +1,1562 @@
+@incollection{Mubarkoot_2021,
+	doi = {10.1007/978-3-030-92916-9_14},
+	url = {https://doi.org/10.1007%2F978-3-030-92916-9_14},
+	year = 2021,
+	publisher = {Springer International Publishing},
+	pages = {168--177},
+	author = {Mohammed Mubarkoot and Jörn Altmann},
+	title = {Towards Software Compliance Specification and Enforcement Using {TOSCA}},
+	booktitle = {Economics of Grids, Clouds, Systems, and Services}
+}
+
+@article{Ariza_Porras_2021,
+	doi = {10.1007/s41781-020-00051-x},
+	url = {https://doi.org/10.1007%2Fs41781-020-00051-x},
+	year = 2021,
+	month = {jan},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {5},
+	number = {1},
+	author = {Christian Ariza-Porras and Valentin Kuznetsov and Federica Legger},
+	title = {The {CMS} monitoring infrastructure and applications},
+	journal = {Computing and Software for Big Science}
+}
+
+@article{Li_2021,
+	doi = {10.1007/s10664-021-10063-9},
+	url = {https://doi.org/10.1007%2Fs10664-021-10063-9},
+	year = 2021,
+	month = {nov},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {27},
+	number = {1},
+	author = {Bowen Li and Xin Peng and Qilin Xiang and Hanzhang Wang and Tao Xie and Jun Sun and Xuanzhe Liu},
+	title = {Enjoy your observability: an industrial survey of microservice tracing and analysis},
+	journal = {Empirical Software Engineering}
+}
+
+@inproceedings{10.1145/3444757.3485108,
+author = {Morais, Gabriel and Bork, Dominik and Adda, Mehdi},
+title = {Towards an Ontology-Driven Approach to Model and Analyze Microservices Architectures},
+year = {2021},
+isbn = {9781450383141},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3444757.3485108},
+doi = {10.1145/3444757.3485108},
+abstract = {Microservices Architectures (MSAs) are continuously replacing monolithic systems toward achieving more flexible and maintainable service-oriented software systems. However, the shift toward an MSA also requires a technological and managerial shift for its adopters. Architecting and managing MSAs represent unique challenges, including microservices' identification, interoperability, and reuse. To handle these challenges, we propose an Ontology-driven Conceptual Modelling approach, based on the Ontology of Microservices Architecture Concepts (OMSAC), for modelling and analyzing microservices-based systems. We show, how OMSAC-based conceptual models, stocked in a Stardog triple store, support Stakeholder-specific communication, documentation, and reuse. This paper reports on the application of our approach in three open-source MSA systems with a focus on microservices' discovery based on similarity metrics. Eventually, we compare the extracted similarity metrics derived from the application of machine learning techniques to the OMSAC models with a manual analysis performed by experts.},
+booktitle = {Proceedings of the 13th International Conference on Management of Digital EcoSystems},
+pages = {79–86},
+numpages = {8},
+keywords = {Microservices, Stardog, ontology, OMSAC, machine learning},
+location = {Virtual Event, Tunisia},
+series = {MEDES '21}
+}
+
+@inproceedings{10.1145/3493649.3493656,
+author = {Allen, Sadie and Toslali, Mert and Parthasarathy, Srinivasan and Oliveira, Fabio and Coskun, Ayse K.},
+title = {Tritium: A Cross-Layer Analytics System for Enhancing Microservice Rollouts in the Cloud},
+year = {2021},
+isbn = {9781450391719},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3493649.3493656},
+doi = {10.1145/3493649.3493656},
+abstract = {Microservice architectures are widely used in cloud-native applications as their modularity allows for independent development and deployment of components. With the many complex interactions occurring in between components, it is difficult to determine the effects of a particular microservice rollout. Site Reliability Engineers must be able to determine with confidence whether a new rollout is at fault for a concurrent or subsequent performance problem in the system so they can quickly mitigate the issue. We present Tritium, a cross-layer analytics system that synthesizes several types of data to suggest possible causes for Service Level Objective (SLO) violations in microservice applications. It uses event data to identify new version rollouts, tracing data to build a topology graph for the cluster and determine services potentially affected by the rollout, and causal impact analysis applied to metric time-series to determine if the rollout is at fault. Tritium works based on the principle that if a rollout is not responsible for a change in an upstream or neighboring SLO metric, then the rollout's telemetry data will do a poor job predicting the behavior of that SLO metric. In this paper, we experimentally demonstrate that Tritium can accurately attribute SLO violations to downstream rollouts and outline the steps necessary to fully realize Tritium.},
+booktitle = {Proceedings of the Seventh International Workshop on Container Technologies and Container Clouds},
+pages = {19–24},
+numpages = {6},
+keywords = {container systems, microservices, version rollouts, Fault diagnosis},
+location = {Virtual Event, Canada},
+series = {WoC '21}
+}
+
+@InProceedings{Switzer2023,
+  author    = {Switzer, Jennifer and Marcano, Gabriel and Kastner, Ryan and Pannuto, Pat},
+  booktitle = {Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+  title     = {Junkyard Computing: Repurposing Discarded Smartphones to Minimize Carbon},
+  year      = {2023},
+  address   = {New York, NY, USA},
+  pages     = {400–412},
+  publisher = {Association for Computing Machinery},
+  series    = {ASPLOS 2023},
+  abstract  = {1.5 billion smartphones are sold annually, and most are decommissioned less than two years later. Most of these unwanted smartphones are neither discarded nor recycled but languish in junk drawers and storage units. This computational stockpile represents a substantial wasted potential: modern smartphones have increasingly high-performance and energy-efficient processors, extensive networking capabilities, and a reliable built-in power supply. This project studies the ability to reuse smartphones as "junkyard computers." Junkyard computers grow global computing capacity by extending device lifetimes, which supplants the manufacture of new devices. We show that the capabilities of even decade-old smartphones are within those demanded by modern cloud microservices and discuss how to combine phones to perform increasingly complex tasks. We describe how current operation-focused metrics do not capture the actual carbon costs of compute. We propose Computational Carbon Intensity---a performance metric that balances the continued service of older devices with the superlinear runtime improvements of newer machines. We use this metric to redefine device service lifetime in terms of carbon efficiency. We develop a cloudlet of reused Pixel 3A phones. We analyze the carbon benefits of deploying large, end-to-end microservice-based applications on these smartphones. Finally, we describe system architectures and associated challenges to scale to cloudlets with hundreds and thousands of smartphones.},
+  doi       = {10.1145/3575693.3575710},
+  file      = {:Switzer2023 - Junkyard Computing_ Repurposing Discarded Smartphones to Minimize Carbon.pdf:PDF},
+  isbn      = {9781450399166},
+  keywords  = {life cycle assessment, cloud computing, sustainability},
+  location  = {Vancouver, BC, Canada},
+  numpages  = {13},
+}
+
+@inproceedings{10.1145/3543507.3583338,
+author = {Jiang, Xinrui and Pan, Yicheng and Ma, Meng and Wang, Ping},
+title = {Look Deep into the Microservice System Anomaly through Very Sparse Logs},
+year = {2023},
+isbn = {9781450394161},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543507.3583338},
+doi = {10.1145/3543507.3583338},
+abstract = {Intensive monitoring and anomaly diagnosis have become a knotty problem for modern microservice architecture due to the dynamics of service dependency. While most previous studies rely heavily on ample monitoring metrics, we raise a fundamental but always neglected issue - the diagnostic metric integrity problem. This paper solves the problem by proposing MicroCU – a novel approach to diagnose microservice systems using very sparse API logs. We design a structure named dynamic causal curves to portray time-varying service dependencies and a temporal dynamics discovery algorithm based on Granger causal intervals. Our algorithm generates a smoother space of causal curves and designs the concept of causal unimodalization to calibrate the causality infidelities brought by missing metrics. Finally, a path search algorithm on dynamic causality graphs is proposed to pinpoint the root cause. Experiments on commercial system cases show that MicroCU outperforms many state-of-the-art approaches and reflects the superiorities of causal unimodalization to raw metric imputation.},
+booktitle = {Proceedings of the ACM Web Conference 2023},
+pages = {2970–2978},
+numpages = {9},
+keywords = {Microservice architecture, Anomaly diagnosis, Root cause analysis, Dynamic Granger causality},
+location = {Austin, TX, USA},
+series = {WWW '23}
+}
+
+@inproceedings{10.1145/3578245.3585030,
+author = {Belkhiri, Adel and Shahnejat Bushehri, Ahmad and Gohring de Magalhaes, Felipe and Nicolescu, Gabriela},
+title = {Transparent Trace Annotation for Performance Debugging in Microservice-Oriented Systems (Work In Progress Paper)},
+year = {2023},
+isbn = {9798400700729},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3578245.3585030},
+doi = {10.1145/3578245.3585030},
+abstract = {Microservices is a cloud-native architecture in which a single application is implemented as a collection of small, independent, and loosely-coupled services. This architecture is gaining popularity in the industry as it promises to make applications more scalable and easier to develop and deploy. Nonetheless, adopting this architecture in practice has raised many concerns, particularly regarding the difficulty of diagnosing performance bugs and explaining abnormal software behaviour. Fortunately, many tools based on distributed tracing were proposed to achieve observability in microservice-oriented systems and address these concerns (e.g., Jaeger). Distributed tracing is a method for tracking user requests as they flow between services. While these tools can identify slow services and detect latency-related problems, they mostly fail to pinpoint the root causes of these issues.This paper presents a new approach for enacting cross-layer tracing of microservice-based applications. It also proposes a framework for annotating traces generated by most distributed tracing tools with relevant tracing data and metrics collected from the kernel. The information added to the traces aims at helping the practitioner get a clear insight into the operations of the application executing user requests. The framework we present is notably efficient in diagnosing the causes of long tail latencies. Unlike other solutions, our approach for annotating traces is completely transparent as it does not require the modification of the application, the tracer, or the operating system. Furthermore, our evaluation shows that this approach incurs low overhead costs.},
+booktitle = {Companion of the 2023 ACM/SPEC International Conference on Performance Engineering},
+pages = {25–32},
+numpages = {8},
+keywords = {microservices, performance analysis, distributed systems, software tracing},
+location = {Coimbra, Portugal},
+series = {ICPE '23 Companion}
+}
+
+@inproceedings{10.1145/3542929.3563477,
+author = {Luo, Shutian and Xu, Huanle and Ye, Kejiang and Xu, Guoyao and Zhang, Liping and Yang, Guodong and Xu, Chengzhong},
+title = {The Power of Prediction: Microservice Auto Scaling via Workload Learning},
+year = {2022},
+isbn = {9781450394147},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3542929.3563477},
+doi = {10.1145/3542929.3563477},
+abstract = {When deploying microservices in production clusters, it is critical to automatically scale containers to improve cluster utilization and ensure service level agreements (SLA). Although reactive scaling approaches work well for monolithic architectures, they are not necessarily suitable for microservice frameworks due to the long delay caused by complex microservice call chains. In contrast, existing proactive approaches leverage end-to-end performance prediction for scaling, but cannot effectively handle microservice multiplexing and dynamic microservice dependencies.In this paper, we present Madu, a proactive microservice auto-scaler that scales containers based on predictions for individual microservices. Madu learns workload uncertainty to handle the highly dynamic dependency between microservices. Additionally, Madu adopts OS-level metrics to optimize resource usage while maintaining good control over scaling overhead. Experiments on large-scale deployments of microservices in Alibaba clusters show that the overall prediction accuracy of Madu can reach as high as 92.3% on average, which is 13% higher than the state-of-the-art approaches. Furthermore, experiments running real-world microservice benchmarks in a local cluster of 20 servers show that Madu can reduce the overall resource usage by 1.7X compared to reactive solutions, while reducing end-to-end service latency by 50%.},
+booktitle = {Proceedings of the 13th Symposium on Cloud Computing},
+pages = {355–369},
+numpages = {15},
+keywords = {microservices, workload uncertainty learning, proactive auto-scaler},
+location = {San Francisco, California},
+series = {SoCC '22}
+}
+
+@InProceedings{10.1145/3559712.3559716,
+  author    = {Moreira, Mateus Gabi and De Fran\c{c}a, Breno Bernard Nicolau},
+  booktitle = {Proceedings of the 16th Brazilian Symposium on Software Components, Architectures, and Reuse},
+  title     = {Analysis of Microservice Evolution Using Cohesion Metrics},
+  year      = {2022},
+  address   = {New York, NY, USA},
+  pages     = {40–49},
+  publisher = {Association for Computing Machinery},
+  series    = {SBCARS '22},
+  abstract  = {The adoption of Microservices Architecture (MSA) has increased in recent years due to several claimed benefits, such as reducing deployment complexity, supporting technology diversity, and better scalability. However, MSA is not free from maintainability issues, especially the lack of cohesion, in which microservices possibly concentrate or miss responsibilities. Also, the lack of empirically-validated cohesion metrics for MSA makes the quantitative assessment even more challenging. In this paper, we empirically explore the practical applicability of service-level cohesion metrics in an open-source MSA application context. The qualitative results show the possibility of assessing MSA cohesion using these service-level metrics, the feasibility of tracking software evolution, and an indication of possible technical debts along the way.},
+  doi       = {10.1145/3559712.3559716},
+  file      = {:10.1145_3559712.3559716 - Analysis of Microservice Evolution Using Cohesion Metrics.pdf:PDF},
+  isbn      = {9781450397452},
+  keywords  = {Cohesion Metrics, Software evolution, Microservices, Software architecture},
+  location  = {Uberlandia, Brazil},
+  numpages  = {10},
+  url       = {https://doi.org/10.1145/3559712.3559716},
+}
+
+@inproceedings{10.1145/3524481.3527233,
+author = {Camilli, Matteo and Guerriero, Antonio and Janes, Andrea and Russo, Barbara and Russo, Stefano},
+title = {Microservices Integrated Performance and Reliability Testing},
+year = {2022},
+isbn = {9781450392860},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3524481.3527233},
+doi = {10.1145/3524481.3527233},
+abstract = {Continuous quality assurance for extra-functional properties of modern software systems is today a big challenge as their complexity is constantly increasing to satisfy market demands. This is the case of microservice systems. They provide high control on the scale of operation by means of fine-grained service decomposition, but this demands careful consideration of the relations between performance of individual microservices and service failures.In this work, we propose MIPaRT, a novel methodology, and platform to automatically test microservice operations for performance and reliability in combination. The proposed platform can be integrated into a DevOps cycle to support continuous testing and monitoring by the automatic (1) generation and execution of performance-reliability ex-vivo testing sessions, (2) collection of monitoring data, (3) computation of performance and reliability metrics, and (4) integrated visualization of the results.We apply our approach by operating the platform on an open source benchmark. Results show that our integrated approach can provide additional insights into the performance and reliability behaviour of microservices as well as their mutual relationships.},
+booktitle = {Proceedings of the 3rd ACM/IEEE International Conference on Automation of Software Test},
+pages = {29–39},
+numpages = {11},
+keywords = {performance testing, reliability testing, microservices systems},
+location = {Pittsburgh, Pennsylvania},
+series = {AST '22}
+}
+
+@inproceedings{10.1145/3569902.3569916,
+author = {Castro, Jessica and Laranjeiro, Nuno and Vieira, Marco},
+title = {Detecting DoS Attacks in Microservice Applications: Approach&nbsp;and Case Study},
+year = {2023},
+isbn = {9781450397377},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3569902.3569916},
+doi = {10.1145/3569902.3569916},
+abstract = {A microservices-based architecture decreases the complexity of developing new systems, making them highly scalable and manageable. However, its distributed nature, the high granularity of services, and the large attack surface increase the need to secure those systems at runtime. This paper investigates the challenges of detecting low- and high-volume DoS attacks against microservices using application-level metrics. We conducted an exploratory study to evaluate how different services influence attack detection, the use of Machine Learning (ML) techniques to detect DoS attacks, and the application-level metrics that can be used to detect DoS attacks. The results show that, analysing the services in parallel improves the detection rate, ML models are promising in detecting DoS attacks, and the numbers of sockets and threads used by containers are valuable metrics to indicate high-volume DoS attacks.},
+booktitle = {Proceedings of the 11th Latin-American Symposium on Dependable Computing},
+pages = {73–78},
+numpages = {6},
+keywords = {machine learning, microservices, security, attack detection, denial of service, container},
+location = {Fortaleza/CE, Brazil},
+series = {LADC '22}
+}
+
+@inproceedings{10.1145/3540250.3558951,
+author = {Peng, Xin and Zhang, Chenxi and Zhao, Zhongyuan and Isami, Akasaka and Guo, Xiaofeng and Cui, Yunna},
+title = {Trace Analysis Based Microservice Architecture Measurement},
+year = {2022},
+isbn = {9781450394130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3540250.3558951},
+doi = {10.1145/3540250.3558951},
+abstract = {Microservice architecture design highly relies on expert experience and may often result in improper service decomposition. Moreover, a microservice architecture is likely to degrade with the continuous evolution of services. Architecture measurement is thus important for the long-term evolution of microservice architectures. Due to the independent and dynamic nature of services, source code analysis based approaches cannot well capture the interactions between services. In this paper, we propose a trace analysis based microservice architecture measurement approach. We define a trace data model for microservice architecture measurement, which enables fine-grained analysis of the execution processes of requests and the interactions between interfaces and services. Based on the data model, we define 14 architectural metrics to measure the service independence and invocation chain complexity of a microservice system. We implement the approach and conduct three case studies with a student course project, an open-source microservice benchmark system, and three industrial microservice systems. The results show that our approach can well characterize the independence and invocation chain complexity of microservice architectures and help developers to identify microservice architecture issues caused by improper service decomposition and architecture degradation.},
+booktitle = {Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {1589–1599},
+numpages = {11},
+keywords = {Dynamic analysis, Architecture, Tracing, Microservice},
+location = {Singapore, Singapore},
+series = {ESEC/FSE 2022}
+}
+
+@InProceedings{10.1145/3575693.3575751,
+  author    = {Liang, Mingyu and Gan, Yu and Li, Yueying and Torres, Carlos and Dhanotia, Abhishek and Ketkar, Mahesh and Delimitrou, Christina},
+  booktitle = {Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+  title     = {Ditto: End-to-End Application Cloning for Networked Cloud Services},
+  year      = {2023},
+  address   = {New York, NY, USA},
+  pages     = {222–236},
+  publisher = {Association for Computing Machinery},
+  series    = {ASPLOS 2023},
+  abstract  = {The lack of representative, publicly-available cloud services has been a recurring problem in the architecture and systems communities. While open-source benchmarks exist, they do not capture the full complexity of cloud services. Application cloning is a promising way to address this, however, prior work is limited to CPU-/cache-centric, single-node services, operating at user level. We present Ditto, an automated framework for cloning end-to-end cloud applications, both monolithic and microservices, which captures I/O and network activity, as well as kernel operations, in addition to application logic. Ditto takes a hierarchical approach to application cloning, starting with capturing the dependency graph across distributed services, to recreating each tier's control/data flow, and finally generating system calls and assembly that mimics the individual applications. Ditto does not reveal the logic of the original application, facilitating publicly sharing clones of production services with hardware vendors, cloud providers, and the research community. We show that across a diverse set of single- and multi-tier applications, Ditto accurately captures their CPU and memory characteristics as well as their high-level performance metrics, is portable across platforms, and facilitates a wide range of system studies.},
+  doi       = {10.1145/3575693.3575751},
+  file      = {:10.1145_3575693.3575751 - Ditto_ End to End Application Cloning for Networked Cloud Services.pdf:PDF},
+  isbn      = {9781450399166},
+  keywords  = {software reverse engineering, cloud computing, microservices, architecture, benchmarking and emulation},
+  location  = {Vancouver, BC, Canada},
+  numpages  = {15},
+  url       = {https://doi.org/10.1145/3575693.3575751},
+}
+
+@inproceedings{10.1145/3489525.3511675,
+author = {Li, Richard and Du, Min and Wang, Zheng and Chang, Hyunseok and Mukherjee, Sarit and Eide, Eric},
+title = {LongTale: Toward Automatic Performance Anomaly Explanation in Microservices},
+year = {2022},
+isbn = {9781450391436},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3489525.3511675},
+doi = {10.1145/3489525.3511675},
+abstract = {Performance troubleshooting is notoriously difficult for distributed microservices-based applications. A typical root-cause diagnosis for performance anomaly by an analyst starts by narrowing down the scope of slow services, investigates into high-level performance metrics or available logs in the slow components, and finally drills down to an actual cause. This process can be long, tedious, and sometimes aimless due to the lack of domain knowledge and the sheer number of possible culprits. This paper introduces a new machine-learning-driven performance analysis system called LongTale that automates the troubleshooting process for latency-related performance anomalies to facilitate the root cause diagnosis and explanation. LongTale builds on existing application-layer tracing in two significant aspects. First, it stitches application-layer traces with corresponding system stack traces, which enables more informative root-cause analysis. Second, it utilizes a novel machine-learning-driven analysis that feeds on the combined data to automatically uncover the most likely contributing factor(s) for given performance slowdown. We demonstrate how LongTale can be utilized in different scenarios, including abnormal long-tail latency explanation and performance interference analysis.},
+booktitle = {Proceedings of the 2022 ACM/SPEC on International Conference on Performance Engineering},
+pages = {5–16},
+numpages = {12},
+keywords = {cross-layer tracing, tail latency, performance analysis},
+location = {Beijing, China},
+series = {ICPE '22}
+}
+
+@inproceedings{10.1145/3543507.3583274,
+author = {Chakraborty, Sarthak and Garg, Shaddy and Agarwal, Shubham and Chauhan, Ayush and Saini, Shiv Kumar},
+title = {CausIL: Causal Graph for Instance Level Microservice Data},
+year = {2023},
+isbn = {9781450394161},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543507.3583274},
+doi = {10.1145/3543507.3583274},
+abstract = {AI-based monitoring has become crucial for cloud-based services due to its scale. A common approach to AI-based monitoring is to detect causal relationships among service components and build a causal graph. Availability of domain information makes cloud systems even better suited for such causal detection approaches. In modern cloud systems, however, auto-scalers dynamically change the number of microservice instances, and a load-balancer manages the load on each instance. This poses a challenge for off-the-shelf causal structure detection techniques as they neither incorporate the system architectural domain information nor provide a way to model distributed compute across varying numbers of service instances. To address this, we develop CausIL, which detects a causal structure among service metrics by considering compute distributed across dynamic instances and incorporating domain knowledge derived from system architecture. Towards the application in cloud systems, CausIL estimates a causal graph using instance-specific variations in performance metrics, modeling multiple instances of a service as independent, conditional on system assumptions. Simulation study shows the efficacy of CausIL over baselines by improving graph estimation accuracy by ∼ 25% as measured by Structural Hamming Distance whereas the real-world dataset demonstrates CausIL’s applicability in deployment settings.},
+booktitle = {Proceedings of the ACM Web Conference 2023},
+pages = {2905–2915},
+numpages = {11},
+keywords = {Causal Structure Detection, Causal Graph, Microservices, System Monitoring},
+location = {Austin, TX, USA},
+series = {WWW '23}
+}
+
+@inproceedings{10.1145/3540250.3549146,
+author = {Zhang, Chenxi and Peng, Xin and Zhou, Tong and Sha, Chaofeng and Yan, Zhenghui and Chen, Yiru and Yang, Hong},
+title = {TraceCRL: Contrastive Representation Learning for Microservice Trace Analysis},
+year = {2022},
+isbn = {9781450394130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3540250.3549146},
+doi = {10.1145/3540250.3549146},
+abstract = {Due to the large amount and high complexity of trace data, microservice trace analysis tasks such as anomaly detection, fault diagnosis, and tail-based sampling widely adopt machine learning technology. These trace analysis approaches usually use a preprocessing step to map structured features of traces to vector representations in an ad-hoc way. Therefore, they may lose important information such as topological dependencies between service operations. In this paper, we propose TraceCRL, a trace representation learning approach based on contrastive learning and graph neural network, which can incorporate graph structured information in the downstream trace analysis tasks. Given a trace, TraceCRL constructs an operation invocation graph where nodes represent service operations and edges represent operation invocations together with predefined features for invocation status and related metrics. Based on the operation invocation graphs of traces TraceCRL uses a contrastive learning method to train a graph neural network-based model for trace representation. In particular, TraceCRL employs six trace data augmentation strategies to alleviate the problems of class collision and uniformity of representation in contrastive learning. Our experimental studies show that TraceCRL can significantly improve the performance of trace anomaly detection and offline trace sampling. It also confirms the effectiveness of the trace augmentation strategies and the efficiency of TraceCRL.},
+booktitle = {Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {1221–1232},
+numpages = {12},
+keywords = {Contrastive Learning, Microservice, Graph Neural Network, Deep Learning, Tracing},
+location = {Singapore, Singapore},
+series = {ESEC/FSE 2022}
+}
+
+@inproceedings{10.1145/3531056.3542765,
+author = {Peng, Xin},
+title = {Large-Scale Trace Analysis for Microservice Anomaly Detection and Root Cause Localization},
+year = {2022},
+isbn = {9781450396639},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3531056.3542765},
+doi = {10.1145/3531056.3542765},
+abstract = {Distributed tracing traces requests as they flow between services. It has been widely accepted and practiced in industry as an important means to achieve observability in microservice architecture for various purposes such as anomaly detection and root cause localization. However, trace analysis in an industrial microservice system is often challenging due to the huge number of traces produced by the system and the difficulties in combining traces with other types of operation data such as logs and metrics. In this talk, I will first analyze the background and describe the industrial practice of distributed tracing and trace analysis. Then I will introduce our explorations on large-scale trace analysis for microservice anomaly detection and root cause localization.},
+booktitle = {Proceedings of the Federated Africa and Middle East Conference on Software Engineering},
+pages = {93–94},
+numpages = {2},
+keywords = {Log, Root Cause Analysis, Observability, Metrics, Anomaly Detection, Microservice Architecture, Trace},
+location = {Cairo-Kampala, Egypt},
+series = {FAMECSE '22}
+}
+
+@inproceedings{10.1145/3578244.3583721,
+author = {Straesser, Martin and Eismann, Simon and von Kistowski, J\'{o}akim and Bauer, Andr\'{e} and Kounev, Samuel},
+title = {Autoscaler Evaluation and Configuration: A Practitioner's Guideline},
+year = {2023},
+isbn = {9798400700682},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3578244.3583721},
+doi = {10.1145/3578244.3583721},
+abstract = {Autoscalers are indispensable parts of modern cloud deployments and determine the service quality and cost of a cloud application in dynamic workloads. The configuration of an autoscaler strongly influences its performance and is also one of the biggest challenges and showstoppers for the practical applicability of many research autoscalers. Many proposed cloud experiment methodologies can only be partially applied in practice, and many autoscaling papers use custom evaluation methods and metrics. This paper presents a practical guideline for obtaining meaningful and interpretable results on autoscaler performance with reasonable overhead. We provide step-by-step instructions for defining realistic usage behaviors and traffic patterns. We divide the analysis of autoscaler performance into a qualitative antipattern-based analysis and a quantitative analysis. To demonstrate the applicability of our guideline, we conduct several experiments with a microservice of our industry partner in a realistic test environment.},
+booktitle = {Proceedings of the 2023 ACM/SPEC International Conference on Performance Engineering},
+pages = {31–41},
+numpages = {11},
+keywords = {guideline, autoscaling, methodology, evaluation, antipatterns},
+location = {Coimbra, Portugal},
+series = {ICPE '23}
+}
+
+@inproceedings{10.1109/ASE51524.2021.9678708,
+author = {Wang, Hanzhang and Wu, Zhengkai and Jiang, Huai and Huang, Yichao and Wang, Jiamu and Kopru, Selcuk and Xie, Tao},
+title = {Groot: An Event-Graph-Based Approach for Root Cause Analysis in Industrial Settings},
+year = {2022},
+isbn = {9781665403375},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ASE51524.2021.9678708},
+doi = {10.1109/ASE51524.2021.9678708},
+abstract = {For large-scale distributed systems, it is crucial to efficiently diagnose the root causes of incidents to maintain high system availability. The recent development of microservice architecture brings three major challenges (i.e., complexities of operation, system scale, and monitoring) to root cause analysis (RCA) in industrial settings. To tackle these challenges, in this paper, we present Groot, an event-graph-based approach for RCA. Groot constructs a real-time causality graph based on events that summarize various types of metrics, logs, and activities in the system under analysis. Moreover, to incorporate domain knowledge from site reliability engineering (SRE) engineers, Groot can be customized with user-defined events and domain-specific rules. Currently, Groot supports RCA among 5,000 real production services and is actively used by the SRE teams in eBay, a global e-commerce system serving more than 159 million active buyers per year. Over 15 months, we collect a data set containing labeled root causes of 952 real production incidents for evaluation. The evaluation results show that Groot is able to achieve 95% top-3 accuracy and 78% top-1 accuracy. To share our experience in deploying and adopting RCA in industrial settings, we conduct a survey to show that users of Groot find it helpful and easy to use. We also share the lessons learned from deploying and adopting Groot to solve RCA problems in production environments.},
+booktitle = {Proceedings of the 36th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {419–429},
+numpages = {11},
+keywords = {root cause analysis, microservices, AIOps, observability},
+location = {Melbourne, Australia},
+series = {ASE '21}
+}
+
+@inproceedings{10.1145/3578244.3583726,
+author = {Straesser, Martin and Mathiasch, Jonas and Bauer, Andr\'{e} and Kounev, Samuel},
+title = {A Systematic Approach for Benchmarking of Container Orchestration Frameworks},
+year = {2023},
+isbn = {9798400700682},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3578244.3583726},
+doi = {10.1145/3578244.3583726},
+abstract = {Container orchestration frameworks play a critical role in modern cloud computing paradigms such as cloud-native or serverless computing. They significantly impact the quality and cost of service deployment as they manage many performance-critical tasks such as container provisioning, scheduling, scaling, and networking. Consequently, a comprehensive performance assessment of container orchestration frameworks is essential. However, until now, there is no benchmarking approach that covers the many different tasks implemented in such platforms and supports evaluating different technology stacks. In this paper, we present a systematic approach that enables benchmarking of container orchestrators. Based on a definition of container orchestration, we define the core requirements and benchmarking scope for such platforms. Each requirement is then linked to metrics and measurement methods, and a benchmark architecture is proposed. With COFFEE, we introduce a benchmarking tool supporting the definition of complex test campaigns for container orchestration frameworks. We demonstrate the potential of our approach with case studies of the frameworks Kubernetes and Nomad in a self-hosted environment and on the Google Cloud Platform. The presented case studies focus on container startup times, crash recovery, rolling updates, and more.},
+booktitle = {Proceedings of the 2023 ACM/SPEC International Conference on Performance Engineering},
+pages = {187–198},
+numpages = {12},
+keywords = {nomad, kubernetes, benchmarking, performance, container orchestration},
+location = {Coimbra, Portugal},
+series = {ICPE '23}
+}
+
+@inproceedings{10.1145/3578245.3584728,
+author = {Klinaku, Floriment and Speth, Sandro and Zilch, Markus and Becker, Steffen},
+title = {Hitchhiker's Guide for Explainability in Autoscaling},
+year = {2023},
+isbn = {9798400700729},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3578245.3584728},
+doi = {10.1145/3578245.3584728},
+abstract = {Cloud-native applications force increasingly powerful and complex autoscalers to guarantee the applications' quality of service. For software engineers with operational tasks understanding the autoscalers' behavior and applying appropriate reconfigurations is challenging due to their internal mechanisms, inherent distribution, and decentralized decision-making. Hence, engineers seek appropriate explanations. However, engineers' expectations on feedback and explanations of autoscalers are unclear. In this paper, through a workshop with a representative sample of engineers responsible for operating an autoscaler, we elicit requirements for explainability in autoscaling. Based on the requirements, we propose an evaluation scheme for evaluating explainability as a non-functional property of the autoscaling process and guide software engineers in choosing the best-fitting autoscaler for their scenario. The evaluation scheme is based on a Goal Question Metric approach and contains three goals, nine questions to assess explainability, and metrics to answer these questions. The evaluation scheme should help engineers choose a suitable and explainable autoscaler or guide them in building their own.},
+booktitle = {Companion of the 2023 ACM/SPEC International Conference on Performance Engineering},
+pages = {277–282},
+numpages = {6},
+keywords = {evaluation, elasticity, explainability, requirements, cloud},
+location = {Coimbra, Portugal},
+series = {ICPE '23 Companion}
+}
+
+@inproceedings{10.1145/3491204.3527490,
+author = {Tuli, Shreshth and Casale, Giuliano},
+title = {Optimizing the Performance of Fog Computing Environments Using AI and Co-Simulation},
+year = {2022},
+isbn = {9781450391597},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3491204.3527490},
+doi = {10.1145/3491204.3527490},
+abstract = {This tutorial presents a performance engineering approach for optimizing the Quality of Service (QoS) of Edge/Fog/Cloud Computing environments using AI and Coupled-Simulation being developed as part of the Co-Simulation based Container Orchestration (COSCO) framework. It introduces fundamental AI and co-simulation concepts, their importance in QoS optimization and performance engineering challenges in the context of Fog computing. It also discusses how AI models, specifically, deep neural networks (DNNs), can be used in tandem with simulated estimates to take optimal resource management decisions. Additionally, we discuss a few use cases of training DNNs as surrogates to estimate key QoS metrics and utilize such models to build policies for dynamic scheduling in a distributed fog environment. The tutorial demonstrates these concepts using the COSCO framework. Metric monitoring and simulation primitives in COSCO demonstrates the efficacy of an AI and simulation based scheduler on a fog/cloud platform. Finally, we provide AI baselines for resource management problems that arise in the area of fog management.},
+booktitle = {Companion of the 2022 ACM/SPEC International Conference on Performance Engineering},
+pages = {25–28},
+numpages = {4},
+keywords = {performance engineering, artificial intelligence, fog computing, co-simulation.},
+location = {Bejing, China},
+series = {ICPE '22}
+}
+
+@article{10.1145/3512893,
+author = {Ming, Zhao and Li, Xiuhua and Sun, Chuan and Fan, Qilin and Wang, Xiaofei and Leung, Victor C. M.},
+title = {Sleeping Cell Detection for Resiliency Enhancements in 5G/B5G Mobile Edge-Cloud Computing Networks},
+year = {2022},
+issue_date = {August 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {18},
+number = {3},
+issn = {1550-4859},
+url = {https://doi.org/10.1145/3512893},
+doi = {10.1145/3512893},
+abstract = {The rapid increase of data traffic has brought great challenges to the maintenance and optimization of 5G and beyond, and some smart critical infrastructures, e.g., small base stations (SBSs) in cellular cells, are facing serious security and failure threats, causing resiliency degradation concerns. Among special smart critical infrastructure failures, the sleeping cell failure is hard to address since no alarm is generally triggered. Sleeping cells can remain undetected for a long time and can severely affect the quality of service/quality of experience to users. To enhance the resiliency of the SBSs in sleeping cells, we design a mobile edge-cloud computing system and propose a semi-supervised learning-based framework to dynamically detect the sleeping cells. Particularly, we consider two indicators, recovery proportion and recovery speed, to measure the resiliency of the SBSs. Moreover, in the proposed scheme, experts’ optimization experience and each period’s detection results can be utilized to iteratively improve the performance. Then we adopt a dataset from real-world networks for performance evaluation. Trace-driven evaluation results demonstrate that the proposed scheme outperforms existing sleeping cell detection schemes, and can also reduce the communication and runtime costs and enhance the resiliency of the SBSs.},
+journal = {ACM Trans. Sen. Netw.},
+month = {apr},
+articleno = {42},
+numpages = {30},
+keywords = {5G/B5G, sleeping cell detection, semi-supervised learning, Smart critical infrastructures, resiliency enhancement, mobile edge-cloud computing}
+}
+
+@inproceedings{10.1145/3578244.3583728,
+author = {Volpert, Simon and Erb, Benjamin and Eisenhart, Georg and Seybold, Daniel and Wesner, Stefan and Domaschka, J\"{o}rg},
+title = {A Methodology and Framework to Determine the Isolation Capabilities of Virtualisation Technologies},
+year = {2023},
+isbn = {9798400700682},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3578244.3583728},
+doi = {10.1145/3578244.3583728},
+abstract = {The capability to isolate system resources is an essential characteristic of virtualisation technologies and is therefore important for research and industry alike. It allows the co-location of experiments and workloads, the partitioning of system resources and enables multi-tenant business models such as cloud computing. Poor isolation among tenants bears the risk of noisy-neighbour and contention effects which negatively impacts all of those use-cases. These effects describe the negative impact of one tenant onto another by utilising shared resources. Both industry and research provide many different concepts and technologies to realise isolation. Yet, the isolation capabilities of all these different approaches are not well understood; nor is there an established way to measure the quality of their isolation capabilities. Such an understanding, however, is of uttermost importance in practice to elaborately decide on a suited implementation. Hence, in this work, we present a novel methodology to measure the isolation capabilities of virtualisation technologies for system resources, that fulfils all requirements to benchmarking including reliability. It relies on an immutable approach, based on Experiment-as-Code. The complete process holistically includes everything from bare metal resource provisioning to the actual experiment enactment.The results determined by this methodology help in the decision for a virtualisation technology regarding its capability to isolate given resources. Such results are presented here as a closing example in order to validate the proposed methodology.},
+booktitle = {Proceedings of the 2023 ACM/SPEC International Conference on Performance Engineering},
+pages = {149–160},
+numpages = {12},
+keywords = {framework, isolation, virtualisation, benchmarking},
+location = {Coimbra, Portugal},
+series = {ICPE '23}
+}
+
+@inproceedings{10.1145/3543712.3543715,
+author = {Petrov, Valerii and Gennadinik, Anna and Avksentieva, Elena},
+title = {Metrics for Machine Learning Evaluation Methods in Cloud Monitoring Systems},
+year = {2022},
+isbn = {9781450396226},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543712.3543715},
+doi = {10.1145/3543712.3543715},
+abstract = {During the machine learning pipeline development, engineers need to validate the efficiency of the machine learning methods in order to assess the quality of the made forecast.Due to the wide deployment and implementation of the machine learning models and methods across monitoring systems, the actual scientific problem is the assessment of these methods in the monitoring systems. This research has concluded that the current standard metrics are not sufficient to get the accurate assessment for the used machine learning methods.This research has provided the new complex rating for anomaly detection regarding the use-cases of cloud monitoring systems. The main difference from the standard metrics is that the new approach includes better integration to the business processes, demanding resources, and a critical glance to the false-positive alerts. The new approach might be used in the model assessment in monitoring systems with the similar requirements:Cost-effective use of computing resourcesLow amount of false-positivesFast detection of anomaliesFurthermore, the current research proposes new methods of computation capacity planning for different anomaly detection methods. These methods are not even limited to anomaly detection and could be used as a basis for developing capacity planning for other machine learning techniques and approaches.· Applied computing∼Operations research∼Forecasting · Computer systems organization∼Architectures∼Distributed architectures ∼Cloud computing∼Forecasting · Computing methodologies∼Machine learning},
+booktitle = {Proceedings of the 2022 8th International Conference on Computer Technology Applications},
+pages = {168–175},
+numpages = {8},
+keywords = {machine learning metrics, capacity planning, monitoring, quality assessment},
+location = {Vienna, Austria},
+series = {ICCTA '22}
+}
+
+@INPROCEEDINGS{9581580,
+author={Zolait, Ali Hussein and Alalas, Sumaya and Ali, Noor and Showaiter, Aya},
+booktitle={2021 International Conference on Innovation and Intelligence for Informatics, Computing, and Technologies (3ICT)},
+title={Quality of Life Integrated Framework: Perspective of Cloud Computing Usage},
+year={2021},
+volume={},
+number={},
+pages={537-544},
+doi={10.1109/3ICT53449.2021.9581580}}
+
+@INPROCEEDINGS{9719517,
+author={Nayak, Samaleswari Prasad and Rout, Suchismita and Das, Surajit and Patra, Sudhansu Shekhar},
+booktitle={2021 19th OITS International Conference on Information Technology (OCIT)},
+title={Error rate reduction of Air Quality Parameters in Health Care Industry using SD-IoT Environment},
+year={2021},
+volume={},
+number={},
+pages={454-459},
+doi={10.1109/OCIT53463.2021.00094}}
+
+@INPROCEEDINGS{9684637,
+author={Udomsripaiboon, Thana and Chaewsuwan, Chutiphan and Chumpoowang, Thanatip and Saetoen, Natthachai and Rojanavasu, Pornthep and Chaewsuwan, Thitirath},
+booktitle={2021 25th International Computer Science and Engineering Conference (ICSEC)},
+title={The Atmospheric Ozone Monitoring System by using Internet of Things Technology for Nanosatellites (3U CubeSat)},
+year={2021},
+volume={},
+number={},
+pages={325-329},
+doi={10.1109/ICSEC53205.2021.9684637}}
+
+@INPROCEEDINGS{9556059,
+author={Jin, Xuan and Xie, Yunlong and Yin, Yitao},
+booktitle={2021 13th International Conference on Intelligent Human-Machine Systems and Cybernetics (IHMSC)},
+title={BotCatcher:A Complementary Advantages and Deep Learning Based Scheme for Intrusion Detection},
+year={2021},
+volume={},
+number={},
+pages={95-98},
+doi={10.1109/IHMSC52134.2021.00030}}
+
+@INPROCEEDINGS{9702517,
+author={Chauhan, Rishabh and Kumar, Sunil},
+booktitle={2021 5th International Conference on Information Systems and Computer Networks (ISCON)},
+title={Packet Loss Prediction Using Artificial Intelligence Unified with Big Data Analytics, Internet of Things and Cloud Computing Technologies},
+year={2021},
+volume={},
+number={},
+pages={01-06},
+doi={10.1109/ISCON52037.2021.9702517}}
+
+@INPROCEEDINGS{9719678,
+author={Gong, Yanqi and Hao, Fei and Sun, Yifei and Guo, Longjiang},
+booktitle={2021 20th International Conference on Ubiquitous Computing and Communications (IUCC/CIT/DSCI/SmartCNS)},
+title={Joint Optimization of Latency and Reward for Offloading Dependent Tasks in Mobile Edge Computing},
+year={2021},
+volume={},
+number={},
+pages={68-75},
+doi={10.1109/IUCC-CIT-DSCI-SmartCNS55181.2021.00025}}
+
+@INPROCEEDINGS{9672417,
+author={Yilmaz, Rahime and Buzluca, Feza},
+booktitle={2021 2nd International Informatics and Software Engineering Conference (IISEC)}, 
+title={A Fuzzy Quality Model to Measure the Maintainability of Microservice Architectures}, 
+year={2021},
+volume={},
+number={},
+pages={1-6},
+doi={10.1109/IISEC54230.2021.9672417}}
+
+@INPROCEEDINGS{9836297,
+author={Pulnil, Sermsook and Senivongse, Twittie},
+booktitle={2022 19th International Joint Conference on Computer Science and Software Engineering (JCSSE)},
+title={A Microservices Quality Model Based on Microservices Anti-patterns},
+year={2022},
+volume={},
+number={},
+pages={1-6},
+doi={10.1109/JCSSE54890.2022.9836297}}
+
+@INPROCEEDINGS{9779690,
+author={Zaragoza, Pascal and Seriai, Abdelhak-Djamel and Seriai, Abderrahmane and Shatnawi, Anas and Derras, Mustapha},
+booktitle={2022 IEEE 19th International Conference on Software Architecture (ICSA)},
+title={Leveraging the Layered Architecture for Microservice Recovery},
+year={2022},
+volume={},
+number={},
+pages={135-145},
+doi={10.1109/ICSA53651.2022.00021}}
+
+@INPROCEEDINGS{10036308,
+author={Basciftci, Fatih and Aydemir, Fikri},
+booktitle={2022 IEEE 20th Jubilee International Symposium on Intelligent Systems and Informatics (SISY)},
+title={Strategies for Request-Response Logging in Microservices Architecture},
+year={2022},
+volume={},
+number={},
+pages={000121-000126},
+doi={10.1109/SISY56759.2022.10036308}}
+
+@INPROCEEDINGS{9960012,
+author={Ivanov, Rosen and Yordanov, Stanimir and Dinev, Dinko},
+booktitle={2022 International Conference Automatics and Informatics (ICAI)},
+title={Internet of Things–based pregnancy tracking and monitoring service},
+year={2022},
+volume={},
+number={},
+pages={298-302},
+doi={10.1109/ICAI55857.2022.9960012}}
+
+@INPROCEEDINGS{10074842,
+author={Yang, Xikang and Wang, Juan and Zhou, Biyu and Wang, Wang and Liu, Wantao and Dong, Yangchen},
+booktitle={2022 IEEE 24th Int Conf on High Performance Computing & Communications; 8th Int Conf on Data Science & Systems; 20th Int Conf on Smart City; 8th Int Conf on Dependability in Sensor, Cloud & Big Data Systems & Application (HPCC/DSS/SmartCity/DependSys)},
+title={Fine-grained Spatiotemporal Features-Based for Anomaly Detection in Microservice Systems},
+year={2022},
+volume={},
+number={},
+pages={847-856},
+doi={10.1109/HPCC-DSS-SmartCity-DependSys57074.2022.00138}}
+
+@ARTICLE{9744560,
+author={Rossi, Fabiana and Cardellini, Valeria and Presti, Francesco Lo and Nardelli, Matteo},
+journal={IEEE Transactions on Cloud Computing},
+title={Dynamic Multi-Metric Thresholds for Scaling Applications Using Reinforcement Learning},
+year={2023},
+volume={11},
+number={2},
+pages={1807-1821},
+doi={10.1109/TCC.2022.3163357}}
+
+@INPROCEEDINGS{10118016,
+author={Schindewolf, Marc and Grimm, Daniel and Lingor, Christian and Sax, Eric},
+booktitle={2022 IEEE 1st International Conference on Cognitive Mobility (CogMob)},
+title={Toward a Resilient Automotive Service-Oriented Architecture by using Dynamic Orchestration},
+year={2022},
+volume={},
+number={},
+pages={000147-000154},
+doi={10.1109/CogMob55547.2022.10118016}}
+
+@INPROCEEDINGS{9874065,
+author={Chinthavali, Supriya and Hasan, S.M.Shamimul and Yoginath, Srikanth and Xu, Haowen and Nugent, Phil and Jones, Terry and Engebretsen, Cozmo and Olatt, Joseph and Tansakul, Varisara and Christopher, Carter and Polsky, Yarom},
+booktitle={2022 IEEE 23rd International Conference on Information Reuse and Integration for Data Science (IRI)},
+title={An Alternative Timing and Synchronization Approach for Situational Awareness and Predictive Analytics},
+year={2022},
+volume={},
+number={},
+pages={172-177},
+doi={10.1109/IRI54793.2022.00047}}
+
+@INPROCEEDINGS{9973518,
+author={Chapman, Martin and G-Medhin, Abigail and Sassoon, Isabel and Kökciyan, Nadin and Sklar, Elizabeth I. and Curcin, Vasa},
+booktitle={2022 IEEE 18th International Conference on e-Science (e-Science)},
+title={Using Microservices to Design Patient-facing Research Software},
+year={2022},
+volume={},
+number={},
+pages={44-54},
+doi={10.1109/eScience55777.2022.00019}}
+
+@INPROCEEDINGS{9885761,
+author={Chen, Yufu and Yan, Meng and Yang, Dan and Zhang, Xiaohong and Wang, Ziliang},
+booktitle={2022 IEEE International Conference on Web Services (ICWS)},
+title={Deep Attentive Anomaly Detection for Microservice Systems with Multimodal Time-Series Data},
+year={2022},
+volume={},
+number={},
+pages={373-378},
+doi={10.1109/ICWS55610.2022.00062}}
+
+@INPROCEEDINGS{10078974,
+author={Li, Qixiu},
+booktitle={2022 2nd International Conference on Networking, Communications and Information Technology (NetCIT)},
+title={Construction of Agricultural Economic Data Management and Service Platform Based on Improved Genetic Algorithm},
+year={2022},
+volume={},
+number={},
+pages={1-5},
+doi={10.1109/NetCIT57419.2022.00105}}
+
+@ARTICLE{10023952,
+author={Pu, Lingjun and Shi, Jianxin and Yuan, Xinjing and Chen, Xu and Jiao, Lei and Zhang, Tian and Xu, Jingdong},
+journal={IEEE Transactions on Mobile Computing},
+title={EMS: Erasure-Coded Multi-Source Streaming for UHD Videos Within Cloud Native 5G Networks},
+year={2023},
+volume={},
+number={},
+pages={1-15},
+doi={10.1109/TMC.2023.3238356}}
+
+@INPROCEEDINGS{9935836,
+author={Widodo, Doni Iksan and Hartono, Ambran and Yuniarti, Elvan},
+booktitle={2022 10th International Conference on Cyber and IT Service Management (CITSM)},
+title={Design and Build End-to-End Device as User Recommendations for Indoor Air Quality Monitoring},
+year={2022},
+volume={},
+number={},
+pages={1-5},
+doi={10.1109/CITSM56380.2022.9935836}}
+
+@INPROCEEDINGS{10140844,
+author={Mishra, Praveen Kumar and Chaturvedi, Amit Kumar},
+booktitle={2023 International Conference on Computational Intelligence, Communication Technology and Networking (CICTN)},
+title={Research Challenges in Job Scheduling and Resource Distribution Methodology for Cloud Fog Atmosphere: An Organized Analysis},
+year={2023},
+volume={},
+number={},
+pages={292-299},
+doi={10.1109/CICTN57981.2023.10140844}}
+
+@INPROCEEDINGS{9928755,
+author={Li, Shuo and Baştuğ, Ejder and Di Renzo, Marco},
+booktitle={2022 IEEE International Mediterranean Conference on Communications and Networking (MeditCom)},
+title={On the Modelling and Analysis of Edge-Serverless Computing},
+year={2022},
+volume={},
+number={},
+pages={250-254},
+doi={10.1109/MeditCom55741.2022.9928755}}
+
+@INPROCEEDINGS{9915888,
+author={Wen, Shilin and Deng, Hongjie and Qiu, Ke and Han, Rui},
+booktitle={2022 IEEE International Conference on Sensing, Diagnostics, Prognostics, and Control ( SDPC)},
+title={EdgeCloudBenchmark: A Benchmark Driven by Real Trace to Generate Cloud-Edge Workloads},
+year={2022},
+volume={},
+number={},
+pages={377-382},
+doi={10.1109/SDPC55702.2022.9915888}}
+
+@INPROCEEDINGS{9779020,
+author={Duan, Danping and Xiang, Chaoyang},
+booktitle={2022 10th International Conference on Information and Education Technology (ICIET)},
+title={The Design and Implementation of Virtual Simulation Teaching Resource Management and Sharing Platform},
+year={2022},
+volume={},
+number={},
+pages={11-15},
+doi={10.1109/ICIET55102.2022.9779020}}
+
+@ARTICLE{9645168,
+author={Balcão-Filho, Amandio and Ruiz, Natasha and Rosa, Ferrucio de Franco and Bonacin, Rodrigo and Jino, Mario},
+journal={IEEE Transactions on Services Computing},
+title={Applying a Consumer-Centric Framework for Trust Assessment of Cloud Computing Service Providers},
+year={2023},
+volume={16},
+number={1},
+pages={95-107},
+doi={10.1109/TSC.2021.3134125}}
+
+@INPROCEEDINGS{10070735,
+author={Kong, Xiangyu and Gao, Xuesong and Pan, Shibao and Zhou, Yizhi and Yang, Yanan and Zhao, Laiping and Qi, Heng},
+booktitle={2022 IEEE Intl Conf on Parallel & Distributed Processing with Applications, Big Data & Cloud Computing, Sustainable Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom)},
+title={TailCmp - A Tail Latency Evaluation Solution of Public Cloud and Labeled von Neumann Architecture based Cloud Prototype},
+year={2022},
+volume={},
+number={},
+pages={888-895},
+doi={10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00118}}
+
+@ARTICLE{9829255,
+author={Fu, Shaojing and Huang, XueLun and Liu, Lin and Luo, Yuchuan},
+journal={IEEE Transactions on Cloud Computing},
+title={BFCRI: A Blockchain-Based Framework for Crowdsourcing With Reputation and Incentive},
+year={2023},
+volume={11},
+number={2},
+pages={2158-2174},
+doi={10.1109/TCC.2022.3190275}}
+
+@INPROCEEDINGS{10017214,
+author={Sharma, P. and Saini, K. S. and Sidhu, P. K.},
+booktitle={The 3rd International Conference on Distributed Sensing and Intelligent Systems (ICDSIS 2022)},
+title={Authentication mechanisms used in Wireless Body Area Networks: a study},
+year={2022},
+volume={2022},
+number={},
+pages={282-291},
+doi={10.1049/icp.2022.2478}}
+
+@ARTICLE{9933021,
+author={Lu, Ke and Du, Zhekai and Li, Jingjing and Min, Geyong},
+journal={IEEE Transactions on Network and Service Management},
+title={Resource-Efficient Distributed Deep Neural Networks Empowered by Intelligent Software-Defined Networking},
+year={2022},
+volume={19},
+number={4},
+pages={4069-4081},
+doi={10.1109/TNSM.2022.3218173}}
+
+@ARTICLE{9785848,
+author={Rui, Lanlan and Song, Dai and Chen, Shiyou and Yang, Yingtai and Yang, Yang and Gao, Zhipeng},
+journal={IEEE Transactions on Parallel and Distributed Systems},
+title={Content Collaborative Caching Strategy in the Edge Maintenance of Communication Network: A Joint Download Delay and Energy Consumption Method},
+year={2022},
+volume={33},
+number={12},
+pages={4148-4163},
+doi={10.1109/TPDS.2022.3179271}}
+
+@INPROCEEDINGS{10001602,
+author={Zhu, Jing and Wang, Dan and Qin, Shuxin and Tao, Gaofeng and Gui, Hongxin and Li, Fang and Ou, Liang},
+booktitle={GLOBECOM 2022 - 2022 IEEE Global Communications Conference},
+title={Towards Network Dynamics: Adaptive Buffer Management with Deep Reinforcement Learning},
+year={2022},
+volume={},
+number={},
+pages={4935-4940},
+doi={10.1109/GLOBECOM48099.2022.10001602}}
+
+@article{Farshidi_2023,
+	doi = {10.1007/s10270-023-01110-8},
+	url = {https://doi.org/10.1007%2Fs10270-023-01110-8},
+	year = 2023,
+	month = {may},
+	publisher = {Springer Science and Business Media {LLC}},
+	author = {Siamak Farshidi and Izaak Beer Kwantes and Slinger Jansen},
+	title = {Business process modeling language selection for research modelers},
+	journal = {Software and Systems Modeling}
+}
+
+@article{Soares_2023,
+	doi = {10.1007/s00607-023-01161-1},
+	url = {https://doi.org/10.1007%2Fs00607-023-01161-1},
+	year = 2023,
+	month = {feb},
+	publisher = {Springer Science and Business Media {LLC}},
+	author = {Rodrigo C. Soares and Rafael Capilla and Vinicius dos Santos and Elisa Yumi Nakagawa},
+	title = {Trends in continuous evaluation of software architectures},
+	journal = {Computing}
+}
+
+@article{Valderas_2022,
+	doi = {10.1007/s12599-022-00770-y},
+	url = {https://doi.org/10.1007%2Fs12599-022-00770-y},
+	year = 2022,
+	month = {aug},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {65},
+	number = {1},
+	pages = {25--48},
+	author = {Pedro Valderas and Victoria Torres and Estefan{\'{\i}}a Serral},
+	title = {Towards an Interdisciplinary Development of {IoT}-Enhanced Business Processes},
+	journal = {Business {\&}amp$\mathsemicolon$ Information Systems Engineering}
+}
+
+@article{Zhao_2023,
+	doi = {10.1007/s10257-022-00617-9},
+	url = {https://doi.org/10.1007%2Fs10257-022-00617-9},
+	year = 2023,
+	month = {jan},
+	publisher = {Springer Science and Business Media {LLC}},
+	author = {Shajunyi Zhao and Jianchun Miao and Jingfeng Zhao and Nader Naghshbandi},
+	title = {A comprehensive and systematic review of the banking systems based on pay-as-you-go payment fashion and cloud computing in the pandemic era},
+	journal = {Information Systems and e-Business Management}
+}
+
+@incollection{Lockner_2023,
+	doi = {10.1007/978-3-030-98062-7_8-1},
+	url = {https://doi.org/10.1007%2F978-3-030-98062-7_8-1},
+	year = 2023,
+	publisher = {Springer International Publishing},
+	pages = {1--33},
+	author = {Yannik Lockner and Paul Buske and Maximilian Rudack and Zahra Kheirandish and Moritz Kröger and Stoyan Stoyanov and Seyed Ruhollah Dokhanchi and Julia Janowitz and Alexander Peitz and Fridtjof Rudolph and Christian Hopmann and Kirsten Bobzin and Hendrik Heinemann and Christian Kalscheuer and Marco Carlet and Wolfgang Schulz},
+	title = {Improving Manufacturing Efficiency for Discontinuous Processes by Methodological Cross-Domain Knowledge Transfer},
+	booktitle = {Internet of Production}
+}
+
+@incollection{Gudenkauf_2023,
+	doi = {10.1007/978-3-031-26886-1_16},
+	url = {https://doi.org/10.1007%2F978-3-031-26886-1_16},
+	year = 2023,
+	publisher = {Springer International Publishing},
+	pages = {268--283},
+	author = {Stefan Gudenkauf and Uwe Bachmann and Niklas Hartmann},
+	title = {A Concept and a Multitenant Web Application for Interactive Software Architecture Analysis},
+	booktitle = {Lecture Notes in Business Information Processing}
+}
+
+@incollection{Li_2023,
+	doi = {10.1007/978-3-031-37228-5_9},
+	url = {https://doi.org/10.1007%2F978-3-031-37228-5_9},
+	year = 2023,
+	publisher = {Springer Nature Switzerland},
+	pages = {135--158},
+	author = {Qing Li and Zhixiong Fang and Bohang Liang},
+	title = {General Architecture Framework and General Modelling Framework: Interoperability of Enterprise Architecture},
+	booktitle = {Innovative Intelligent Industrial Production and Logistics}
+}
+
+@Article{Rwemalika_2022,
+  author    = {Renaud Rwemalika and Sarra Habchi and Mike Papadakis and Yves Le Traon and Marie-Claude Brasseur},
+  journal   = {Empirical Software Engineering},
+  title     = {Smells in system user interactive tests},
+  year      = {2022},
+  month     = {dec},
+  number    = {1},
+  volume    = {28},
+  doi       = {10.1007/s10664-022-10251-1},
+  file      = {:Rwemalika_2022 - Smells in System User Interactive Tests.pdf:PDF},
+  publisher = {Springer Science and Business Media {LLC}},
+  url       = {https://doi.org/10.1007%2Fs10664-022-10251-1},
+}
+
+@article{Mehmood_2022,
+	doi = {10.1007/s10115-022-01757-7},
+	url = {https://doi.org/10.1007%2Fs10115-022-01757-7},
+	year = 2022,
+	month = {sep},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {64},
+	number = {12},
+	pages = {3419--3445},
+	author = {Erum Mehmood and Tayyaba Anees},
+	title = {Distributed real-time {ETL} architecture for unstructured big data},
+	journal = {Knowledge and Information Systems}
+}
+
+@article{Ren_2022,
+	doi = {10.1007/s00521-022-07023-9},
+	url = {https://doi.org/10.1007%2Fs00521-022-07023-9},
+	year = 2022,
+	month = {feb},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {34},
+	number = {8},
+	pages = {5813--5837},
+	author = {Teng Ren and Tianyu Luo and Shuxuan Li and Lining Xing and Shang Xiang},
+	title = {Review on R{\&}amp$\mathsemicolon$D task integrated management of intelligent manufacturing equipment},
+	journal = {Neural Computing and Applications}
+}
+
+@article{Zeng_2022,
+	doi = {10.1007/s11704-020-0072-3},
+	url = {https://doi.org/10.1007%2Fs11704-020-0072-3},
+	year = 2022,
+	month = {jan},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {16},
+	number = {6},
+	author = {Rong Zeng and Xiaofeng Hou and Lu Zhang and Chao Li and Wenli Zheng and Minyi Guo},
+	title = {Performance optimization for cloud computing systems in the microservice era: state-of-the-art and research opportunities},
+	journal = {Frontiers of Computer Science}
+}
+
+@InCollection{Kresse_2022,
+  author    = {Wolfgang Kresse and David Danko and Kian Fadaie},
+  booktitle = {Springer Handbook of Geographic Information},
+  publisher = {Springer International Publishing},
+  title     = {Standardization},
+  year      = {2022},
+  pages     = {383--492},
+  doi       = {10.1007/978-3-030-53125-6_15},
+  file      = {:Kresse_2022 - Standardization.pdf:PDF},
+  url       = {https://doi.org/10.1007%2F978-3-030-53125-6_15},
+}
+
+@incollection{Ziemann_2022,
+	doi = {10.1007/978-3-030-96734-5_4},
+	url = {https://doi.org/10.1007%2F978-3-030-96734-5_4},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {109--167},
+	author = {Jörg Ziemann},
+	title = {{EAM} Implementation},
+	booktitle = {The Enterprise Engineering Series}
+}
+
+@incollection{Graciano_Neto_2022,
+	doi = {10.1007/978-3-031-15116-3_15},
+	url = {https://doi.org/10.1007%2F978-3-031-15116-3_15},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {333--352},
+	author = {Valdemar Vicente Graciano Neto and Wallace Manzano and Pablo Oliveira Antonino and Elisa Yumi Nakagawa},
+	title = {Foundations and~Research Agenda for~Simulation of~Smart Ecosystems Architectures},
+	booktitle = {Software Architecture}
+}
+
+@incollection{Zouari_2022,
+	doi = {10.1007/978-3-031-20891-1_17},
+	url = {https://doi.org/10.1007%2F978-3-031-20891-1_17},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {225--240},
+	author = {Firas Zouari and Chirine Ghedira-Guegan and Khouloud Boukadi and Nadia Kabachi},
+	title = {A Service-Based Framework for~Adaptive Data Curation in~Data Lakehouses},
+	booktitle = {Web Information Systems Engineering {\textendash} {WISE} 2022}
+}
+
+@incollection{Christy_Eunaicy_2022,
+	doi = {10.1007/978-981-19-4831-2_28},
+	url = {https://doi.org/10.1007%2F978-981-19-4831-2_28},
+	year = 2022,
+	publisher = {Springer Nature Singapore},
+	pages = {343--356},
+	author = {J. I. Christy Eunaicy and V. Sundaravadivelu and S. Suguna},
+	title = {Personalization and Prediction System Based on Learner Assessment Attributes Using {CNN} in E-learning Environment},
+	booktitle = {Lecture Notes in Electrical Engineering}
+}
+
+@incollection{Qui_a_Mera_2022,
+	doi = {10.1007/978-3-031-20319-0_2},
+	url = {https://doi.org/10.1007%2F978-3-031-20319-0_2},
+	year = 2022,
+	publisher = {Springer Nature Switzerland},
+	pages = {16--30},
+	author = {Antonio Qui{\~{n}}a-Mera and Jos{\'{e}} Mar{\'{\i}}a Garc{\'{\i}}a and Pablo Fern{\'{a}}ndez and Pa{\'{u}}l Vega-Molina and Antonio Ruiz-Cort{\'{e}}s},
+	title = {{GraphQL} or~{REST} for~Mobile Applications?},
+	booktitle = {Communications in Computer and Information Science}
+}
+
+@article{Bombini_2023,
+	doi = {10.1007/s12210-023-01174-0},
+	url = {https://doi.org/10.1007%2Fs12210-023-01174-0},
+	year = 2023,
+	month = {jul},
+	publisher = {Springer Science and Business Media {LLC}},
+	author = {Alessandro Bombini and Fernando Garc{\'{\i}}a-Avello Bof{\'{\i}}as and Chiara Ruberto and Francesco Taccetti},
+	title = {A cloud-native application for digital restoration of Cultural Heritage using nuclear imaging: {THESPIAN}-{XRF}},
+	journal = {Rendiconti Lincei. Scienze Fisiche e Naturali}
+}
+
+@article{Maller_2023,
+	doi = {10.1007/s11276-023-03432-3},
+	url = {https://doi.org/10.1007%2Fs11276-023-03432-3},
+	year = 2023,
+	month = {jul},
+	publisher = {Springer Science and Business Media {LLC}},
+	author = {Levente M{\'{a}}rk Maller and P{\'{e}}ter Suskovics and L{\'{a}}szl{\'{o}} Bokor},
+	title = {Edge computing in the loop simulation framework for automotive use cases evaluation},
+	journal = {Wireless Networks}
+}
+
+@article{Bhimji_2023,
+	doi = {10.1007/s41781-023-00097-7},
+	url = {https://doi.org/10.1007%2Fs41781-023-00097-7},
+	year = 2023,
+	month = {apr},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {7},
+	number = {1},
+	author = {W. Bhimji and D. Carder and E. Dart and J. Duarte and I. Fisk and R. Gardner and C. Guok and B. Jayatilaka and T. Lehman and M. Lin and C. Maltzahn and S. McKee and M. S. Neubauer and O. Rind and O. Shadura and N. V. Tran and P. van Gemmeren and G. Watts and B. A. Weaver and F. Würthwein},
+	title = {Snowmass 2021 Computational Frontier {CompF}4 Topical Group Report Storage and Processing Resource Access},
+	journal = {Computing and Software for Big Science}
+}
+
+@article{Soldani_2023,
+	doi = {10.1007/s42979-023-01721-4},
+	url = {https://doi.org/10.1007%2Fs42979-023-01721-4},
+	year = 2023,
+	month = {apr},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {4},
+	number = {3},
+	author = {Jacopo Soldani and Javad Khalili and Antonio Brogi},
+	title = {Offline Mining of Microservice-Based Architectures (Extended Version)},
+	journal = {{SN} Computer Science}
+}
+
+@Article{Metsch_2023,
+  author    = {Thijs Metsch and Magdalena Viktorsson and Adrian Hoban and Monica Vitali and Ravi Iyer and Erik Elmroth},
+  journal   = {{SN} Computer Science},
+  title     = {Intent-Driven Orchestration: Enforcing Service Level Objectives for Cloud Native Deployments},
+  year      = {2023},
+  month     = {mar},
+  number    = {3},
+  volume    = {4},
+  doi       = {10.1007/s42979-023-01698-0},
+  file      = {:Metsch_2023 - Intent Driven Orchestration_ Enforcing Service Level Objectives for Cloud Native Deployments.pdf:PDF},
+  publisher = {Springer Science and Business Media {LLC}},
+  url       = {https://doi.org/10.1007%2Fs42979-023-01698-0},
+}
+
+@Article{Adewojo_2023,
+  author    = {Adekunbi A. Adewojo and Julian M. Bass},
+  journal   = {{SN} Computer Science},
+  title     = {A Novel Weight-Assignment Load Balancing Algorithm for Cloud Applications},
+  year      = {2023},
+  month     = {mar},
+  number    = {3},
+  volume    = {4},
+  doi       = {10.1007/s42979-023-01702-7},
+  file      = {:Adewojo_2023 - A Novel Weight Assignment Load Balancing Algorithm for Cloud Applications.pdf:PDF},
+  publisher = {Springer Science and Business Media {LLC}},
+  url       = {https://doi.org/10.1007%2Fs42979-023-01702-7},
+}
+
+@article{Erdei_2023,
+	doi = {10.1007/s10922-023-09726-3},
+	url = {https://doi.org/10.1007%2Fs10922-023-09726-3},
+	year = 2023,
+	month = {feb},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {31},
+	number = {2},
+	author = {Roland Erdei and Laszlo Toka},
+	title = {Minimizing Resource Allocation for Cloud-Native Microservices},
+	journal = {Journal of Network and Systems Management}
+}
+
+@incollection{Huang_2023,
+	doi = {10.1007/978-3-031-28124-2_40},
+	url = {https://doi.org/10.1007%2F978-3-031-28124-2_40},
+	year = 2023,
+	publisher = {Springer Nature Switzerland},
+	pages = {414--427},
+	author = {Xiaoli Huang and Andi Liu and Yizhong Liu and Li Li and Zhenglin Lv and Fan Wang},
+	title = {Construction Practice of~Cloud Billing Message Based on~Stream Native},
+	booktitle = {Lecture Notes in Computer Science}
+}
+
+@incollection{Frank_2023,
+	doi = {10.1007/978-3-658-38823-2_6},
+	url = {https://doi.org/10.1007%2F978-3-658-38823-2_6},
+	year = 2023,
+	publisher = {Springer Fachmedien Wiesbaden},
+	pages = {133--168},
+	author = {Roland Frank and Gregor Schumacher and Andreas Tamm},
+	title = {Mastering Software as a Core Competence},
+	booktitle = {Cloud Transformation}
+}
+
+@InCollection{Mohamed_2023,
+  author    = {Amany Magdy Mohamed and Ashraf Darwish and Aboul Ella Hassanien},
+  booktitle = {Studies in Big Data},
+  publisher = {Springer Nature Switzerland},
+  title     = {Cost Effective Decision Support System for Smart Water Management System},
+  year      = {2023},
+  pages     = {207--220},
+  doi       = {10.1007/978-3-031-22456-0_12},
+  file      = {:Mohamed_2023 - Cost Effective Decision Support System for Smart Water Management System.pdf:PDF},
+  url       = {https://doi.org/10.1007%2F978-3-031-22456-0_12},
+}
+
+@incollection{Dubey_2023,
+	doi = {10.1007/978-981-99-0377-1_12},
+	url = {https://doi.org/10.1007%2F978-981-99-0377-1_12},
+	year = 2023,
+	publisher = {Springer Nature Singapore},
+	pages = {189--202},
+	author = {Parul Dubey and Arvind Kumar Tiwari},
+	title = {Solution Architecting on~Remote Medical Monitoring with {AWS} Cloud and {IoT}},
+	booktitle = {Advanced Technologies and Societal Change}
+}
+
+@incollection{Bonomi_2023,
+	doi = {10.1007/978-3-031-21343-4_15},
+	url = {https://doi.org/10.1007%2F978-3-031-21343-4_15},
+	year = 2023,
+	publisher = {Springer International Publishing},
+	pages = {395--431},
+	author = {Flavio Bonomi and Adam T. Drobot},
+	title = {Infrastructure for Digital Twins: Data, Communications, Computing, and Storage},
+	booktitle = {The Digital Twin}
+}
+
+@incollection{Taheri_2022,
+	doi = {10.1007/978-3-031-22155-2_4},
+	url = {https://doi.org/10.1007%2F978-3-031-22155-2_4},
+	year = 2022,
+	month = {nov},
+	publisher = {Springer International Publishing},
+	pages = {111--157},
+	author = {Javid Taheri and Schahram Dustdar and Albert Zomaya and Shuiguang Deng},
+	title = {{AI}/{ML} for Computation Offloading},
+	booktitle = {Edge Intelligence}
+}
+
+@incollection{Al_Bouhairi_2023,
+	doi = {10.1007/978-981-99-0272-9_25},
+	url = {https://doi.org/10.1007%2F978-981-99-0272-9_25},
+	year = 2023,
+	publisher = {Springer Nature Singapore},
+	pages = {366--379},
+	author = {Mohamad Jamil Al Bouhairi and Mostakim Mullick and Marvin Wolf and Ivan Gudymenko and Sebastian Clauss},
+	title = {Encryption Proxies in~a~Confidential Computing Environment},
+	booktitle = {Communications in Computer and Information Science}
+}
+
+@incollection{Taheri_2022,
+	doi = {10.1007/978-3-031-22155-2_3},
+	url = {https://doi.org/10.1007%2F978-3-031-22155-2_3},
+	year = 2022,
+	month = {nov},
+	publisher = {Springer International Publishing},
+	pages = {55--109},
+	author = {Javid Taheri and Schahram Dustdar and Albert Zomaya and Shuiguang Deng},
+	title = {{AI}/{ML} for Service Life Cycle at Edge},
+	booktitle = {Edge Intelligence}
+}
+
+@InCollection{2022,
+  author    = {Huawei Technologies Co., Ltd.},
+  booktitle = {Cloud Computing Technology},
+  publisher = {Springer Nature Singapore},
+  title     = {Cloud Computing Development Trends},
+  year      = {2022},
+  month     = {oct},
+  pages     = {343--374},
+  doi       = {10.1007/978-981-19-3026-3_8},
+  file      = {:2022 - Cloud Computing Development Trends.pdf:PDF},
+  url       = {https://doi.org/10.1007%2F978-981-19-3026-3_8},
+}
+
+@article{Carri_n_2022,
+	doi = {10.1007/s10723-022-09629-8},
+	url = {https://doi.org/10.1007%2Fs10723-022-09629-8},
+	year = 2022,
+	month = {dec},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {20},
+	number = {4},
+	author = {Carmen Carri{\'{o}}n},
+	title = {Kubernetes as a Standard Container Orchestrator - A Bibliometric Analysis},
+	journal = {Journal of Grid Computing}
+}
+
+@article{Henning_2022,
+	doi = {10.1007/s10664-022-10162-1},
+	url = {https://doi.org/10.1007%2Fs10664-022-10162-1},
+	year = 2022,
+	month = {aug},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {27},
+	number = {6},
+	author = {Sören Henning and Wilhelm Hasselbring},
+	title = {A configurable method for benchmarking scalability of cloud-native applications},
+	journal = {Empirical Software Engineering}
+}
+
+@article{Mechouche_2022,
+	doi = {10.1007/s11227-022-04363-0},
+	url = {https://doi.org/10.1007%2Fs11227-022-04363-0},
+	year = 2022,
+	month = {mar},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {78},
+	number = {11},
+	pages = {13004--13039},
+	author = {Jeremy Mechouche and Roua Touihri and Mohamed Sellami and Walid Gaaloul},
+	title = {Conformance checking for autonomous multi-cloud {SLA} management and adaptation},
+	journal = {The Journal of Supercomputing}
+}
+
+@article{Muslim_2022,
+	doi = {10.1007/s10115-022-01699-0},
+	url = {https://doi.org/10.1007%2Fs10115-022-01699-0},
+	year = 2022,
+	month = {jun},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {64},
+	number = {7},
+	pages = {1997--2022},
+	author = {Hafiz Syed Muhammad Muslim and Saddaf Rubab and Malik M. Khan and Naima Iltaf and Ali Kashif Bashir and Kashif Javed},
+	title = {S-{RAP}: relevance-aware {QoS} prediction in web-services and user contexts},
+	journal = {Knowledge and Information Systems}
+}
+
+@incollection{Lichtenth_ler_2022,
+	doi = {10.1007/978-3-031-04718-3_7},
+	url = {https://doi.org/10.1007%2F978-3-031-04718-3_7},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {109--117},
+	author = {Robin Lichtenthäler and Guido Wirtz},
+	title = {Towards a~Quality Model for~Cloud-native Applications},
+	booktitle = {Service-Oriented and Cloud Computing}
+}
+
+@InCollection{Vitali_2022,
+  author    = {Monica Vitali},
+  booktitle = {Advanced Information Systems Engineering},
+  publisher = {Springer International Publishing},
+  title     = {Towards Greener Applications: Enabling Sustainable-aware Cloud Native Applications Design},
+  year      = {2022},
+  pages     = {93--108},
+  doi       = {10.1007/978-3-031-07472-1_6},
+  file      = {:Vitali_2022 - Towards Greener Applications_ Enabling Sustainable Aware Cloud Native Applications Design.pdf:PDF},
+  url       = {https://doi.org/10.1007%2F978-3-031-07472-1_6},
+}
+
+@incollection{Gr_newald_2022,
+	doi = {10.1007/978-3-030-99100-5_10},
+	url = {https://doi.org/10.1007%2F978-3-030-99100-5_10},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {122--141},
+	author = {Elias Grünewald},
+	title = {Cloud Native Privacy Engineering through {DevPrivOps}},
+	booktitle = {Privacy and Identity Management. Between Data Protection and Security}
+}
+
+@incollection{Zhang_2022,
+	doi = {10.1007/978-3-031-06761-7_48},
+	url = {https://doi.org/10.1007%2F978-3-031-06761-7_48},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {599--615},
+	author = {Yifan Zhang and Shuli Zhang and Chengyun Guo and Luogang Zhang and Yinggang Sun and Hai Huang},
+	title = {Optimization Design of Privacy Protection System Based on Cloud Native},
+	booktitle = {Advances in Artificial Intelligence and Security}
+}
+
+@incollection{Bhatia_2022,
+	doi = {10.1007/978-981-16-6069-6_6},
+	url = {https://doi.org/10.1007%2F978-981-16-6069-6_6},
+	year = 2022,
+	publisher = {Springer Nature Singapore},
+	pages = {129--146},
+	author = {Mohan Bhatia},
+	title = {Cloud Adoption: A Foundational Engine},
+	booktitle = {Banking 4.0}
+}
+
+@incollection{Forn_s_Leal_2022,
+	doi = {10.1007/978-981-19-2980-9_1},
+	url = {https://doi.org/10.1007%2F978-981-19-2980-9_1},
+	year = 2022,
+	publisher = {Springer Nature Singapore},
+	pages = {1--16},
+	author = {Alejandro Forn{\'{e}}s-Leal and Ignacio Lacalle and Rafael Va{\~{n}}o and Carlos E. Palau and Fernando Boronat and Maria Ganzha and Marcin Paprzycki},
+	title = {Evolution of {MANO} Towards the Cloud-Native Paradigm for the Edge Computing},
+	booktitle = {Lecture Notes in Electrical Engineering}
+}
+
+@incollection{Ziemann_2022,
+	doi = {10.1007/978-3-030-96734-5_5},
+	url = {https://doi.org/10.1007%2F978-3-030-96734-5_5},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {169--204},
+	author = {Jörg Ziemann},
+	title = {{EAM} Evaluation},
+	booktitle = {The Enterprise Engineering Series}
+}
+
+@incollection{Xi_2022,
+	doi = {10.1007/978-3-031-23020-2_34},
+	url = {https://doi.org/10.1007%2F978-3-031-23020-2_34},
+	year = 2022,
+	publisher = {Springer Nature Switzerland},
+	pages = {598--614},
+	author = {Ning Xi and Yajie Li and Jin Liu},
+	title = {Decentralized Access Control for~Secure Microservices Cooperation with~Blockchain},
+	booktitle = {Network and System Security}
+}
+
+@incollection{Horn_2022,
+	doi = {10.1007/978-3-031-12597-3_15},
+	url = {https://doi.org/10.1007%2F978-3-031-12597-3_15},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {233--250},
+	author = {Angelina Horn and Hamid Mohammadi Fard and Felix Wolf},
+	title = {Multi-objective Hybrid Autoscaling of~Microservices in~Kubernetes Clusters},
+	booktitle = {Euro-Par 2022: Parallel Processing}
+}
+
+@incollection{Bhatia_2022,
+	doi = {10.1007/978-981-16-6069-6_5},
+	url = {https://doi.org/10.1007%2F978-981-16-6069-6_5},
+	year = 2022,
+	publisher = {Springer Nature Singapore},
+	pages = {91--128},
+	author = {Mohan Bhatia},
+	title = {Deliver Digital Experience},
+	booktitle = {Banking 4.0}
+}
+
+@incollection{Liu_2022,
+	doi = {10.1007/978-3-031-14923-8_15},
+	url = {https://doi.org/10.1007%2F978-3-031-14923-8_15},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {224--239},
+	author = {Fengrui Liu and Yang Wang and Zhenyu Li and Rui Ren and Hongtao Guan and Xian Yu and Xiaofan Chen and Gaogang Xie},
+	title = {{MicroCBR}: Case-Based Reasoning on~Spatio-temporal Fault Knowledge Graph for~Microservices Troubleshooting},
+	booktitle = {Case-Based Reasoning Research and Development}
+}
+
+@incollection{Hajlaoui_2022,
+	doi = {10.1007/978-3-031-10522-7_18},
+	url = {https://doi.org/10.1007%2F978-3-031-10522-7_18},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {249--264},
+	author = {Jaleleddine Hajlaoui and Zied Trifa and Zaki Brahmi},
+	title = {Model Based Migration of Cloud Systems: Review and Roadmap},
+	booktitle = {Computational Science and Its Applications {\textendash} {ICCSA} 2022}
+}
+
+@InCollection{El_Mariouli_2022,
+  author    = {Majda El Mariouli and Jalal Laassiri},
+  booktitle = {Distributed Sensing and Intelligent Systems},
+  publisher = {Springer International Publishing},
+  title     = {Migration Strategies and Refactoring Methodology When Moving a Legacy {ERP} System to Cloud Platform},
+  year      = {2022},
+  pages     = {207--217},
+  doi       = {10.1007/978-3-030-64258-7_19},
+  file      = {:El_Mariouli_2022 - Migration Strategies and Refactoring Methodology When Moving a Legacy ERP System to Cloud Platform.pdf:PDF},
+  url       = {https://doi.org/10.1007%2F978-3-030-64258-7_19},
+}
+
+@InCollection{Holfelder_2022,
+  author    = {Wieland Holfelder and Andreas Mayer and Thomas Baumgart},
+  booktitle = {Designing Data Spaces},
+  publisher = {Springer International Publishing},
+  title     = {Sovereign Cloud Technologies for Scalable Data Spaces},
+  year      = {2022},
+  pages     = {419--436},
+  doi       = {10.1007/978-3-030-93975-5_25},
+  file      = {:Holfelder_2022 - Sovereign Cloud Technologies for Scalable Data Spaces.pdf:PDF},
+  url       = {https://doi.org/10.1007%2F978-3-030-93975-5_25},
+}
+
+@incollection{Maamouri_2022,
+	doi = {10.1007/978-3-030-95947-0_1},
+	url = {https://doi.org/10.1007%2F978-3-030-95947-0_1},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {3--16},
+	author = {Amine Maamouri and Lilia Sfaxi and Riadh Robbana},
+	title = {Phi: A Generic Microservices-Based Big Data Architecture},
+	booktitle = {Information Systems}
+}
+
+@incollection{Zhang_2022,
+	doi = {10.1007/978-3-031-11612-4_5},
+	url = {https://doi.org/10.1007%2F978-3-031-11612-4_5},
+	year = 2022,
+	publisher = {Springer International Publishing},
+	pages = {89--107},
+	author = {Qingquan Tony Zhang and Beibei Li and Danxia Xie},
+	title = {Alternative Data Utilization from a Country Perspective},
+	booktitle = {Alternative Data and Artificial Intelligence Techniques}
+}
+
+@incollection{Bhatia_2022,
+	doi = {10.1007/978-981-16-6069-6_2},
+	url = {https://doi.org/10.1007%2F978-981-16-6069-6_2},
+	year = 2022,
+	publisher = {Springer Nature Singapore},
+	pages = {19--39},
+	author = {Mohan Bhatia},
+	title = {Tactical Approach to the Industrialisation},
+	booktitle = {Banking 4.0}
+}
+
+@InCollection{SerranoGutierrez2023,
+  author    = {Pablo Serrano-Gutierrez and Inmaculada Ayala and Lidia Fuentes},
+  booktitle = {Service-Oriented Computing {\textendash} {ICSOC} 2022 Workshops},
+  publisher = {Springer Nature Switzerland},
+  title     = {{FUSPAQ}: A Function Selection Platform to Adjust {QoS} in a {FaaS} Application},
+  year      = {2023},
+  pages     = {249--260},
+  doi       = {10.1007/978-3-031-26507-5_20},
+}
+
+@InCollection{Beltran2023,
+  author    = {Daniela Beltran and Mariela Curiel},
+  booktitle = {Communications in Computer and Information Science},
+  publisher = {Springer Nature Switzerland},
+  title     = {Comparison of Deployment Options for Microservices in the Cloud},
+  year      = {2023},
+  pages     = {44--57},
+  doi       = {10.1007/978-3-031-36357-3_4},
+  file      = {:Beltran2023 - Comparison of Deployment Options for Microservices in the Cloud.pdf:PDF},
+}
+
+@InCollection{BermonAngarita2023,
+  author    = {Leonardo Bermon-Angarita and N{\'{e}}stor Dar{\'{\i}}o Duque-M{\'{e}}ndez and Claudia Patricia R{\'{\i}}os-Ruiz},
+  booktitle = {Communications in Computer and Information Science},
+  publisher = {Springer Nature Switzerland},
+  title     = {Expert System for Software Architecture Selection},
+  year      = {2023},
+  pages     = {73--86},
+  doi       = {10.1007/978-3-031-36357-3_6},
+}
+
+@InCollection{Zaragoza2022,
+  author    = {Pascal Zaragoza and Abdelhak-Djamel Seriai and Abderrahmane Seriai and Anas Shatnawi and Hinde-Lilia Bouziane and Mustapha Derras},
+  booktitle = {Communications in Computer and Information Science},
+  publisher = {Springer International Publishing},
+  title     = {Materializing Microservice-oriented Architecture from~Monolithic Object-oriented Source Code},
+  year      = {2022},
+  pages     = {143--168},
+  doi       = {10.1007/978-3-031-11513-4_7},
+}
+
+@InCollection{McAleese2022,
+  author    = {Stephen McAleese and Jordan Conway McLaughlin and Filip Detyna and Andrey Murashev and Murat Yilmaz and Paul M. Clarke},
+  booktitle = {Communications in Computer and Information Science},
+  publisher = {Springer International Publishing},
+  title     = {Serverless Software Engineering {\textendash} and How to Get There.},
+  year      = {2022},
+  pages     = {75--90},
+  doi       = {10.1007/978-3-031-15559-8_6},
+  file      = {:McAleese2022 - Serverless Software Engineering _ and How to Get There..pdf:PDF},
+}
+
+@InCollection{Ghazouani2022,
+  author    = {Souad Ghazouani and Anis Tissaoui and Richard Chbeir},
+  booktitle = {Web Services {\textendash} {ICWS} 2021},
+  publisher = {Springer International Publishing},
+  title     = {Cloud-{WSDL}: Making {WSDL} Suitable for Cloud Computing},
+  year      = {2022},
+  pages     = {1--14},
+  doi       = {10.1007/978-3-030-96140-4_1},
+}
+
+@InCollection{Yussupov2022,
+  author    = {Vladimir Yussupov and Uwe Breitenbücher and Antonio Brogi and Lukas Harzenetter and Frank Leymann and Jacopo Soldani},
+  booktitle = {Service-Oriented Computing},
+  publisher = {Springer International Publishing},
+  title     = {Serverless or~Serverful? A~Pattern-Based Approach for~Exploring Hosting Alternatives},
+  year      = {2022},
+  pages     = {45--67},
+  doi       = {10.1007/978-3-031-18304-1_3},
+}
+
+@InCollection{Kumara2022,
+  author    = {Indika Kumara and Alfio Lazzaro and Nina Mujkanovic and Zoe Vasileiou and Damian A. Tamburri},
+  booktitle = {Deployment and Operation of Complex Software in Heterogeneous Execution Environments},
+  publisher = {Springer International Publishing},
+  title     = {Quality Assurance and Design-Time Optimization},
+  year      = {2022},
+  pages     = {53--66},
+  doi       = {10.1007/978-3-031-04961-3_4},
+}
+
+@inproceedings{10.5555/3581644.3581707,
+author = {Kalinagac, Onur and Soussi, Wissem and G\"{u}r, G\"{u}rkan},
+title = {Graph Based Liability Analysis for the Microservice Architecture},
+year = {2023},
+isbn = {9783903176515},
+publisher = {International Federation for Information Processing},
+address = {Laxenburg, AUT},
+abstract = {In this work, we present Graph Based Liability Analysis Framework (GRALAF) for root cause analysis (RCA) of the microservices. In this Proof-of-Concept (PoC) tool, we keep track of the performance metrics of microservices, such as service response time and CPU level values, to detect anomalies. By injecting faults in the services, we construct a Causal Bayesian Network (CBN) which represents the relation between service faults and metrics. The constructed CBN is used to predict the fault probability of services under given metrics which are assigned discrete values according to their anomaly states.},
+booktitle = {Proceedings of the 18th International Conference on Network and Service Management},
+articleno = {51},
+numpages = {3},
+keywords = {causal bayesian network, microservices, root cause analysis},
+location = {Thessaloniki, Greece},
+series = {CNSM '22}
+}
+
+@INPROCEEDINGS{10083635,
+author={S, Savitha and C, Sangana and K, Devendran and L, Pravin and M, Rajkumar and C, Nirmal},
+booktitle={2023 7th International Conference on Computing Methodologies and Communication (ICCMC)},
+title={Auto Scaling Infrastructure with Monitoring Tools using Linux Server on Cloud},
+year={2023},
+volume={},
+number={},
+pages={45-52},
+doi={10.1109/ICCMC56507.2023.10083635}}
+
+@INPROCEEDINGS{9779689,
+author={Vale, Guilherme and Correia, Filipe Figueiredo and Guerra, Eduardo Martins and de Oliveira Rosa, Thatiane and Fritzsch, Jonas and Bogner, Justus},
+booktitle={2022 IEEE 19th International Conference on Software Architecture (ICSA)},
+title={Designing Microservice Systems Using Patterns: An Empirical Study on Quality Trade-Offs},
+year={2022},
+volume={},
+number={},
+pages={69-79},
+doi={10.1109/ICSA53651.2022.00015}}
+
+@article{Alonso_2023,
+	doi = {10.1186/s13677-022-00367-6},
+	url = {https://doi.org/10.1186%2Fs13677-022-00367-6},
+	year = 2023,
+	month = {jan},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {12},
+	number = {1},
+	author = {Juncal Alonso and Leire Orue-Echevarria and Valentina Casola and Ana Isabel Torre and Maider Huarte and Eneko Osaba and Jesus L. Lobo},
+	title = {Understanding the challenges and novel architectural models of multi-cloud native applications {\textendash} a systematic literature review},
+	journal = {Journal of Cloud Computing}
+}
+
+@inproceedings{10.1145/3493700.3493731,
+author = {Lodha, Ishaan and Kolur, Lakshana and Krishnan, Keerthan and Dheenadayalan, Kumar and Sitaram, Dinkar and Nandi, Siddhartha},
+title = {Cost-Optimized Video Transfer Using Real-Time Super Resolution Convolutional Neural Networks},
+year = {2022},
+isbn = {9781450385824},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3493700.3493731},
+doi = {10.1145/3493700.3493731},
+abstract = {The explosion of video generation and consumption, coupled with an inadequate rise in network bandwidth has led to network delays and decreased Quality of Experience, limiting the opportunities to tap into the full potential of video data. These deficiencies in network resources with a shift to cloud computing models have resulted in the need to revisit the overall mechanism for video transfer and storage of videos between edge devices and the cloud. We propose a novel multi-scale real-time super-resolution convolutional neural network to achieve the composite task of optimizing the entire cost of video transfer with minimal loss of quality that can be used for any application involving the transfer of video data. To achieve this, we develop a cost-optimized video transfer system that optimizes the metrics of video transfer to give the best quality video output, given the user budget. The model makes use of Convolution blocks for extracting features and output creation with multiple sub-pixel convolutions in a novel structure. For upscaling to full High Definition video at 30 fps, the model successfully retained the frame rate while the system achieved savings in transfer time and bandwidth usage. This model has been trained on surveillance videos (VIRAT dataset), but consistent results were obtained during testing even on feature films and sports videos which demonstrates its content invariance. The evaluation of our approach averaged over 376 videos, yielded meager quality losses of 8%, measured by a novel non-referential quality metric, also proposed in this paper. Additionally, average network bandwidth savings of 80% and average video transfer time reduction of 52% were achieved.},
+booktitle = {5th Joint International Conference on Data Science & Management of Data (9th ACM IKDD CODS and 27th COMAD)},
+pages = {213–221},
+numpages = {9},
+keywords = {CNN, deep neural networks, video transfer, cost optimization, GAN, super resolution},
+location = {Bangalore, India},
+series = {CODS-COMAD 2022}
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: fileDirectory-robin-robin-x1-carbon10:../../pdfs;}
+
+@Comment{jabref-meta: saveActions:disabled;
+all-text-fields[identity]
+date[normalize_date]
+month[normalize_month]
+pages[normalize_page_numbers]
+;}
