@@ -974,7 +974,7 @@ Name: Service Interface Data Cohesion / Cohesion at message level / Communicatio
 
 Adjusted Name: Service Interface Data Cohesion
 
-Source: Bogner2017, Perepletchikov2007, Kazemi2011; Brito2021, Jin2021, Jin2018; Athanasopoulos2011, Athanasopoulos2015, Bogner2020
+Source: Bogner2017, Perepletchikov2007, Kazemi2011; Brito2021, Jin2021, Jin2018; Athanasopoulos2011, Athanasopoulos2015, Bogner2020, Moreira2022
 
 Entity: Service, Endpoint
 
@@ -988,7 +988,7 @@ Name: Service Interface Usage Cohesion
 
 Adjusted Name: Service Interface Usage Cohesion
 
-Source: Bogner2017, Perepletchikov2007, Kazemi2011
+Source: Bogner2017, Perepletchikov2007, Kazemi2011, Moreira2022
 
 Entity: Service, Endpoint
 
@@ -1002,7 +1002,7 @@ Name: Total Service Interface Cohesion
 
 Adjusted Name: Total Service Interface Cohesion
 
-Source: Bogner2017, Perepletchikov2007
+Source: Bogner2017, Perepletchikov2007, Moreira2022
 
 Entity: Service
 
