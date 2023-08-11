@@ -230,7 +230,7 @@ Calculation: Number of components whose egress is guarded / All components
 
 Name: Data Access Cohesion
 
-Adjusted Name: Cohesion between Endpoints based on data aggragte usage
+Adjusted Name: Cohesion between Endpoints based on data aggregate usage
 
 Source: Peng2022
 
@@ -422,6 +422,20 @@ Product factor: Data encryption in transit
 
 Calculation: Number of links using secure communication / All links
 
+### NOR
+
+Name: Number of runnables per software component
+
+Adjusted Name: Number of components
+
+Source: Silva2023, Venkitachalam2017
+
+Entity: Components
+
+Product factor: Sparsity
+
+Calculation: Number of Components in the System
+
 ## Runtime measures
 
 ### P
@@ -549,4 +563,3 @@ Entity: Component
 Product factor: Time behavior
 
 Calculation: The time it takes to restart a component (until it is ready) after manual restarts or restarts caused by errors.
-

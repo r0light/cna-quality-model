@@ -422,18 +422,19 @@ see: [second-search/13-filtered-by-fulltext.bib](second-search/13-filtered-by-fu
 
 #### 4. Additional Forward Search based on the previously considered papers
 
-In addition to the described search process, we also applied a forward search to the previously considered 61 papers. To do so we looked up each paper at [SemanticScolar](https://www.semanticscholar.org/) and scanned the papers which have hitherto cited the paper in focus. Through this, we found the following relevant papers:
+In addition to the described search process, we also applied a forward search to the previously considered 61 papers. To do so we looked up each paper at [SemanticScolar](https://www.semanticscholar.org/) and scanned the papers which have hitherto cited the paper in focus. Through this, we found the following relevant papers. A special case is the paper Silva2023, because it is a review paper. It reviews existing metrics from literature and thus we also included the original papers included in the review by Silva2023 where applicable:
 
 * Filippone2023 (cites Brito2021):
 * Genfer2021 (cites Engel2018):
 * Ntentos2022 (cites Zdun2017):
 * Silva2023 (cites Perepletchikov2007):
+* Venkitachalam2017 (cited by Silva2023):
 * Zdun2023 (cites Engel2018, Zdun2017):
 
-5 papers describing metrics were found through a forward search using the hitherto found literature.
-see: [second-search/14-forward-search.bib](second-search/13-filtered-by-fulltext.bib)
+6 papers describing metrics were found through a forward search using the hitherto found literature.
+see: [second-search/14-forward-search.bib](second-search/14-forward-search.bib)
 
-The combined papers identified by the literature search update therefore amount 11 papers, see [second-search/15-final-update-set.bib](second-search/15-final-update-set.bib).
+The combined papers identified by the literature search update therefore amount 12 papers, see [second-search/15-final-update-set.bib](second-search/15-final-update-set.bib).
 
 ## Current literature including metrics relevant for the quality model
 
