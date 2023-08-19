@@ -98,4 +98,4 @@ Finally, the results of the survey were incorporated into the model. The followi
 
 The result of this revision of the quality model is the quality model as shown here:
 
-![The revised quality model including the survey results](docs/assets/img/revised-quality-model.svg)
+![The revised quality model including the survey results](assets/img/revised-quality-model.svg)
