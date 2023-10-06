@@ -6,7 +6,7 @@ layout: home
 title: Overview
 ---
 
-This site describes the quality model for cloud-native application architectures as presented in the paper *[Towards a Quality Model for Cloud-native applications](http://doi.org/10.1007/978-3-031-04718-3_7)* and updated in the paper *Cloud-Native Architectural Characteristics and their Impacts on Software Quality: A Validation Survey*.
+This site describes the quality model for cloud-native application architectures as presented in the paper *[Towards a Quality Model for Cloud-native applications](http://doi.org/10.1007/978-3-031-04718-3_7)* and updated in the paper *[Cloud-Native Architectural Characteristics and their Impacts on Software Quality: A Validation Survey](https://doi.org/10.1109/SOSE58276.2023.00008)*.
 Our quality model focuses on the design time and is intended to enable quality evaluations of software architectures to assess their cloud-nativeness.
 The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and contains the following **factors** (that means **quality aspects** and **product factors**):
 
