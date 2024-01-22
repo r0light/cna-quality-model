@@ -637,7 +637,6 @@ In sum, 38 papers were removed during this step.
 
 ##### Papers which describe useable metrics
 
-* Abgaz2023: An extensive literature review on approaches for migrating from monoliths to microservices. For the evaluation of such a migration, also metrics are listed from the different approaches. Specifically cohesion and coupling metrics are listed, although presented in the referenced literature.
 * AlDebagy2020: Focusing on Microservices, several metrics are presented in detail for the evaluation of microservices architectures. The focus is on cohesion, granularity and functional scope
 * Asik2017: Metrics are presented focusing on single services but also the interplay between services to identify especially problematic parts, such as Endpoints offered by services, but not used by other services.
 * Daniel2023: Metrics are presented which can be calculated at an architectural level to detect whether common microservices patterns are used. These metrics are therefore also applicable to our model.
@@ -648,8 +647,28 @@ In sum, 38 papers were removed during this step.
 * Zdun2023 (was also found through forward search in the second search): Architectural metrics to evaluate security-related aspects of microservices-based systems are presented.
 * Zdun2023a: Architectural metrics to detect the usage of security-related approaches (or the decision to use them) based on metrics.
 
-11 papers described useable metrics.
+10 papers described useable metrics.
 see: [third-revising-search/35-filtered-by-fulltext.bib](third-revising-search/35-filtered-by-fulltext.bib)
+
+##### Papers which lead to the identification of additional papers presenting usable metrics
+
+* Abgaz2023: An extensive literature review on approaches for migrating from monoliths to microservices. For the evaluation of such a migration, also metrics are listed from the different approaches. Specifically cohesion and coupling metrics are listed, although presented in the referenced literature.
+
+1 paper was a review. Therefore we checked its references to identify additional papers which present metrics.
+see: [third-revising-search/35-filtered-by-fulltext.bib](third-revising-search/35-filtered-by-fulltext.bib)
+
+##### Papers which were identified in addition recursively based on the previously mentioned papers
+
+* Assuncao2021 (found through Abgaz2023): Focusing on the decomposition of a system into microservices, metrics are presented to evaluate the quality of decomposition options
+* Desai2021 (found through Abgaz2023): Also focusing on the decomposition of a system into microservices, metrics are presented to evaluate the quality of decomposition options
+
+The recursive search of the mentioned 1 paper led to the identifiation of 2 additional papers presenting useable metrics.
+see: [third-revising-search/36-identified-through-others.bib](third-revising-search/36-identified-through-others.bib)
+
+### Merged results of the third revising search
+
+Therfore, from the third revising search 13 additional papers were identified.
+see: [third-revising-search/37-merged-set-of-new-literature.bib](third-revising-search/37-merged-set-of-new-literature.bib)
 
 ## Current literature including metrics relevant for the quality model
 
