@@ -56,7 +56,7 @@ Name: Weighted Service Interface Count / Interface Number / Module Size Metric /
 
 Name: Average Number of Endpoints per Service
 
-Source: Bogner2017, Bogner2020, Hirzalla2009; Brito2021, Jin2021; Rosa2020; Kazemi2013, Ma2009
+Source: Bogner2017, Bogner2020, Hirzalla2009; Brito2021, Jin2021; Rosa2020; Kazemi2013, Ma2009; Desai2021
 
 Entity: System, Service, Endpoint
 
@@ -92,13 +92,13 @@ Product factor: Simplicity
 
 Calculation: Number of Data aggregates used in a system
 
-### NPE / M1 / SIM_NO / ifn
+### NPE / M1 / SIM_NO / ifn / OEM
 
-Name: Number of Produced Endpoints / (A)synchronous interfaces / Number of Operations / interface number
+Name: Number of Produced Endpoints / (A)synchronous interfaces / Number of Operations / interface number / Operations exposed by a microservice
 
 Adjusted Name: Number of provided Endpoints / Number of provided synchronous and asynchronous endpoints
 
-Source: Apel2019; Engel2018; Shim2008; Brito2021, Jin2021
+Source: Apel2019; Engel2018; Shim2008; Brito2021, Jin2021; Daniel2023
 
 Entity: Service, Endpoint
 
@@ -246,13 +246,13 @@ Product factor: "Layered architecture"
 
 Calculation: Number of endpoints which are accessible to externals.
 
-### SIM_NAO
+### SIM_NAO / AI
 
-Name: Number of Asynchronous Operations
+Name: Number of Asynchronous Operations / Asynchronous connections a microservice receives
 
 Adjusted Name: Number of asynchronous endpoints offered by a service
 
-Source: Shim2008
+Source: Shim2008; Daniel2023
 
 Entity: Service
 
@@ -330,13 +330,13 @@ Product factor: Scalability, Simplicity
 
 Calculation: Number of asynchronous and synchronous links
 
-### NCE
+### NCE / DO / FO
 
-Name: Number of Consumed Endpoints
+Name: Number of Consumed Endpoints / Degree_out / Fan out
 
 Adjusted Name: Number of Consumed Endpoints
 
-Source: Apel2019
+Source: Apel2019; Gamage2021; Perera2018; Perera2018a
 
 Entity: Service, Link
 
@@ -344,13 +344,13 @@ Product factor: Coupling
 
 Calculation: Number of endpoints a service is linked to
 
-### NSSD
+### NSSD / SD
 
-Name: Number of Synchronous Service Dependencies
+Name: Number of Synchronous Service Dependencies / Synchronous connections a microservice creates
 
 Adjusted Name: Number of synchronous outgoing links
 
-Source: Apel2019
+Source: Apel2019; Daniel2023
 
 Entity: Service, Link
 
@@ -358,13 +358,13 @@ Product factor: Asynchronous communication
 
 Calculation: Number of outgoing links that are synchronous
 
-### NASD
+### NASD / AD
 
-Name: Number of Asynchronous Service Dependencies
+Name: Number of Asynchronous Service Dependencies / Asynchronous connections a microservice creates 
 
 Adjusted Name: Number of asynchronous outgoing links
 
-Source: Apel2019
+Source: Apel2019; Daniel2023
 
 Entity: Service, Link
 
@@ -694,13 +694,13 @@ Product factor: Coupling, Service independence
 
 Calculation: Number of services which are bi-directionally linked
 
-### IRN / TI(CBS)
+### IRN / TI(CBS) / Coupling
 
-Name: Interaction number / Total interactions of component based software
+Name: Interaction number / Total interactions of component based software / Coupling between microservices
 
 Adjusted Name: Total number of links in a system
 
-Source: Brito2021, Jin2018; Tiwari2014
+Source: Brito2021, Jin2018; Tiwari2014; Assuncao2021
 
 Entity: System, Link
 
@@ -750,13 +750,13 @@ Product factor: Coupling, Service independence
 
 Calculation: (SEM_NDPS + SEM_NDCS) / SM_SSNS
 
-### AIS / SEM_NDCS / IS
+### AIS / SEM_NDCS / IS / CC / DI / FI
 
-Name: Absolute Importance of the Service / Number of Directly Connected Consumer Services / Impotance of Service
+Name: Absolute Importance of the Service / Number of Directly Connected Consumer Services / Impotance of Service / Client Count / Degree_in / Fan in
 
 Adjusted Name: Number of Components that are linked to a component
 
-Source: Bogner2017, Rud2009; Shim2008; Zhang2009
+Source: Bogner2017, Rud2009; Shim2008; Zhang2009; Asik2017; Gamage2021; Perera2018; Perera2018a
 
 Entity: Service, Link
 
@@ -806,13 +806,13 @@ Product factor: Coupling, Service indepedence
 
 Calculation: Number of Links which connect the same Components via different endpoints in the same direction
 
-### SSC
+### SSC / CC
 
-Name: System’s Service Coupling
+Name: System’s Service Coupling / Clustering Coefficient
 
 Adjusted Name: Aggregate System metric to measure service coupling
 
-Source: Hofmeister2008
+Source: Hofmeister2008; Gamage2021
 
 Entity: System, Service, Link
 
@@ -1247,7 +1247,7 @@ Name: Client-side Communication via Facade utilization metric
 
 Adjusted Name: Centralization of externally available endpoints
 
-Source: Ntentos2020
+Source: Ntentos2020; Ntentos2021
 
 Entity: System
 
@@ -1261,7 +1261,7 @@ Name: API Composition utilization metric
 
 Adjusted Name: API Composition utilization metric
 
-Source: Ntentos2020
+Source: Ntentos2020; Ntentos2021
 
 Entity: System
 
@@ -1275,7 +1275,7 @@ Name: Service Messaging Persistence utilization metric
 
 Adjusted Name: Service Link Persistence utilization metric
 
-Source: Ntentos2020
+Source: Ntentos2020; Ntentos2021
 
 Entity: System, Link
 
@@ -1289,7 +1289,7 @@ Name: Shared DataBase utilization metric / Shared Database Interactions
 
 Adjusted Name: Shared Storage Backing Service Interactions
 
-Source: Ntentos2020, Ntentos2020a
+Source: Ntentos2020, Ntentos2020a; Ntentos2021
 
 Entity: System
 
@@ -1303,7 +1303,7 @@ Name: Outbox/Event Sourcing utilization metric
 
 Adjusted Name: Outbox/Event Sourcing utilization metric
 
-Source: Ntentos2020
+Source: Ntentos2020; Ntentos2021
 
 Entity: System, Link
 
@@ -1317,7 +1317,7 @@ Name: Services and Facades supporting Distributed Tracing
 
 Adjusted Name: Distributed Tracing Support
 
-Source: Ntentos2020
+Source: Ntentos2020; Ntentos2021
 
 Entity: System
 
@@ -1331,7 +1331,7 @@ Name: Service Interaction via Central Component utilization metric
 
 Adjusted Name: Service Interaction via Central Component utilization metric
 
-Source: Ntentos2020
+Source: Ntentos2020; Ntentos2021
 
 Entity: System, Link
 
@@ -1345,7 +1345,7 @@ Name: Service Interaction with Event Sourcing utilization metric
 
 Adjusted Name: Service Interaction with Event Sourcing utilization metric
 
-Source: Ntentos2020
+Source: Ntentos2020; Ntentos
 
 Entity: System, Link
 
@@ -1807,7 +1807,7 @@ Name: Token-Based Authentication utilization metric
 
 Adjusted Name: Ratio of endpoints that support token-based authentication
 
-Source: Ntentos2022; Zdun2023
+Source: Ntentos2022; Zdun2023; Zdun2023a
 
 Entity: Endpoint
 
@@ -1835,7 +1835,7 @@ Name: Plaintext Authentication utilization metric
 
 Adjusted Name: Ratio of endpoints that support plaintext authentication
 
-Source: Ntentos2022; Zdun2023
+Source: Ntentos2022; Zdun2023; Zdun2023a
 
 Entity: Endpoint
 
@@ -1997,13 +1997,13 @@ Product factor: Low coupling
 
 Calculation: Number or request traces which contain the same two services / Number of request traces
 
-### LIC
+### LIC / PL
 
-Name: Length of Invocation Chain
+Name: Length of Invocation Chain / Path Length
 
 Adjusted Name: Request Trace Length
 
-Source: Peng2022
+Source: Peng2022; Gamage2021
 
 Entity: Request Trace
 
@@ -2011,13 +2011,13 @@ Product factor: Limited request trace scope
 
 Calculation: Number of Links included in a request trace
 
-### RCD
+### RCD / CD
 
-Name: Request-level Cyclic Dependency
+Name: Request-level Cyclic Dependency / Cyclic Dependency
 
 Adjusted Name: Number of Cycles in Request Traces
 
-Source: Peng2022
+Source: Peng2022; Gamage2021
 
 Entity: Request Trace
 
@@ -2073,7 +2073,7 @@ Name: Secure Distributed Connectors
 
 Adjusted Name: Ratio of secured links
 
-Source: Zdun2023
+Source: Zdun2023; Zdun2023a
 
 Entity: Link
 
@@ -2094,6 +2094,174 @@ Entity: Components
 Product factor: Sparsity
 
 Calculation: Number of Components in the System
+
+### LCOM
+
+Name: Lack of cohesion metric
+
+Adjusted Name: Lack of cohesion of a service
+
+Source: AlDebagy2020
+
+Entity: Service, Endpoint
+
+Product factor: Cohesion, Limited endpoint scope
+
+Calculation: 1 - (sum-of(occurences of all parameters) / (number of operations * number of unique paramters))
+
+### ALCOM
+
+Name: Average Lack of cohesion metric
+
+Adjusted Name: Average system lack of cohesion of a service
+
+Source: AlDebagy2020
+
+Entity: System, Service, Endpoint
+
+Product factor: Cohesion, Limited endpoint scope
+
+Calculation: (sum-of(LCOM values) / Number of services)
+
+### RC
+
+Name: Resource Count
+
+Adjusted Name: Data Aggregate Count
+
+Source: Asik2017
+
+Entity: Service, Data Aggregate
+
+Product factor: Limited data scope
+
+Calculation: Number of Data Aggregates used in a service
+
+### Size
+
+Name: Size of a microservice
+
+Adjusted Name: Size of a service
+
+Source: Asik2017
+
+Entity: Service
+
+Product factor: Limited functional scope
+
+Calculation: RC + CC
+
+### URC
+
+Name: Unused Resource Count
+
+Adjusted Name: Unused Endpoint Count
+
+Source: Asik2017
+
+Entity: Service, Endpoint
+
+Product factor: ? Compatibility
+
+Calculation: Number of Endpoints of a Service that are not used by any other component
+
+### UEC
+
+Name: Unreachable Endpoint Count
+
+Adjusted Name: Unreachable Endpoint Count
+
+Source: Asik2017
+
+Entity: Service, Link, Endpoint
+
+Product factor: ? Compatibility
+
+Calculation: Number of Links in a Component which target an Endpoint that does not exist
+
+### COD
+
+Name: Clients microservices of a given database
+
+Adjusted Name: Number of Services connected to a Storage Backing Service
+
+Source: Daniel2023
+
+Entity: Service, Link, Storage Backing Service
+
+Product factor: Backing service decentralization
+
+Calculation: Number of Services that are connected to an Endpoint of a Storage Backing Service
+
+### QOEM
+
+Name: Query operations exposed by a microservice
+
+Adjusted Name: Number of Read Endpoints provided by a service
+
+Source: Daniel2023
+
+Entity: Service, Endpoint
+
+Product factor: Limited Endpoint Scope, Command Query Responsibility Segregation
+
+Calculation: Number Read Endpoints included in a service
+
+### COEM
+
+Name: Command operations exposed by a microservice
+
+Adjusted Name: Number of Write Endpoints provided by a service
+
+Source: Daniel2023
+
+Entity: Service, Endpoint
+
+Product factor: Limited Endpoint Scope, Command Query Responsibility Segregation
+
+Calculation: Number Write Endpoints included in a service
+
+### MCMd
+
+Name: Microservices composing a module
+
+Adjusted Name: Number of Services hosted on one infrastructure entity
+
+Source: Daniel2023
+
+Entity: Service, Infrastructure
+
+Product factor: Distribution
+
+Calculation: Number of Services hosted on one infrastructure entity
+
+### GWP
+
+Name: Gateway Paths
+
+Adjusted Name: Ratio of request traces through a gateway
+
+Source: Zdun2023a
+
+Entity: Request Trace, Component
+
+Product factor: API Gateway
+
+Calculation: Request Traces containing a Gateway Component / All Requet Traces
+
+### FEP
+
+Name: Frontend Service Paths
+
+Adjusted Name: Ratio of request traces containing a frontend component
+
+Source: Zdun2023a
+
+Entity: Request Trace, Component
+
+Product factor: ?
+
+Calculation: Request Traces containing a Frontend Component / All Requet Traces
 
 ## Runtime measures
 
