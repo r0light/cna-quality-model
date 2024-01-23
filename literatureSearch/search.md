@@ -406,7 +406,7 @@ In this step we...:
 * Yilmaz2021: A quality model for microservices which focuses mostly on maintainability and therefore also includes metrics in this regard. However the metrics focus on internal aspects of services (Classes, Packages, Lines of Code) and not on the architecture of the whole system. Therefore the metrics are not suitable for our quality model.
 * Zaragoza2022a: An approach for identifying potential microservices in a system (that means classes which should be part of the same service) to guide the migration of systems into microservices. Because of this focus on internal structures of services, the presented metrics are not suitable for the quality model.
 
-In sum, 25 papers were removed during this step.
+In sum, 26 papers were removed during this step.
 
 ##### Papers which describe useable metrics
 

@@ -393,11 +393,13 @@ In this step we...:
 * Pulnil2022: The full-text of the work was not accessible to us, despite several different attempts to retrieve it.
 * SerranoGutierrez2023: An approach for optimizing the configuration of individual functions in a FaaS-based application, mainly focusing on performance. Because each function is considered separately and no architectural metrics, considering the application architecture as a whole, are presented, no metrics suitable for the quality model could be found.
 * Straesser2023: The work focuses on autoscaler configuration options and aims to provide guidance on how to configure autoscalers based on common anti-patterns and potential solutions for these. While in general very relevant, because in this way the quality of autoscaling configurations could be measured, the topic requires a lot more runtime information than currently considered by our quality model and we therefore decided not to include the presented metrics.
+* Vale2022: Provides a general overview on the connections between architectural aspects and quality aspects and is therefore very related to our work. Thus, it can be helpful for comparing the mentioned impacts of product factors on quality aspects in the form of trade-offs, but there are no specific measures for measuring the existence of these patterns in an architecture, presented.
 * Vitali2022: An approach for including energy and power consumption considerations into the development workflow of cloud applications. A formalization is proposed to include sustainability-oriented information in a model of an application. These information can then be used for the deployment of an application in order to reduce the emissions caused by an application. The approach however remains rather high-level and no specific metrics suitable for the quality model are presented.
 * Volpert2023: A methodology for evaluating isolation capabilities of virtualization technologies is presented. The focus is on how virtualization technologies can be compared in a fair way, leading to a proposed experiment setup where parallel workloads are executed and measurements regarding the resource usage of these workloads are taken in order to determine to what extent the workloads influence each other. The lower the influence, the better the isolation. While the isolation can be seen as a quality aspect, the work focuses on the technologies as such, and not the applications in which they are used. Therefore no suitable metrics were found.
+* Yilmaz2021: A quality model for microservices which focuses mostly on maintainability and therefore also includes metrics in this regard. However the metrics focus on internal aspects of services (Classes, Packages, Lines of Code) and not on the architecture of the whole system. Therefore the metrics are not suitable for our quality model.
 * Zaragoza2022a: An approach for identifying potential microservices in a system (that means classes which should be part of the same service) to guide the migration of systems into microservices. Because of this focus on internal structures of services, the presented metrics are not suitable for the quality model.
 
-In sum, 24 papers were removed during this step.
+In sum, 26 papers were removed during this step.
 
 ##### Papers which describe useable metrics
 
@@ -406,11 +408,9 @@ In sum, 24 papers were removed during this step.
 * Moreira2022: An evolution-focus analysis approach which focuses on cohesion metrics.
 * Peng2022: An analysis approach based on the traces found in a microservices-based system, therefore presenting metrics regarding the interaction chains between services.
 * Straesser2023a: Very interesting, because quality aspects of container orchestration systems are considered. The metrics used are however mostly runtime metrics.
-* Vale2022: Provides a general overview on the connections between architectural aspects and quality aspects and is therefore very related to our work. Some metrics, referred to as "indicators" are also included.
-* Yilmaz2021: A quality model for microservices which focuses mostly on maintainability and therefore also includes metrics in this regard
 * Yussupov2022: A work presenting patterns for FaaS-based applications which therefore also includes aspects to consider for the quality model. Metrics however need to be distilled from these patterns.
 
-8 papers described useable metrics.
+6 papers described useable metrics.
 
 #### 4. Additional Forward Search based on the previously considered papers
 
