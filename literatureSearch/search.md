@@ -48,7 +48,7 @@ This search returned 34 results.
 
 This search returned 84 results.
 
-#### [Springer Link](link.springer.com??)
+#### [Springer Link](https://link.springer.com)
 
 Because Springer Link does not allow for searching the abstracts only, but instead searches full texts, the search keywords were adjusted to be even more specific.
 
@@ -318,7 +318,7 @@ This search returned 16 results.
 
 This search returned 24 results.
 
-#### [Springer Link](link.springer.com)
+#### [Springer Link](https://link.springer.com)
 
 Because Springer Link does not allow for searching the abstracts only, but instead searches full texts, the search keywords were adjusted to be even more specific.
 
@@ -512,7 +512,7 @@ This search returned 248 results.
 
 This search returned 79 results.
 
-#### [Springer Link](link.springer.com)
+#### [Springer Link](https://link.springer.com)
 
 Because Springer Link does not allow for searching the abstracts only, but instead searches full texts, the search keywords were adjusted to be even more specific.
 
