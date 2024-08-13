@@ -1889,7 +1889,7 @@ Calculation: Number of components whose egress is guarded / All components
 
 Name: Data Access Cohesion
 
-Adjusted Name: Cohesion between Endpoints based on data aggragte usage
+Adjusted Name: Cohesion between Endpoints based on data aggregate usage
 
 Source: Peng2022
 
