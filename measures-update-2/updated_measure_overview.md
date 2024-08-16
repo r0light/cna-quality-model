@@ -160,7 +160,7 @@ Calculation: ((Maximum path lengths between components when no links exist) - (p
 
 Name: Average interactions among components
 
-Adjusted Name: Interaction density in the system
+Adjusted Name: Interaction density based on components
 
 Source: Tiwari2014
 
@@ -168,13 +168,13 @@ Entity: System, Service, Link
 
 Product factor: Service independence, Coupling
 
-Calculation: (Number of outgoing links in a system + Number of incoming links in a system) / Number of components in as system
+Calculation: (Number of links in a system) / (Number of components in as system)
 
 ### IP% / DD
 
 Name: Interaction Percentage of Components / Direct Dependency
 
-Adjusted Name: Interaction density of a system
+Adjusted Name: Interaction density based on links
 
 Source: Tiwari2014; Karhikeyan2012
 
@@ -182,7 +182,7 @@ Entity: System, Service, Link
 
 Product factor: Service independence, Coupling
 
-Calculation: ((Number of outgoing links in a system + Number of incoming links in a system) / Number of possible links in a system) * 100
+Calculation: ((Number of links in a system) / (Number of possible links in a system)) * 100
 
 ### IDDT
 
