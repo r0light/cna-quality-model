@@ -78,13 +78,13 @@ Product factor: Coupling
 
 Calculation: Number of Data aggregates used in a service
 
-### SM_TMU
+### SM_TMU / AM I-1
 
-Name: Total Number of Message Used
+Name: Total Number of Message Used / Data Model Size and Data Model Structure
 
 Adjusted Name: Data aggregate scope
 
-Source: Shim2008
+Source: Shim2008; Zimmermann2015
 
 Entity: System
 
@@ -414,11 +414,11 @@ Product factor: Simplicity, Service independence
 
 Calculation: Amount of services needed for processing a request
 
-### AM-SOA2
+### AM-SOA2a
 
-Name: Number and Complexity of Service Composition Workflows
+Name: Number of Service Composition Workflows
 
-Adjusted Name: Service composition scope
+Adjusted Name: Number of Request Traces
 
 Source: Zimmermann2015
 
@@ -426,7 +426,21 @@ Entity: System
 
 Product factor: Coupling
 
-Calculation: Number and length of composition workflows
+Calculation: Number of Request Traces
+
+### AM-SOA2b
+
+Name: Complexity of Service Composition Workflows
+
+Adjusted Name: Average Complexity of Request Traces
+
+Source: Zimmermann2015
+
+Entity: System
+
+Product factor: Coupling
+
+Calculation: (sum-of(Number of Links in Request Trace) for all Request Traces) / Total number of request traces
 
 ### NHSF
 
@@ -694,13 +708,13 @@ Product factor: Coupling, Service independence
 
 Calculation: Number of services which are bi-directionally linked
 
-### IRN / TI(CBS) / Coupling
+### IRN / TI(CBS) / Coupling / AM-P3
 
-Name: Interaction number / Total interactions of component based software / Coupling between microservices
+Name: Interaction number / Total interactions of component based software / Coupling between microservices / IPC Index and Remote Call Counter
 
 Adjusted Name: Total number of links in a system
 
-Source: Brito2021, Jin2018; Tiwari2014; Assuncao2021
+Source: Brito2021, Jin2018; Tiwari2014; Assuncao2021; Zimmermann2015
 
 Entity: System, Link
 
@@ -1132,7 +1146,7 @@ Calculation: Number of component sharings / (Number of non-external components)Â
 
 Name: Clustering Index
 
-Adjusted Name: Amount of redudancy
+Adjusted Name: Amount of redundancy
 
 Source: Zimmermann2015
 
@@ -1141,20 +1155,6 @@ Entity: System
 Product factor: Maintainability, Resiliency
 
 Calculation: Deployment units / logical components
-
-### AM I-1
-
-Name: Data Model Size and Data Model Structure
-
-Adjusted Name: Data Model Scope
-
-Source: Zimmermann2015
-
-Entity: System
-
-Product factor: Performance, Maintainability
-
-Calculation: Number of databases/schemas
 
 ### G98
 
