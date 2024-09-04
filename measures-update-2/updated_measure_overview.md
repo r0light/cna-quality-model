@@ -1305,20 +1305,6 @@ Product factor: Distributed Tracing
 
 Calculation: Services and Facades Support Distributed Tracing / Number of Services and Facades
 
-### SICC
-
-Name: Service Interaction via Central Component utilization metric
-
-Adjusted Name: Service Interaction via Central Component utilization metric
-
-Source: Ntentos2020; Ntentos2021
-
-Entity: System, Link
-
-Product factor: Distributed Tracing
-
-Calculation: Service Interaction via Central Component w/o Event Sourcing
-
 ### SIES
 
 Name: Service Interaction with Event Sourcing utilization metric
@@ -1347,17 +1333,17 @@ Product factor: Backing Service decentralization
 
 Calculation: Database per Service Links / Total Service-to-Database Links
 
-### SIC
+### SIC / SICC
 
-Name: Service Interaction via Intermediary Component
+Name: Service Interaction via Intermediary Component / Service Interaction via Central Component utilization metric
 
 Adjusted Name: Service Interaction via Backing Service
 
-Source: Ntentos2020a
+Source: Ntentos2020a, Ntentos2020; Ntentos2021
 
 Entity: System
 
-Product factor: Service independence
+Product factor: Service independence, Distributed Tracing
 
 Calculation: Service Interconnections via [MessageBrokers|Pub/sub|Stream] / Total Service Interconnections
 
