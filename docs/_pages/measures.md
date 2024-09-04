@@ -1297,11 +1297,11 @@ Product factor: Backing Service decentralization
 
 Calculation: Service Interconnections with SharedDB / Number of Service Interconnections
 
-### OES
+### OES / SIES
 
-Name: Outbox/Event Sourcing utilization metric
+Name: Outbox/Event Sourcing utilization metric / Service Interaction with Event Sourcing utilization metric
 
-Adjusted Name: Outbox/Event Sourcing utilization metric
+Adjusted Name: Event Sourcing utilization metric
 
 Source: Ntentos2020; Ntentos2021
 
@@ -1325,20 +1325,6 @@ Product factor: Distributed Tracing
 
 Calculation: Services and Facades Support Distributed Tracing / Number of Services and Facades
 
-### SIES
-
-Name: Service Interaction with Event Sourcing utilization metric
-
-Adjusted Name: Service Interaction with Event Sourcing utilization metric
-
-Source: Ntentos2020; Ntentos
-
-Entity: System, Link
-
-Product factor: Distributed Tracing
-
-Calculation: Service Interaction via Central Component with Event Sourcing
-
 ### DTU
 
 Name: Database Type Utilization
@@ -1353,9 +1339,9 @@ Product factor: Backing Service decentralization
 
 Calculation: Database per Service Links / Total Service-to-Database Links
 
-### SIC / SICC
+### SIC / SICC / SMP
 
-Name: Service Interaction via Intermediary Component / Service Interaction via Central Component utilization metric
+Name: Service Interaction via Intermediary Component / Service Interaction via Central Component utilization metric / Service Messaging Persistence utilization metric
 
 Adjusted Name: Service Interaction via Backing Service
 
