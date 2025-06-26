@@ -297,7 +297,7 @@ This search returned 18 results.
 
 ```
 "query": { (Abstract:("cloud\-native") OR Abstract:("cloud computing")) AND (Abstract:(measure) OR Abstract:(metric)) AND (Abstract:(quality)) }
-"filter": { Publication Date: (01/01/2022 TO 12/31/2023), ACM Content: DL }
+"filter": { Publication Date: (10/01/2021 TO 12/31/2023), ACM Content: DL }
 ```
 
 This search returned 9 results.
@@ -306,14 +306,14 @@ This search returned 9 results.
 
 ```
 (("Abstract":"architecture") AND ("Abstract":"measure" OR "Abstract":"metric") AND ("Abstract":"service-oriented" OR "Abstract":"microservices"))
-2022-10 - 2023-07
+2021-10 - 2023-07
 ```
 
 This search returned 16 results.
 
 ```
 (("Abstract":"cloud-native" OR "Abstract":"cloud computing") AND ("Abstract":"measure" OR "Abstract":"metric") AND ("Abstract":"quality"))
-2022-10 - 2023-07
+2021-10 - 2023-07
 ```
 
 This search returned 24 results.
@@ -324,14 +324,14 @@ Because Springer Link does not allow for searching the abstracts only, but inste
 
 ```
 ("microservice architecture" OR "service-oriented architecture") AND ("metric" OR "measure") AND ("quality evaluation" OR "architecture evaluation" OR "architecture quality)
-2022-10 - 2023-07
+2021-10 - 2023-07
 ```
 
 This search returned 111 results.
 
 ```
 "cloud-native application" AND (measure OR metric) AND quality
-2022-10 - 2023-07
+2021-10 - 2023-07
 ```
 
 This search returned 93 results.
