@@ -468,7 +468,7 @@ This search returned 366 results.
 
 ```
 "query": { (Abstract:("cloud\-native") OR Abstract:("cloud computing")) AND (Abstract:(measure) OR Abstract:(measures) OR Abstract:(metric) OR Abstract:(metrics)) AND (Abstract:(quality)) }
-"filter": { Publication Date: (10/01/2023 TO 12/31/2023), ACM Content: DL }
+"filter": { Publication Date: (10/01/2021 TO 12/31/2023), ACM Content: DL }
 ```
 
 This search returned 132 results.
@@ -484,7 +484,7 @@ This search returned 151 results.
 
 ```
 (("Abstract":"architecture") AND ("Abstract":"measure" OR "Abstract":"measures" OR "Abstract":"metric" OR "Abstract":"metrics") AND ("Abstract":"service-oriented" OR "Abstract":"microservice" OR "Abstract":"microservices"))
-2022 - 2023
+2021 - 2023
 ```
 
 This search returned 70 results.
@@ -498,7 +498,7 @@ This search returned 248 results.
 
 ```
 (("Abstract":"cloud-native" OR "Abstract":"cloud computing") AND ("Abstract":"measure" OR "Abstract":"measures" OR "Abstract":"metric" OR "Abstract":"metrics") AND ("Abstract":"quality"))
-2022 - 2023
+2021 - 2023
 ```
 
 This search returned 79 results.

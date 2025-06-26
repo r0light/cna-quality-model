@@ -477,7 +477,7 @@ This search returned 366 results.
 
 ```
 "query": { (Abstract:("cloud\-native") OR Abstract:("cloud computing")) AND (Abstract:(measure) OR Abstract:(measures) OR Abstract:(metric) OR Abstract:(metrics)) AND (Abstract:(quality)) }
-"filter": { Publication Date: (10/01/2023 TO 12/31/2023), ACM Content: DL }
+"filter": { Publication Date: (10/01/2021 TO 12/31/2023), ACM Content: DL }
 ```
 
 This search returned 132 results.
