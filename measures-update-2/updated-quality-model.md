@@ -1,23 +1,6 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-permalink: /
-layout: home
-title: Overview
----
+# Quality model with Entities, Quality aspects and Measures
 
-This site describes the quality model for cloud-native application architectures as presented in the paper *[Towards a Quality Model for Cloud-native applications](http://doi.org/10.1007/978-3-031-04718-3_7)* and updated in the paper *[Cloud-Native Architectural Characteristics and their Impacts on Software Quality: A Validation Survey](https://doi.org/10.1109/SOSE58276.2023.00008)*.
-Our quality model focuses on the design time and is intended to enable quality evaluations of software architectures to assess their cloud-nativeness.
-The quality model is based on the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf) and contains the following **factors** (that means **quality aspects** and **product factors**):
-
-![The current quality model focused on the architectural design](assets/img/revised-quality-model.svg)
-
-The higher level **quality aspects** are adopted from the [ISO25010 standard](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010) and the relations (called **impacts**) between **product factors** and **quality aspects** is explained by this excerpt from the [Quamoco meta model](https://mediatum.ub.tum.de/doc/1110600/file.pdf):
-
-![An excerpt of the Quamoco meta model](assets/img/quamoco.svg?sanitize=true)
-
-It also shows that **entities** are needed which describe a software architecture and which are characterized by **product factors**. Our proposed entities for the quality model are the following:
-
+## Entities which describe a software architecture that the quality model can be applied on
 
 | Name                    | Description                                                                                                                                                                                                                                                                                               | Relation                        |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -35,9 +18,7 @@ It also shows that **entities** are needed which describe a software architectur
 | Data Aggregate          | An aggregate which needs to be persisted and is used by services, e.g., Business objects                                                                                                                                                                                                                  | part-of System                  |
 | Backing Data            | Non-business data, e.g., config values, secrets, logs, metrics                                                                                                                                                                                                                                            | part-of System                  |
 
-Finally, **measures** are needed for a quantitative evaluation. In its current state we have included **measures** so far presented in scientific literature. However, not for all **product factors** we could find suitable **measures** highlighting the need for future work in order to enable comprehensive quality evaluations for cloud-native application architectures (For more information on this and on the creation process of our quality model see [Initial Creation Process]({{ site.baseurl }}{% link _pages/creation-process.md %}) and [Validation Survey]({{ site.baseurl }}{% link _pages/validation-survey.md %})).
-
-Our quality model is described in more detail in the following:
+## Quality aspects (high-level) and product factors (tangible in the software)
 
 ### Security
 
@@ -204,7 +185,7 @@ Our quality model is described in more detail in the following:
       * *Ratio of outgoing links of a service* (PhamThiQuynh2009)
       * *Coupling degree based on potential coupling* (PhamThiQuynh2009)
       * *Interaction density based on components* ([Tiwari2014](https://doi.org/10.1145/2659118.2659135))
-      * *Interaction density based on links* ([Tiwari2014](https://doi.org/10.1145/2659118.2659135); [Karhikeyan2012](https://doi.org/10.1109/racss.2012.6212677))
+      * *Interaction density based on links*  ([Tiwari2014](https://doi.org/10.1145/2659118.2659135); [Karhikeyan2012](https://doi.org/10.1109/racss.2012.6212677))
       * *Indirect Interaction density of a system* ([Karhikeyan2012](https://doi.org/10.1109/racss.2012.6212677))
       * *Service Coupling based on Endpoint Entropy* ([Wang2009](https://doi.org/10.1109/iciecs.2009.5362767))
       * *System Coupling based on Endpoint Entropy* ([Wang2009](https://doi.org/10.1109/iciecs.2009.5362767))
@@ -437,3 +418,4 @@ Our quality model is described in more detail in the following:
     *By mediating communication through additional components, there is no direct dependence on the other communication partner and additional operations can be performed to manage the communication, such as load balancing, monitoring, or the enforcement of policies. By using centralized mediation approaches, such as Service Meshes, management actions can be performed universally and consistently across the components of an application.*  
     [Indrasiri2021](https://www.oreilly.com/library/view/design-patterns-for/9781492090700/) 3 Sidecar Pattern, Service Mesh Pattern, Service Abstraction Pattern (Proxy communication with services to include service discovery and load balancing); [Davis2019](https://www.manning.com/books/cloud-native-patterns) 10.3; [Richardson2019](https://www.manning.com/books/microservices-patterns) 11.4.2
     * *Service Interaction via Backing Service* ([Ntentos2020a](https://doi.org/10.1007%2F978-3-030-58923-3_1))
+    

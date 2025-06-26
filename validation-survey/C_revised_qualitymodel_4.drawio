@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-21T11:11:08.565Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="FqoajJLntSqD7mMOhld1" version="21.6.8" type="device">
+<mxfile host="app.diagrams.net" modified="2023-09-13T12:35:30.242Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0" etag="Gki1jbZ33VoxSV1wQ3ln" version="21.7.5" type="device">
   <diagram id="lvV3Ok0h8ql0EQ45Bn60" name="Page-1">
-    <mxGraphModel dx="2704" dy="2224" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2257" dy="1964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -539,10 +539,12 @@
         <mxCell id="UkfMT5YlCVHSnMBwZSvf-100" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#000000;fontColor=#000000;" parent="1" source="UkfMT5YlCVHSnMBwZSvf-101" target="UkfMT5YlCVHSnMBwZSvf-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="n4TEiyT-7FuKTJClGV-Z-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UkfMT5YlCVHSnMBwZSvf-101" target="n4TEiyT-7FuKTJClGV-Z-1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="n4TEiyT-7FuKTJClGV-Z-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="UkfMT5YlCVHSnMBwZSvf-101" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-103.13000000000011" y="-1130.7300000000005" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="UkfMT5YlCVHSnMBwZSvf-101" value="Configuration mangement" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="UkfMT5YlCVHSnMBwZSvf-101" value="Configuration management" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-143.13" y="-1050.7300000000002" width="80" height="28" as="geometry" />
         </mxCell>
         <mxCell id="UkfMT5YlCVHSnMBwZSvf-103" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#000000;fontColor=#000000;" parent="1" source="UkfMT5YlCVHSnMBwZSvf-105" target="UkfMT5YlCVHSnMBwZSvf-17" edge="1">
@@ -592,7 +594,7 @@
             <mxPoint x="-144.59052631579004" y="-591.5700000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UkfMT5YlCVHSnMBwZSvf-115" value="Command Query Responsibility Segragation" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="UkfMT5YlCVHSnMBwZSvf-115" value="Command Query Responsibility Segregation" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-277.75" y="-332.19000000000005" width="90" height="35" as="geometry" />
         </mxCell>
         <mxCell id="UkfMT5YlCVHSnMBwZSvf-116" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontColor=#000000;" parent="1" source="UkfMT5YlCVHSnMBwZSvf-117" target="UkfMT5YlCVHSnMBwZSvf-43" edge="1">
@@ -1553,9 +1555,6 @@
         </mxCell>
         <mxCell id="RdB9Hu1vqxafDY6famRo-1" value="Automated infrastructure&lt;br&gt;maintenance" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-427" y="-806.4200000000001" width="80" height="36.84" as="geometry" />
-        </mxCell>
-        <mxCell id="n4TEiyT-7FuKTJClGV-Z-1" value="Configuration mangement" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-143.13" y="-1158.7300000000002" width="80" height="28" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

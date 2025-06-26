@@ -1,10 +1,4 @@
----
-permalink: /measures
-layout: page
-title: Measures
----
-
-Selected measures from literature which focus on the architectural properties:
+# Selected measures from literature which focus on the architectural properties
 
 ## Static measures
 
@@ -315,20 +309,6 @@ Entity: Service
 Product factor: Coupling, Cohesion
 
 Calculation: Number of Links of a component
-
-### AM-P3
-
-Name: IPC Index and Remote Call Counter
-
-Adjusted Name: Number of asynchronous and synchronous links
-
-Source: Zimmermann2015
-
-Entity: System
-
-Product factor: Scalability, Simplicity
-
-Calculation: Number of asynchronous and synchronous links
 
 ### NCE / DO / FO
 
@@ -1268,20 +1248,6 @@ Entity: System
 Product factor: API Gateway
 
 Calculation: (Number of Client to Services via other Services Routes / Total Number of Services) / Number of Unique Client Links
-
-### SMP
-
-Name: Service Messaging Persistence utilization metric
-
-Adjusted Name: Service Link Persistence utilization metric
-
-Source: Ntentos2020; Ntentos2021
-
-Entity: System, Link
-
-Product factor: ?
-
-Calculation: Service Interconnections with Messaging or Stream Processing / Number of Service Interconnections
 
 ### SDB / SDBI
 
@@ -2797,3 +2763,4 @@ Entity: Component
 Product factor: Time behavior
 
 Calculation: The time it takes to restart a component (until it is ready) after manual restarts or restarts caused by errors.
+
